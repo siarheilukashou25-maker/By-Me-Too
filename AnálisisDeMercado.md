@@ -1,4 +1,4 @@
-# Análisis de Mercado y Validación: \[Nombre de tu App\]
+# Análisis de Mercado y Validación: By Me Too! / Cómprame!
 
 ## 1. Resumen Ejecutivo
 
