@@ -286,7 +286,7 @@ El proyecto se encuentra actualmente en desarrollo.
 * [x] Definición de los requisitos iniciales
 * [x] Creación del repositorio
 * [x] Organización del equipo
-* [ ] Diseño de la interfaz
+* [x] Diseño de la interfaz
 * [ ] Sistema de usuarios
 * [ ] Creación de grupos
 * [ ] Gestión de compras
