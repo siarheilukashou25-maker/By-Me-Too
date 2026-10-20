@@ -6,7 +6,7 @@ Este manual recoge las medidas de accesibilidad y usabilidad que deben integrars
 
 ## 2. Conceptos clave
 
-**Accesibilidad:** que cualquier persona, con independencia de sus capacidades o del contexto, pueda percibir, comprender, navegar e interactuar con la interfaz. Incluye discapacidades permanentes (visual, auditiva, motriz, cognitiva), temporales (un brazo escayolado) y situacionales (sol directo sobre la pantalla, un entorno ruidoso).
+**Accesibilidad:** que cualquier persona sin contexto, pueda percibir, comprender, navegar e interactuar con la interfaz. Incluye discapacidades permanentes (visual, auditiva, motriz, cognitiva), temporales (un brazo escayolado) y situacionales (sol directo sobre la pantalla, un entorno ruidoso).
 
 **Usabilidad:** grado en que un producto puede ser usado por usuarios concretos para lograr objetivos con **eficacia, eficiencia y satisfacción** en un contexto de uso específico (definición de ISO 9241-11).
 
