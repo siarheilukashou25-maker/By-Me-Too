@@ -30,16 +30,19 @@ Nuevos criterios de WCAG 2.2 relevantes:
 | Criterio | Nivel | Qué exige |
 |---|---|---|
 | 2.4.11 Foco no oculto (mínimo) | AA | El elemento enfocado no puede quedar tapado por cabeceras fijas, banners o cookies |
+| 2.4.12 Foco no oculto (mejorado) | AAA | Ninguna parte del elemento enfocado puede quedar oculta por contenido añadido por el autor |
+| 2.4.13 Apariencia del foco | AAA | El indicador de foco debe tener un tamaño mínimo (área equivalente a un perímetro de 2 píxeles CSS) y un contraste de al menos 3:1 entre sus estados enfocado y no enfocado |
 | 2.5.7 Movimientos de arrastre | AA | Toda acción de arrastrar debe tener alternativa con un solo puntero (clic/toque) |
 | 2.5.8 Tamaño del objetivo (mínimo) | AA | Objetivos interactivos de al menos 24×24 píxeles CSS, o con espaciado suficiente |
 | 3.2.6 Ayuda consistente | A | La ayuda/contacto aparece en el mismo lugar relativo en todas las páginas |
 | 3.3.7 Entrada redundante | A | No pedir al usuario datos que ya introdujo en el mismo proceso |
 | 3.3.8 Autenticación accesible (mínimo) | AA | No exigir pruebas cognitivas (recordar, transcribir, resolver puzles) para iniciar sesión sin alternativa |
-
-*(Los criterios 2.4.12, 2.4.13 y 3.3.9 son de nivel AAA.)*
-
+| 3.3.9 Autenticación accesible (mejorado) | AAA | Igual que 3.3.8, pero más estricto: no permite excepciones para reconocer objetos ni contenido personal propio del usuario |
 
 
+### 3.2 WCAG 3.0
+
+Es un borrador de trabajo del W3C (actualización de marzo de 2026), con un modelo de puntuación por resultados en lugar de aprobado/suspenso. Una Recomendación final no se espera antes de 2028, por lo que **no es exigible**; WCAG 2.2 sigue siendo la referencia vigente.
 
 
 
