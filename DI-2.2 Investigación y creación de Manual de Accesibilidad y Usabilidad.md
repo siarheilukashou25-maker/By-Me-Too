@@ -24,3 +24,48 @@ Las *Web Content Accessibility Guidelines* son el estándar internacional de ref
 - **Robusto:** compatible con navegadores y tecnologías de apoyo actuales y futuras.
 
 Los criterios tienen niveles **A, AA y AAA**. **El objetivo recomendado para este proyecto es el nivel AA de WCAG 2.2.** El nivel AAA no se exige de forma global, pero conviene aplicar criterios concretos cuando sea viable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 11. Fuentes de referencia
+
+- W3C WAI – WCAG 2.2 (w3.org/TR/WCAG22) y *How to Meet WCAG* (w3.org/WAI/WCAG22/quickref)
+- W3C – WAI-ARIA Authoring Practices Guide
+
+
+
+
+
+
+
+
+
+
+
