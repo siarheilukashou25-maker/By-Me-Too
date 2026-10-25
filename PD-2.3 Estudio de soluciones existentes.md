@@ -161,33 +161,31 @@ El proyecto también tendrá en cuenta las recomendaciones del manual de accesib
 
 Al tratarse de un proyecto propio, el equipo podrá priorizar las mejoras según las necesidades detectadas durante el desarrollo y las pruebas. Entre las posibles ampliaciones que se podrían estudiar están los resúmenes periódicos de compras, la clasificación por categorías o la consulta del gasto acumulado del hogar. Estas funciones deberán valorarse según el alcance del proyecto y no se consideran implementadas actualmente.
 
+## 4. Limitaciones y aspectos que deben validarse
 
+Aunque la propuesta tiene un enfoque concreto, todavía no se puede afirmar que sea mejor que las alternativas existentes. Para justificar una ventaja competitiva real, será necesario desarrollar una primera versión y compararla con las necesidades de sus usuarios.
 
+Durante el desarrollo se deberán comprobar los siguientes aspectos:
 
+1. **Facilidad de uso:** medir si los usuarios pueden registrar una compra y consultar el saldo sin ayuda.
+2. **Rapidez:** comprobar cuántos pasos son necesarios para completar las tareas habituales.
+3. **Comprensión de los saldos:** verificar que las personas entienden cuánto les corresponde pagar.
+4. **Accesibilidad:** revisar el contraste, la legibilidad, los controles y los mensajes de error.
+5. **Compatibilidad:** probar la aplicación en los dispositivos y plataformas que finalmente se decidan.
+6. **Utilidad:** preguntar a personas que compartan vivienda si las funciones propuestas resuelven sus necesidades cotidianas.
+7. **Mantenimiento:** valorar los recursos necesarios para corregir errores y añadir mejoras.
 
+También habrá que considerar que los competidores ya disponen de funciones que pueden resultar suficientes para muchos usuarios. Por ello, la diferenciación deberá demostrarse mediante una experiencia útil y sencilla, no solo mediante una lista de características.
 
+## 5. Conclusión
 
+El benchmarking realizado permite identificar varias alternativas consolidadas para compartir gastos: Splitwise, tricount, Splid y Spliit. Todas ofrecen herramientas para registrar pagos, organizar grupos o calcular balances, aunque presentan diferencias en sus modelos de precios, funciones, plataformas y posibilidades de personalización.
 
+A partir de este análisis, se propone orientar By Me Too! / Comprame! hacia la organización de las compras domésticas entre personas que conviven. Su posible valor diferencial estará en ofrecer un proceso sencillo para registrar compras, seleccionar a los participantes y consultar el reparto de los gastos del hogar.
 
+**La ventaja competitiva no consiste en inventar el reparto de gastos, sino en adaptar esa experiencia a las necesidades concretas de la convivencia y facilitar su uso diario.**
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Esta ventaja es, por ahora, una hipótesis de diseño. Para confirmarla, será necesario desarrollar la aplicación, realizar pruebas de usabilidad y accesibilidad y recoger las opiniones de usuarios potenciales.
 
 
 ## 6. Fuentes consultadas
