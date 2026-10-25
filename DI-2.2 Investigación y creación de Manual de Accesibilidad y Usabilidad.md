@@ -1,275 +1,363 @@
-# Manual de Accesibilidad y Usabilidad para las interfaces de By Me Too
+# DI 2.2 – Investigación y creación de un manual de accesibilidad y usabilidad
 
-## 1. Introducción y objetivo
+## 1. Introducción
 
-Este manual recoge las medidas de accesibilidad y usabilidad que deben integrarse en las interfaces del proyecto **By Me Too**, explica **por qué** se aplican y **qué importancia** tienen. Sirve como guía común para diseño, desarrollo y pruebas, y como criterio de revisión antes de dar una funcionalidad por terminada.
+Cuando se desarrolla una aplicación, es importante tener en cuenta tanto su funcionamiento como la facilidad con la que los usuarios pueden utilizarla. Una aplicación debe permitir realizar las tareas para las que ha sido diseñada, pero también debe ofrecer una interfaz clara, intuitiva y accesible.
 
-## 2. Conceptos clave
+La accesibilidad y la usabilidad son dos aspectos fundamentales en el diseño de interfaces. La accesibilidad busca reducir las barreras que pueden dificultar el uso de una aplicación, mientras que la usabilidad se centra en conseguir que los usuarios puedan utilizarla de forma sencilla y eficiente.
 
-**Accesibilidad:** que cualquier persona sin contexto, pueda percibir, comprender, navegar e interactuar con la interfaz. Incluye discapacidades permanentes (visual, auditiva, motriz, cognitiva), temporales (un brazo escayolado) y situacionales (sol directo sobre la pantalla, un entorno ruidoso).
+El objetivo de este manual es investigar las principales características, pautas y estándares relacionados con la accesibilidad y la usabilidad, y establecer una serie de medidas que sirvan como referencia durante el desarrollo de nuestro proyecto.
 
-**Usabilidad:** grado en que un producto puede ser usado por usuarios concretos para lograr objetivos con **eficacia, eficiencia y satisfacción** en un contexto de uso específico (definición de ISO 9241-11).
+En este caso, el manual está orientado a **By Me Too! / Comprame!**, una aplicación móvil destinada a facilitar la gestión de compras compartidas y el reparto de gastos entre personas que conviven.
 
-**Relación entre ambas:** la accesibilidad garantiza que *todas las personas puedan usar* la interfaz; la usabilidad garantiza que *sea fácil y agradable de usar*. Una interfaz puede ser técnicamente accesible y resultar incómoda, o ser cómoda para unos y una barrera para otros. Se necesitan las dos.
+Como el desarrollo de las interfaces todavía no ha comenzado, las medidas recogidas en este documento se plantean como recomendaciones que se tendrán en cuenta durante las futuras fases de diseño y programación. Posteriormente, se podrán comprobar mediante pruebas si se han aplicado correctamente.
 
-## 3. Marco normativo y estándares de referencia
+## 2. Accesibilidad
 
-### 3.1 WCAG 2.2 (W3C)
+### 2.1. ¿Qué es la accesibilidad?
 
-Las *Web Content Accessibility Guidelines* son el estándar internacional de referencia. La versión 2.2 es Recomendación del W3C desde el 5 de octubre de 2023 y añadió 9 criterios nuevos y eliminó el 4.1.1 (Análisis sintáctico). Se organiza en cuatro principios, conocidos como **POUR**:
+La accesibilidad digital consiste en diseñar aplicaciones que puedan ser utilizadas por el mayor número de personas posible, independientemente de sus capacidades o necesidades.
 
-- **Perceptible:** la información debe poder percibirse (alternativas de texto, contraste, subtítulos, adaptabilidad).
-- **Operable:** todo debe poder manejarse con teclado, ratón, táctil o tecnologías de apoyo, sin límites de tiempo abusivos ni contenido que provoque crisis.
-- **Comprensible:** contenido legible, comportamiento predecible y ayuda para evitar y corregir errores.
-- **Robusto:** compatible con navegadores y tecnologías de apoyo actuales y futuras.
+Algunas personas pueden tener dificultades para distinguir determinados colores, leer textos pequeños o utilizar una pantalla táctil. Otras pueden necesitar tecnologías de apoyo, como lectores de pantalla, para acceder a la información.
 
-Los criterios tienen niveles **A, AA y AAA**. **El objetivo recomendado para este proyecto es el nivel AA de WCAG 2.2.** El nivel AAA no se exige de forma global, pero conviene aplicar criterios concretos cuando sea viable.
+Por este motivo, es importante diseñar interfaces que reduzcan estas barreras y permitan a los usuarios acceder a las funciones de la aplicación.
 
-Nuevos criterios de WCAG 2.2 relevantes:
+La accesibilidad no debe considerarse únicamente al final del desarrollo, sino desde las primeras decisiones relacionadas con el diseño de la interfaz.
 
-| Criterio | Nivel | Qué exige |
-|---|---|---|
-| 2.4.11 Foco no oculto (mínimo) | AA | El elemento enfocado no puede quedar tapado por cabeceras fijas, banners o cookies |
-| 2.4.12 Foco no oculto (mejorado) | AAA | Ninguna parte del elemento enfocado puede quedar oculta por contenido añadido por el autor |
-| 2.4.13 Apariencia del foco | AAA | El indicador de foco debe tener un tamaño mínimo (área equivalente a un perímetro de 2 píxeles CSS) y un contraste de al menos 3:1 entre sus estados enfocado y no enfocado |
-| 2.5.7 Movimientos de arrastre | AA | Toda acción de arrastrar debe tener alternativa con un solo puntero (clic/toque) |
-| 2.5.8 Tamaño del objetivo (mínimo) | AA | Objetivos interactivos de al menos 24×24 píxeles CSS, o con espaciado suficiente |
-| 3.2.6 Ayuda consistente | A | La ayuda/contacto aparece en el mismo lugar relativo en todas las páginas |
-| 3.3.7 Entrada redundante | A | No pedir al usuario datos que ya introdujo en el mismo proceso |
-| 3.3.8 Autenticación accesible (mínimo) | AA | No exigir pruebas cognitivas (recordar, transcribir, resolver puzles) para iniciar sesión sin alternativa |
-| 3.3.9 Autenticación accesible (mejorado) | AAA | Igual que 3.3.8, pero más estricto: no permite excepciones para reconocer objetos ni contenido personal propio del usuario |
+### 2.2. Importancia de la accesibilidad
 
+Aplicar medidas de accesibilidad permite que más personas puedan utilizar una aplicación de forma autónoma y comprender correctamente la información que presenta.
 
-### 3.2 WCAG 3.0
+Además, muchas de estas medidas benefician a todos los usuarios. Por ejemplo, utilizar textos claros, botones fáciles de identificar y mensajes de error comprensibles mejora la experiencia general.
 
-Es un borrador de trabajo del W3C (actualización de marzo de 2026), con un modelo de puntuación por resultados en lugar de aprobado/suspenso. Una Recomendación final no se espera antes de 2028, por lo que **no es exigible**; WCAG 2.2 sigue siendo la referencia vigente.
+En nuestro proyecto, la accesibilidad será especialmente importante en las pantallas de registro de compras, consulta de gastos y visualización de los importes correspondientes a cada miembro del grupo.
 
-### 3.3 Normativa europea y española
+### 2.3. Principales pautas de accesibilidad
 
-- **Directiva (UE) 2019/882 – Acta Europea de Accesibilidad (EAA):** fija requisitos comunes de accesibilidad para productos y servicios.
-- **Ley 11/2023, de 8 de mayo:** transpone la EAA a España. Sus obligaciones de accesibilidad se aplican desde el **28 de junio de 2025**. Entre los servicios cubiertos figuran el comercio electrónico, los servicios bancarios a consumidores y las comunicaciones electrónicas. Las microempresas prestadoras de servicios están exentas, por lo que conviene verificar si el proyecto está incluido.
-- **UNE-EN 301 549:** norma técnica europea de accesibilidad TIC que sirve de base para demostrar conformidad. Actualmente incorpora WCAG 2.1 AA, y está previsto actualizarla hacia WCAG 2.2.
-- **Real Decreto 1112/2018:** accesibilidad de sitios web y apps móviles del **sector público** español; exige además una declaración de accesibilidad.
+Para desarrollar una interfaz accesible, se deben tener en cuenta las siguientes recomendaciones:
 
-**Importante:** cumplir WCAG no equivale automáticamente a cumplir la EAA, que incluye requisitos adicionales (por ejemplo, servicios de soporte accesibles e información sobre accesibilidad). Si el proyecto tiene fines comerciales, conviene consultar con asesoría legal. Este manual no constituye asesoramiento jurídico.
+- Utilizar combinaciones de colores que permitan distinguir correctamente los textos del fondo.
+- Mantener un tamaño de letra adecuado y facilitar la lectura del contenido.
+- No utilizar únicamente el color para transmitir información importante.
+- Proporcionar nombres o descripciones accesibles a los botones y otros elementos interactivos.
+- Permitir que los usuarios utilicen las funciones de la aplicación mediante los mecanismos de navegación compatibles con la plataforma.
+- Organizar la información de forma lógica y coherente.
+- Evitar que los elementos interactivos sean demasiado pequeños o difíciles de utilizar.
+- Mostrar los errores mediante mensajes claros que permitan comprender cómo solucionarlos.
 
-### 3.4 Estándares de usabilidad
+Estas recomendaciones ayudarán a reducir las dificultades de uso y servirán como referencia durante el diseño de las interfaces.
 
-- **ISO 9241-11:** define usabilidad (eficacia, eficiencia, satisfacción).
-- **ISO 9241-210:** proceso de diseño centrado en las personas (investigar el contexto, especificar requisitos, diseñar, evaluar y repetir).
-- **10 heurísticas de Nielsen:** principios de evaluación de interfaces (ver sección 5).
-- **WAI-ARIA 1.2:** especificación del W3C para roles, estados y propiedades que hacen accesibles los componentes dinámicos.
-- **Pautas de plataforma:** Material Design (Android/web) y Human Interface Guidelines (iOS), útiles para componentes táctiles y apps móviles.
+## 3. Usabilidad
 
-## 4. Medidas de accesibilidad a integrar
+### 3.1. ¿Qué es la usabilidad?
 
-Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
+La usabilidad se refiere a la facilidad con la que una persona puede aprender a utilizar una aplicación, comprender su funcionamiento y completar las tareas que necesita realizar.
 
-### 4.1 Perceptible
+Una aplicación con buena usabilidad presenta la información de manera ordenada, utiliza elementos reconocibles y permite realizar las acciones principales sin generar confusión.
 
-**Alternativas de texto para imágenes (1.1.1, A).**
-- Qué: toda imagen informativa lleva `alt` descriptivo; las decorativas llevan `alt=""`. Los iconos que actúan como botón necesitan nombre accesible (`aria-label` o texto oculto visualmente).
-- Por qué: las personas ciegas o con baja visión que usan lectores de pantalla no pueden interpretar una imagen sin su texto equivalente.
+Por ejemplo, al registrar una compra, el usuario debería poder identificar fácilmente dónde introducir el nombre del producto, su precio y las personas que participan en el gasto.
 
-**Contraste de color (1.4.3 y 1.4.11, AA).**
-- Qué: relación mínima **4,5:1** para texto normal y **3:1** para texto grande (≥24 px, o ≥18,5 px en negrita) y para bordes de campos, iconos y estados de componentes.
-- Por qué: afecta a personas con baja visión, daltonismo y a cualquiera que use el móvil a pleno sol.
+### 3.2. Importancia de la usabilidad
 
-**No depender solo del color (1.4.1, A).**
-- Qué: los errores, estados y enlaces se indican además con texto, icono o subrayado.
-- Por qué: unos 1 de cada 12 hombres tiene alguna forma de daltonismo; un campo "en rojo" sin más información pasa desapercibido.
+Una buena usabilidad permite reducir los errores y facilita que los usuarios completen sus tareas sin tener que dedicar demasiado tiempo a comprender la interfaz.
 
-**Texto redimensionable y reflujo (1.4.4, 1.4.10, AA).**
-- Qué: usar unidades relativas (`rem`, `%`), permitir zoom hasta el 200 % sin perder contenido ni funcionalidad y que el diseño se reorganice a 320 px de ancho sin scroll horizontal.
-- Por qué: facilita la lectura a personas con baja visión y a quienes usan pantallas pequeñas.
+Por el contrario, una aplicación con una navegación confusa, formularios complicados o información desorganizada puede provocar que los usuarios cometan errores o tengan dificultades para utilizar determinadas funciones.
 
-**Espaciado del texto (1.4.12, AA).** El contenido no debe romperse si el usuario aumenta interlineado, espaciado de párrafos y de letras.
+En By Me Too! / Comprame!, la usabilidad tendrá especial importancia porque los usuarios necesitarán registrar compras, consultar gastos y comprender cómo se distribuyen los importes entre los integrantes de un grupo.
 
-**Multimedia (1.2.x).** Subtítulos en vídeos con voz, transcripción para audio y audiodescripción cuando la información visual sea esencial. Por qué: personas sordas o con discapacidad auditiva, y usuarios en entornos sin sonido.
+Por tanto, las principales funciones deberán ser fáciles de localizar y utilizar.
 
-**Estructura semántica (1.3.1, A).** Usar HTML semántico: `header`, `nav`, `main`, `footer`, encabezados `h1–h6` en orden lógico, listas reales, `table` solo para datos. Por qué: los lectores de pantalla navegan por encabezados y regiones; la semántica es la base de todo lo demás.
+### 3.3. Principales características de una interfaz usable
 
-**Orientación y propósito de los campos (1.3.4, 1.3.5, AA).** No bloquear la orientación vertical u horizontal y usar `autocomplete` correcto en datos personales.
+Para conseguir una buena usabilidad, se tendrán en cuenta los siguientes principios:
 
-### 4.2 Operable
+- **Claridad:** la información debe presentarse de forma comprensible.
+- **Consistencia:** los elementos que cumplen funciones similares deben mantener un diseño y comportamiento coherentes.
+- **Facilidad de aprendizaje:** los usuarios deben poder comprender rápidamente cómo utilizar la aplicación.
+- **Prevención de errores:** la interfaz debe ayudar a evitar errores y facilitar su corrección.
+- **Retroalimentación:** la aplicación debe informar sobre el resultado de las acciones realizadas.
+- **Eficiencia:** las tareas habituales deben poder completarse sin pasos innecesarios.
+- **Simplicidad:** se debe evitar la presencia de elementos que no aporten valor o dificulten la navegación.
 
-**Acceso completo por teclado (2.1.1, A).**
-- Qué: todas las funciones deben poder usarse con teclado; sin trampas de foco; orden de tabulación lógico; nada de `tabindex` positivo.
-- Por qué: personas con discapacidad motriz, usuarios de lectores de pantalla, de conmutadores y de teclados externos dependen de él.
+Estos principios servirán como guía para diseñar una aplicación fácil de utilizar y adaptada a las necesidades de sus usuarios.
 
-**Foco visible y no oculto (2.4.7 AA; 2.4.11 AA en WCAG 2.2).** Indicador de foco claro, con buen contraste, que no quede tapado por elementos fijos. Nunca usar `outline: none` sin sustituto.
+## 4. Estándares y recomendaciones
 
-**Enlace para saltar al contenido (2.4.1, A).** "Saltar al contenido principal" como primer elemento enfocable. Evita recorrer toda la navegación en cada página.
+Existen diferentes estándares y recomendaciones que ayudan a diseñar interfaces accesibles y fáciles de utilizar. Estos documentos sirven como referencia para identificar buenas prácticas y establecer criterios durante el desarrollo.
 
-**Títulos de página y enlaces descriptivos (2.4.2, 2.4.4).** Títulos únicos y enlaces cuyo texto se entienda por sí solo (evitar "clic aquí").
+### 4.1. WCAG
 
-**Tamaño de los objetivos táctiles (2.5.8, AA).** Mínimo 24×24 px CSS; como buena práctica, **44×44 px** en móvil. Por qué: personas con temblores, poca precisión o dedos grandes fallan al tocar botones diminutos.
+Las WCAG (*Web Content Accessibility Guidelines*) son las pautas de accesibilidad para el contenido web desarrolladas por el World Wide Web Consortium (W3C).
 
-**Alternativa al arrastre (2.5.7, AA).** Si hay arrastrar y soltar o deslizadores, ofrecer botones o clic como alternativa.
+Su objetivo es establecer criterios que permitan mejorar la accesibilidad del contenido y facilitar su uso a personas con diferentes capacidades.
 
-**Tiempo suficiente (2.2.1, A).** Avisar y permitir ampliar los límites de tiempo, como las sesiones que caducan.
+La versión WCAG 2.2 constituye una referencia actual para evaluar la accesibilidad. Aunque se centra en el contenido web, sus criterios también pueden orientar el diseño de aplicaciones móviles. El W3C dispone de documentación específica para explicar cómo aplicar estas pautas a las aplicaciones móviles.
 
-**Sin destellos (2.3.1, A).** Nada que parpadee más de 3 veces por segundo (riesgo de crisis epilépticas). Respetar `prefers-reduced-motion` para animaciones.
+Las WCAG se organizan en cuatro principios fundamentales:
 
-### 4.3 Comprensible
+- **Perceptible:** la información debe poder percibirse. Por ejemplo, los textos deben ser legibles y las imágenes informativas deben disponer de alternativas adecuadas.
+- **Operable:** los componentes y funciones deben poder utilizarse mediante los mecanismos de interacción disponibles.
+- **Comprensible:** la información y el funcionamiento de la interfaz deben resultar fáciles de entender.
+- **Robusto:** el contenido debe poder interpretarse correctamente mediante diferentes tecnologías y tecnologías de apoyo compatibles.
 
-**Idioma de la página (3.1.1, A).** Declarar `lang="es"` (y `lang` en fragmentos en otro idioma). Los lectores de pantalla eligen la pronunciación según él.
+Estos principios servirán como referencia para tomar decisiones de diseño y revisar posteriormente las interfaces de la aplicación.
 
-**Comportamiento predecible (3.2.x).** Navegación y componentes consistentes; ningún cambio de contexto inesperado al enfocar o rellenar un campo. Ayuda en el mismo sitio en todas las pantallas (3.2.6).
+### 4.2. Recomendaciones de usabilidad
 
-**Formularios accesibles (3.3.x, 1.3.1, 4.1.2).**
-- Cada campo con `<label>` asociado visible (no solo *placeholder*).
-- Instrucciones y formatos esperados antes del campo.
-- Mensajes de error junto al campo, en texto claro, que indiquen cómo corregirlo (3.3.1, 3.3.3).
-- Confirmar o permitir revisar acciones importantes o irreversibles (3.3.4).
-- No pedir de nuevo datos ya introducidos (3.3.7).
-- Autenticación sin pruebas cognitivas obligatorias: permitir gestores de contraseñas y pegar contraseñas (3.3.8).
-- Por qué: los formularios son el punto donde más usuarios abandonan, y donde las barreras tienen más impacto.
+Además de las pautas de accesibilidad, existen recomendaciones generales que ayudan a mejorar la experiencia de los usuarios.
 
-**Lenguaje claro.** Frases cortas, vocabulario sencillo, evitar jerga. Beneficia a personas con discapacidad cognitiva, baja alfabetización o que no tienen el español como lengua materna.
+Entre las más importantes se encuentran:
 
-### 4.4 Robusto
+- Mantener una navegación sencilla.
+- Utilizar nombres claros para los botones y las opciones de los menús.
+- Mostrar mensajes que informen del resultado de las acciones.
+- Evitar pasos innecesarios en las tareas habituales.
+- Mantener una estructura visual coherente entre las pantallas.
+- Facilitar la identificación y corrección de errores.
+- Presentar la información de forma ordenada.
+- Evitar solicitar información que no sea necesaria para completar una tarea.
 
-**Nombre, rol y valor (4.1.2, A).** Todo componente personalizado debe exponer a las tecnologías de apoyo su nombre, su rol y su estado. Primero usar el elemento HTML nativo (`button`, `input`, `select`); usar ARIA solo cuando no exista equivalente nativo.
+Estas recomendaciones serán útiles para diseñar las futuras pantallas y facilitar el uso de las principales funciones del proyecto.
 
-**Mensajes de estado (4.1.3, AA).** Notificaciones, errores asíncronos o resultados de búsqueda se anuncian con `role="status"`, `role="alert"` o `aria-live` sin mover el foco.
+## 5. Medidas previstas para las interfaces del proyecto
 
-**Regla de oro de ARIA:** *ningún ARIA es mejor que un mal ARIA*. Un rol incorrecto empeora la experiencia respecto a no usarlo.
+En este apartado se recogen las medidas de accesibilidad y usabilidad que se tendrán en cuenta durante el diseño y desarrollo de By Me Too! / Comprame!.
 
-**Regla de oro de ARIA:** *ningún ARIA es mejor que un mal ARIA*. Un rol incorrecto empeora la experiencia respecto a no usarlo.
+Como las interfaces todavía no se han implementado, las medidas se presentan como criterios previstos para orientar el trabajo. Su aplicación se comprobará a medida que avance el desarrollo.
 
-## 5. Medidas de usabilidad a integrar
+### 5.1. Contraste de colores
 
-### Las 10 heurísticas de Nielsen aplicadas al proyecto
+**Medida prevista:**
 
-1. **Visibilidad del estado del sistema:** indicadores de carga, confirmaciones de guardado, progreso en procesos de varios pasos.
-2. **Coherencia con el mundo real:** lenguaje del usuario, iconos reconocibles, orden natural de la información.
-3. **Control y libertad del usuario:** deshacer, cancelar y volver atrás sin perder datos.
-4. **Consistencia y estándares:** mismos patrones, nombres y comportamientos en toda la aplicación (sistema de diseño).
-5. **Prevención de errores:** restricciones sensatas, valores por defecto, confirmación en acciones destructivas.
-6. **Reconocer antes que recordar:** opciones visibles, historial, sugerencias; no obligar a memorizar.
-7. **Flexibilidad y eficiencia de uso:** atajos y flujos rápidos para usuarios habituales sin complicar a los nuevos.
-8. **Diseño estético y minimalista:** mostrar solo lo necesario; priorizar jerarquía visual.
-9. **Ayudar a reconocer, diagnosticar y recuperarse de errores:** mensajes en lenguaje claro, con causa y solución.
-10. **Ayuda y documentación:** ayuda breve, contextual y fácil de encontrar.
+Se utilizarán combinaciones de colores que permitan distinguir correctamente los textos, los fondos y los elementos interactivos.
 
-### Medidas prácticas adicionales
+También se evitará utilizar exclusivamente el color para diferenciar información importante, como los gastos pendientes o los importes correspondientes a cada persona.
 
-- **Diseño responsive y *mobile first*:** la mayor parte del uso es móvil; se diseña primero para pantallas pequeñas y se escala.
-- **Jerarquía visual y espacio en blanco:** guían la atención y reducen la carga cognitiva.
-- **Tiempos de carga y rendimiento:** una interfaz lenta es una barrera, especialmente con conexiones limitadas.
-- **Estados completos de cada componente:** normal, hover, foco, activo, deshabilitado, error, carga y vacío.
-- **Pruebas con personas usuarias reales,** incluidas personas con discapacidad, durante el diseño y antes de lanzar.
+Como referencia, se tendrán en cuenta los criterios de contraste de las WCAG 2.2. Para el texto normal, el nivel AA establece una relación de contraste mínima de 4,5:1, salvo las excepciones contempladas en las pautas.
 
-## 6. Por qué importa: argumentos de peso
+**Importancia:**
 
-- **Ético y de inclusión:** el acceso a la información y a los servicios es un derecho. Una interfaz inaccesible excluye de facto a parte de la población.
-- **Alcance:** solo en España hay más de 4,3 millones de personas con algún tipo de discapacidad (cifra citada por fuentes del sector), sin contar a las personas mayores o con limitaciones temporales.
-- **Legal:** la Ley 11/2023 aplica desde junio de 2025 y las sanciones pueden alcanzar importes elevados en los casos graves; además, la reputación está en juego.
-- **Beneficio para todos (efecto bordillo rebajado):** los subtítulos, el buen contraste y los formularios claros ayudan a todo el mundo.
-- **Calidad técnica y SEO:** HTML semántico y estructura clara mejoran el posicionamiento y la mantenibilidad.
-- **Coste:** corregir la accesibilidad desde el diseño es mucho más barato que reparar una interfaz ya construida.
-  
-## 7. Cómo integrarlo en el flujo de trabajo
+Un contraste adecuado facilita la lectura y permite identificar mejor la información. Esto resulta especialmente importante en una aplicación donde los usuarios necesitarán consultar precios, cantidades y balances económicos.
 
-**Diseño**
-- Definir paleta con contrastes verificados y tipografía mínima legible (≥16 px de cuerpo).
-- Documentar estados de foco, error y vacío en cada componente.
-- Anotar en los prototipos el orden de foco y los textos alternativos.
+### 5.2. Tamaño y legibilidad del texto
 
-**Desarrollo**
-- Usar HTML semántico y componentes nativos antes que personalizados.
-- Añadir linters de accesibilidad al proyecto (por ejemplo `eslint-plugin-jsx-a11y` si se usa React).
-- Incluir pruebas automáticas con **axe-core** o **Lighthouse** en la integración continua.
+**Medida prevista:**
 
-**Revisión.** Una funcionalidad solo se considera terminada si:
+Se utilizarán fuentes legibles y tamaños de texto adecuados para dispositivos móviles. También se procurará que exista una separación suficiente entre los distintos elementos y que el contenido pueda visualizarse correctamente cuando el usuario amplíe el texto, siempre que la plataforma lo permita.
 
-- [ ] Se puede usar entera con teclado
-- [ ] El foco es visible y ordenado
-- [ ] Cumple los contrastes
-- [ ] Imágenes e iconos tienen alternativa
-- [ ] Los formularios tienen etiquetas y errores claros
-- [ ] Funciona con zoom al 200 % y a 320 px de ancho
-- [ ] Pasa las pruebas automáticas sin errores críticos
+**Importancia:**
 
-## 8. Herramientas de verificación
+Estas medidas facilitan la lectura y ayudan a evitar que los usuarios tengan dificultades para comprender los datos mostrados.
 
-| Tipo | Herramienta | Uso |
-|---|---|---|
-| Automática | axe DevTools, Lighthouse, WAVE | Detectan una parte de los problemas (aproximadamente un tercio o menos) |
-| Contraste | Colour Contrast Analyser, WebAIM Contrast Checker | Verificar ratios 4,5:1 y 3:1 |
-| Lector de pantalla | NVDA (Windows), VoiceOver (macOS/iOS), TalkBack (Android) | Prueba manual de la experiencia real |
-| Teclado | Navegar solo con Tab, Mayús+Tab, Enter, Espacio y Esc | Detectar trampas y foco perdido |
-| Zoom y reflujo | Zoom del navegador al 200–400 % | Comprobar 1.4.4 y 1.4.10 |
-| Usabilidad | Pruebas con usuarios, evaluación heurística | Detectar fricción que las herramientas no ven |
+En nuestra aplicación, será importante que los precios, los nombres de los productos y los balances puedan consultarse sin esfuerzo.
 
-**Importante:** las herramientas automáticas no sustituyen la revisión manual ni las pruebas con personas usuarias.
+### 5.3. Identificación de botones y elementos interactivos
 
-## 9. Aplicación a las interfaces de By Me Too *(por completar)*
+**Medida prevista:**
 
-Rellenar tras la auditoría inicial del proyecto:
+Los botones, iconos y controles tendrán nombres o etiquetas que permitan identificar claramente su función.
 
-| Pantalla / componente | Problemas detectados | Medida a aplicar | Criterio | Responsable | Estado |
-|---|---|---|---|---|---|
-| *Ej.: Formulario de registro* | *Sin etiquetas visibles* | *Añadir `label` y mensajes de error* | *3.3.2, 3.3.1* | | |
-| | | | | | |
+Por ejemplo, las acciones para añadir una compra, editar un gasto o consultar un balance deberán ser fáciles de distinguir.
 
-## 10. Glosario
+Cuando se utilicen iconos sin texto visible, se procurará proporcionar un nombre accesible que explique su función.
 
-- **Tecnología de apoyo:** software o hardware que usan las personas con discapacidad (lectores de pantalla, ampliadores, conmutadores, control por voz).
-- **Lector de pantalla:** software que convierte el contenido de la pantalla en voz o braille.
-- **ARIA:** conjunto de atributos que añaden información de accesibilidad a elementos HTML.
-- **Criterio de conformidad:** requisito verificable de WCAG con un nivel (A, AA o AAA).
-- **Foco:** elemento de la interfaz que recibe en ese momento la interacción del teclado.
+**Importancia:**
 
+Esta medida facilita la comprensión de la interfaz y permite que los usuarios identifiquen las acciones disponibles sin tener que adivinar su significado.
 
+También favorece el uso de tecnologías de apoyo.
 
+### 5.4. Navegación accesible
 
+**Medida prevista:**
 
+Se diseñará una navegación coherente entre las distintas pantallas y se tendrá en cuenta la compatibilidad con las funciones de accesibilidad de la plataforma móvil.
 
+Los elementos interactivos deberán poder identificarse y utilizarse correctamente mediante los mecanismos de navegación compatibles con la aplicación.
 
+**Importancia:**
 
+Una navegación clara facilita el acceso a las diferentes funciones y evita que los usuarios se pierdan al cambiar de pantalla.
 
+Además, tener en cuenta la accesibilidad desde el principio permite detectar posibles barreras antes de que el diseño esté terminado.
 
+### 5.5. Organización de la información
 
+**Medida prevista:**
 
+La información se organizará mediante secciones diferenciadas y una jerarquía visual coherente.
 
+Las pantallas relacionadas con las compras, los integrantes del grupo y los balances deberán presentar los datos de forma ordenada, dando prioridad a la información más relevante para cada tarea.
 
+**Importancia:**
 
+Una buena organización permite localizar rápidamente los datos necesarios y facilita la comprensión del funcionamiento de la aplicación.
 
+En particular, ayudará a que los usuarios distingan entre las compras registradas, los participantes y los importes asociados.
 
+### 5.6. Formularios para registrar compras
 
+**Medida prevista:**
 
+El formulario para registrar una compra deberá identificar claramente los datos que se deben introducir, como el nombre del producto y su precio, así como las personas que participan en el gasto cuando corresponda.
 
+Los campos estarán correctamente etiquetados y los errores de introducción se comunicarán mediante mensajes comprensibles.
 
-## 11. Fuentes de referencia
+También se evitarán campos innecesarios que puedan complicar el proceso.
 
-[1] World Wide Web Consortium (W3C), "Web Content Accessibility Guidelines (WCAG) 2.2," W3C Recommendation, 2023. [En línea]. Disponible en: https://www.w3.org/TR/WCAG22/
+**Importancia:**
 
-[2] W3C Web Accessibility Initiative (WAI), "How to Meet WCAG (Quick Reference)," W3C, 2023. [En línea]. Disponible en: https://www.w3.org/WAI/WCAG22/quickref/
+Un formulario sencillo facilita el registro de las compras y reduce la posibilidad de introducir información incorrecta.
 
-[3] W3C Web Accessibility Initiative (WAI), "WAI-ARIA Authoring Practices Guide (APG)," W3C. [En línea]. Disponible en: https://www.w3.org/WAI/ARIA/apg/
+Esta medida es especialmente relevante porque el registro de compras constituye una de las funciones principales del proyecto.
 
-[4] J. Nielsen, "10 Usability Heuristics for User Interface Design," Nielsen Norman Group. [En línea]. Disponible en: https://www.nngroup.com/articles/ten-usability-heuristics/
+### 5.7. Visualización y reparto de gastos
 
-[5] *Ergonomics of human-system interaction. Part 11: Usability: Definitions and concepts*, ISO 9241-11:2018, International Organization for Standardization, Ginebra, Suiza, 2018. [En línea]. Disponible en: https://www.iso.org/standard/63500.html
+**Medida prevista:**
 
-[6] *Ergonomics of human-system interaction. Part 210: Human-centred design for interactive systems*, ISO 9241-210:2019, International Organization for Standardization, Ginebra, Suiza, 2019. [En línea]. Disponible en: https://www.iso.org/standard/77520.html
+Los importes y balances se presentarán de manera clara, indicando a qué persona o grupo corresponde cada cantidad.
 
-[7] Directiva (UE) 2019/882 del Parlamento Europeo y del Consejo, de 17 de abril de 2019, sobre los requisitos de accesibilidad de los productos y servicios, *Diario Oficial de la Unión Europea*, L 151, 7 jun. 2019. [En línea]. Disponible en: https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32019L0882
+Cuando se muestre el reparto de un gasto, se procurará que el usuario pueda entender cómo se distribuye el importe y qué cantidad corresponde a cada participante.
 
-[8] Ley 11/2023, de 8 de mayo, de trasposición de Directivas de la Unión Europea en materia de accesibilidad de determinados productos y servicios, migración de personas altamente cualificadas, tributaria y digitalización del sector financiero, *Boletín Oficial del Estado*, may. 2023. [En línea]. Disponible en: https://www.boe.es/buscar/act.php?id=BOE-A-2023-11335
+No se utilizará únicamente el color para indicar si un importe está pendiente, pagado o asociado a una determinada situación.
 
-[9] Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, *Boletín Oficial del Estado*, sep. 2018. [En línea]. Disponible en: https://www.boe.es/buscar/act.php?id=BOE-A-2018-12699
+**Importancia:**
 
-[10] *Requisitos de accesibilidad aplicables a los productos y servicios TIC*, UNE-EN 301 549, Asociación Española de Normalización (UNE), Madrid, España.
+La información económica debe ser fácil de interpretar para evitar confusiones entre los integrantes del grupo.
 
-[11] Observatorio de Accesibilidad Web, Portal de la Administración Electrónica, Gobierno de España. [En línea]. Disponible en: https://administraciones.gob.es
+Una presentación clara de los importes ayudará a los usuarios a comprender la distribución de los gastos y consultar su situación económica dentro de la aplicación.
 
+### 5.8. Diseño adaptable a dispositivos móviles
 
+**Medida prevista:**
 
+La interfaz se diseñará teniendo en cuenta los tamaños de pantalla de los dispositivos móviles en los que se vaya a utilizar la aplicación.
 
+Se procurará que los textos sean legibles, que la información no quede cortada y que los elementos interactivos dispongan de espacio suficiente para utilizarlos cómodamente.
 
+También se tendrá en cuenta la posibilidad de ampliar el contenido y las preferencias de visualización compatibles con la plataforma.
+
+**Importancia:**
+
+Un diseño adaptado facilita el uso de la aplicación en diferentes dispositivos y mejora la experiencia general.
+
+Además, disponer de elementos fáciles de identificar y pulsar resulta importante para las personas con dificultades de visión o de movilidad.
+
+### 5.9. Consistencia visual
+
+**Medida prevista:**
+
+Se mantendrán criterios comunes de diseño en las distintas pantallas, especialmente en los botones, los colores, la tipografía, los iconos y la distribución de los elementos.
+
+Las acciones similares deberán presentarse de una manera coherente.
+
+**Importancia:**
+
+La consistencia visual facilita el aprendizaje de la aplicación y permite que los usuarios reconozcan los elementos que ya conocen.
+
+Esto ayudará a que las funciones de gestión de compras y consulta de gastos resulten más intuitivas.
+
+### 5.10. Mensajes de confirmación y error
+
+**Medida prevista:**
+
+La aplicación proporcionará mensajes claros cuando una acción se complete correctamente o cuando se produzca un error.
+
+Por ejemplo, después de registrar una compra, se podrá mostrar una confirmación que indique que se ha guardado correctamente.
+
+Cuando se detecte un dato incorrecto, el mensaje deberá explicar el problema y, cuando sea posible, cómo solucionarlo.
+
+En las acciones que puedan provocar la pérdida de información, como eliminar una compra, se valorará incluir una confirmación previa.
+
+**Importancia:**
+
+Los mensajes informativos permiten que los usuarios comprendan el resultado de sus acciones y sepan cómo actuar ante un error.
+
+Además, las confirmaciones en operaciones importantes pueden ayudar a prevenir modificaciones o eliminaciones accidentales.
+
+### 5.11. Simplicidad de la navegación
+
+**Medida prevista:**
+
+Se procurará que las funciones principales de la aplicación sean fáciles de localizar y que las tareas habituales puedan completarse sin pasos innecesarios.
+
+La navegación deberá permitir acceder de forma clara a las compras, los grupos y la información relacionada con los gastos.
+
+**Importancia:**
+
+Una navegación sencilla reduce el tiempo necesario para aprender a utilizar la aplicación y facilita su uso habitual.
+
+En By Me Too! / Comprame!, esto será importante para que los usuarios puedan registrar compras y consultar balances sin tener que recorrer demasiadas pantallas.
+
+## 6. Plan de comprobación de accesibilidad y usabilidad
+
+Una vez que comience el desarrollo de la aplicación, será necesario comprobar que las medidas propuestas se han aplicado correctamente.
+
+Las pruebas se realizarán de forma progresiva, a medida que se desarrollen las diferentes pantallas y funcionalidades.
+
+### 6.1. Revisión de accesibilidad
+
+Se realizarán las siguientes comprobaciones:
+
+- Revisar el contraste entre los textos y los fondos.
+- Comprobar que el tamaño del texto permite leer correctamente la información.
+- Verificar que los botones y controles tienen nombres accesibles.
+- Revisar que la información no depende únicamente del color.
+- Comprobar el funcionamiento con las herramientas de accesibilidad disponibles en la plataforma móvil.
+- Verificar que los elementos interactivos se pueden identificar y utilizar correctamente.
+
+### 6.2. Revisión de usabilidad
+
+Para comprobar la facilidad de uso de la aplicación, se revisarán aspectos como los siguientes:
+
+- Comprobar si las funciones principales se encuentran fácilmente.
+- Verificar que los formularios se entienden y se pueden completar sin dificultades innecesarias.
+- Revisar que los mensajes de error explican cómo corregir los problemas.
+- Comprobar que las compras y los balances se presentan de forma clara.
+- Observar si los usuarios pueden completar las tareas principales sin ayuda.
+- Identificar pasos innecesarios o elementos que puedan generar confusión.
+
+### 6.3. Herramientas y pruebas
+
+Se podrán utilizar herramientas automáticas para detectar determinados problemas técnicos, junto con revisiones manuales de las interfaces.
+
+En función de la tecnología utilizada para desarrollar la aplicación, se seleccionarán las herramientas más adecuadas para comprobar la accesibilidad.
+
+También se podrán realizar pruebas con usuarios para identificar dificultades que no se detecten mediante herramientas automáticas.
+
+Estas comprobaciones permitirán revisar las decisiones de diseño y realizar los ajustes necesarios antes de dar por finalizada la aplicación.
+
+## 7. Conclusión
+
+La accesibilidad y la usabilidad son aspectos fundamentales en el desarrollo de una aplicación, ya que influyen directamente en la facilidad con la que las personas pueden utilizarla y comprender su funcionamiento.
+
+A través de la investigación realizada, se han identificado diferentes pautas, estándares y recomendaciones que pueden servir como referencia para el futuro desarrollo de By Me Too! / Comprame!.
+
+Las medidas propuestas se centran especialmente en las necesidades de una aplicación de compras compartidas, teniendo en cuenta aspectos como el registro de productos, la introducción de precios, la selección de participantes y la consulta de balances.
+
+Como el desarrollo de las interfaces todavía no ha comenzado, este manual servirá como guía para orientar las decisiones de diseño y programación. Posteriormente, las medidas podrán comprobarse mediante revisiones y pruebas de accesibilidad y usabilidad.
+
+De esta manera, se pretende que la aplicación no solo cumpla con sus funcionalidades principales, sino que también ofrezca una experiencia clara, coherente y accesible para sus usuarios.
+
+## 8. Fuentes consultadas
+
+- **W3C – Web Content Accessibility Guidelines (WCAG) 2.2.**  
+  https://www.w3.org/TR/WCAG22/
+
+- **W3C – Web Accessibility Initiative (WAI): Introducción a la accesibilidad web.**  
+  https://www.w3.org/WAI/fundamentals/accessibility-intro/es
+
+- **W3C – Guidance on Applying WCAG 2.2 to Mobile Applications.**  
+  https://www.w3.org/TR/wcag2mobile-22/
+
+- **W3C – Mobile Accessibility.**  
+  https://www.w3.org/WAI/standards-guidelines/mobile/
+
+- **Junta de Andalucía – Norma de usabilidad en sitios web.**  
+  https://desarrollo.juntadeandalucia.es/recursos/reglas-pautas/norma-usabilidad-en-sitios-web
+
+- **Repositorio del proyecto – By Me Too! / Comprame!**  
+  https://github.com/siarheilukashou25-maker/By-Me-Too
 
 
 
