@@ -116,6 +116,26 @@ Es importante distinguir entre el coste que asume una persona usuaria y el coste
 
 Que una aplicación sea gratuita para el usuario no significa que su desarrollo y mantenimiento no tengan costes.
 
+## Comparación de usabilidad
+
+Las cuatro alternativas estudiadas permiten registrar gastos y consultar el resultado de los repartos. Por ello, By Me Too! no debería diferenciarse únicamente por ofrecer estas mismas funciones. La oportunidad consiste en estudiar cómo facilitar una tarea concreta: organizar las compras que comparten las personas de una vivienda y conocer con claridad cómo se distribuye su coste.
+
+Para conseguirlo, se propone priorizar:
+
+- Un acceso sencillo a los grupos de convivencia.
+- Un registro de compras con los datos imprescindibles.
+- Una selección clara de las personas que participan en cada compra.
+- Una presentación comprensible de los saldos.
+- Una navegación consistente y adaptada a dispositivos móviles.
+- Mensajes claros al guardar los datos o cuando se produzca un error.
+
+Estas decisiones deberán comprobarse mediante pruebas con usuarios cuando exista una primera versión funcional.
+
+## 3. Justificación de la propuesta y ventajas competitivas
+
+El análisis muestra que ya existen aplicaciones maduras para dividir gastos. Por tanto, no sería correcto afirmar que By Me Too! es la primera aplicación que permite registrar compras compartidas, crear grupos o calcular deudas.
+
+La propuesta de valor debe centrarse en la experiencia que se pretende ofrecer a las personas que comparten vivienda y realizan compras para el hogar.
 
 
 
