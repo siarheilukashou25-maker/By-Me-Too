@@ -44,6 +44,97 @@ Nuevos criterios de WCAG 2.2 relevantes:
 
 Es un borrador de trabajo del W3C (actualización de marzo de 2026), con un modelo de puntuación por resultados en lugar de aprobado/suspenso. Una Recomendación final no se espera antes de 2028, por lo que **no es exigible**; WCAG 2.2 sigue siendo la referencia vigente.
 
+### 3.3 Normativa europea y española
+
+- **Directiva (UE) 2019/882 – Acta Europea de Accesibilidad (EAA):** fija requisitos comunes de accesibilidad para productos y servicios.
+- **Ley 11/2023, de 8 de mayo:** transpone la EAA a España. Sus obligaciones de accesibilidad se aplican desde el **28 de junio de 2025**. Entre los servicios cubiertos figuran el comercio electrónico, los servicios bancarios a consumidores y las comunicaciones electrónicas. Las microempresas prestadoras de servicios están exentas, por lo que conviene verificar si el proyecto está incluido.
+- **UNE-EN 301 549:** norma técnica europea de accesibilidad TIC que sirve de base para demostrar conformidad. Actualmente incorpora WCAG 2.1 AA, y está previsto actualizarla hacia WCAG 2.2.
+- **Real Decreto 1112/2018:** accesibilidad de sitios web y apps móviles del **sector público** español; exige además una declaración de accesibilidad.
+
+**Importante:** cumplir WCAG no equivale automáticamente a cumplir la EAA, que incluye requisitos adicionales (por ejemplo, servicios de soporte accesibles e información sobre accesibilidad). Si el proyecto tiene fines comerciales, conviene consultar con asesoría legal. Este manual no constituye asesoramiento jurídico.
+
+### 3.4 Estándares y heurísticas de usabilidad
+
+- **ISO 9241-11:** define usabilidad (eficacia, eficiencia, satisfacción).
+- **ISO 9241-210:** proceso de diseño centrado en las personas (investigar el contexto, especificar requisitos, diseñar, evaluar y repetir).
+- **10 heurísticas de Nielsen:** principios de evaluación de interfaces (ver sección 5).
+- **WAI-ARIA 1.2:** especificación del W3C para roles, estados y propiedades que hacen accesibles los componentes dinámicos.
+- **Pautas de plataforma:** Material Design (Android/web) y Human Interface Guidelines (iOS), útiles para componentes táctiles y apps móviles.
+
+## 4. Medidas de accesibilidad a integrar
+
+Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
+
+### 4.1 Perceptible
+
+**Alternativas de texto para imágenes (1.1.1, A).**
+- Qué: toda imagen informativa lleva `alt` descriptivo; las decorativas llevan `alt=""`. Los iconos que actúan como botón necesitan nombre accesible (`aria-label` o texto oculto visualmente).
+- Por qué: las personas ciegas o con baja visión que usan lectores de pantalla no pueden interpretar una imagen sin su texto equivalente.
+
+**Contraste de color (1.4.3 y 1.4.11, AA).**
+- Qué: relación mínima **4,5:1** para texto normal y **3:1** para texto grande (≥24 px, o ≥18,5 px en negrita) y para bordes de campos, iconos y estados de componentes.
+- Por qué: afecta a personas con baja visión, daltonismo y a cualquiera que use el móvil a pleno sol.
+
+**No depender solo del color (1.4.1, A).**
+- Qué: los errores, estados y enlaces se indican además con texto, icono o subrayado.
+- Por qué: unos 1 de cada 12 hombres tiene alguna forma de daltonismo; un campo "en rojo" sin más información pasa desapercibido.
+
+**Texto redimensionable y reflujo (1.4.4, 1.4.10, AA).**
+- Qué: usar unidades relativas (`rem`, `%`), permitir zoom hasta el 200 % sin perder contenido ni funcionalidad y que el diseño se reorganice a 320 px de ancho sin scroll horizontal.
+- Por qué: facilita la lectura a personas con baja visión y a quienes usan pantallas pequeñas.
+
+**Espaciado del texto (1.4.12, AA).** El contenido no debe romperse si el usuario aumenta interlineado, espaciado de párrafos y de letras.
+
+**Multimedia (1.2.x).** Subtítulos en vídeos con voz, transcripción para audio y audiodescripción cuando la información visual sea esencial. Por qué: personas sordas o con discapacidad auditiva, y usuarios en entornos sin sonido.
+
+**Estructura semántica (1.3.1, A).** Usar HTML semántico: `header`, `nav`, `main`, `footer`, encabezados `h1–h6` en orden lógico, listas reales, `table` solo para datos. Por qué: los lectores de pantalla navegan por encabezados y regiones; la semántica es la base de todo lo demás.
+
+**Orientación y propósito de los campos (1.3.4, 1.3.5, AA).** No bloquear la orientación vertical u horizontal y usar `autocomplete` correcto en datos personales.
+
+### 4.2 Operable
+
+**Acceso completo por teclado (2.1.1, A).**
+- Qué: todas las funciones deben poder usarse con teclado; sin trampas de foco; orden de tabulación lógico; nada de `tabindex` positivo.
+- Por qué: personas con discapacidad motriz, usuarios de lectores de pantalla, de conmutadores y de teclados externos dependen de él.
+
+**Foco visible y no oculto (2.4.7 AA; 2.4.11 AA en WCAG 2.2).** Indicador de foco claro, con buen contraste, que no quede tapado por elementos fijos. Nunca usar `outline: none` sin sustituto.
+
+**Enlace para saltar al contenido (2.4.1, A).** "Saltar al contenido principal" como primer elemento enfocable. Evita recorrer toda la navegación en cada página.
+
+**Títulos de página y enlaces descriptivos (2.4.2, 2.4.4).** Títulos únicos y enlaces cuyo texto se entienda por sí solo (evitar "clic aquí").
+
+**Tamaño de los objetivos táctiles (2.5.8, AA).** Mínimo 24×24 px CSS; como buena práctica, **44×44 px** en móvil. Por qué: personas con temblores, poca precisión o dedos grandes fallan al tocar botones diminutos.
+
+**Alternativa al arrastre (2.5.7, AA).** Si hay arrastrar y soltar o deslizadores, ofrecer botones o clic como alternativa.
+
+**Tiempo suficiente (2.2.1, A).** Avisar y permitir ampliar los límites de tiempo, como las sesiones que caducan.
+
+**Sin destellos (2.3.1, A).** Nada que parpadee más de 3 veces por segundo (riesgo de crisis epilépticas). Respetar `prefers-reduced-motion` para animaciones.
+
+### 4.3 Comprensible
+
+**Idioma de la página (3.1.1, A).** Declarar `lang="es"` (y `lang` en fragmentos en otro idioma). Los lectores de pantalla eligen la pronunciación según él.
+
+**Comportamiento predecible (3.2.x).** Navegación y componentes consistentes; ningún cambio de contexto inesperado al enfocar o rellenar un campo. Ayuda en el mismo sitio en todas las pantallas (3.2.6).
+
+**Formularios accesibles (3.3.x, 1.3.1, 4.1.2).**
+- Cada campo con `<label>` asociado visible (no solo *placeholder*).
+- Instrucciones y formatos esperados antes del campo.
+- Mensajes de error junto al campo, en texto claro, que indiquen cómo corregirlo (3.3.1, 3.3.3).
+- Confirmar o permitir revisar acciones importantes o irreversibles (3.3.4).
+- No pedir de nuevo datos ya introducidos (3.3.7).
+- Autenticación sin pruebas cognitivas obligatorias: permitir gestores de contraseñas y pegar contraseñas (3.3.8).
+- Por qué: los formularios son el punto donde más usuarios abandonan, y donde las barreras tienen más impacto.
+
+**Lenguaje claro.** Frases cortas, vocabulario sencillo, evitar jerga. Beneficia a personas con discapacidad cognitiva, baja alfabetización o que no tienen el español como lengua materna.
+
+### 4.4 Robusto
+
+**Nombre, rol y valor (4.1.2, A).** Todo componente personalizado debe exponer a las tecnologías de apoyo su nombre, su rol y su estado. Primero usar el elemento HTML nativo (`button`, `input`, `select`); usar ARIA solo cuando no exista equivalente nativo.
+
+**Mensajes de estado (4.1.3, AA).** Notificaciones, errores asíncronos o resultados de búsqueda se anuncian con `role="status"`, `role="alert"` o `aria-live` sin mover el foco.
+
+**Regla de oro de ARIA:** *ningún ARIA es mejor que un mal ARIA*. Un rol incorrecto empeora la experiencia respecto a no usarlo.
 
 
 
