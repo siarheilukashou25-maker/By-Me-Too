@@ -192,7 +192,18 @@ Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
 - [ ] Funciona con zoom al 200 % y a 320 px de ancho
 - [ ] Pasa las pruebas automáticas sin errores críticos
 
+## 8. Herramientas de verificación
 
+| Tipo | Herramienta | Uso |
+|---|---|---|
+| Automática | axe DevTools, Lighthouse, WAVE | Detectan una parte de los problemas (aproximadamente un tercio o menos) |
+| Contraste | Colour Contrast Analyser, WebAIM Contrast Checker | Verificar ratios 4,5:1 y 3:1 |
+| Lector de pantalla | NVDA (Windows), VoiceOver (macOS/iOS), TalkBack (Android) | Prueba manual de la experiencia real |
+| Teclado | Navegar solo con Tab, Mayús+Tab, Enter, Espacio y Esc | Detectar trampas y foco perdido |
+| Zoom y reflujo | Zoom del navegador al 200–400 % | Comprobar 1.4.4 y 1.4.10 |
+| Usabilidad | Pruebas con usuarios, evaluación heurística | Detectar fricción que las herramientas no ven |
+
+**Importante:** las herramientas automáticas no sustituyen la revisión manual ni las pruebas con personas usuarias.
 
 
 
