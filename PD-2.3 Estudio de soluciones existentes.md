@@ -30,3 +30,61 @@ Splitwise es una aplicación diseñada para registrar gastos compartidos entre a
 - La versión gratuita tiene restricciones en el número de gastos diarios.
 - Algunas funciones avanzadas requieren una suscripción.
 - Está centrada en el reparto de gastos y no específicamente en la planificación de las compras domésticas.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 6. Fuentes consultadas
+
+[1] Splitwise, “Splitwise: Share expenses with friends and family.” [En línea]. Disponible en: https://www.splitwise.com/. [Accedido: 25-oct-2026].
+
+[2] Splitwise, “Splitwise Pro.” [En línea]. Disponible en: https://www.splitwise.com/pro. [Accedido: 25-oct-2026].
+
+[3] Splitwise, “What is Splitwise Pro?” *Splitwise Knowledge Base*. [En línea]. Disponible en: https://kb.splitwise.com/pro/what-is-splitwise-pro. [Accedido: 25-oct-2026].
+
+[4] tricount, “tricount: Comparte gastos fácilmente.” [En línea]. Disponible en: https://www.tricount.com/es-es/. [Accedido: 25-oct-2026].
+
+[5] tricount, “Features.” [En línea]. Disponible en: https://www.tricount.com/es-es/features. [Accedido: 25-oct-2026].
+
+[6] Team Turtle, “Splid – Split group bills,” *Google Play Store*. [En línea]. Disponible en: https://play.google.com/store/apps/details?id=splid.teamturtle.com.splid. [Accedido: 25-oct-2026].
+
+[7] Spliit, “Spliit — Split expenses with friends.” [En línea]. Disponible en: https://spliit.app/. [Accedido: 25-oct-2026].
+
+[8] Spliit, “Spliit: Open-source expense splitting application,” *GitHub repository*. [En línea]. Disponible en: https://github.com/spliit-app/spliit. [Accedido: 25-oct-2026].
+
+[9] By Me Too!, “Repositorio del proyecto By Me Too! / Comprame!,” *GitHub*. [En línea]. Disponible en: https://github.com/siarheilukashou25-maker/By-Me-Too. [Accedido: 25-oct-2026].
