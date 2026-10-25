@@ -87,7 +87,34 @@ Spliit es una alternativa de código abierto para compartir gastos. Permite crea
 
 Para comparar las alternativas se han utilizado criterios relacionados con el coste, la facilidad de aprendizaje, la experiencia de usuario, la compatibilidad entre plataformas, la generación de informes y la capacidad de adaptación.
 
+### comparativa
 
+| Criterio | Splitwise | tricount | Splid | Spliit | By Me Too! / Comprame! (propuesta) |
+|---|---|---|---|---|---|
+| **Coste de uso** | Plan gratuito con límites y suscripción Pro. | Registro de gastos gratuito según su web oficial. | Descarga gratuita con algunas compras dentro de la aplicación. | Uso gratuito de la instancia oficial; alojamiento propio con costes potenciales. | Por definir según las decisiones del proyecto. |
+| **Coste de implantación** | No exige servidor propio al usuario. | No exige gestionar infraestructura propia. | No exige gestionar infraestructura propia. | La instalación propia puede requerir configuración y mantenimiento. | Se valorarán desarrollo, pruebas, publicación y mantenimiento. |
+| **Curva de aprendizaje** | Baja: registro de gastos y consulta de saldos. | Baja: creación de grupos y gastos sencilla. | Baja: se centra en el reparto de gastos. | Baja o media, según la instancia y el usuario. | Se buscará una curva baja con procesos sencillos. |
+| **Experiencia de usuario** | Seguimiento de gastos y deudas. | Compartir gastos de forma sencilla. | Interfaz centrada en funciones esenciales. | Interfaz web para grupos y gastos. | Se priorizarán compras domésticas y saldos claros. |
+| **Multiplataforma** | Móvil y web. | Aplicaciones móviles; comprobar disponibilidad por plataforma. | Disponibilidad móvil; comprobar opciones por dispositivo. | Aplicación web progresiva y ecosistema web. | Se plantea como aplicación móvil; plataformas por determinar. |
+| **Creación de grupos** | Sí. | Sí. | Sí. | Sí. | Función prevista. |
+| **Registro de gastos** | Sí. | Sí. | Sí. | Sí. | Función prevista para compras compartidas. |
+| **Reparto entre participantes** | Sí. | Sí, con reparto personalizado. | Sí, con repartos personalizados. | Sí, con reparto desigual. | Se plantea seleccionar participantes y reparto. |
+| **Consulta de saldos** | Sí. | Sí. | Sí. | Sí. | Función prevista. |
+| **Informes y exportación** | Herramientas de análisis; algunas son Pro. | Información de gastos; opciones variables. | Exportación de resúmenes; algunas opciones de pago. | Balances y herramientas de gestión. | Se estudiarán resúmenes de compras domésticas. |
+| **Extensibilidad** | Depende de las opciones de la plataforma. | Depende de las funciones del servicio. | Depende de las funciones de la aplicación. | Código abierto: puede modificarse y mantenerse. | Se valorará una estructura que facilite añadir funciones. |
+| **Limitaciones** | Límites gratuitos y funciones avanzadas de pago. | Orientación general al reparto de gastos. | Enfoque reducido al reparto y control de gastos. | El despliegue propio requiere conocimientos técnicos. | Las funciones y la experiencia aún no están validadas. |
+
+> **Nota:** La curva de aprendizaje y la experiencia de usuario son valoraciones cualitativas basadas en el enfoque y las funciones descritas por cada producto, no en una prueba de usabilidad realizada por nuestro equipo. Los precios y las condiciones comerciales pueden cambiar.
+
+### Comparación del coste de implantación
+
+Es importante distinguir entre el coste que asume una persona usuaria y el coste de desarrollar y mantener una aplicación.
+
+- **Aplicaciones comerciales:** Splitwise, tricount y Splid permiten utilizar sus servicios sin desplegar un servidor propio, aunque pueden incluir límites o compras dentro de la aplicación.
+- **Software de código abierto:** Spliit permite estudiar y desplegar el código, pero una instalación propia puede implicar gastos de alojamiento, base de datos, dominio, mantenimiento y administración.
+- **By Me Too! / Comprame!:** al tratarse de un proyecto en desarrollo, todavía no se puede establecer un coste definitivo. Será necesario valorar el tiempo de programación, las pruebas, la infraestructura y el mantenimiento.
+
+Que una aplicación sea gratuita para el usuario no significa que su desarrollo y mantenimiento no tengan costes.
 
 
 
