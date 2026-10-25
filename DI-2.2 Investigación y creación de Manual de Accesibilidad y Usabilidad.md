@@ -169,15 +169,15 @@ Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
 
 [4] J. Nielsen, "10 Usability Heuristics for User Interface Design," Nielsen Norman Group. [En línea]. Disponible en: https://www.nngroup.com/articles/ten-usability-heuristics/
 
-[5] *Ergonomics of human-system interaction. Part 11: Usability: Definitions and concepts*, ISO 9241-11:2018, International Organization for Standardization, Ginebra, Suiza, 2018.
+[5] *Ergonomics of human-system interaction. Part 11: Usability: Definitions and concepts*, ISO 9241-11:2018, International Organization for Standardization, Ginebra, Suiza, 2018. [En línea]. Disponible en: https://www.iso.org/standard/63500.html
 
-[6] *Ergonomics of human-system interaction. Part 210: Human-centred design for interactive systems*, ISO 9241-210:2019, International Organization for Standardization, Ginebra, Suiza, 2019.
+[6] *Ergonomics of human-system interaction. Part 210: Human-centred design for interactive systems*, ISO 9241-210:2019, International Organization for Standardization, Ginebra, Suiza, 2019. [En línea]. Disponible en: https://www.iso.org/standard/77520.html
 
-[7] Directiva (UE) 2019/882 del Parlamento Europeo y del Consejo, de 17 de abril de 2019, sobre los requisitos de accesibilidad de los productos y servicios, *Diario Oficial de la Unión Europea*, L 151, 7 jun. 2019.
+[7] Directiva (UE) 2019/882 del Parlamento Europeo y del Consejo, de 17 de abril de 2019, sobre los requisitos de accesibilidad de los productos y servicios, *Diario Oficial de la Unión Europea*, L 151, 7 jun. 2019. [En línea]. Disponible en: https://eur-lex.europa.eu/legal-content/ES/TXT/?uri=CELEX:32019L0882
 
-[8] Ley 11/2023, de 8 de mayo, de trasposición de Directivas de la Unión Europea en materia de accesibilidad de determinados productos y servicios, migración de personas altamente cualificadas, tributaria y digitalización del sector financiero, *Boletín Oficial del Estado*, may. 2023.
+[8] Ley 11/2023, de 8 de mayo, de trasposición de Directivas de la Unión Europea en materia de accesibilidad de determinados productos y servicios, migración de personas altamente cualificadas, tributaria y digitalización del sector financiero, *Boletín Oficial del Estado*, may. 2023. [En línea]. Disponible en: https://www.boe.es/buscar/act.php?id=BOE-A-2023-11335
 
-[9] Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, *Boletín Oficial del Estado*, sep. 2018.
+[9] Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, *Boletín Oficial del Estado*, sep. 2018. [En línea]. Disponible en: https://www.boe.es/buscar/act.php?id=BOE-A-2018-12699
 
 [10] *Requisitos de accesibilidad aplicables a los productos y servicios TIC*, UNE-EN 301 549, Asociación Española de Normalización (UNE), Madrid, España.
 
