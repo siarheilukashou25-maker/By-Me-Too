@@ -137,7 +137,29 @@ El análisis muestra que ya existen aplicaciones maduras para dividir gastos. Po
 
 La propuesta de valor debe centrarse en la experiencia que se pretende ofrecer a las personas que comparten vivienda y realizan compras para el hogar.
 
+### Ventaja 1. Enfoque en las compras domésticas
 
+Mientras las alternativas estudiadas sirven para distintos contextos —como viajes, cenas, eventos o convivencia—, By Me Too! pretende dar prioridad a las compras compartidas de la vida cotidiana. Este enfoque permitiría organizar la información alrededor de qué compras se han realizado para el hogar, quién ha participado y cómo se distribuye el importe.
+
+### Ventaja 2. Organización de los grupos de convivencia
+
+La aplicación plantea utilizar grupos que representen a las personas que comparten vivienda. Esto permitiría reunir las compras y los saldos de cada grupo en un mismo espacio, facilitando su consulta.
+
+### Ventaja 3. Registro de compras orientado a la sencillez
+
+Se propone diseñar un proceso de registro que solicite únicamente la información necesaria para añadir una compra y seleccionar a sus participantes. Reducir los pasos innecesarios puede facilitar el uso habitual de la aplicación.
+
+### Ventaja 4. Claridad en el reparto de los gastos
+
+Una prioridad será presentar los saldos de forma comprensible para que cada integrante pueda saber cuánto le corresponde y cómo queda el balance del grupo. La información deberá mostrarse de manera clara, evitando cálculos manuales y reduciendo posibles malentendidos.
+
+### Ventaja 5. Diseño centrado en la accesibilidad y la usabilidad
+
+El proyecto también tendrá en cuenta las recomendaciones del manual de accesibilidad y usabilidad elaborado en la actividad DI 2.2. Se propone utilizar textos legibles, contrastes adecuados, controles fáciles de identificar, formularios claros y una navegación consistente.
+
+### Ventaja 6. Posibilidad de evolución
+
+Al tratarse de un proyecto propio, el equipo podrá priorizar las mejoras según las necesidades detectadas durante el desarrollo y las pruebas. Entre las posibles ampliaciones que se podrían estudiar están los resúmenes periódicos de compras, la clasificación por categorías o la consulta del gasto acumulado del hogar. Estas funciones deberán valorarse según el alcance del proyecto y no se consideran implementadas actualmente.
 
 
 
