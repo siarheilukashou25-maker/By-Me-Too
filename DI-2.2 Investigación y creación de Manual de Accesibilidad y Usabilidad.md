@@ -161,8 +161,27 @@ Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
 
 ## 11. Fuentes de referencia
 
-- W3C WAI – WCAG 2.2 (w3.org/TR/WCAG22) y *How to Meet WCAG* (w3.org/WAI/WCAG22/quickref)
-- W3C – WAI-ARIA Authoring Practices Guide
+[1] World Wide Web Consortium (W3C), "Web Content Accessibility Guidelines (WCAG) 2.2," W3C Recommendation, 2023. [En línea]. Disponible en: https://www.w3.org/TR/WCAG22/
+
+[2] W3C Web Accessibility Initiative (WAI), "How to Meet WCAG (Quick Reference)," W3C, 2023. [En línea]. Disponible en: https://www.w3.org/WAI/WCAG22/quickref/
+
+[3] W3C Web Accessibility Initiative (WAI), "WAI-ARIA Authoring Practices Guide (APG)," W3C. [En línea]. Disponible en: https://www.w3.org/WAI/ARIA/apg/
+
+[4] J. Nielsen, "10 Usability Heuristics for User Interface Design," Nielsen Norman Group. [En línea]. Disponible en: https://www.nngroup.com/articles/ten-usability-heuristics/
+
+[5] *Ergonomics of human-system interaction. Part 11: Usability: Definitions and concepts*, ISO 9241-11:2018, International Organization for Standardization, Ginebra, Suiza, 2018.
+
+[6] *Ergonomics of human-system interaction. Part 210: Human-centred design for interactive systems*, ISO 9241-210:2019, International Organization for Standardization, Ginebra, Suiza, 2019.
+
+[7] Directiva (UE) 2019/882 del Parlamento Europeo y del Consejo, de 17 de abril de 2019, sobre los requisitos de accesibilidad de los productos y servicios, *Diario Oficial de la Unión Europea*, L 151, 7 jun. 2019.
+
+[8] Ley 11/2023, de 8 de mayo, de trasposición de Directivas de la Unión Europea en materia de accesibilidad de determinados productos y servicios, migración de personas altamente cualificadas, tributaria y digitalización del sector financiero, *Boletín Oficial del Estado*, may. 2023.
+
+[9] Real Decreto 1112/2018, de 7 de septiembre, sobre accesibilidad de los sitios web y aplicaciones para dispositivos móviles del sector público, *Boletín Oficial del Estado*, sep. 2018.
+
+[10] *Requisitos de accesibilidad aplicables a los productos y servicios TIC*, UNE-EN 301 549, Asociación Española de Normalización (UNE), Madrid, España.
+
+[11] Observatorio de Accesibilidad Web, Portal de la Administración Electrónica, Gobierno de España. [En línea]. Disponible en: https://administraciones.gob.es
 
 
 
