@@ -48,8 +48,44 @@ tricount es una aplicación para gestionar gastos compartidos entre amigos, pare
 - La planificación específica de una compra doméstica podría requerir funciones adicionales.
 - También está orientada a viajes y otros gastos en grupo.
 
+### 3. Splid
 
+**Página oficial:** https://splid.teamturtle.com/
 
+Splid es una aplicación centrada en simplificar el reparto de gastos entre varias personas. Permite crear grupos, registrar pagos, dividir importes de manera equitativa o personalizada y calcular las cantidades que debe cada participante. También admite el uso sin conexión, diferentes monedas y la exportación de resúmenes, aunque algunas opciones pueden requerir una compra dentro de la aplicación.
+
+**Ventajas:**
+- Se centra en las funciones esenciales de reparto de gastos.
+- Permite trabajar sin conexión a Internet.
+- Admite diferentes monedas y repartos no equitativos.
+- Ofrece resúmenes exportables.
+
+**Limitaciones:**
+- Su enfoque principal es el reparto de gastos, no la organización integral de las compras domésticas.
+- Algunas opciones de exportación pueden ser de pago.
+- La disponibilidad y la experiencia de uso dependen de la plataforma y la versión utilizada.
+
+### 4. Spliit
+
+**Página oficial:** https://spliit.app/  
+**Repositorio del proyecto:** https://github.com/spliit-app/spliit
+
+Spliit es una alternativa de código abierto para compartir gastos. Permite crear grupos, registrar gastos, consultar balances, introducir reembolsos y clasificar los gastos por categorías. También permite adjuntar imágenes y utilizar una aplicación web progresiva (PWA). Al disponer de código abierto bajo licencia MIT, ofrece la posibilidad de estudiar el código y desplegar una instancia propia. No obstante, alojarla requiere conocimientos técnicos y recursos para mantener el servicio y la base de datos.
+
+**Ventajas:**
+- Es una solución de código abierto.
+- Permite consultar y repartir los gastos de un grupo.
+- Ofrece categorías y búsqueda de gastos.
+- Puede desplegarse en una infraestructura propia.
+
+**Limitaciones:**
+- El alojamiento propio requiere configuración y mantenimiento.
+- Su función principal sigue siendo la gestión de gastos compartidos.
+- Las funciones y la experiencia pueden depender de la instancia utilizada.
+
+## 2.3.2. Análisis comparativo
+
+Para comparar las alternativas se han utilizado criterios relacionados con el coste, la facilidad de aprendizaje, la experiencia de usuario, la compatibilidad entre plataformas, la generación de informes y la capacidad de adaptación.
 
 
 
