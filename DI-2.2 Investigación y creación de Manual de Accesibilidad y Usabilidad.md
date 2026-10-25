@@ -53,7 +53,7 @@ Es un borrador de trabajo del W3C (actualización de marzo de 2026), con un mode
 
 **Importante:** cumplir WCAG no equivale automáticamente a cumplir la EAA, que incluye requisitos adicionales (por ejemplo, servicios de soporte accesibles e información sobre accesibilidad). Si el proyecto tiene fines comerciales, conviene consultar con asesoría legal. Este manual no constituye asesoramiento jurídico.
 
-### 3.4 Estándares y heurísticas de usabilidad
+### 3.4 Estándares de usabilidad
 
 - **ISO 9241-11:** define usabilidad (eficacia, eficiencia, satisfacción).
 - **ISO 9241-210:** proceso de diseño centrado en las personas (investigar el contexto, especificar requisitos, diseñar, evaluar y repetir).
