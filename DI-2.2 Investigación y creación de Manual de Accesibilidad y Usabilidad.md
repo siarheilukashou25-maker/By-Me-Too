@@ -205,6 +205,23 @@ Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
 
 **Importante:** las herramientas automáticas no sustituyen la revisión manual ni las pruebas con personas usuarias.
 
+## 9. Aplicación a las interfaces de By Me Too *(por completar)*
+
+Rellenar tras la auditoría inicial del proyecto:
+
+| Pantalla / componente | Problemas detectados | Medida a aplicar | Criterio | Responsable | Estado |
+|---|---|---|---|---|---|
+| *Ej.: Formulario de registro* | *Sin etiquetas visibles* | *Añadir `label` y mensajes de error* | *3.3.2, 3.3.1* | | |
+| | | | | | |
+
+## 10. Glosario
+
+- **Tecnología de apoyo:** software o hardware que usan las personas con discapacidad (lectores de pantalla, ampliadores, conmutadores, control por voz).
+- **Lector de pantalla:** software que convierte el contenido de la pantalla en voz o braille.
+- **ARIA:** conjunto de atributos que añaden información de accesibilidad a elementos HTML.
+- **Criterio de conformidad:** requisito verificable de WCAG con un nivel (A, AA o AAA).
+- **Foco:** elemento de la interfaz que recibe en ese momento la interacción del teclado.
+
 
 
 
