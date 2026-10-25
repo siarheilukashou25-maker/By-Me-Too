@@ -182,7 +182,7 @@ Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
 - Añadir linters de accesibilidad al proyecto (por ejemplo `eslint-plugin-jsx-a11y` si se usa React).
 - Incluir pruebas automáticas con **axe-core** o **Lighthouse** en la integración continua.
 
-**Revisión (*Definition of Done*).** Una funcionalidad solo se considera terminada si:
+**Revisión.** Una funcionalidad solo se considera terminada si:
 
 - [ ] Se puede usar entera con teclado
 - [ ] El foco es visible y ordenado
