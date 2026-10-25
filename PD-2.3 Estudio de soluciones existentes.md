@@ -31,6 +31,22 @@ Splitwise es una aplicación diseñada para registrar gastos compartidos entre a
 - Algunas funciones avanzadas requieren una suscripción.
 - Está centrada en el reparto de gastos y no específicamente en la planificación de las compras domésticas.
 
+### 2. tricount
+
+**Página oficial:** https://www.tricount.com/es-es/
+
+tricount es una aplicación para gestionar gastos compartidos entre amigos, parejas y compañeros de piso. Permite crear grupos, añadir gastos, indicar quién ha pagado y seleccionar quién participa en cada gasto. También ofrece repartos personalizados, fotografías de recibos y seguimiento de saldos. Su página oficial presenta el registro de gastos compartidos como un servicio gratuito.
+
+**Ventajas:**
+- Interfaz orientada a registrar y repartir gastos de forma sencilla.
+- Permite consultar quién ha pagado y cuánto debe cada persona.
+- Ofrece repartos personalizados y fotografías de recibos.
+- Puede utilizarse para organizar gastos de viviendas compartidas.
+
+**Limitaciones:**
+- Su objetivo principal es controlar los gastos y saldar deudas.
+- La planificación específica de una compra doméstica podría requerir funciones adicionales.
+- También está orientada a viajes y otros gastos en grupo.
 
 
 
