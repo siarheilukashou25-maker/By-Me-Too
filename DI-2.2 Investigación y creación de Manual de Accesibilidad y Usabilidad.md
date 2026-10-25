@@ -169,6 +169,28 @@ Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
 - **Beneficio para todos (efecto bordillo rebajado):** los subtítulos, el buen contraste y los formularios claros ayudan a todo el mundo.
 - **Calidad técnica y SEO:** HTML semántico y estructura clara mejoran el posicionamiento y la mantenibilidad.
 - **Coste:** corregir la accesibilidad desde el diseño es mucho más barato que reparar una interfaz ya construida.
+  
+## 7. Cómo integrarlo en el flujo de trabajo
+
+**Diseño**
+- Definir paleta con contrastes verificados y tipografía mínima legible (≥16 px de cuerpo).
+- Documentar estados de foco, error y vacío en cada componente.
+- Anotar en los prototipos el orden de foco y los textos alternativos.
+
+**Desarrollo**
+- Usar HTML semántico y componentes nativos antes que personalizados.
+- Añadir linters de accesibilidad al proyecto (por ejemplo `eslint-plugin-jsx-a11y` si se usa React).
+- Incluir pruebas automáticas con **axe-core** o **Lighthouse** en la integración continua.
+
+**Revisión (*Definition of Done*).** Una funcionalidad solo se considera terminada si:
+
+- [ ] Se puede usar entera con teclado
+- [ ] El foco es visible y ordenado
+- [ ] Cumple los contrastes
+- [ ] Imágenes e iconos tienen alternativa
+- [ ] Los formularios tienen etiquetas y errores claros
+- [ ] Funciona con zoom al 200 % y a 320 px de ancho
+- [ ] Pasa las pruebas automáticas sin errores críticos
 
 
 
