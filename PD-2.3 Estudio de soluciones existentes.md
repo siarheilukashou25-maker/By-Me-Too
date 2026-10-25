@@ -170,13 +170,13 @@ La propuesta de valor debe centrarse en la experiencia que se pretende ofrecer a
 
 ## 6. Fuentes consultadas
 
-[1] Splitwise, “Splitwise: Share expenses with friends and family.” [En línea]. Disponible en: https://www.splitwise.com/. [Accedido: 25-oct-2026].
+[1] Splitwise, “Splitwise: Share expenses with friends and family.” [En línea]. Disponible en: https://www.splitwise.com/. [Accedido: 23-oct-2026].
 
-[2] Splitwise, “Splitwise Pro.” [En línea]. Disponible en: https://www.splitwise.com/pro. [Accedido: 25-oct-2026].
+[2] Splitwise, “Splitwise Pro.” [En línea]. Disponible en: https://www.splitwise.com/pro. [Accedido: 23-oct-2026].
 
-[3] Splitwise, “What is Splitwise Pro?” *Splitwise Knowledge Base*. [En línea]. Disponible en: https://kb.splitwise.com/pro/what-is-splitwise-pro. [Accedido: 25-oct-2026].
+[3] Splitwise, “What is Splitwise Pro?” *Splitwise Knowledge Base*. [En línea]. Disponible en: https://kb.splitwise.com/pro/what-is-splitwise-pro. [Accedido: 24-oct-2026].
 
-[4] tricount, “tricount: Comparte gastos fácilmente.” [En línea]. Disponible en: https://www.tricount.com/es-es/. [Accedido: 25-oct-2026].
+[4] tricount, “tricount: Comparte gastos fácilmente.” [En línea]. Disponible en: https://www.tricount.com/es-es/. [Accedido: 24-oct-2026].
 
 [5] tricount, “Features.” [En línea]. Disponible en: https://www.tricount.com/es-es/features. [Accedido: 25-oct-2026].
 
