@@ -136,6 +136,39 @@ Para cada medida se indica **qué hacer**, **por qué** y su **criterio WCAG**.
 
 **Regla de oro de ARIA:** *ningún ARIA es mejor que un mal ARIA*. Un rol incorrecto empeora la experiencia respecto a no usarlo.
 
+**Regla de oro de ARIA:** *ningún ARIA es mejor que un mal ARIA*. Un rol incorrecto empeora la experiencia respecto a no usarlo.
+
+## 5. Medidas de usabilidad a integrar
+
+### Las 10 heurísticas de Nielsen aplicadas al proyecto
+
+1. **Visibilidad del estado del sistema:** indicadores de carga, confirmaciones de guardado, progreso en procesos de varios pasos.
+2. **Coherencia con el mundo real:** lenguaje del usuario, iconos reconocibles, orden natural de la información.
+3. **Control y libertad del usuario:** deshacer, cancelar y volver atrás sin perder datos.
+4. **Consistencia y estándares:** mismos patrones, nombres y comportamientos en toda la aplicación (sistema de diseño).
+5. **Prevención de errores:** restricciones sensatas, valores por defecto, confirmación en acciones destructivas.
+6. **Reconocer antes que recordar:** opciones visibles, historial, sugerencias; no obligar a memorizar.
+7. **Flexibilidad y eficiencia de uso:** atajos y flujos rápidos para usuarios habituales sin complicar a los nuevos.
+8. **Diseño estético y minimalista:** mostrar solo lo necesario; priorizar jerarquía visual.
+9. **Ayudar a reconocer, diagnosticar y recuperarse de errores:** mensajes en lenguaje claro, con causa y solución.
+10. **Ayuda y documentación:** ayuda breve, contextual y fácil de encontrar.
+
+### Medidas prácticas adicionales
+
+- **Diseño responsive y *mobile first*:** la mayor parte del uso es móvil; se diseña primero para pantallas pequeñas y se escala.
+- **Jerarquía visual y espacio en blanco:** guían la atención y reducen la carga cognitiva.
+- **Tiempos de carga y rendimiento:** una interfaz lenta es una barrera, especialmente con conexiones limitadas.
+- **Estados completos de cada componente:** normal, hover, foco, activo, deshabilitado, error, carga y vacío.
+- **Pruebas con personas usuarias reales,** incluidas personas con discapacidad, durante el diseño y antes de lanzar.
+
+## 6. Por qué importa: argumentos de peso
+
+- **Ético y de inclusión:** el acceso a la información y a los servicios es un derecho. Una interfaz inaccesible excluye de facto a parte de la población.
+- **Alcance:** solo en España hay más de 4,3 millones de personas con algún tipo de discapacidad (cifra citada por fuentes del sector), sin contar a las personas mayores o con limitaciones temporales.
+- **Legal:** la Ley 11/2023 aplica desde junio de 2025 y las sanciones pueden alcanzar importes elevados en los casos graves; además, la reputación está en juego.
+- **Beneficio para todos (efecto bordillo rebajado):** los subtítulos, el buen contraste y los formularios claros ayudan a todo el mundo.
+- **Calidad técnica y SEO:** HTML semántico y estructura clara mejoran el posicionamiento y la mantenibilidad.
+- **Coste:** corregir la accesibilidad desde el diseño es mucho más barato que reparar una interfaz ya construida.
 
 
 
