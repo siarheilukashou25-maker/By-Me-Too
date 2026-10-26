@@ -356,8 +356,6 @@ De esta manera, se pretende que la aplicación no solo cumpla con sus funcionali
 - **Junta de Andalucía – Norma de usabilidad en sitios web.**  
   https://desarrollo.juntadeandalucia.es/recursos/reglas-pautas/norma-usabilidad-en-sitios-web
 
-- **Repositorio del proyecto – By Me Too! / Comprame!**  
-  https://github.com/siarheilukashou25-maker/By-Me-Too
 
 
 
