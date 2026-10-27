@@ -19,7 +19,7 @@ public class Controlador {
         this.modelo = modelo;
         this.login = login;
         this.principal = principal;
-        this.login.alEntrar(this::entrar);
+        //this.login.alEntrar(this::entrar);
     }
 
     public Modelo getModelo() {
