@@ -59,7 +59,6 @@ public class MainWindowEmpty extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cómprame! — Gestor de gastos compartidos");
-        setPreferredSize(new java.awt.Dimension(860, 680));
 
         toolbarPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
         btnNuevoGrupo.setText("Nuevo grupo");
@@ -477,7 +476,7 @@ public class MainWindowEmpty extends javax.swing.JFrame {
                     .addComponent(statusPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(1024, 768));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 

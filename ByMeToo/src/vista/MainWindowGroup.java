@@ -82,7 +82,6 @@ public class MainWindowGroup extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cómprame! — Gestor de gastos compartidos");
-        setPreferredSize(new java.awt.Dimension(860, 680));
 
         toolbarPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
 
@@ -417,9 +416,6 @@ public class MainWindowGroup extends javax.swing.JFrame {
 
         lblBuscarIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/search.png"))); // NOI18N
 
-        txtBuscar.setForeground(new java.awt.Color(140, 140, 140));
-        txtBuscar.setText("Escribe el nombre del producto...");
-
         javax.swing.GroupLayout buscarCardLayout = new javax.swing.GroupLayout(buscarCard);
         buscarCard.setLayout(buscarCardLayout);
         buscarCardLayout.setHorizontalGroup(
@@ -646,7 +642,7 @@ public class MainWindowGroup extends javax.swing.JFrame {
                 .addComponent(statusPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        pack();
+        setSize(new java.awt.Dimension(1024, 768));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
