@@ -1,11 +1,10 @@
 package vista;
 
 /**
- *
- * @author Elias
+ * Ventana de inicio de sesión (maqueta).
  */
 public class LoginWindow extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginWindow.class.getName());
 
     /**
@@ -13,14 +12,6 @@ public class LoginWindow extends javax.swing.JFrame {
      */
     public LoginWindow() {
         initComponents();
-    }
-
-    public void alEntrar(java.awt.event.ActionListener accion) {
-        loginButton.addActionListener(accion);
-    }
-
-    public void pulsarEntrar() {
-        loginButton.doClick();
     }
 
     /**
@@ -32,164 +23,158 @@ public class LoginWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        loginWindow = new javax.swing.JPanel();
-        titleText = new javax.swing.JLabel();
-        signInText = new javax.swing.JLabel();
-        emailText = new javax.swing.JLabel();
-        mailInput = new javax.swing.JTextField();
-        passwordText = new javax.swing.JLabel();
-        passwordInput = new javax.swing.JPasswordField();
-        frgPasswordButton = new javax.swing.JButton();
-        rememberUserButton = new javax.swing.JCheckBox();
-        loginButton = new javax.swing.JButton();
-        orText = new javax.swing.JLabel();
-        signWithText = new javax.swing.JLabel();
-        signGoogleButton = new javax.swing.JButton();
-        signFacebookButton = new javax.swing.JButton();
-        signUpButton = new javax.swing.JButton();
-        noAccText = new javax.swing.JLabel();
+        loginCard = new javax.swing.JPanel();
+        headerPanel = new javax.swing.JPanel();
+        lblHeader = new javax.swing.JLabel();
+        lblIntro = new javax.swing.JLabel();
+        btnGoogle = new javax.swing.JButton();
+        sepIzquierda = new javax.swing.JSeparator();
+        lblO = new javax.swing.JLabel();
+        sepDerecha = new javax.swing.JSeparator();
+        lblCorreo = new javax.swing.JLabel();
+        txtCorreo = new javax.swing.JTextField();
+        lblContrasena = new javax.swing.JLabel();
+        lblOlvidaste = new javax.swing.JLabel();
+        pwdContrasena = new javax.swing.JPasswordField();
+        btnIniciarSesion = new javax.swing.JButton();
+        btnCrearCuenta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(540, 960));
-        setMinimumSize(new java.awt.Dimension(540, 960));
-        setPreferredSize(new java.awt.Dimension(540, 960));
+        setTitle("Cómprame! — Iniciar sesión");
 
-        titleText.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        titleText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        titleText.setText("By Me Too!");
+        loginCard.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
+        headerPanel.setBackground(new java.awt.Color(150, 175, 210));
 
-        signInText.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
-        signInText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signInText.setText("Sign In");
+        headerPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
 
-        emailText.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        emailText.setText("Email");
+        lblHeader.setFont(lblHeader.getFont().deriveFont(lblHeader.getFont().getStyle() | java.awt.Font.BOLD));
 
-        mailInput.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        mailInput.setText("segaega666@gmail.com");
 
-        passwordText.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        passwordText.setText("Password");
+        lblHeader.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
 
-        passwordInput.setText("jPasswordField1");
 
-        frgPasswordButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        frgPasswordButton.setForeground(new java.awt.Color(102, 102, 102));
-        frgPasswordButton.setText("Forgot Password?");
+        lblHeader.setText("Iniciar sesión");
 
-        rememberUserButton.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        rememberUserButton.setText("Remember me");
 
-        loginButton.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        loginButton.setText("Login");
+        javax.swing.GroupLayout headerPanelLayout = new javax.swing.GroupLayout(headerPanel);
+        headerPanel.setLayout(headerPanelLayout);
 
-        orText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        orText.setForeground(new java.awt.Color(153, 153, 153));
-        orText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        orText.setText("-OR-");
-
-        signWithText.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        signWithText.setForeground(new java.awt.Color(102, 102, 102));
-        signWithText.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        signWithText.setText("Sign it with");
-
-        signGoogleButton.setText("Google");
-
-        signFacebookButton.setText("Facebook");
-
-        signUpButton.setText("Sign Up!");
-        signUpButton.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        signUpButton.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
-
-        noAccText.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        noAccText.setText("Dont hace account yet?");
-
-        javax.swing.GroupLayout loginWindowLayout = new javax.swing.GroupLayout(loginWindow);
-        loginWindow.setLayout(loginWindowLayout);
-        loginWindowLayout.setHorizontalGroup(
-            loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loginWindowLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(passwordText)
-                    .addComponent(emailText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(loginWindowLayout.createSequentialGroup()
-                        .addComponent(rememberUserButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
-                        .addComponent(frgPasswordButton))
-                    .addComponent(passwordInput)
-                    .addComponent(mailInput)
-                    .addComponent(loginButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(loginWindowLayout.createSequentialGroup()
-                .addGap(119, 119, 119)
-                .addComponent(signGoogleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63)
-                .addComponent(signFacebookButton)
-                .addContainerGap(121, Short.MAX_VALUE))
-            .addGroup(loginWindowLayout.createSequentialGroup()
-                .addGroup(loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(signInText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(loginWindowLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(titleText, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(orText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(signWithText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(loginWindowLayout.createSequentialGroup()
-                                .addComponent(noAccText, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(signUpButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
-                .addContainerGap())
+        headerPanelLayout.setHorizontalGroup(
+            headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(headerPanelLayout.createSequentialGroup()
+                    .addGap(8, 8, 8)
+                    .addComponent(lblHeader)
+                    .addGap(0, 0, Short.MAX_VALUE))
         );
-        loginWindowLayout.setVerticalGroup(
-            loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loginWindowLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(titleText, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(signInText)
-                .addGap(47, 47, 47)
-                .addComponent(emailText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mailInput, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(passwordText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(passwordInput, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(8, 8, 8)
-                .addGroup(loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rememberUserButton)
-                    .addComponent(frgPasswordButton))
-                .addGap(18, 18, 18)
-                .addComponent(loginButton, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(orText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(signWithText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(signGoogleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(signFacebookButton, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 159, Short.MAX_VALUE)
-                .addGroup(loginWindowLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(noAccText, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(signUpButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+
+        headerPanelLayout.setVerticalGroup(
+            headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(headerPanelLayout.createSequentialGroup()
+                    .addGap(5, 5, 5)
+                    .addComponent(lblHeader)
+                    .addGap(5, 5, 5))
+        );
+
+        lblIntro.setText("Accede a tu cuenta para gestionar tus gastos compartidos.");
+
+        btnGoogle.setText("Continuar con Google");
+
+        lblO.setText("o");
+
+        lblCorreo.setText("Correo electrónico");
+
+        lblContrasena.setText("Contraseña");
+
+        lblOlvidaste.setFont(lblOlvidaste.getFont().deriveFont(lblOlvidaste.getFont().getSize()-1f));
+
+        lblOlvidaste.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+
+        lblOlvidaste.setText("<html><u>¿Olvidaste tu contraseña?</u></html>");
+
+        pwdContrasena.setText("password");
+
+        btnIniciarSesion.setText("Iniciar sesión");
+
+        btnCrearCuenta.setText("¿No tienes cuenta?  Crear una");
+
+        javax.swing.GroupLayout loginCardLayout = new javax.swing.GroupLayout(loginCard);
+        loginCard.setLayout(loginCardLayout);
+        loginCardLayout.setHorizontalGroup(
+            loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(loginCardLayout.createSequentialGroup()
+                    .addGap(16, 16, 16)
+                    .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(lblIntro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnGoogle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(loginCardLayout.createSequentialGroup()
+                            .addComponent(sepIzquierda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGap(8, 8, 8)
+                            .addComponent(lblO)
+                            .addGap(8, 8, 8)
+                            .addComponent(sepDerecha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblCorreo)
+                        .addComponent(txtCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(loginCardLayout.createSequentialGroup()
+                            .addComponent(lblContrasena)
+                            .addGap(0, 0, Short.MAX_VALUE)
+                            .addComponent(lblOlvidaste))
+                        .addComponent(pwdContrasena, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnIniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCrearCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGap(16, 16, 16))
+        );
+        loginCardLayout.setVerticalGroup(
+            loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(loginCardLayout.createSequentialGroup()
+                    .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(16, 16, 16)
+                    .addComponent(lblIntro)
+                    .addGap(12, 12, 12)
+                    .addComponent(btnGoogle, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(14, 14, 14)
+                    .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                        .addComponent(sepIzquierda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblO)
+                        .addComponent(sepDerecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(14, 14, 14)
+                    .addComponent(lblCorreo)
+                    .addGap(4, 4, 4)
+                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(12, 12, 12)
+                    .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblContrasena)
+                        .addComponent(lblOlvidaste))
+                    .addGap(4, 4, 4)
+                    .addComponent(pwdContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(12, 12, 12)
+                    .addComponent(btnIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(12, 12, 12)
+                    .addComponent(btnCrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(16, 16, 16))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
+
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(loginWindow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(loginWindow, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        pack();
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        setSize(new java.awt.Dimension(1024, 768));
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -218,21 +203,20 @@ public class LoginWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel emailText;
-    private javax.swing.JButton frgPasswordButton;
-    private javax.swing.JButton loginButton;
-    private javax.swing.JPanel loginWindow;
-    private javax.swing.JTextField mailInput;
-    private javax.swing.JLabel noAccText;
-    private javax.swing.JLabel orText;
-    private javax.swing.JPasswordField passwordInput;
-    private javax.swing.JLabel passwordText;
-    private javax.swing.JCheckBox rememberUserButton;
-    private javax.swing.JButton signFacebookButton;
-    private javax.swing.JButton signGoogleButton;
-    private javax.swing.JLabel signInText;
-    private javax.swing.JButton signUpButton;
-    private javax.swing.JLabel signWithText;
-    private javax.swing.JLabel titleText;
+    private javax.swing.JButton btnCrearCuenta;
+    private javax.swing.JButton btnGoogle;
+    private javax.swing.JButton btnIniciarSesion;
+    private javax.swing.JPanel headerPanel;
+    private javax.swing.JLabel lblContrasena;
+    private javax.swing.JLabel lblCorreo;
+    private javax.swing.JLabel lblHeader;
+    private javax.swing.JLabel lblIntro;
+    private javax.swing.JLabel lblO;
+    private javax.swing.JLabel lblOlvidaste;
+    private javax.swing.JPanel loginCard;
+    private javax.swing.JPasswordField pwdContrasena;
+    private javax.swing.JSeparator sepDerecha;
+    private javax.swing.JSeparator sepIzquierda;
+    private javax.swing.JTextField txtCorreo;
     // End of variables declaration//GEN-END:variables
 }
