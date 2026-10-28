@@ -364,15 +364,31 @@ De esta manera, se pretende que la aplicación no solo cumpla con sus funcionali
 
 ## 8. Referencias bibliográficas
 
-[1] World Wide Web Consortium (W3C), “Web Content Accessibility Guidelines (WCAG). 2.2.”. Disponible en: https://www.w3.org/TR/WCAG22/. [Accedido: 23-oct-2026].
+[1] World Wide Web Consortium (W3C), “Web Content Accessibility Guidelines (WCAG) 2.2.”. Disponible en: https://www.w3.org/TR/WCAG22/. [Accedido: 23-oct-2026].
 
-[2] World Wide Web Consortium (W3C), “Introducción a la Accesibilidad Web.” Web Accessibility Initiative (WAI).. Disponible en: https://www.w3.org/WAI/fundamentals/accessibility-intro/es. [Accedido: 23-oct-2026].
+**Fragmento original consultado:** “Web Content Accessibility Guidelines (WCAG) 2.2”.
 
-[3] World Wide Web Consortium (W3C), “Guidance on Applying WCAG 2.2 to Mobile Applications (WCAG2Mobile).” . Disponible en: https://www.w3.org/TR/wcag2mobile-22/. [Accedido: 24-oct-2026].
+**Utilidad en el proyecto:** referencia complementaria para criterios generales como el contraste, la percepción de la información y la comprensión de las interfaces. No se considera una guía exclusiva para aplicaciones nativas.
 
-[4] World Wide Web Consortium (W3C), “Mobile Accessibility.” Web Accessibility Initiative (WAI). . Disponible en: https://www.w3.org/WAI/standards-guidelines/mobile/. [Accedido: 24-oct-2026].
+[2] Android Developers, “Principles for improving app accessibility.”. Disponible en: https://developer.android.com/guide/topics/ui/accessibility/principles. [Accedido: 23-oct-2026].
 
-[5] Junta de Andalucía, “Norma de usabilidad en sitios web.” Desarrollo de servicios digitales. . Disponible en: https://desarrollo.juntadeandalucia.es/recursos/reglas-pautas/norma-usabilidad-en-sitios-web. [Accedido: 25-oct-2026].
+**Fragmento original consultado:** “Label elements” y “Use cues other than color”.
+
+**Utilidad en el proyecto:** orienta el etiquetado de botones y controles, el uso de lectores de pantalla y la presentación de información que no dependa únicamente del color en la versión Android, si se desarrolla para esta plataforma.
+
+[3] Microsoft, “Accessibility checklist.” Microsoft Learn.. Disponible en: https://learn.microsoft.com/en-us/windows/apps/design/accessibility/accessibility-checklist. [Accedido: 24-oct-2026].
+
+**Fragmento original consultado:** “Set accessible names and descriptions”, “Implement keyboard accessibility” y “Ensure text is a readable size”.
+
+**Utilidad en el proyecto:** sirve como referencia para revisar la accesibilidad de la versión de escritorio para Windows, especialmente los nombres accesibles, la navegación por teclado, el tamaño del texto y el contraste.
+
+[4] Apple, “Accessibility.” Human Interface Guidelines. . Disponible en: https://developer.apple.com/design/human-interface-guidelines/accessibility. [Accedido: 24-oct-2026].
+
+**Fragmento original consultado:** “Keep actions simple and intuitive” y “navigate your interface using easy-to-remember and consistent interactions”.
+
+**Utilidad en el proyecto:** aporta recomendaciones para diseñar interfaces sencillas y coherentes y puede utilizarse si la aplicación se desarrolla para plataformas de Apple.
+
+
 
 
 
