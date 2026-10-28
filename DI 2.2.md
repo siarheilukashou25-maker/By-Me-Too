@@ -341,15 +341,15 @@ De esta manera, se pretende que la aplicación no solo cumpla con sus funcionali
 
 ## 8. Referencias bibliográficas
 
-[1] World Wide Web Consortium (W3C), “Web Content Accessibility Guidelines (WCAG) 2.2.” [En línea]. Disponible en: https://www.w3.org/TR/WCAG22/. [Accedido: 23-oct-2026].
+[1] World Wide Web Consortium (W3C), “Web Content Accessibility Guidelines (WCAG). 2.2.”. Disponible en: https://www.w3.org/TR/WCAG22/. [Accedido: 23-oct-2026].
 
-[2] World Wide Web Consortium (W3C), “Introducción a la Accesibilidad Web.” Web Accessibility Initiative (WAI). [En línea]. Disponible en: https://www.w3.org/WAI/fundamentals/accessibility-intro/es. [Accedido: 23-oct-2026].
+[2] World Wide Web Consortium (W3C), “Introducción a la Accesibilidad Web.” Web Accessibility Initiative (WAI).. Disponible en: https://www.w3.org/WAI/fundamentals/accessibility-intro/es. [Accedido: 23-oct-2026].
 
-[3] World Wide Web Consortium (W3C), “Guidance on Applying WCAG 2.2 to Mobile Applications (WCAG2Mobile).” [En línea]. Disponible en: https://www.w3.org/TR/wcag2mobile-22/. [Accedido: 24-oct-2026].
+[3] World Wide Web Consortium (W3C), “Guidance on Applying WCAG 2.2 to Mobile Applications (WCAG2Mobile).” . Disponible en: https://www.w3.org/TR/wcag2mobile-22/. [Accedido: 24-oct-2026].
 
-[4] World Wide Web Consortium (W3C), “Mobile Accessibility.” Web Accessibility Initiative (WAI). [En línea]. Disponible en: https://www.w3.org/WAI/standards-guidelines/mobile/. [Accedido: 24-oct-2026].
+[4] World Wide Web Consortium (W3C), “Mobile Accessibility.” Web Accessibility Initiative (WAI). . Disponible en: https://www.w3.org/WAI/standards-guidelines/mobile/. [Accedido: 24-oct-2026].
 
-[5] Junta de Andalucía, “Norma de usabilidad en sitios web.” Desarrollo de servicios digitales. [En línea]. Disponible en: https://desarrollo.juntadeandalucia.es/recursos/reglas-pautas/norma-usabilidad-en-sitios-web. [Accedido: 25-oct-2026].
+[5] Junta de Andalucía, “Norma de usabilidad en sitios web.” Desarrollo de servicios digitales. . Disponible en: https://desarrollo.juntadeandalucia.es/recursos/reglas-pautas/norma-usabilidad-en-sitios-web. [Accedido: 25-oct-2026].
 
 
 
