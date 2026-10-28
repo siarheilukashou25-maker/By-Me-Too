@@ -140,7 +140,6 @@ Además de las pautas de accesibilidad, se tendrán en cuenta las siguientes rec
 - Evitar solicitar información que no sea necesaria para completar una tarea.
 
 Estas recomendaciones se aplicarán a las dos versiones del proyecto, adaptando la interacción a cada dispositivo.
-
 ## 5. Medidas previstas para las interfaces del proyecto
 
 En este apartado se recogen las medidas de accesibilidad y usabilidad que se tendrán en cuenta durante el diseño y desarrollo de By Me Too! / Comprame!.
@@ -189,19 +188,20 @@ Esta medida facilita la comprensión de la interfaz y permite que los usuarios i
 
 También favorece el uso de tecnologías de apoyo.
 
-### 5.4. Navegación accesible
+### 5.4. Navegación accesible en móvil y escritorio
 
 **Medida prevista:**
 
-Se diseñará una navegación coherente entre las distintas pantallas y se tendrá en cuenta la compatibilidad con las funciones de accesibilidad de la plataforma móvil.
+Se diseñará una navegación coherente entre las distintas pantallas y se tendrá en cuenta la compatibilidad con las funciones de accesibilidad de cada plataforma.
 
-Los elementos interactivos deberán poder identificarse y utilizarse correctamente mediante los mecanismos de navegación compatibles con la aplicación.
+En móviles, se comprobará la navegación táctil y la compatibilidad con lectores de pantalla. En escritorio, se verificará que los elementos interactivos puedan recorrerse mediante el teclado, que el foco sea visible y que el orden de navegación resulte lógico.
 
 **Importancia:**
 
 Una navegación clara facilita el acceso a las diferentes funciones y evita que los usuarios se pierdan al cambiar de pantalla.
 
 Además, tener en cuenta la accesibilidad desde el principio permite detectar posibles barreras antes de que el diseño esté terminado.
+
 
 ### 5.5. Organización de la información
 
