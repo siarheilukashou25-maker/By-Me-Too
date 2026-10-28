@@ -8,7 +8,7 @@ La accesibilidad y la usabilidad son dos aspectos fundamentales en el diseño de
 
 El objetivo de este manual es investigar las principales características, pautas y estándares relacionados con la accesibilidad y la usabilidad, y establecer una serie de medidas que sirvan como referencia durante el desarrollo de nuestro proyecto.
 
-En este caso, el manual está orientado a **By Me Too! / Comprame!**, una aplicación móvil destinada a facilitar la gestión de compras compartidas y el reparto de gastos entre personas que conviven.
+En este caso, el manual está orientado a **By Me Too! / Comprame!**, una aplicación destinada a facilitar la gestión de compras compartidas y el reparto de gastos entre personas que conviven. El proyecto contempla una versión móvil y otra de escritorio, por lo que las interfaces deberán adaptarse a las características de cada entorno, como el uso táctil en móviles y la navegación mediante teclado y ratón en ordenadores.
 
 Como el desarrollo de las interfaces todavía no ha comenzado, las medidas recogidas en este documento se plantean como recomendaciones que se tendrán en cuenta durante las futuras fases de diseño y programación. Posteriormente, se podrán comprobar mediante pruebas si se han aplicado correctamente.
 
@@ -16,13 +16,13 @@ Como el desarrollo de las interfaces todavía no ha comenzado, las medidas recog
 
 ### 2.1. ¿Qué es la accesibilidad?
 
-La accesibilidad digital consiste en diseñar aplicaciones que puedan ser utilizadas por el mayor número de personas posible, independientemente de sus capacidades o necesidades.
+La accesibilidad digital consiste en diseñar aplicaciones que puedan ser utilizadas por el mayor número de personas posible, independientemente de sus capacidades o necesidades. Este principio debe aplicarse tanto a las aplicaciones móviles como a las de escritorio [2], [3], [4].
 
 Algunas personas pueden tener dificultades para distinguir determinados colores, leer textos pequeños o utilizar una pantalla táctil. Otras pueden necesitar tecnologías de apoyo, como lectores de pantalla, para acceder a la información.
 
 Por este motivo, es importante diseñar interfaces que reduzcan estas barreras y permitan a los usuarios acceder a las funciones de la aplicación.
 
-La accesibilidad no debe considerarse únicamente al final del desarrollo, sino desde las primeras decisiones relacionadas con el diseño de la interfaz.
+La accesibilidad no debe considerarse únicamente al final del desarrollo, sino desde las primeras decisiones relacionadas con el diseño de la interfaz. Las guías de accesibilidad de Android y Windows recomiendan tener en cuenta aspectos como los nombres accesibles, el uso del teclado, la legibilidad y el contraste [2], [3].
 
 ### 2.2. Importancia de la accesibilidad
 
@@ -31,6 +31,7 @@ Aplicar medidas de accesibilidad permite que más personas puedan utilizar una a
 Además, muchas de estas medidas benefician a todos los usuarios. Por ejemplo, utilizar textos claros, botones fáciles de identificar y mensajes de error comprensibles mejora la experiencia general.
 
 En nuestro proyecto, la accesibilidad será especialmente importante en las pantallas de registro de compras, consulta de gastos y visualización de los importes correspondientes a cada miembro del grupo.
+
 
 ### 2.3. Principales pautas de accesibilidad
 
