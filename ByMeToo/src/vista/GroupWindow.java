@@ -18,11 +18,6 @@ public class GroupWindow extends javax.swing.JFrame {
 
         jButton3 = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JSeparator();
-        panelEstado = new javax.swing.JPanel();
-        lblEstadoListo = new javax.swing.JLabel();
-        panelEstadoDerecho = new javax.swing.JPanel();
-        lblEstadoGrupos = new javax.swing.JLabel();
-        lblEstadoLook = new javax.swing.JLabel();
         sidebarPanel = new javax.swing.JPanel();
         navPanel = new javax.swing.JPanel();
         navTitle = new javax.swing.JLabel();
@@ -53,6 +48,7 @@ public class GroupWindow extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        statusGrupos = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -68,27 +64,6 @@ public class GroupWindow extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(850, 550));
         setPreferredSize(new java.awt.Dimension(900, 600));
 
-        panelEstado.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(204, 204, 204)));
-        panelEstado.setLayout(new java.awt.BorderLayout());
-
-        lblEstadoListo.setText(" Listo");
-        lblEstadoListo.setBorder(javax.swing.BorderFactory.createEmptyBorder(2, 5, 2, 2));
-        panelEstado.add(lblEstadoListo, java.awt.BorderLayout.WEST);
-
-        panelEstadoDerecho.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 0));
-
-        lblEstadoGrupos.setText("Grupos: 1");
-        lblEstadoGrupos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        panelEstadoDerecho.add(lblEstadoGrupos);
-
-        lblEstadoLook.setText("Java Swing L&F");
-        lblEstadoLook.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        panelEstadoDerecho.add(lblEstadoLook);
-
-        panelEstado.add(panelEstadoDerecho, java.awt.BorderLayout.EAST);
-
-        getContentPane().add(panelEstado, java.awt.BorderLayout.SOUTH);
-
         navPanel.setBackground(new java.awt.Color(255, 255, 255));
         navPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
 
@@ -96,9 +71,8 @@ public class GroupWindow extends javax.swing.JFrame {
         navTitle.setText("Navegación");
         navTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 6, 5, 6));
 
-        navInicioPanel.setBackground(new java.awt.Color(65, 130, 220));
+        navInicioPanel.setBackground(new java.awt.Color(255, 255, 255));
 
-        navInicio.setForeground(new java.awt.Color(255, 255, 255));
         navInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/home.png"))); // NOI18N
         navInicio.setText("Inicio");
         navInicio.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
@@ -111,11 +85,11 @@ public class GroupWindow extends javax.swing.JFrame {
         navInicioPanel.setLayout(navInicioPanelLayout);
         navInicioPanelLayout.setHorizontalGroup(
             navInicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(navInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         navInicioPanelLayout.setVerticalGroup(
             navInicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(navInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         navGrupos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
@@ -125,6 +99,7 @@ public class GroupWindow extends javax.swing.JFrame {
         navGrupos.setContentAreaFilled(false);
         navGrupos.setFocusPainted(false);
         navGrupos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        navGrupos.setOpaque(true);
 
         navResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
         navResumen.setText("Resumen");
@@ -199,7 +174,7 @@ public class GroupWindow extends javax.swing.JFrame {
                 .addComponent(gruposSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(2, 2, 2)
                 .addComponent(lblGrupoPiso1)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(193, 193, 193))
         );
 
         toolbarPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
@@ -355,39 +330,53 @@ public class GroupWindow extends javax.swing.JFrame {
                 .addComponent(accionesCard, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(114, Short.MAX_VALUE))
+                .addContainerGap(137, Short.MAX_VALUE))
         );
 
         accionesCard.getAccessibleContext().setAccessibleName("Acciones");
+
+        statusGrupos.setText("Grupos: 1");
+        statusGrupos.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
 
         javax.swing.GroupLayout sidebarPanelLayout = new javax.swing.GroupLayout(sidebarPanel);
         sidebarPanel.setLayout(sidebarPanelLayout);
         sidebarPanelLayout.setHorizontalGroup(
             sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sidebarPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(navPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(sidebarPanelLayout.createSequentialGroup()
-                .addComponent(toolbarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(toolbarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(sidebarPanelLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(navPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
+            .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sidebarPanelLayout.createSequentialGroup()
+                    .addGap(434, 434, 434)
+                    .addComponent(statusGrupos)
+                    .addGap(434, 434, 434)))
         );
         sidebarPanelLayout.setVerticalGroup(
             sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(sidebarPanelLayout.createSequentialGroup()
                 .addComponent(toolbarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(sidebarPanelLayout.createSequentialGroup()
                         .addComponent(navPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(3, 3, 3)
+                        .addGap(6, 6, 6)
                         .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(2, 2, 2))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 7, Short.MAX_VALUE))
+            .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sidebarPanelLayout.createSequentialGroup()
+                    .addGap(218, 218, 218)
+                    .addComponent(statusGrupos)
+                    .addGap(219, 219, 219)))
         );
 
         getContentPane().add(sidebarPanel, java.awt.BorderLayout.CENTER);
@@ -407,13 +396,13 @@ public class GroupWindow extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -451,9 +440,6 @@ public class GroupWindow extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblConectado;
-    private javax.swing.JLabel lblEstadoGrupos;
-    private javax.swing.JLabel lblEstadoListo;
-    private javax.swing.JLabel lblEstadoLook;
     private javax.swing.JLabel lblGrupoPiso1;
     private javax.swing.JButton navGrupos;
     private javax.swing.JButton navInicio;
@@ -463,9 +449,8 @@ public class GroupWindow extends javax.swing.JFrame {
     private javax.swing.JButton navResumen;
     private javax.swing.JSeparator navSeparator;
     private javax.swing.JLabel navTitle;
-    private javax.swing.JPanel panelEstado;
-    private javax.swing.JPanel panelEstadoDerecho;
     private javax.swing.JPanel sidebarPanel;
+    private javax.swing.JLabel statusGrupos;
     private javax.swing.JPanel toolbarPanel;
     private javax.swing.JSeparator toolbarSeparator;
     // End of variables declaration//GEN-END:variables
