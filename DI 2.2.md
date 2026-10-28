@@ -339,22 +339,17 @@ Como el desarrollo de las interfaces todavía no ha comenzado, este manual servi
 
 De esta manera, se pretende que la aplicación no solo cumpla con sus funcionalidades principales, sino que también ofrezca una experiencia clara, coherente y accesible para sus usuarios.
 
-## 8. Fuentes consultadas
+## 8. Referencias bibliográficas
 
-- **W3C – Web Content Accessibility Guidelines (WCAG) 2.2.**  
-  https://www.w3.org/TR/WCAG22/
+[1] World Wide Web Consortium (W3C), “Web Content Accessibility Guidelines (WCAG) 2.2.” [En línea]. Disponible en: https://www.w3.org/TR/WCAG22/. [Accedido: 28-oct-2026].
 
-- **W3C – Web Accessibility Initiative (WAI): Introducción a la accesibilidad web.**  
-  https://www.w3.org/WAI/fundamentals/accessibility-intro/es
+[2] World Wide Web Consortium (W3C), “Introducción a la Accesibilidad Web.” Web Accessibility Initiative (WAI). [En línea]. Disponible en: https://www.w3.org/WAI/fundamentals/accessibility-intro/es. [Accedido: 28-oct-2026].
 
-- **W3C – Guidance on Applying WCAG 2.2 to Mobile Applications.**  
-  https://www.w3.org/TR/wcag2mobile-22/
+[3] World Wide Web Consortium (W3C), “Guidance on Applying WCAG 2.2 to Mobile Applications (WCAG2Mobile).” [En línea]. Disponible en: https://www.w3.org/TR/wcag2mobile-22/. [Accedido: 28-oct-2026].
 
-- **W3C – Mobile Accessibility.**  
-  https://www.w3.org/WAI/standards-guidelines/mobile/
+[4] World Wide Web Consortium (W3C), “Mobile Accessibility.” Web Accessibility Initiative (WAI). [En línea]. Disponible en: https://www.w3.org/WAI/standards-guidelines/mobile/. [Accedido: 28-oct-2026].
 
-- **Junta de Andalucía – Norma de usabilidad en sitios web.**  
-  https://desarrollo.juntadeandalucia.es/recursos/reglas-pautas/norma-usabilidad-en-sitios-web
+[5] Junta de Andalucía, “Norma de usabilidad en sitios web.” Desarrollo de servicios digitales. [En línea]. Disponible en: https://desarrollo.juntadeandalucia.es/recursos/reglas-pautas/norma-usabilidad-en-sitios-web. [Accedido: 28-oct-2026].
 
 
 
