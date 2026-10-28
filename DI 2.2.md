@@ -82,11 +82,9 @@ Para conseguir una buena usabilidad, se tendrán en cuenta los siguientes princi
 
 Estos principios servirán como guía para diseñar una aplicación fácil de utilizar y adaptada a las necesidades de sus usuarios.
 
-## 4. Estándares y recomendaciones
+## 4. Estándares y recomendaciones para aplicaciones móviles y de escritorio
 
-Existen diferentes estándares y recomendaciones que ayudan a diseñar interfaces accesibles y fáciles de utilizar. Estos documentos sirven como referencia para identificar buenas prácticas y establecer criterios durante el desarrollo.
-
-### 4.1. WCAG
+Existen estándares y guías que ayudan a diseñar interfaces accesibles y fáciles de utilizar. Para este proyecto se combinarán recomendaciones generales con las guías específicas de cada plataforma, ya que las formas de interacción pueden variar entre un móvil y un ordenador.
 
 Las WCAG (*Web Content Accessibility Guidelines*) son las pautas de accesibilidad para el contenido web desarrolladas por el World Wide Web Consortium (W3C).
 
