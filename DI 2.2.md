@@ -101,13 +101,36 @@ Las WCAG se organizan en cuatro principios fundamentales:
 
 Estos principios servirán como referencia para tomar decisiones de diseño y revisar posteriormente las interfaces de la aplicación.
 
-### 4.2. Recomendaciones de usabilidad
+### 4.1. WCAG
 
-Además de las pautas de accesibilidad, existen recomendaciones generales que ayudan a mejorar la experiencia de los usuarios.
+Las WCAG (*Web Content Accessibility Guidelines*) son las pautas de accesibilidad para el contenido web desarrolladas por el World Wide Web Consortium (W3C) [1]. Aunque están orientadas principalmente al contenido web, algunos de sus criterios —como el contraste, la claridad de la información y la identificación de los elementos— pueden servir como referencia complementaria para el diseño de las interfaces de la aplicación.
 
-Entre las más importantes se encuentran:
+Las WCAG se organizan en cuatro principios fundamentales:
 
-- Mantener una navegación sencilla.
+- **Perceptible:** la información debe poder percibirse. Por ejemplo, los textos deben ser legibles y la información importante no debe depender únicamente del color.
+- **Operable:** los componentes y funciones deben poder utilizarse mediante los mecanismos de interacción disponibles.
+- **Comprensible:** la información y el funcionamiento de la interfaz deben resultar fáciles de entender.
+- **Robusto:** el contenido debe poder interpretarse correctamente mediante las tecnologías de apoyo compatibles.
+
+Estos principios se utilizarán como orientación general, sin sustituir las recomendaciones específicas de accesibilidad para las plataformas móvil y de escritorio.
+
+### 4.2. Guías de accesibilidad para aplicaciones móviles
+
+En las aplicaciones móviles es importante utilizar controles accesibles, proporcionar etiquetas descriptivas a los botones e iconos y comprobar que las funciones principales pueden utilizarse con herramientas de apoyo, como lectores de pantalla. Android ofrece recomendaciones específicas para mejorar la accesibilidad de las aplicaciones [2]. Si el proyecto también se desarrolla para iOS o macOS, se deberán consultar las pautas de accesibilidad correspondientes de Apple [4].
+
+También se tendrá en cuenta el uso táctil: los controles deberán ser fáciles de localizar y pulsar, y la información deberá seguir siendo comprensible cuando el usuario aumente el tamaño del texto.
+
+### 4.3. Guías de accesibilidad para aplicaciones de escritorio
+
+En la versión de escritorio, además del contraste y la legibilidad, se comprobará que las funciones principales se puedan utilizar mediante el teclado, que el orden de navegación sea lógico y que los lectores de pantalla puedan identificar los controles. Microsoft recoge recomendaciones específicas para diseñar y comprobar la accesibilidad de las aplicaciones de Windows [3].
+
+La interfaz de escritorio también deberá aprovechar el espacio disponible sin perder claridad, mantener una distribución coherente y permitir que el usuario identifique fácilmente las compras, los grupos y los balances.
+
+### 4.4. Recomendaciones generales de usabilidad
+
+Además de las pautas de accesibilidad, se tendrán en cuenta las siguientes recomendaciones:
+
+- Mantener una navegación sencilla y coherente.
 - Utilizar nombres claros para los botones y las opciones de los menús.
 - Mostrar mensajes que informen del resultado de las acciones.
 - Evitar pasos innecesarios en las tareas habituales.
@@ -116,7 +139,7 @@ Entre las más importantes se encuentran:
 - Presentar la información de forma ordenada.
 - Evitar solicitar información que no sea necesaria para completar una tarea.
 
-Estas recomendaciones serán útiles para diseñar las futuras pantallas y facilitar el uso de las principales funciones del proyecto.
+Estas recomendaciones se aplicarán a las dos versiones del proyecto, adaptando la interacción a cada dispositivo.
 
 ## 5. Medidas previstas para las interfaces del proyecto
 
