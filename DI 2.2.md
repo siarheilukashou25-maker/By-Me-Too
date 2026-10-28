@@ -249,21 +249,21 @@ La información económica debe ser fácil de interpretar para evitar confusione
 
 Una presentación clara de los importes ayudará a los usuarios a comprender la distribución de los gastos y consultar su situación económica dentro de la aplicación.
 
-### 5.8. Diseño adaptable a dispositivos móviles
+### 5.8. Adaptación a dispositivos móviles y de escritorio
 
 **Medida prevista:**
 
-La interfaz se diseñará teniendo en cuenta los tamaños de pantalla de los dispositivos móviles en los que se vaya a utilizar la aplicación.
+La interfaz se diseñará teniendo en cuenta los distintos tamaños de pantalla y las formas de interacción de los dispositivos móviles y los ordenadores.
 
-Se procurará que los textos sean legibles, que la información no quede cortada y que los elementos interactivos dispongan de espacio suficiente para utilizarlos cómodamente.
+En móviles, se procurará que los textos sean legibles, que la información no quede cortada y que los elementos táctiles dispongan de espacio suficiente. En escritorio, se aprovechará el espacio disponible sin sobrecargar la pantalla y se comprobará que la interfaz funciona con diferentes tamaños de ventana y escalas de visualización.
 
-También se tendrá en cuenta la posibilidad de ampliar el contenido y las preferencias de visualización compatibles con la plataforma.
+En ambas versiones se tendrá en cuenta la ampliación del texto y las preferencias de visualización compatibles con la plataforma.
 
 **Importancia:**
 
 Un diseño adaptado facilita el uso de la aplicación en diferentes dispositivos y mejora la experiencia general.
 
-Además, disponer de elementos fáciles de identificar y pulsar resulta importante para las personas con dificultades de visión o de movilidad.
+Además, disponer de elementos fáciles de identificar y utilizar —tanto con el tacto como con el teclado y el ratón— resulta importante para las personas con dificultades de visión o de movilidad.
 
 ### 5.9. Consistencia visual
 
@@ -278,6 +278,7 @@ Las acciones similares deberán presentarse de una manera coherente.
 La consistencia visual facilita el aprendizaje de la aplicación y permite que los usuarios reconozcan los elementos que ya conocen.
 
 Esto ayudará a que las funciones de gestión de compras y consulta de gastos resulten más intuitivas.
+
 
 ### 5.10. Mensajes de confirmación y error
 
