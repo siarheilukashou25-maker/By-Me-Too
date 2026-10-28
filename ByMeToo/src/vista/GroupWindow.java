@@ -9,279 +9,400 @@ public class GroupWindow extends javax.swing.JFrame {
 
     public GroupWindow() {
         initComponents();
-        customInit();
     }
 
-    private void customInit() {
-        jToolBar1.add(Box.createHorizontalGlue(), 3);
-    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jButton3 = new javax.swing.JButton();
-        jToolBar1 = new javax.swing.JToolBar();
+        jSeparator4 = new javax.swing.JSeparator();
+        sidebarPanel = new javax.swing.JPanel();
+        navPanel = new javax.swing.JPanel();
+        navTitle = new javax.swing.JLabel();
+        navSeparator = new javax.swing.JSeparator();
+        navInicioPanel = new javax.swing.JPanel();
+        navInicio = new javax.swing.JButton();
+        navGrupos = new javax.swing.JButton();
+        navResumen = new javax.swing.JButton();
+        navPerfil = new javax.swing.JButton();
+        gruposSidePanel = new javax.swing.JPanel();
+        gruposTitle = new javax.swing.JLabel();
+        gruposSeparator = new javax.swing.JSeparator();
+        lblGrupoPiso1 = new javax.swing.JLabel();
+        toolbarPanel = new javax.swing.JPanel();
         btnNuevoGrupo = new javax.swing.JButton();
         btnNuevaCompra = new javax.swing.JButton();
-        jSeparator1 = new javax.swing.JToolBar.Separator();
-        btnResumenToolbar = new javax.swing.JButton();
-        lblUsuario = new javax.swing.JLabel();
-        jSplitPane1 = new javax.swing.JSplitPane();
-        panelIzquierdo = new javax.swing.JPanel();
-        panelArbolGrupos = new javax.swing.JPanel();
-        jScrollPaneTree = new javax.swing.JScrollPane();
-        jTreeGrupos = new javax.swing.JTree();
-        panelNavegacion = new javax.swing.JPanel();
-        jButton6 = new javax.swing.JButton();
+        toolbarSeparator = new javax.swing.JSeparator();
+        btnResumen = new javax.swing.JButton();
+        lblConectado = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        accionesCard = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        panelDerecho = new javax.swing.JPanel();
-        panelCabecera = new javax.swing.JPanel();
-        lblTituloGrupos = new javax.swing.JLabel();
-        lblSubtituloGrupos = new javax.swing.JLabel();
-        panelContenidoCentral = new javax.swing.JPanel();
-        panelAcciones = new javax.swing.JPanel();
-        btnCrearGrupoAccion = new javax.swing.JButton();
-        lblUnirseCodigo = new javax.swing.JLabel();
-        txtCodigo = new javax.swing.JTextField();
-        btnUnirse = new javax.swing.JButton();
-        panelListadoGrupos = new javax.swing.JPanel();
-        jScrollPaneTabla = new javax.swing.JScrollPane();
-        jTableGrupos = new javax.swing.JTable();
-        panelEstado = new javax.swing.JPanel();
-        lblEstadoListo = new javax.swing.JLabel();
-        panelEstadoDerecho = new javax.swing.JPanel();
-        lblEstadoGrupos = new javax.swing.JLabel();
-        lblEstadoLook = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        menuArchivo = new javax.swing.JMenu();
-        menuVer = new javax.swing.JMenu();
-        menuAyuda = new javax.swing.JMenu();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jButton2 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        statusGrupos = new javax.swing.JLabel();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        jMenu3 = new javax.swing.JMenu();
 
         jButton3.setText("jButton3");
+
+        jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
+        jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cómprame! — Gestor de gastos compartidos");
         setMinimumSize(new java.awt.Dimension(850, 550));
         setPreferredSize(new java.awt.Dimension(900, 600));
 
-        jToolBar1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        jToolBar1.setRollover(true);
-        jToolBar1.setPreferredSize(new java.awt.Dimension(540, 27));
+        navPanel.setBackground(new java.awt.Color(255, 255, 255));
+        navPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
 
-        btnNuevoGrupo.setText("+ Nuevo grupo");
-        btnNuevoGrupo.setFocusable(false);
-        btnNuevoGrupo.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnNuevoGrupo.setMargin(new java.awt.Insets(2, 10, 2, 10));
-        btnNuevoGrupo.setOpaque(true);
-        btnNuevoGrupo.addActionListener(this::btnNuevoGrupoActionPerformed);
-        jToolBar1.add(btnNuevoGrupo);
+        navTitle.setFont(navTitle.getFont().deriveFont(navTitle.getFont().getStyle() | java.awt.Font.BOLD));
+        navTitle.setText("Navegación");
+        navTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 6, 5, 6));
+
+        navInicioPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        navInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/home.png"))); // NOI18N
+        navInicio.setText("Inicio");
+        navInicio.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
+        navInicio.setBorderPainted(false);
+        navInicio.setContentAreaFilled(false);
+        navInicio.setFocusPainted(false);
+        navInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+        javax.swing.GroupLayout navInicioPanelLayout = new javax.swing.GroupLayout(navInicioPanel);
+        navInicioPanel.setLayout(navInicioPanelLayout);
+        navInicioPanelLayout.setHorizontalGroup(
+            navInicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(navInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        navInicioPanelLayout.setVerticalGroup(
+            navInicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(navInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        navGrupos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
+        navGrupos.setText("Grupos");
+        navGrupos.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
+        navGrupos.setBorderPainted(false);
+        navGrupos.setContentAreaFilled(false);
+        navGrupos.setFocusPainted(false);
+        navGrupos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        navGrupos.setOpaque(true);
+
+        navResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
+        navResumen.setText("Resumen");
+        navResumen.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
+        navResumen.setBorderPainted(false);
+        navResumen.setContentAreaFilled(false);
+        navResumen.setFocusPainted(false);
+        navResumen.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+        navPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
+        navPerfil.setText("Perfil");
+        navPerfil.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
+        navPerfil.setBorderPainted(false);
+        navPerfil.setContentAreaFilled(false);
+        navPerfil.setFocusPainted(false);
+        navPerfil.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+        javax.swing.GroupLayout navPanelLayout = new javax.swing.GroupLayout(navPanel);
+        navPanel.setLayout(navPanelLayout);
+        navPanelLayout.setHorizontalGroup(
+            navPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(navSeparator)
+            .addComponent(navInicioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(navGrupos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(navResumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(navPerfil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(navPanelLayout.createSequentialGroup()
+                .addComponent(navTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        navPanelLayout.setVerticalGroup(
+            navPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(navPanelLayout.createSequentialGroup()
+                .addComponent(navTitle)
+                .addGap(0, 0, 0)
+                .addComponent(navSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(navInicioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(navGrupos)
+                .addGap(0, 0, 0)
+                .addComponent(navResumen)
+                .addGap(0, 0, 0)
+                .addComponent(navPerfil)
+                .addGap(4, 4, 4))
+        );
+
+        gruposSidePanel.setBackground(new java.awt.Color(255, 255, 255));
+        gruposSidePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
+
+        gruposTitle.setFont(gruposTitle.getFont().deriveFont(gruposTitle.getFont().getStyle() | java.awt.Font.BOLD));
+        gruposTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/folder.png"))); // NOI18N
+        gruposTitle.setText("Grupos");
+        gruposTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 6, 5, 6));
+
+        lblGrupoPiso1.setText("Piso1");
+        lblGrupoPiso1.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
+
+        javax.swing.GroupLayout gruposSidePanelLayout = new javax.swing.GroupLayout(gruposSidePanel);
+        gruposSidePanel.setLayout(gruposSidePanelLayout);
+        gruposSidePanelLayout.setHorizontalGroup(
+            gruposSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(gruposTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(gruposSeparator)
+            .addComponent(lblGrupoPiso1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        gruposSidePanelLayout.setVerticalGroup(
+            gruposSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(gruposSidePanelLayout.createSequentialGroup()
+                .addComponent(gruposTitle)
+                .addGap(0, 0, 0)
+                .addComponent(gruposSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
+                .addComponent(lblGrupoPiso1)
+                .addGap(193, 193, 193))
+        );
+
+        toolbarPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
+
+        btnNuevoGrupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/plus.png"))); // NOI18N
+        btnNuevoGrupo.setText("Nuevo grupo");
 
         btnNuevaCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
         btnNuevaCompra.setText("Nueva compra");
-        btnNuevaCompra.setFocusable(false);
-        btnNuevaCompra.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnNuevaCompra.setMargin(new java.awt.Insets(2, 10, 2, 10));
-        btnNuevaCompra.addActionListener(this::btnNuevaCompraActionPerformed);
-        jToolBar1.add(btnNuevaCompra);
-        jToolBar1.add(jSeparator1);
 
-        btnResumenToolbar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
-        btnResumenToolbar.setText("Resumen");
-        btnResumenToolbar.setFocusable(false);
-        btnResumenToolbar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        btnResumenToolbar.setMargin(new java.awt.Insets(2, 10, 2, 10));
-        btnResumenToolbar.addActionListener(this::btnResumenToolbarActionPerformed);
-        jToolBar1.add(btnResumenToolbar);
+        toolbarSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        lblUsuario.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblUsuario.setText("<html>Conectado como <b>SIARHEI LUKASHOU    </b></html>");
-        lblUsuario.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        jToolBar1.add(lblUsuario);
+        btnResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
+        btnResumen.setText("Resumen");
 
-        getContentPane().add(jToolBar1, java.awt.BorderLayout.NORTH);
+        lblConectado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblConectado.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
 
-        jSplitPane1.setDividerLocation(220);
-
-        panelIzquierdo.setLayout(new java.awt.BorderLayout());
-
-        panelArbolGrupos.setBorder(javax.swing.BorderFactory.createTitledBorder("Grupos"));
-        panelArbolGrupos.setPreferredSize(new java.awt.Dimension(60, 200));
-        panelArbolGrupos.setLayout(new java.awt.BorderLayout());
-
-        javax.swing.tree.DefaultMutableTreeNode treeNode1 = new javax.swing.tree.DefaultMutableTreeNode("Mis Grupos");
-        javax.swing.tree.DefaultMutableTreeNode treeNode2 = new javax.swing.tree.DefaultMutableTreeNode("> Piso1");
-        treeNode1.add(treeNode2);
-        jTreeGrupos.setModel(new javax.swing.tree.DefaultTreeModel(treeNode1));
-        jTreeGrupos.setRootVisible(false);
-        jScrollPaneTree.setViewportView(jTreeGrupos);
-
-        panelArbolGrupos.add(jScrollPaneTree, java.awt.BorderLayout.CENTER);
-
-        panelIzquierdo.add(panelArbolGrupos, java.awt.BorderLayout.CENTER);
-
-        panelNavegacion.setBorder(javax.swing.BorderFactory.createTitledBorder("Navegación"));
-        panelNavegacion.setAlignmentX(0.0F);
-        panelNavegacion.setLayout(new javax.swing.BoxLayout(panelNavegacion, javax.swing.BoxLayout.Y_AXIS));
-
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/home.png"))); // NOI18N
-        jButton6.setText("Inicio");
-        jButton6.setMaximumSize(new java.awt.Dimension(50000, 23));
-        panelNavegacion.add(jButton6);
+        javax.swing.GroupLayout toolbarPanelLayout = new javax.swing.GroupLayout(toolbarPanel);
+        toolbarPanel.setLayout(toolbarPanelLayout);
+        toolbarPanelLayout.setHorizontalGroup(
+            toolbarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(toolbarPanelLayout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(btnNuevoGrupo)
+                .addGap(3, 3, 3)
+                .addComponent(btnNuevaCompra)
+                .addGap(5, 5, 5)
+                .addComponent(toolbarSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(5, 5, 5)
+                .addComponent(btnResumen)
+                .addGap(175, 175, 175)
+                .addComponent(lblConectado)
+                .addContainerGap())
+        );
+        toolbarPanelLayout.setVerticalGroup(
+            toolbarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(toolbarPanelLayout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addGroup(toolbarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(btnNuevoGrupo)
+                    .addComponent(btnNuevaCompra)
+                    .addComponent(toolbarSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnResumen)
+                    .addComponent(lblConectado))
+                .addGap(2, 2, 2))
+        );
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setMaximumSize(new java.awt.Dimension(50000, 92));
-        jPanel1.setMinimumSize(new java.awt.Dimension(300, 92));
-        jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.Y_AXIS));
+        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
-        jButton7.setText("Grupos");
-        jButton7.setMaximumSize(new java.awt.Dimension(5000, 23));
-        jPanel1.add(jButton7);
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel1.setText("Grupos");
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
-        jButton8.setText("Resumen");
-        jButton8.setMaximumSize(new java.awt.Dimension(5000, 23));
-        jButton8.addActionListener(this::jButton8ActionPerformed);
-        jPanel1.add(jButton8);
+        accionesCard.setBackground(new java.awt.Color(252, 252, 252));
+        accionesCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Acciones"));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
-        jButton1.setText("Perfil");
-        jButton1.setMaximumSize(new java.awt.Dimension(5000, 23));
-        jPanel1.add(jButton1);
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/plus.png"))); // NOI18N
+        jButton1.setText("Crear grupo");
+        jButton1.addActionListener(this::jButton1ActionPerformed);
 
-        panelNavegacion.add(jPanel1);
+        jLabel2.setText("Unirse con código");
 
-        panelIzquierdo.add(panelNavegacion, java.awt.BorderLayout.NORTH);
+        jTextField1.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField1.setText("ABC123");
+        jTextField1.addActionListener(this::jTextField1ActionPerformed);
 
-        jSplitPane1.setLeftComponent(panelIzquierdo);
+        jButton2.setText("Unirse");
 
-        panelDerecho.setBackground(new java.awt.Color(245, 245, 245));
-        panelDerecho.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 153, 153)));
-        panelDerecho.setMaximumSize(new java.awt.Dimension(5000000, 34));
-        panelDerecho.setLayout(new java.awt.BorderLayout(0, 15));
+        javax.swing.GroupLayout accionesCardLayout = new javax.swing.GroupLayout(accionesCard);
+        accionesCard.setLayout(accionesCardLayout);
+        accionesCardLayout.setHorizontalGroup(
+            accionesCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(accionesCardLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButton1)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jButton2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        accionesCardLayout.setVerticalGroup(
+            accionesCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, accionesCardLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(accionesCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(jLabel2)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
+                .addGap(34, 34, 34))
+        );
 
-        panelCabecera.setOpaque(false);
-        panelCabecera.setLayout(new java.awt.BorderLayout());
+        jLabel3.setText("Crea o únete a un grupo de convivencia");
 
-        lblTituloGrupos.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblTituloGrupos.setText("Grupos");
-        panelCabecera.add(lblTituloGrupos, java.awt.BorderLayout.WEST);
+        jPanel2.setBackground(new java.awt.Color(252, 252, 252));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Listado de grupos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 12))); // NOI18N
 
-        lblSubtituloGrupos.setForeground(new java.awt.Color(102, 102, 102));
-        lblSubtituloGrupos.setText("Crea o únete a un grupo de convivencia    ");
-        panelCabecera.add(lblSubtituloGrupos, java.awt.BorderLayout.EAST);
-
-        panelDerecho.add(panelCabecera, java.awt.BorderLayout.NORTH);
-
-        panelContenidoCentral.setOpaque(false);
-        panelContenidoCentral.setLayout(new java.awt.BorderLayout(0, 10));
-
-        panelAcciones.setBorder(javax.swing.BorderFactory.createTitledBorder("Acciones"));
-        panelAcciones.setOpaque(false);
-        panelAcciones.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 15, 10));
-
-        btnCrearGrupoAccion.setText("+ Crear grupo");
-        panelAcciones.add(btnCrearGrupoAccion);
-
-        lblUnirseCodigo.setText("Unirse con código:");
-        panelAcciones.add(lblUnirseCodigo);
-
-        txtCodigo.setForeground(new java.awt.Color(153, 153, 153));
-        txtCodigo.setText("ABC123");
-        txtCodigo.setPreferredSize(new java.awt.Dimension(120, 26));
-        panelAcciones.add(txtCodigo);
-
-        btnUnirse.setText("Unirse");
-        btnUnirse.setEnabled(false);
-        panelAcciones.add(btnUnirse);
-
-        panelContenidoCentral.add(panelAcciones, java.awt.BorderLayout.NORTH);
-
-        panelListadoGrupos.setBorder(javax.swing.BorderFactory.createTitledBorder("Listado de grupos"));
-        panelListadoGrupos.setOpaque(false);
-        panelListadoGrupos.setLayout(new java.awt.BorderLayout());
-
-        jScrollPaneTabla.setToolTipText("");
-        jScrollPaneTabla.setMaximumSize(new java.awt.Dimension(452, 500));
-        jScrollPaneTabla.setPreferredSize(new java.awt.Dimension(452, 80));
-
-        jTableGrupos.setModel(new javax.swing.table.DefaultTableModel(
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"<html><b>Piso1</b></html>", "Administrador", "1", "V1EU7L", "Salir"}
+                {"Piso 1", "Administrador", "1", "V1EU7L", "Salir"}
             },
             new String [] {
                 "Nombre", "Rol", "Miembros", "Código", ""
             }
         ));
-        jTableGrupos.setRowHeight(30);
-        jTableGrupos.setShowGrid(true);
-        jScrollPaneTabla.setViewportView(jTableGrupos);
+        jTable1.setShowGrid(true);
+        jScrollPane1.setViewportView(jTable1);
 
-        panelListadoGrupos.add(jScrollPaneTabla, java.awt.BorderLayout.NORTH);
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 736, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 124, Short.MAX_VALUE)
+                .addContainerGap())
+        );
 
-        panelContenidoCentral.add(panelListadoGrupos, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel3))
+                    .addComponent(accionesCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(accionesCard, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(137, Short.MAX_VALUE))
+        );
 
-        panelDerecho.add(panelContenidoCentral, java.awt.BorderLayout.CENTER);
+        accionesCard.getAccessibleContext().setAccessibleName("Acciones");
 
-        jSplitPane1.setRightComponent(panelDerecho);
+        statusGrupos.setText("Grupos: 1");
+        statusGrupos.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
 
-        getContentPane().add(jSplitPane1, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout sidebarPanelLayout = new javax.swing.GroupLayout(sidebarPanel);
+        sidebarPanel.setLayout(sidebarPanelLayout);
+        sidebarPanelLayout.setHorizontalGroup(
+            sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sidebarPanelLayout.createSequentialGroup()
+                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(toolbarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(sidebarPanelLayout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(navPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sidebarPanelLayout.createSequentialGroup()
+                    .addGap(434, 434, 434)
+                    .addComponent(statusGrupos)
+                    .addGap(434, 434, 434)))
+        );
+        sidebarPanelLayout.setVerticalGroup(
+            sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(sidebarPanelLayout.createSequentialGroup()
+                .addComponent(toolbarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(sidebarPanelLayout.createSequentialGroup()
+                        .addComponent(navPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(6, 6, 6)
+                        .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 7, Short.MAX_VALUE))
+            .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(sidebarPanelLayout.createSequentialGroup()
+                    .addGap(218, 218, 218)
+                    .addComponent(statusGrupos)
+                    .addGap(219, 219, 219)))
+        );
 
-        panelEstado.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(204, 204, 204)));
-        panelEstado.setLayout(new java.awt.BorderLayout());
+        getContentPane().add(sidebarPanel, java.awt.BorderLayout.CENTER);
 
-        lblEstadoListo.setText(" Listo");
-        lblEstadoListo.setBorder(javax.swing.BorderFactory.createEmptyBorder(2, 5, 2, 2));
-        panelEstado.add(lblEstadoListo, java.awt.BorderLayout.WEST);
+        jMenu1.setText("Archivo");
+        jMenuBar2.add(jMenu1);
 
-        panelEstadoDerecho.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT, 5, 0));
+        jMenu2.setText("Ver");
+        jMenuBar2.add(jMenu2);
 
-        lblEstadoGrupos.setText("Grupos: 1");
-        lblEstadoGrupos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        panelEstadoDerecho.add(lblEstadoGrupos);
+        jMenu3.setText("Ayuda");
+        jMenuBar2.add(jMenu3);
 
-        lblEstadoLook.setText("Java Swing L&F");
-        lblEstadoLook.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        panelEstadoDerecho.add(lblEstadoLook);
-
-        panelEstado.add(panelEstadoDerecho, java.awt.BorderLayout.EAST);
-
-        getContentPane().add(panelEstado, java.awt.BorderLayout.SOUTH);
-
-        menuArchivo.setText("Archivo");
-        jMenuBar1.add(menuArchivo);
-
-        menuVer.setText("Ver");
-        jMenuBar1.add(menuVer);
-
-        menuAyuda.setText("Ayuda");
-        jMenuBar1.add(menuAyuda);
-
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBar2);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnNuevoGrupoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoGrupoActionPerformed
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnNuevoGrupoActionPerformed
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
-    private void btnNuevaCompraActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaCompraActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnNuevaCompraActionPerformed
-
-    private void btnResumenToolbarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResumenToolbarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnResumenToolbarActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -295,45 +416,42 @@ public class GroupWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCrearGrupoAccion;
+    private javax.swing.JPanel accionesCard;
     private javax.swing.JButton btnNuevaCompra;
     private javax.swing.JButton btnNuevoGrupo;
-    private javax.swing.JButton btnResumenToolbar;
-    private javax.swing.JButton btnUnirse;
+    private javax.swing.JButton btnResumen;
+    private javax.swing.JSeparator gruposSeparator;
+    private javax.swing.JPanel gruposSidePanel;
+    private javax.swing.JLabel gruposTitle;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPaneTabla;
-    private javax.swing.JScrollPane jScrollPaneTree;
-    private javax.swing.JToolBar.Separator jSeparator1;
-    private javax.swing.JSplitPane jSplitPane1;
-    private javax.swing.JTable jTableGrupos;
-    private javax.swing.JToolBar jToolBar1;
-    private javax.swing.JTree jTreeGrupos;
-    private javax.swing.JLabel lblEstadoGrupos;
-    private javax.swing.JLabel lblEstadoListo;
-    private javax.swing.JLabel lblEstadoLook;
-    private javax.swing.JLabel lblSubtituloGrupos;
-    private javax.swing.JLabel lblTituloGrupos;
-    private javax.swing.JLabel lblUnirseCodigo;
-    private javax.swing.JLabel lblUsuario;
-    private javax.swing.JMenu menuArchivo;
-    private javax.swing.JMenu menuAyuda;
-    private javax.swing.JMenu menuVer;
-    private javax.swing.JPanel panelAcciones;
-    private javax.swing.JPanel panelArbolGrupos;
-    private javax.swing.JPanel panelCabecera;
-    private javax.swing.JPanel panelContenidoCentral;
-    private javax.swing.JPanel panelDerecho;
-    private javax.swing.JPanel panelEstado;
-    private javax.swing.JPanel panelEstadoDerecho;
-    private javax.swing.JPanel panelIzquierdo;
-    private javax.swing.JPanel panelListadoGrupos;
-    private javax.swing.JPanel panelNavegacion;
-    private javax.swing.JTextField txtCodigo;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel lblConectado;
+    private javax.swing.JLabel lblGrupoPiso1;
+    private javax.swing.JButton navGrupos;
+    private javax.swing.JButton navInicio;
+    private javax.swing.JPanel navInicioPanel;
+    private javax.swing.JPanel navPanel;
+    private javax.swing.JButton navPerfil;
+    private javax.swing.JButton navResumen;
+    private javax.swing.JSeparator navSeparator;
+    private javax.swing.JLabel navTitle;
+    private javax.swing.JPanel sidebarPanel;
+    private javax.swing.JLabel statusGrupos;
+    private javax.swing.JPanel toolbarPanel;
+    private javax.swing.JSeparator toolbarSeparator;
     // End of variables declaration//GEN-END:variables
 }
