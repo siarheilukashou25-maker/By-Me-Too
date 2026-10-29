@@ -314,8 +314,13 @@ public class MainView extends javax.swing.JFrame {
         jLabel11.setText("Grupos");
 
         accionesCard3.setBackground(new java.awt.Color(250, 250, 250));
+
         accionesCard3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acciones", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 1, 18))); // NOI18N
+
+        accionesCard3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acciones", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 18))); // NOI18N
+
         accionesCard3.setForeground(new java.awt.Color(26, 32, 44));
+        accionesCard3.setFont(new java.awt.Font("Inter", 0, 18)); // NOI18N
 
         jButton14.setBackground(new java.awt.Color(250, 250, 250));
         jButton14.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -367,8 +372,13 @@ public class MainView extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(250, 250, 250));
+
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Listado de grupos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 1, 18))); // NOI18N
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Listado de grupos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 18))); // NOI18N
+
         jPanel2.setForeground(new java.awt.Color(26, 32, 44));
+        jPanel2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(26, 32, 44));
@@ -537,6 +547,9 @@ public class MainView extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(77, Short.MAX_VALUE))
+
+                .addContainerGap(83, Short.MAX_VALUE))
+
         );
 
         jButton4.setBackground(new java.awt.Color(250, 250, 250));

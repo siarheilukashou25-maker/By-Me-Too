@@ -35,15 +35,139 @@ public class UserView extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
         jPanel1 = new javax.swing.JPanel();
-        sidebarPanel = new javax.swing.JPanel();
-        toolbarPanel1 = new javax.swing.JPanel();
+        sidebarPanel = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
+        toolbarPanel1 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         toolbarSeparator1 = new javax.swing.JSeparator();
         lblConectado1 = new javax.swing.JLabel();
         navGrupos = new javax.swing.JButton();
         navPerfil = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto en origen, gris divisor en destino
+                java.awt.Color colorTopLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorBottomRight = java.awt.Color.decode("#E2E8E5");
+
+                // Gradiente de esquina superior izquierda (0,0) a esquina inferior derecha (w,h)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorTopLeft, w, h, colorBottomRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino neutro
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         lblInicioTitle = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+
+                // Activamos el antialiasing para un acabado suave en los bordes curvos
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Radio de curvatura de las esquinas
+
+                if (w > 0 && h > 0) {
+                    // Colores del gradiente
+                    java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                    java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                    // Rellenar la forma redondeada limpiamente de esquina a esquina
+                    java.awt.geom.RoundRectangle2D shape = new java.awt.geom.RoundRectangle2D.Float(0, 0, w, h, arc, arc);
+                    g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                    g2d.fill(shape);
+                }
+
+                g2d.dispose();
+            }
+        };
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -54,7 +178,38 @@ public class UserView extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         jButton2 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -95,7 +250,6 @@ public class UserView extends javax.swing.JFrame {
         navGrupos.setContentAreaFilled(false);
         navGrupos.setFocusPainted(false);
         navGrupos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        navGrupos.setOpaque(true);
 
         navPerfil.setBackground(new java.awt.Color(250, 250, 250));
         navPerfil.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -146,7 +300,7 @@ public class UserView extends javax.swing.JFrame {
         lblInicioTitle.setText("Perfil");
 
         jPanel3.setBackground(new java.awt.Color(250, 250, 250));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Información del usuario", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Arial", 1, 12))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Información del usuario", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Arial", 1, 18))); // NOI18N
         jPanel3.setForeground(new java.awt.Color(26, 32, 44));
 
         jButton1.setBackground(new java.awt.Color(250, 250, 250));
@@ -250,7 +404,7 @@ public class UserView extends javax.swing.JFrame {
         );
 
         jPanel4.setBackground(new java.awt.Color(250, 250, 250));
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Estadísticas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12))); // NOI18N
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Estadísticas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 18))); // NOI18N
         jPanel4.setForeground(new java.awt.Color(26, 32, 44));
 
         jButton2.setBackground(new java.awt.Color(250, 250, 250));
@@ -322,9 +476,9 @@ public class UserView extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 144, Short.MAX_VALUE)
                 .addComponent(jButton3)
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout sidebarPanelLayout = new javax.swing.GroupLayout(sidebarPanel);
