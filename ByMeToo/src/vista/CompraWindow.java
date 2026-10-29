@@ -23,35 +23,146 @@ public class CompraWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        topNavPanel = new javax.swing.JPanel();
-        btnTopInicio = new javax.swing.JButton();
-        sepTopNav = new javax.swing.JSeparator();
-        btnTopPerfil = new javax.swing.JButton();
-        lblTopUsuario = new javax.swing.JLabel();
-        tabsPanel = new javax.swing.JPanel();
-        btnTabGastos = new javax.swing.JButton();
-        btnTabRepartos = new javax.swing.JButton();
-        btnTabNuevaCompra = new javax.swing.JButton();
-        btnTabResumen = new javax.swing.JButton();
-        btnAjustes = new javax.swing.JButton();
-        footerPanel = new javax.swing.JPanel();
-        btnSalir = new javax.swing.JButton();
-        contentPanel = new javax.swing.JPanel();
-        compraPanel = new javax.swing.JPanel();
-        btnVolver = new javax.swing.JButton();
-        lblCompraTitulo = new javax.swing.JLabel();
-        lblCompraFecha = new javax.swing.JLabel();
-        lblTotalTitulo = new javax.swing.JLabel();
-        lblTotal = new javax.swing.JLabel();
-        lblEstadoCompra = new javax.swing.JLabel();
-        productosCard = new javax.swing.JPanel();
-        scrollProductos = new javax.swing.JScrollPane();
-        tblProductos = new javax.swing.JTable();
-        btnAnadirProducto = new javax.swing.JButton();
-        btnEditarProducto = new javax.swing.JButton();
-        btnEliminarProducto = new javax.swing.JButton();
-        lblTotalProductos = new javax.swing.JLabel();
-        pagadoCard = new javax.swing.JPanel();
+        contentPanel7 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto en origen, gris divisor en destino
+                java.awt.Color colorTopLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorBottomRight = java.awt.Color.decode("#E2E8E5");
+
+                // Gradiente de esquina superior izquierda (0,0) a esquina inferior derecha (w,h)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorTopLeft, w, h, colorBottomRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino neutro
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
+        compraPanel7 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto en origen, gris divisor en destino
+                java.awt.Color colorTopLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorBottomRight = java.awt.Color.decode("#E2E8E5");
+
+                // Gradiente de esquina superior izquierda (0,0) a esquina inferior derecha (w,h)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorTopLeft, w, h, colorBottomRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino neutro
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
+        btnVolver7 = new javax.swing.JButton();
+        lblCompraTitulo7 = new javax.swing.JLabel();
+        lblCompraFecha7 = new javax.swing.JLabel();
+        lblTotalTitulo7 = new javax.swing.JLabel();
+        lblTotal7 = new javax.swing.JLabel();
+        lblEstadoCompra7 = new javax.swing.JLabel();
+        productosCard7 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
+        scrollProductos7 = new javax.swing.JScrollPane();
+        tblProductos7 = new javax.swing.JTable();
+        btnAnadirProducto7 = new javax.swing.JButton();
+        btnEditarProducto7 = new javax.swing.JButton();
+        btnEliminarProducto7 = new javax.swing.JButton();
+        lblTotalProductos7 = new javax.swing.JLabel();
+        pagadoCard = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         lblPagadorBadge = new javax.swing.JLabel();
         lblPagador = new javax.swing.JLabel();
         lblPagadorDetalle = new javax.swing.JLabel();
@@ -66,210 +177,111 @@ public class CompraWindow extends javax.swing.JFrame {
         lblRepartoPendiente = new javax.swing.JLabel();
         btnMarcarPagado = new javax.swing.JButton();
         btnEditarReparto = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        btnResumen = new javax.swing.JButton();
+        btnAjustes = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
+        topNavPanel = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
+        btnTopInicio = new javax.swing.JButton();
+        btnTopPerfil = new javax.swing.JButton();
+        lblTopUsuario = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cómprame! — Detalle de compra");
 
-        topNavPanel.setBackground(new java.awt.Color(236, 237, 237));
-        topNavPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
-        btnTopInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
-
-        btnTopInicio.setText("Inicio");
-
-        btnTopInicio.setBorderPainted(false);
-
-        btnTopInicio.setContentAreaFilled(false);
-
-        btnTopInicio.setFocusPainted(false);
-
-        sepTopNav.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        btnTopPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
-
-        btnTopPerfil.setText("Perfil");
-
-        btnTopPerfil.setBorderPainted(false);
-
-        btnTopPerfil.setContentAreaFilled(false);
-
-        btnTopPerfil.setFocusPainted(false);
-
-        lblTopUsuario.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-
-        lblTopUsuario.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
-
-        javax.swing.GroupLayout topNavPanelLayout = new javax.swing.GroupLayout(topNavPanel);
-        topNavPanel.setLayout(topNavPanelLayout);
-        topNavPanelLayout.setHorizontalGroup(
-            topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(topNavPanelLayout.createSequentialGroup()
-                    .addGap(6, 6, 6)
-                    .addComponent(btnTopInicio)
-                    .addGap(8, 8, 8)
-                    .addComponent(sepTopNav, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(8, 8, 8)
-                    .addComponent(btnTopPerfil)
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(lblTopUsuario)
-                    .addGap(10, 10, 10))
-        );
-        topNavPanelLayout.setVerticalGroup(
-            topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(topNavPanelLayout.createSequentialGroup()
-                    .addGap(2, 2, 2)
-                    .addGroup(topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addComponent(btnTopInicio)
-                        .addComponent(sepTopNav, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnTopPerfil)
-                        .addComponent(lblTopUsuario))
-                    .addGap(2, 2, 2))
-        );
-
-        tabsPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
-        btnTabGastos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-billetes-16.png"))); // NOI18N
-
-        btnTabGastos.setText("Gastos");
-
-        btnTabRepartos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
-
-        btnTabRepartos.setText("Repartos");
-
-        btnTabNuevaCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
-
-        btnTabNuevaCompra.setText("Nueva compra");
-
-        btnTabResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
-
-        btnTabResumen.setText("Resumen");
-
-        btnAjustes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-ajustes-25-2.png"))); // NOI18N
-
-        btnAjustes.setBorderPainted(false);
-
-        btnAjustes.setContentAreaFilled(false);
-
-        btnAjustes.setFocusPainted(false);
-
-        javax.swing.GroupLayout tabsPanelLayout = new javax.swing.GroupLayout(tabsPanel);
-        tabsPanel.setLayout(tabsPanelLayout);
-        tabsPanelLayout.setHorizontalGroup(
-            tabsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(tabsPanelLayout.createSequentialGroup()
-                    .addGap(8, 8, 8)
-                    .addComponent(btnTabGastos)
-                    .addGap(20, 20, 20)
-                    .addComponent(btnTabRepartos)
-                    .addGap(20, 20, 20)
-                    .addComponent(btnTabNuevaCompra)
-                    .addGap(20, 20, 20)
-                    .addComponent(btnTabResumen)
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(btnAjustes, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(6, 6, 6))
-        );
-        tabsPanelLayout.setVerticalGroup(
-            tabsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(tabsPanelLayout.createSequentialGroup()
-                    .addGap(4, 4, 4)
-                    .addGroup(tabsPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addComponent(btnTabGastos)
-                        .addComponent(btnTabRepartos)
-                        .addComponent(btnTabNuevaCompra)
-                        .addComponent(btnTabResumen)
-                        .addComponent(btnAjustes, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(4, 4, 4))
-        );
-
-        footerPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(160, 160, 160)));
-        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
-
-        btnSalir.setText("Salir");
-
-        javax.swing.GroupLayout footerPanelLayout = new javax.swing.GroupLayout(footerPanel);
-        footerPanel.setLayout(footerPanelLayout);
-        footerPanelLayout.setHorizontalGroup(
-            footerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(footerPanelLayout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(btnSalir)
-                    .addGap(8, 8, 8))
-        );
-        footerPanelLayout.setVerticalGroup(
-            footerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(footerPanelLayout.createSequentialGroup()
-                    .addGap(4, 4, 4)
-                    .addComponent(btnSalir)
-                    .addGap(4, 4, 4))
-        );
-
-        compraPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        compraPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(200, 200, 200)));
-
-        btnVolver.setText("←  Volver");
-
-
-        lblCompraTitulo.setFont(lblCompraTitulo.getFont().deriveFont(lblCompraTitulo.getFont().getStyle() | java.awt.Font.BOLD, lblCompraTitulo.getFont().getSize()+8));
-
-
-        lblCompraTitulo.setText("Mercadona");
-
-
-        lblCompraFecha.setForeground(new java.awt.Color(110, 110, 110));
-
-
-        lblCompraFecha.setText("23 de octubre de 2026  ·  Piso 1");
-
-
-        lblTotalTitulo.setForeground(new java.awt.Color(110, 110, 110));
-
-
-        lblTotalTitulo.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-
-
-        lblTotalTitulo.setText("Total");
-
-
-        lblTotal.setFont(lblTotal.getFont().deriveFont(lblTotal.getFont().getStyle() | java.awt.Font.BOLD, lblTotal.getFont().getSize()+8));
-
-
-        lblTotal.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-
-
-        lblTotal.setText("34,60 €");
-
-
-        lblEstadoCompra.setForeground(new java.awt.Color(180, 105, 20));
-
-
-        lblEstadoCompra.setFont(lblEstadoCompra.getFont().deriveFont(lblEstadoCompra.getFont().getStyle() | java.awt.Font.BOLD));
-
-
-        lblEstadoCompra.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-
-        lblEstadoCompra.setText("Pendiente");
-
-
-        lblEstadoCompra.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(180, 105, 20)), javax.swing.BorderFactory.createEmptyBorder(3, 10, 3, 10)));
-
-
-        productosCard.setOpaque(false);
-
-
-        productosCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Productos"));
-
-
-        tblProductos.setModel(new javax.swing.table.DefaultTableModel(
+        contentPanel7.setBackground(new java.awt.Color(250, 250, 250));
+        contentPanel7.setForeground(new java.awt.Color(26, 32, 44));
+
+        compraPanel7.setBackground(new java.awt.Color(250, 250, 250));
+        compraPanel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(200, 200, 200)));
+        compraPanel7.setForeground(new java.awt.Color(26, 32, 44));
+
+        btnVolver7.setBackground(new java.awt.Color(250, 250, 250));
+        btnVolver7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnVolver7.setForeground(new java.awt.Color(26, 32, 44));
+        btnVolver7.setText("←  Volver");
+
+        lblCompraTitulo7.setBackground(new java.awt.Color(250, 250, 250));
+        lblCompraTitulo7.setFont(new java.awt.Font("Inter", 1, 21)); // NOI18N
+        lblCompraTitulo7.setForeground(new java.awt.Color(26, 32, 44));
+        lblCompraTitulo7.setText("Mercadona");
+
+        lblCompraFecha7.setBackground(new java.awt.Color(250, 250, 250));
+        lblCompraFecha7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblCompraFecha7.setForeground(new java.awt.Color(26, 32, 44));
+        lblCompraFecha7.setText("23 de octubre de 2026  ·  Piso 1");
+
+        lblTotalTitulo7.setBackground(new java.awt.Color(250, 250, 250));
+        lblTotalTitulo7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblTotalTitulo7.setForeground(new java.awt.Color(26, 32, 44));
+        lblTotalTitulo7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblTotalTitulo7.setText("Total");
+
+        lblTotal7.setBackground(new java.awt.Color(250, 250, 250));
+        lblTotal7.setFont(new java.awt.Font("Inter", 1, 21)); // NOI18N
+        lblTotal7.setForeground(new java.awt.Color(26, 32, 44));
+        lblTotal7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblTotal7.setText("34,60 €");
+
+        lblEstadoCompra7.setBackground(new java.awt.Color(250, 250, 250));
+        lblEstadoCompra7.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
+        lblEstadoCompra7.setForeground(new java.awt.Color(26, 32, 44));
+        lblEstadoCompra7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblEstadoCompra7.setText("Pendiente");
+        lblEstadoCompra7.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(180, 105, 20)), javax.swing.BorderFactory.createEmptyBorder(3, 10, 3, 10)));
+
+        productosCard7.setBackground(new java.awt.Color(250, 250, 250));
+        productosCard7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Productos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 18))); // NOI18N
+        productosCard7.setForeground(new java.awt.Color(26, 32, 44));
+        productosCard7.setOpaque(false);
+
+        scrollProductos7.setBackground(new java.awt.Color(250, 250, 250));
+        scrollProductos7.setForeground(new java.awt.Color(26, 32, 44));
+
+        tblProductos7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        tblProductos7.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"Leche entera", Integer.valueOf(6), "0,95 €", "5,70 €"},
-                {"Pan de molde", Integer.valueOf(2), "1,35 €", "2,70 €"},
-                {"Huevos (docena)", Integer.valueOf(1), "2,40 €", "2,40 €"},
-                {"Pechugas de pollo", Integer.valueOf(1), "6,85 €", "6,85 €"},
-                {"Arroz 1 kg", Integer.valueOf(2), "1,15 €", "2,30 €"},
-                {"Tomates 1 kg", Integer.valueOf(1), "1,99 €", "1,99 €"},
-                {"Aceite de oliva 1 L", Integer.valueOf(1), "8,95 €", "8,95 €"},
-                {"Papel higiénico", Integer.valueOf(1), "3,71 €", "3,71 €"}
+                {"Leche entera",  new Integer(6), "0,95 €", "5,70 €"},
+                {"Pan de molde",  new Integer(2), "1,35 €", "2,70 €"},
+                {"Huevos (docena)",  new Integer(1), "2,40 €", "2,40 €"},
+                {"Pechugas de pollo",  new Integer(1), "6,85 €", "6,85 €"},
+                {"Arroz 1 kg",  new Integer(2), "1,15 €", "2,30 €"},
+                {"Tomates 1 kg",  new Integer(1), "1,99 €", "1,99 €"},
+                {"Aceite de oliva 1 L",  new Integer(1), "8,95 €", "8,95 €"},
+                {"Papel higiénico",  new Integer(1), "3,71 €", "3,71 €"}
             },
             new String [] {
                 "Producto", "Cant.", "Precio", "Subtotal"
@@ -290,231 +302,177 @@ public class CompraWindow extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-
-
-
-
-        tblProductos.setRowHeight(24);
-
-
-
-
-        tblProductos.setFillsViewportHeight(true);
-
-
-
-
-        scrollProductos.setViewportView(tblProductos);
-
-
-
-        if (tblProductos.getColumnModel().getColumnCount() > 0) {
-            tblProductos.getColumnModel().getColumn(0).setPreferredWidth(260);
-            tblProductos.getColumnModel().getColumn(1).setPreferredWidth(50);
-            tblProductos.getColumnModel().getColumn(2).setPreferredWidth(80);
-            tblProductos.getColumnModel().getColumn(3).setPreferredWidth(90);
+        tblProductos7.setFillsViewportHeight(true);
+        tblProductos7.setRowHeight(24);
+        scrollProductos7.setViewportView(tblProductos7);
+        if (tblProductos7.getColumnModel().getColumnCount() > 0) {
+            tblProductos7.getColumnModel().getColumn(0).setPreferredWidth(260);
+            tblProductos7.getColumnModel().getColumn(1).setPreferredWidth(50);
+            tblProductos7.getColumnModel().getColumn(2).setPreferredWidth(80);
+            tblProductos7.getColumnModel().getColumn(3).setPreferredWidth(90);
         }
 
+        btnAnadirProducto7.setBackground(new java.awt.Color(250, 250, 250));
+        btnAnadirProducto7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnAnadirProducto7.setForeground(new java.awt.Color(26, 32, 44));
+        btnAnadirProducto7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/plus.png"))); // NOI18N
+        btnAnadirProducto7.setText("Añadir");
 
+        btnEditarProducto7.setBackground(new java.awt.Color(250, 250, 250));
+        btnEditarProducto7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnEditarProducto7.setForeground(new java.awt.Color(26, 32, 44));
+        btnEditarProducto7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
+        btnEditarProducto7.setText("Editar");
 
-        btnAnadirProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/plus.png"))); // NOI18N
+        btnEliminarProducto7.setBackground(new java.awt.Color(250, 250, 250));
+        btnEliminarProducto7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnEliminarProducto7.setForeground(new java.awt.Color(26, 32, 44));
+        btnEliminarProducto7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
+        btnEliminarProducto7.setText("Eliminar");
+        btnEliminarProducto7.addActionListener(this::btnEliminarProductoActionPerformed);
 
+        lblTotalProductos7.setBackground(new java.awt.Color(250, 250, 250));
+        lblTotalProductos7.setFont(new java.awt.Font("Inter", 1, 15)); // NOI18N
+        lblTotalProductos7.setForeground(new java.awt.Color(26, 32, 44));
+        lblTotalProductos7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblTotalProductos7.setText("Total: 34,60 €");
 
-
-        btnAnadirProducto.setText("Añadir");
-
-
-
-        btnEditarProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
-
-
-
-        btnEditarProducto.setText("Editar");
-
-
-
-        btnEliminarProducto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
-
-
-
-        btnEliminarProducto.setText("Eliminar");
-
-
-
-        lblTotalProductos.setFont(lblTotalProductos.getFont().deriveFont(lblTotalProductos.getFont().getStyle() | java.awt.Font.BOLD, lblTotalProductos.getFont().getSize()+2));
-
-
-
-        lblTotalProductos.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-
-
-
-        lblTotalProductos.setText("Total: 34,60 €");
-
-
-
-        javax.swing.GroupLayout productosCardLayout = new javax.swing.GroupLayout(productosCard);
-        productosCard.setLayout(productosCardLayout);
-
-
-        productosCardLayout.setHorizontalGroup(
-            productosCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(productosCardLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addGroup(productosCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(scrollProductos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(productosCardLayout.createSequentialGroup()
-                            .addComponent(btnAnadirProducto)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnEditarProducto)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnEliminarProducto)
-                            .addGap(0, 0, Short.MAX_VALUE)
-                            .addComponent(lblTotalProductos)))
-                    .addContainerGap())
+        javax.swing.GroupLayout productosCard7Layout = new javax.swing.GroupLayout(productosCard7);
+        productosCard7.setLayout(productosCard7Layout);
+        productosCard7Layout.setHorizontalGroup(
+            productosCard7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(productosCard7Layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addGroup(productosCard7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(scrollProductos7, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE)
+                    .addGroup(productosCard7Layout.createSequentialGroup()
+                        .addComponent(btnAnadirProducto7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEditarProducto7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEliminarProducto7)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lblTotalProductos7)))
+                .addContainerGap())
+        );
+        productosCard7Layout.setVerticalGroup(
+            productosCard7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(productosCard7Layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(scrollProductos7, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(218, 218, 218)
+                .addGroup(productosCard7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnAnadirProducto7)
+                    .addComponent(btnEditarProducto7)
+                    .addComponent(btnEliminarProducto7)
+                    .addComponent(lblTotalProductos7))
+                .addContainerGap())
         );
 
-
-        productosCardLayout.setVerticalGroup(
-            productosCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(productosCardLayout.createSequentialGroup()
-                    .addGap(2, 2, 2)
-                    .addComponent(scrollProductos, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
-                    .addGap(10, 10, 10)
-                    .addGroup(productosCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnAnadirProducto)
-                        .addComponent(btnEditarProducto)
-                        .addComponent(btnEliminarProducto)
-                        .addComponent(lblTotalProductos))
-                    .addContainerGap())
-        );
-
-
+        pagadoCard.setBackground(new java.awt.Color(250, 250, 250));
+        pagadoCard.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Pagado por", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 18))); // NOI18N
+        pagadoCard.setForeground(new java.awt.Color(26, 32, 44));
         pagadoCard.setOpaque(false);
 
-
-        pagadoCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Pagado por"));
-
-
-        lblPagadorBadge.setFont(lblPagadorBadge.getFont().deriveFont(lblPagadorBadge.getFont().getStyle() | java.awt.Font.BOLD));
-
-
-
+        lblPagadorBadge.setBackground(new java.awt.Color(250, 250, 250));
+        lblPagadorBadge.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
+        lblPagadorBadge.setForeground(new java.awt.Color(26, 32, 44));
         lblPagadorBadge.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-
-
         lblPagadorBadge.setText("S");
-
-
-
         lblPagadorBadge.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
 
-
-
-        lblPagador.setFont(lblPagador.getFont().deriveFont(lblPagador.getFont().getStyle() | java.awt.Font.BOLD));
-
-
-
+        lblPagador.setBackground(new java.awt.Color(250, 250, 250));
+        lblPagador.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
+        lblPagador.setForeground(new java.awt.Color(26, 32, 44));
         lblPagador.setText("SIARHEI LUKASHOU");
 
-
-
-        lblPagadorDetalle.setForeground(new java.awt.Color(110, 110, 110));
-
-
-
-        lblPagadorDetalle.setFont(lblPagadorDetalle.getFont().deriveFont(lblPagadorDetalle.getFont().getSize()-1f));
-
-
-
+        lblPagadorDetalle.setBackground(new java.awt.Color(250, 250, 250));
+        lblPagadorDetalle.setFont(new java.awt.Font("Inter", 0, 12)); // NOI18N
+        lblPagadorDetalle.setForeground(new java.awt.Color(26, 32, 44));
         lblPagadorDetalle.setText("Pagó 34,60 € el 23/10/2026");
 
+        sepPagado.setBackground(new java.awt.Color(250, 250, 250));
+        sepPagado.setForeground(new java.awt.Color(26, 32, 44));
 
-
+        lblReasignar.setBackground(new java.awt.Color(250, 250, 250));
+        lblReasignar.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblReasignar.setForeground(new java.awt.Color(26, 32, 44));
         lblReasignar.setText("Reasignar pago a:");
 
-
-
+        cmbReasignar.setBackground(new java.awt.Color(250, 250, 250));
+        cmbReasignar.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        cmbReasignar.setForeground(new java.awt.Color(26, 32, 44));
         cmbReasignar.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SIARHEI LUKASHOU", "Pablo", "Elias", "Roberto" }));
 
-
-
+        btnReasignar.setBackground(new java.awt.Color(250, 250, 250));
+        btnReasignar.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnReasignar.setForeground(new java.awt.Color(26, 32, 44));
         btnReasignar.setText("Reasignar");
-
-
 
         javax.swing.GroupLayout pagadoCardLayout = new javax.swing.GroupLayout(pagadoCard);
         pagadoCard.setLayout(pagadoCardLayout);
-
-
         pagadoCardLayout.setHorizontalGroup(
             pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pagadoCardLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(pagadoCardLayout.createSequentialGroup()
-                            .addComponent(lblPagadorBadge, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(10, 10, 10)
-                            .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblPagador)
-                                .addComponent(lblPagadorDetalle)))
-                        .addComponent(sepPagado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblReasignar)
-                        .addGroup(pagadoCardLayout.createSequentialGroup()
-                            .addComponent(cmbReasignar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnReasignar)))
-                    .addContainerGap())
+            .addGroup(pagadoCardLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pagadoCardLayout.createSequentialGroup()
+                        .addComponent(lblPagadorBadge, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblPagador)
+                            .addComponent(lblPagadorDetalle)))
+                    .addComponent(sepPagado)
+                    .addComponent(lblReasignar)
+                    .addGroup(pagadoCardLayout.createSequentialGroup()
+                        .addComponent(cmbReasignar, 0, 210, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnReasignar)))
+                .addContainerGap())
         );
-
-
         pagadoCardLayout.setVerticalGroup(
             pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(pagadoCardLayout.createSequentialGroup()
-                    .addGap(4, 4, 4)
-                    .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addComponent(lblPagadorBadge, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(pagadoCardLayout.createSequentialGroup()
-                            .addComponent(lblPagador)
-                            .addGap(2, 2, 2)
-                            .addComponent(lblPagadorDetalle)))
-                    .addGap(10, 10, 10)
-                    .addComponent(sepPagado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(8, 8, 8)
-                    .addComponent(lblReasignar)
-                    .addGap(4, 4, 4)
-                    .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addComponent(cmbReasignar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnReasignar))
-                    .addContainerGap())
+            .addGroup(pagadoCardLayout.createSequentialGroup()
+                .addGap(4, 4, 4)
+                .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lblPagadorBadge, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(pagadoCardLayout.createSequentialGroup()
+                        .addComponent(lblPagador)
+                        .addGap(2, 2, 2)
+                        .addComponent(lblPagadorDetalle)))
+                .addGap(10, 10, 10)
+                .addComponent(sepPagado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(lblReasignar)
+                .addGap(4, 4, 4)
+                .addGroup(pagadoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(cmbReasignar, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnReasignar))
+                .addContainerGap())
         );
 
-
+        repartoCard.setBackground(new java.awt.Color(250, 250, 250));
+        repartoCard.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Reparto", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 18))); // NOI18N
+        repartoCard.setForeground(new java.awt.Color(26, 32, 44));
         repartoCard.setOpaque(false);
 
-
-        repartoCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Reparto"));
-
-
-        lblRepartoModo.setForeground(new java.awt.Color(110, 110, 110));
-
-
-
-        lblRepartoModo.setFont(lblRepartoModo.getFont().deriveFont(lblRepartoModo.getFont().getSize()-1f));
-
-
-
+        lblRepartoModo.setBackground(new java.awt.Color(250, 250, 250));
+        lblRepartoModo.setFont(new java.awt.Font("Inter", 0, 12)); // NOI18N
+        lblRepartoModo.setForeground(new java.awt.Color(26, 32, 44));
         lblRepartoModo.setText("A partes iguales · 4 personas");
 
+        scrollReparto.setBackground(new java.awt.Color(250, 250, 250));
+        scrollReparto.setForeground(new java.awt.Color(26, 32, 44));
 
-
+        tblReparto.setBackground(new java.awt.Color(250, 250, 250));
+        tblReparto.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        tblReparto.setForeground(new java.awt.Color(26, 32, 44));
         tblReparto.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {Boolean.valueOf(true), "SIARHEI LUKASHOU", "8,65 €", "Pagador"},
-                {Boolean.valueOf(true), "Pablo", "8,65 €", "Pagado"},
-                {Boolean.valueOf(true), "Elias", "8,65 €", "Pendiente"},
-                {Boolean.valueOf(true), "Roberto", "8,65 €", "Pendiente"}
+                { new Boolean(true), "SIARHEI LUKASHOU", "8,65 €", "Pagador"},
+                { new Boolean(true), "Pablo", "8,65 €", "Pagado"},
+                { new Boolean(true), "Elias", "8,65 €", "Pendiente"},
+                { new Boolean(true), "Roberto", "8,65 €", "Pendiente"}
             },
             new String [] {
                 "", "Miembro", "Parte", "Estado"
@@ -535,24 +493,9 @@ public class CompraWindow extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-
-
-
-
-        tblReparto.setRowHeight(24);
-
-
-
-
         tblReparto.setFillsViewportHeight(true);
-
-
-
-
+        tblReparto.setRowHeight(24);
         scrollReparto.setViewportView(tblReparto);
-
-
-
         if (tblReparto.getColumnModel().getColumnCount() > 0) {
             tblReparto.getColumnModel().getColumn(0).setPreferredWidth(24);
             tblReparto.getColumnModel().getColumn(1).setPreferredWidth(120);
@@ -560,162 +503,262 @@ public class CompraWindow extends javax.swing.JFrame {
             tblReparto.getColumnModel().getColumn(3).setPreferredWidth(80);
         }
 
-
-
-        lblRepartoPendiente.setFont(lblRepartoPendiente.getFont().deriveFont(lblRepartoPendiente.getFont().getStyle() | java.awt.Font.BOLD));
-
-
-
+        lblRepartoPendiente.setBackground(new java.awt.Color(250, 250, 250));
+        lblRepartoPendiente.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
+        lblRepartoPendiente.setForeground(new java.awt.Color(26, 32, 44));
         lblRepartoPendiente.setText("Pendiente de cobrar: 17,30 €");
 
-
-
+        btnMarcarPagado.setBackground(new java.awt.Color(250, 250, 250));
+        btnMarcarPagado.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnMarcarPagado.setForeground(new java.awt.Color(26, 32, 44));
         btnMarcarPagado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/check.png"))); // NOI18N
-
-
-
         btnMarcarPagado.setText("Marcar pagado");
 
-
-
+        btnEditarReparto.setBackground(new java.awt.Color(250, 250, 250));
+        btnEditarReparto.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnEditarReparto.setForeground(new java.awt.Color(26, 32, 44));
         btnEditarReparto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
-
-
-
         btnEditarReparto.setText("Editar reparto");
-
-
 
         javax.swing.GroupLayout repartoCardLayout = new javax.swing.GroupLayout(repartoCard);
         repartoCard.setLayout(repartoCardLayout);
-
-
         repartoCardLayout.setHorizontalGroup(
             repartoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(repartoCardLayout.createSequentialGroup()
-                    .addContainerGap()
-                    .addGroup(repartoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblRepartoModo)
-                        .addComponent(scrollReparto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblRepartoPendiente)
-                        .addGroup(repartoCardLayout.createSequentialGroup()
-                            .addComponent(btnMarcarPagado)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(btnEditarReparto)))
-                    .addContainerGap())
+            .addGroup(repartoCardLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(repartoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblRepartoModo)
+                    .addComponent(scrollReparto, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+                    .addComponent(lblRepartoPendiente)
+                    .addGroup(repartoCardLayout.createSequentialGroup()
+                        .addComponent(btnMarcarPagado)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnEditarReparto)))
+                .addContainerGap())
         );
-
-
         repartoCardLayout.setVerticalGroup(
             repartoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(repartoCardLayout.createSequentialGroup()
-                    .addGap(2, 2, 2)
-                    .addComponent(lblRepartoModo)
-                    .addGap(6, 6, 6)
-                    .addComponent(scrollReparto, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(8, 8, 8)
-                    .addComponent(lblRepartoPendiente)
-                    .addGap(10, 10, 10)
-                    .addGroup(repartoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnMarcarPagado)
-                        .addComponent(btnEditarReparto))
-                    .addContainerGap())
+            .addGroup(repartoCardLayout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addComponent(lblRepartoModo)
+                .addGap(6, 6, 6)
+                .addComponent(scrollReparto, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(8, 8, 8)
+                .addComponent(lblRepartoPendiente)
+                .addGap(10, 10, 10)
+                .addGroup(repartoCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnMarcarPagado)
+                    .addComponent(btnEditarReparto))
+                .addContainerGap())
         );
 
+        jButton5.setBackground(new java.awt.Color(250, 250, 250));
+        jButton5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(26, 32, 44));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-billetes-16.png"))); // NOI18N
+        jButton5.setText("Gastos");
 
-        javax.swing.GroupLayout compraPanelLayout = new javax.swing.GroupLayout(compraPanel);
-        compraPanel.setLayout(compraPanelLayout);
+        jButton4.setBackground(new java.awt.Color(250, 250, 250));
+        jButton4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(26, 32, 44));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
+        jButton4.setText("Nueva compra");
+        jButton4.addActionListener(this::jButton4ActionPerformed);
 
-        compraPanelLayout.setHorizontalGroup(
-            compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(compraPanelLayout.createSequentialGroup()
-                    .addGap(16, 16, 16)
-                    .addGroup(compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(compraPanelLayout.createSequentialGroup()
-                            .addComponent(btnVolver)
-                            .addGap(16, 16, 16)
-                            .addGroup(compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(lblCompraTitulo)
-                                .addComponent(lblCompraFecha))
-                            .addGap(0, 0, Short.MAX_VALUE)
-                            .addGroup(compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(lblTotalTitulo)
-                                .addComponent(lblTotal))
-                            .addGap(14, 14, 14)
-                            .addComponent(lblEstadoCompra))
-                        .addGroup(compraPanelLayout.createSequentialGroup()
-                            .addComponent(productosCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGap(12, 12, 12)
-                            .addGroup(compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(pagadoCard, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(repartoCard, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGap(16, 16, 16))
+        jButton3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(26, 32, 44));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jButton3.setText("Repartos");
+
+        btnResumen.setBackground(new java.awt.Color(250, 250, 250));
+        btnResumen.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnResumen.setForeground(new java.awt.Color(26, 32, 44));
+        btnResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
+        btnResumen.setText("Resumen");
+
+        btnAjustes.setBackground(new java.awt.Color(250, 250, 250));
+        btnAjustes.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnAjustes.setForeground(new java.awt.Color(26, 32, 44));
+        btnAjustes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-ajustes-25-2.png"))); // NOI18N
+        btnAjustes.setBorderPainted(false);
+        btnAjustes.setContentAreaFilled(false);
+        btnAjustes.setFocusPainted(false);
+
+        btnSalir.setBackground(new java.awt.Color(250, 250, 250));
+        btnSalir.setForeground(new java.awt.Color(26, 32, 44));
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
+        btnSalir.setText("Salir");
+
+        javax.swing.GroupLayout compraPanel7Layout = new javax.swing.GroupLayout(compraPanel7);
+        compraPanel7.setLayout(compraPanel7Layout);
+        compraPanel7Layout.setHorizontalGroup(
+            compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(compraPanel7Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(compraPanel7Layout.createSequentialGroup()
+                        .addComponent(btnVolver7)
+                        .addGap(16, 16, 16)
+                        .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblCompraTitulo7)
+                            .addComponent(lblCompraFecha7))
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblTotalTitulo7)
+                            .addComponent(lblTotal7))
+                        .addGap(14, 14, 14)
+                        .addComponent(lblEstadoCompra7)
+                        .addGap(16, 16, 16))
+                    .addGroup(compraPanel7Layout.createSequentialGroup()
+                        .addComponent(productosCard7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(compraPanel7Layout.createSequentialGroup()
+                                .addGap(12, 12, 12)
+                                .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(pagadoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(repartoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(compraPanel7Layout.createSequentialGroup()
+                                .addGap(276, 276, 276)
+                                .addComponent(btnSalir)))
+                        .addGap(6, 6, 6))))
+            .addGroup(compraPanel7Layout.createSequentialGroup()
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jButton3)
+                .addGap(0, 0, 0)
+                .addComponent(jButton4)
+                .addGap(0, 0, 0)
+                .addComponent(btnResumen)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnAjustes, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        compraPanel7Layout.setVerticalGroup(
+            compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(compraPanel7Layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnAjustes, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(btnVolver7)
+                    .addGroup(compraPanel7Layout.createSequentialGroup()
+                        .addComponent(lblCompraTitulo7)
+                        .addGap(0, 0, 0)
+                        .addComponent(lblCompraFecha7))
+                    .addGroup(compraPanel7Layout.createSequentialGroup()
+                        .addComponent(lblTotalTitulo7)
+                        .addGap(0, 0, 0)
+                        .addComponent(lblTotal7))
+                    .addComponent(lblEstadoCompra7))
+                .addGap(14, 14, 14)
+                .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(productosCard7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(compraPanel7Layout.createSequentialGroup()
+                        .addComponent(pagadoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12)
+                        .addComponent(repartoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(130, 130, 130)
+                        .addComponent(btnSalir)
+                        .addContainerGap())))
         );
 
-        compraPanelLayout.setVerticalGroup(
-            compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(compraPanelLayout.createSequentialGroup()
-                    .addGap(14, 14, 14)
-                    .addGroup(compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addComponent(btnVolver)
-                        .addGroup(compraPanelLayout.createSequentialGroup()
-                            .addComponent(lblCompraTitulo)
-                            .addComponent(lblCompraFecha))
-                        .addGroup(compraPanelLayout.createSequentialGroup()
-                            .addComponent(lblTotalTitulo)
-                            .addComponent(lblTotal))
-                        .addComponent(lblEstadoCompra))
-                    .addGap(14, 14, 14)
-                    .addGroup(compraPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(productosCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(compraPanelLayout.createSequentialGroup()
-                            .addComponent(pagadoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(12, 12, 12)
-                            .addComponent(repartoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, Short.MAX_VALUE)))
-                    .addGap(16, 16, 16))
+        javax.swing.GroupLayout contentPanel7Layout = new javax.swing.GroupLayout(contentPanel7);
+        contentPanel7.setLayout(contentPanel7Layout);
+        contentPanel7Layout.setHorizontalGroup(
+            contentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(contentPanel7Layout.createSequentialGroup()
+                .addGap(0, 0, 0)
+                .addComponent(compraPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        contentPanel7Layout.setVerticalGroup(
+            contentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(contentPanel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(compraPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
-        javax.swing.GroupLayout contentPanelLayout = new javax.swing.GroupLayout(contentPanel);
-        contentPanel.setLayout(contentPanelLayout);
-        contentPanelLayout.setHorizontalGroup(
-            contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(contentPanelLayout.createSequentialGroup()
-                    .addGap(40, 40, 40)
-                    .addComponent(compraPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGap(40, 40, 40))
+        topNavPanel.setBackground(new java.awt.Color(236, 237, 237));
+        topNavPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
+
+        btnTopInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
+        btnTopInicio.setText("Inicio");
+        btnTopInicio.setBorderPainted(false);
+        btnTopInicio.setContentAreaFilled(false);
+        btnTopInicio.setFocusPainted(false);
+
+        btnTopPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
+        btnTopPerfil.setText("Perfil");
+        btnTopPerfil.setBorderPainted(false);
+        btnTopPerfil.setContentAreaFilled(false);
+        btnTopPerfil.setFocusPainted(false);
+
+        lblTopUsuario.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblTopUsuario.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
+
+        javax.swing.GroupLayout topNavPanelLayout = new javax.swing.GroupLayout(topNavPanel);
+        topNavPanel.setLayout(topNavPanelLayout);
+        topNavPanelLayout.setHorizontalGroup(
+            topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(topNavPanelLayout.createSequentialGroup()
+                .addGap(6, 6, 6)
+                .addComponent(btnTopInicio)
+                .addGap(18, 18, 18)
+                .addComponent(btnTopPerfil)
+                .addGap(0, 303, Short.MAX_VALUE)
+                .addComponent(lblTopUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 536, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addGap(10, 10, 10))
         );
-        contentPanelLayout.setVerticalGroup(
-            contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(contentPanelLayout.createSequentialGroup()
-                    .addGap(12, 12, 12)
-                    .addComponent(compraPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGap(12, 12, 12))
+        topNavPanelLayout.setVerticalGroup(
+            topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(topNavPanelLayout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addGroup(topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(btnTopInicio)
+                    .addComponent(btnTopPerfil)
+                    .addComponent(lblTopUsuario))
+                .addGap(2, 2, 2))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(topNavPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(tabsPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(footerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(topNavPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addComponent(contentPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(topNavPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addComponent(topNavPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(tabsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(footerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGap(29, 29, 29)
+                    .addComponent(contentPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        setSize(new java.awt.Dimension(1024, 768));
+        setSize(new java.awt.Dimension(1024, 744));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProductoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarProductoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -726,17 +769,7 @@ public class CompraWindow extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new CompraWindow().setVisible(true));
@@ -745,26 +778,88 @@ public class CompraWindow extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAjustes;
     private javax.swing.JButton btnAnadirProducto;
+    private javax.swing.JButton btnAnadirProducto1;
+    private javax.swing.JButton btnAnadirProducto2;
+    private javax.swing.JButton btnAnadirProducto3;
+    private javax.swing.JButton btnAnadirProducto4;
+    private javax.swing.JButton btnAnadirProducto5;
+    private javax.swing.JButton btnAnadirProducto6;
+    private javax.swing.JButton btnAnadirProducto7;
     private javax.swing.JButton btnEditarProducto;
+    private javax.swing.JButton btnEditarProducto1;
+    private javax.swing.JButton btnEditarProducto2;
+    private javax.swing.JButton btnEditarProducto3;
+    private javax.swing.JButton btnEditarProducto4;
+    private javax.swing.JButton btnEditarProducto5;
+    private javax.swing.JButton btnEditarProducto6;
+    private javax.swing.JButton btnEditarProducto7;
     private javax.swing.JButton btnEditarReparto;
     private javax.swing.JButton btnEliminarProducto;
+    private javax.swing.JButton btnEliminarProducto1;
+    private javax.swing.JButton btnEliminarProducto2;
+    private javax.swing.JButton btnEliminarProducto3;
+    private javax.swing.JButton btnEliminarProducto4;
+    private javax.swing.JButton btnEliminarProducto5;
+    private javax.swing.JButton btnEliminarProducto6;
+    private javax.swing.JButton btnEliminarProducto7;
     private javax.swing.JButton btnMarcarPagado;
     private javax.swing.JButton btnReasignar;
+    private javax.swing.JButton btnResumen;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JButton btnTabGastos;
-    private javax.swing.JButton btnTabNuevaCompra;
-    private javax.swing.JButton btnTabRepartos;
-    private javax.swing.JButton btnTabResumen;
     private javax.swing.JButton btnTopInicio;
     private javax.swing.JButton btnTopPerfil;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JButton btnVolver1;
+    private javax.swing.JButton btnVolver2;
+    private javax.swing.JButton btnVolver3;
+    private javax.swing.JButton btnVolver4;
+    private javax.swing.JButton btnVolver5;
+    private javax.swing.JButton btnVolver6;
+    private javax.swing.JButton btnVolver7;
     private javax.swing.JComboBox<String> cmbReasignar;
     private javax.swing.JPanel compraPanel;
+    private javax.swing.JPanel compraPanel1;
+    private javax.swing.JPanel compraPanel2;
+    private javax.swing.JPanel compraPanel3;
+    private javax.swing.JPanel compraPanel4;
+    private javax.swing.JPanel compraPanel5;
+    private javax.swing.JPanel compraPanel6;
+    private javax.swing.JPanel compraPanel7;
     private javax.swing.JPanel contentPanel;
-    private javax.swing.JPanel footerPanel;
+    private javax.swing.JPanel contentPanel1;
+    private javax.swing.JPanel contentPanel2;
+    private javax.swing.JPanel contentPanel3;
+    private javax.swing.JPanel contentPanel4;
+    private javax.swing.JPanel contentPanel5;
+    private javax.swing.JPanel contentPanel6;
+    private javax.swing.JPanel contentPanel7;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel lblCompraFecha;
+    private javax.swing.JLabel lblCompraFecha1;
+    private javax.swing.JLabel lblCompraFecha2;
+    private javax.swing.JLabel lblCompraFecha3;
+    private javax.swing.JLabel lblCompraFecha4;
+    private javax.swing.JLabel lblCompraFecha5;
+    private javax.swing.JLabel lblCompraFecha6;
+    private javax.swing.JLabel lblCompraFecha7;
     private javax.swing.JLabel lblCompraTitulo;
+    private javax.swing.JLabel lblCompraTitulo1;
+    private javax.swing.JLabel lblCompraTitulo2;
+    private javax.swing.JLabel lblCompraTitulo3;
+    private javax.swing.JLabel lblCompraTitulo4;
+    private javax.swing.JLabel lblCompraTitulo5;
+    private javax.swing.JLabel lblCompraTitulo6;
+    private javax.swing.JLabel lblCompraTitulo7;
     private javax.swing.JLabel lblEstadoCompra;
+    private javax.swing.JLabel lblEstadoCompra1;
+    private javax.swing.JLabel lblEstadoCompra2;
+    private javax.swing.JLabel lblEstadoCompra3;
+    private javax.swing.JLabel lblEstadoCompra4;
+    private javax.swing.JLabel lblEstadoCompra5;
+    private javax.swing.JLabel lblEstadoCompra6;
+    private javax.swing.JLabel lblEstadoCompra7;
     private javax.swing.JLabel lblPagador;
     private javax.swing.JLabel lblPagadorBadge;
     private javax.swing.JLabel lblPagadorDetalle;
@@ -773,17 +868,57 @@ public class CompraWindow extends javax.swing.JFrame {
     private javax.swing.JLabel lblRepartoPendiente;
     private javax.swing.JLabel lblTopUsuario;
     private javax.swing.JLabel lblTotal;
+    private javax.swing.JLabel lblTotal1;
+    private javax.swing.JLabel lblTotal2;
+    private javax.swing.JLabel lblTotal3;
+    private javax.swing.JLabel lblTotal4;
+    private javax.swing.JLabel lblTotal5;
+    private javax.swing.JLabel lblTotal6;
+    private javax.swing.JLabel lblTotal7;
     private javax.swing.JLabel lblTotalProductos;
+    private javax.swing.JLabel lblTotalProductos1;
+    private javax.swing.JLabel lblTotalProductos2;
+    private javax.swing.JLabel lblTotalProductos3;
+    private javax.swing.JLabel lblTotalProductos4;
+    private javax.swing.JLabel lblTotalProductos5;
+    private javax.swing.JLabel lblTotalProductos6;
+    private javax.swing.JLabel lblTotalProductos7;
     private javax.swing.JLabel lblTotalTitulo;
+    private javax.swing.JLabel lblTotalTitulo1;
+    private javax.swing.JLabel lblTotalTitulo2;
+    private javax.swing.JLabel lblTotalTitulo3;
+    private javax.swing.JLabel lblTotalTitulo4;
+    private javax.swing.JLabel lblTotalTitulo5;
+    private javax.swing.JLabel lblTotalTitulo6;
+    private javax.swing.JLabel lblTotalTitulo7;
     private javax.swing.JPanel pagadoCard;
     private javax.swing.JPanel productosCard;
+    private javax.swing.JPanel productosCard1;
+    private javax.swing.JPanel productosCard2;
+    private javax.swing.JPanel productosCard3;
+    private javax.swing.JPanel productosCard4;
+    private javax.swing.JPanel productosCard5;
+    private javax.swing.JPanel productosCard6;
+    private javax.swing.JPanel productosCard7;
     private javax.swing.JPanel repartoCard;
     private javax.swing.JScrollPane scrollProductos;
+    private javax.swing.JScrollPane scrollProductos1;
+    private javax.swing.JScrollPane scrollProductos2;
+    private javax.swing.JScrollPane scrollProductos3;
+    private javax.swing.JScrollPane scrollProductos4;
+    private javax.swing.JScrollPane scrollProductos5;
+    private javax.swing.JScrollPane scrollProductos6;
+    private javax.swing.JScrollPane scrollProductos7;
     private javax.swing.JScrollPane scrollReparto;
     private javax.swing.JSeparator sepPagado;
-    private javax.swing.JSeparator sepTopNav;
-    private javax.swing.JPanel tabsPanel;
     private javax.swing.JTable tblProductos;
+    private javax.swing.JTable tblProductos1;
+    private javax.swing.JTable tblProductos2;
+    private javax.swing.JTable tblProductos3;
+    private javax.swing.JTable tblProductos4;
+    private javax.swing.JTable tblProductos5;
+    private javax.swing.JTable tblProductos6;
+    private javax.swing.JTable tblProductos7;
     private javax.swing.JTable tblReparto;
     private javax.swing.JPanel topNavPanel;
     // End of variables declaration//GEN-END:variables

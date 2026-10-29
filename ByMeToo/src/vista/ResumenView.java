@@ -28,23 +28,144 @@ public class ResumenView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        toolbarPanel19 = new javax.swing.JPanel();
-        toolbarSeparator20 = new javax.swing.JSeparator();
+        toolbarPanel19 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         lblConectado20 = new javax.swing.JLabel();
         navGrupos20 = new javax.swing.JButton();
         navPerfil20 = new javax.swing.JButton();
-        btnResumen = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        contentPanel = new javax.swing.JPanel();
+        contentPanel = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto en origen, gris divisor en destino
+                java.awt.Color colorTopLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorBottomRight = java.awt.Color.decode("#E2E8E5");
+
+                // Gradiente de esquina superior izquierda (0,0) a esquina inferior derecha (w,h)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorTopLeft, w, h, colorBottomRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino neutro
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         lblResumenTitle = new javax.swing.JLabel();
         lblPeriodo = new javax.swing.JLabel();
         cmbPeriodo = new javax.swing.JComboBox<>();
-        gastoCard = new javax.swing.JPanel();
+        gastoCard = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                // Convertimos a Graphics2D para tener más opciones de dibujo
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+
+                // 1. Activamos el suavizado (antialiasing) para que las curvas queden perfectas
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int margenIzquierdo = 2;
+                int margenDerecho = 4;
+                int margenInferior = 6;
+                int margenSuperior = 8;
+
+                // 2. Definimos la curvatura de las esquinas (10 o 12 suele coincidir perfecto con el TitledBorder)
+                int arc = 12;
+
+                g2d.setColor(new java.awt.Color(255, 255, 255));
+
+                // 3. Usamos fillRoundRect en lugar de fillRect
+                g2d.fillRoundRect(margenIzquierdo,
+                    margenSuperior,
+                    getWidth() - margenIzquierdo - margenDerecho,
+                    getHeight() - margenSuperior - margenInferior,
+                    arc, arc); // Los dos últimos parámetros son la curvatura
+
+                g2d.dispose();
+                super.paintComponent(g);
+            }
+        };
         lblGastoTotal = new javax.swing.JLabel();
         lblComprasRegistradas = new javax.swing.JLabel();
-        balanceCard = new javax.swing.JPanel();
+        balanceCard = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         balTable = new javax.swing.JPanel();
         balHeader = new javax.swing.JPanel();
         lblBalHdrMiembro = new javax.swing.JLabel();
@@ -68,7 +189,38 @@ public class ResumenView extends javax.swing.JFrame {
         barBal3 = new javax.swing.JPanel();
         barBalFill3 = new javax.swing.JPanel();
         lblBalImporte3 = new javax.swing.JLabel();
-        repartoCard = new javax.swing.JPanel();
+        repartoCard = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         repTable = new javax.swing.JPanel();
         repHeader = new javax.swing.JPanel();
         lblRepHdrDebe = new javax.swing.JLabel();
@@ -98,7 +250,38 @@ public class ResumenView extends javax.swing.JFrame {
         lblRepImporte2 = new javax.swing.JLabel();
         cellRepBizum2 = new javax.swing.JPanel();
         btnBizum2 = new javax.swing.JButton();
-        comprasCard = new javax.swing.JPanel();
+        comprasCard = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         comTable = new javax.swing.JPanel();
         comHeader = new javax.swing.JPanel();
         lblComHdrProducto = new javax.swing.JLabel();
@@ -152,13 +335,16 @@ public class ResumenView extends javax.swing.JFrame {
         btnComEditar5 = new javax.swing.JButton();
         btnComBorrar5 = new javax.swing.JButton();
         comRow6 = new javax.swing.JPanel();
+        jButton4 = new javax.swing.JButton();
+        btnResumen = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        toolbarPanel19.setBackground(new java.awt.Color(226, 232, 229));
+        toolbarPanel19.setBackground(new java.awt.Color(250, 250, 250));
         toolbarPanel19.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
-
-        toolbarSeparator20.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        toolbarPanel19.setForeground(new java.awt.Color(26, 32, 44));
 
         lblConectado20.setBackground(new java.awt.Color(226, 232, 229));
         lblConectado20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -176,7 +362,6 @@ public class ResumenView extends javax.swing.JFrame {
         navGrupos20.setContentAreaFilled(false);
         navGrupos20.setFocusPainted(false);
         navGrupos20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        navGrupos20.setOpaque(true);
 
         navPerfil20.setBackground(new java.awt.Color(250, 250, 250));
         navPerfil20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -196,12 +381,10 @@ public class ResumenView extends javax.swing.JFrame {
             .addGroup(toolbarPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(navGrupos20, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(toolbarSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(8, 8, 8)
                 .addComponent(navPerfil20, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(143, 143, 143)
-                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 476, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 497, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addContainerGap())
         );
         toolbarPanel19Layout.setVerticalGroup(
@@ -209,40 +392,42 @@ public class ResumenView extends javax.swing.JFrame {
             .addGroup(toolbarPanel19Layout.createSequentialGroup()
                 .addGap(2, 2, 2)
                 .addGroup(toolbarPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(toolbarSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblConectado20)
                     .addComponent(navGrupos20)
                     .addComponent(navPerfil20))
                 .addGap(3, 3, 3))
         );
 
-        btnResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
-        btnResumen.setText("Resumen");
+        contentPanel.setBackground(new java.awt.Color(250, 250, 250));
+        contentPanel.setForeground(new java.awt.Color(26, 32, 44));
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
-        jButton4.setText("Nueva compra");
-        jButton4.addActionListener(this::jButton4ActionPerformed);
-
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
-        jButton3.setText("Repartos");
-
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-billetes-16.png"))); // NOI18N
-        jButton5.setText("Gastos");
-
-        contentPanel.setBackground(new java.awt.Color(255, 255, 255));
-
-        lblResumenTitle.setFont(lblResumenTitle.getFont().deriveFont(lblResumenTitle.getFont().getStyle() | java.awt.Font.BOLD, lblResumenTitle.getFont().getSize()+4));
+        lblResumenTitle.setBackground(new java.awt.Color(250, 250, 250));
+        lblResumenTitle.setFont(new java.awt.Font("Inter", 1, 17)); // NOI18N
+        lblResumenTitle.setForeground(new java.awt.Color(26, 32, 44));
         lblResumenTitle.setText("Resumen");
 
+        lblPeriodo.setBackground(new java.awt.Color(250, 250, 250));
+        lblPeriodo.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblPeriodo.setForeground(new java.awt.Color(26, 32, 44));
         lblPeriodo.setText("Periodo:");
 
+        cmbPeriodo.setBackground(new java.awt.Color(250, 250, 250));
+        cmbPeriodo.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        cmbPeriodo.setForeground(new java.awt.Color(26, 32, 44));
         cmbPeriodo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Todo", "Este mes", "Mes anterior" }));
 
+        gastoCard.setBackground(new java.awt.Color(250, 250, 250));
         gastoCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Gasto total del grupo"));
+        gastoCard.setForeground(new java.awt.Color(26, 32, 44));
 
-        lblGastoTotal.setFont(lblGastoTotal.getFont().deriveFont(lblGastoTotal.getFont().getStyle() | java.awt.Font.BOLD, lblGastoTotal.getFont().getSize()+14));
+        lblGastoTotal.setBackground(new java.awt.Color(250, 250, 250));
+        lblGastoTotal.setFont(new java.awt.Font("Inter", 1, 27)); // NOI18N
+        lblGastoTotal.setForeground(new java.awt.Color(26, 32, 44));
         lblGastoTotal.setText("66,99 €");
 
+        lblComprasRegistradas.setBackground(new java.awt.Color(250, 250, 250));
+        lblComprasRegistradas.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComprasRegistradas.setForeground(new java.awt.Color(26, 32, 44));
         lblComprasRegistradas.setText("6 compras registradas");
 
         javax.swing.GroupLayout gastoCardLayout = new javax.swing.GroupLayout(gastoCard);
@@ -266,19 +451,33 @@ public class ResumenView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        balanceCard.setBackground(new java.awt.Color(250, 250, 250));
         balanceCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Balance por miembro"));
+        balanceCard.setForeground(new java.awt.Color(26, 32, 44));
 
+        balTable.setBackground(new java.awt.Color(250, 250, 250));
         balTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
+        balTable.setForeground(new java.awt.Color(26, 32, 44));
 
-        balHeader.setBackground(new java.awt.Color(236, 236, 236));
+        balHeader.setBackground(new java.awt.Color(250, 250, 250));
         balHeader.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        balHeader.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblBalHdrMiembro.setBackground(new java.awt.Color(250, 250, 250));
+        lblBalHdrMiembro.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblBalHdrMiembro.setForeground(new java.awt.Color(26, 32, 44));
         lblBalHdrMiembro.setText("Miembro");
         lblBalHdrMiembro.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblBalHdrProporcion.setBackground(new java.awt.Color(250, 250, 250));
+        lblBalHdrProporcion.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblBalHdrProporcion.setForeground(new java.awt.Color(26, 32, 44));
         lblBalHdrProporcion.setText("Proporción");
         lblBalHdrProporcion.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblBalHdrBalance.setBackground(new java.awt.Color(250, 250, 250));
+        lblBalHdrBalance.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblBalHdrBalance.setForeground(new java.awt.Color(26, 32, 44));
         lblBalHdrBalance.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblBalHdrBalance.setText("Balance");
         lblBalHdrBalance.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
@@ -301,9 +500,11 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblBalHdrBalance, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        balRow1.setBackground(new java.awt.Color(255, 255, 255));
+        balRow1.setBackground(new java.awt.Color(250, 250, 250));
         balRow1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        balRow1.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblBalMiembro1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblBalMiembro1.setText("Elias");
         lblBalMiembro1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
@@ -356,7 +557,7 @@ public class ResumenView extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        lblBalImporte1.setFont(lblBalImporte1.getFont().deriveFont(lblBalImporte1.getFont().getStyle() | java.awt.Font.BOLD));
+        lblBalImporte1.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
         lblBalImporte1.setForeground(new java.awt.Color(50, 135, 60));
         lblBalImporte1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblBalImporte1.setText("Le deben 9,33 €");
@@ -380,9 +581,11 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblBalImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        balRow2.setBackground(new java.awt.Color(246, 247, 250));
+        balRow2.setBackground(new java.awt.Color(250, 250, 250));
         balRow2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        balRow2.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblBalMiembro2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblBalMiembro2.setText("Pablo");
         lblBalMiembro2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
@@ -435,7 +638,7 @@ public class ResumenView extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        lblBalImporte2.setFont(lblBalImporte2.getFont().deriveFont(lblBalImporte2.getFont().getStyle() | java.awt.Font.BOLD));
+        lblBalImporte2.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
         lblBalImporte2.setForeground(new java.awt.Color(50, 135, 60));
         lblBalImporte2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblBalImporte2.setText("Le deben 7,83 €");
@@ -459,7 +662,8 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblBalImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        balRow3.setBackground(new java.awt.Color(255, 255, 255));
+        balRow3.setBackground(new java.awt.Color(250, 250, 250));
+        balRow3.setForeground(new java.awt.Color(26, 32, 44));
 
         lblBalMiembro3.setText("SIARHEI LUKASHOU (tú)");
         lblBalMiembro3.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
@@ -575,25 +779,35 @@ public class ResumenView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        repartoCard.setBackground(new java.awt.Color(250, 250, 250));
         repartoCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Reparto sugerido"));
+        repartoCard.setForeground(new java.awt.Color(26, 32, 44));
 
+        repTable.setBackground(new java.awt.Color(250, 250, 250));
         repTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
+        repTable.setForeground(new java.awt.Color(26, 32, 44));
 
-        repHeader.setBackground(new java.awt.Color(236, 236, 236));
+        repHeader.setBackground(new java.awt.Color(250, 250, 250));
         repHeader.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        repHeader.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblRepHdrDebe.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepHdrDebe.setText("Debe");
         lblRepHdrDebe.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblRepHdrFlecha.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepHdrFlecha.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblRepHdrA.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepHdrA.setText("A");
         lblRepHdrA.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblRepHdrImporte.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepHdrImporte.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblRepHdrImporte.setText("Importe");
         lblRepHdrImporte.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblRepHdrAccion.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepHdrAccion.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
         javax.swing.GroupLayout repHeaderLayout = new javax.swing.GroupLayout(repHeader);
@@ -620,16 +834,20 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblRepHdrAccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        repRow1.setBackground(new java.awt.Color(255, 255, 255));
+        repRow1.setBackground(new java.awt.Color(250, 250, 250));
         repRow1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        repRow1.setForeground(new java.awt.Color(26, 32, 44));
 
+        cellRepDebe1.setBackground(new java.awt.Color(250, 250, 250));
+        cellRepDebe1.setForeground(new java.awt.Color(26, 32, 44));
         cellRepDebe1.setOpaque(false);
 
-        lblRepBadgeDe1.setFont(lblRepBadgeDe1.getFont().deriveFont(lblRepBadgeDe1.getFont().getSize()-2f));
+        lblRepBadgeDe1.setFont(new java.awt.Font("Inter", 0, 11)); // NOI18N
         lblRepBadgeDe1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRepBadgeDe1.setText("S");
         lblRepBadgeDe1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
 
+        lblRepDe1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepDe1.setText("SIARHEI LUKASHOU");
 
         javax.swing.GroupLayout cellRepDebe1Layout = new javax.swing.GroupLayout(cellRepDebe1);
@@ -653,18 +871,24 @@ public class ResumenView extends javax.swing.JFrame {
                 .addGap(0, 14, Short.MAX_VALUE))
         );
 
+        lblRepFlecha1.setBackground(new java.awt.Color(250, 250, 250));
+        lblRepFlecha1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblRepFlecha1.setForeground(new java.awt.Color(26, 32, 44));
         lblRepFlecha1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRepFlecha1.setText("→");
         lblRepFlecha1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        cellRepA1.setBackground(new java.awt.Color(250, 250, 250));
         cellRepA1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
+        cellRepA1.setForeground(new java.awt.Color(26, 32, 44));
         cellRepA1.setOpaque(false);
 
-        lblRepBadgeA1.setFont(lblRepBadgeA1.getFont().deriveFont(lblRepBadgeA1.getFont().getSize()-2f));
+        lblRepBadgeA1.setFont(new java.awt.Font("Inter", 0, 11)); // NOI18N
         lblRepBadgeA1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRepBadgeA1.setText("E");
         lblRepBadgeA1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
 
+        lblRepA1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepA1.setText("Elias");
 
         javax.swing.GroupLayout cellRepA1Layout = new javax.swing.GroupLayout(cellRepA1);
@@ -688,14 +912,19 @@ public class ResumenView extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        lblRepImporte1.setFont(lblRepImporte1.getFont().deriveFont(lblRepImporte1.getFont().getStyle() | java.awt.Font.BOLD));
+        lblRepImporte1.setBackground(new java.awt.Color(250, 250, 250));
+        lblRepImporte1.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
+        lblRepImporte1.setForeground(new java.awt.Color(26, 32, 44));
         lblRepImporte1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblRepImporte1.setText("9,33 €");
         lblRepImporte1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        cellRepBizum1.setBackground(new java.awt.Color(250, 250, 250));
         cellRepBizum1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
+        cellRepBizum1.setForeground(new java.awt.Color(26, 32, 44));
         cellRepBizum1.setOpaque(false);
 
+        btnBizum1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnBizum1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/phone.png"))); // NOI18N
         btnBizum1.setText("<html><center>Pagar con<br>Bizum</center></html>");
 
@@ -737,18 +966,22 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblRepFlecha1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellRepA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(lblRepImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(cellRepBizum1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(cellRepBizum1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, Short.MAX_VALUE)
         );
 
-        repRow2.setBackground(new java.awt.Color(246, 247, 250));
+        repRow2.setBackground(new java.awt.Color(250, 250, 250));
+        repRow2.setForeground(new java.awt.Color(26, 32, 44));
 
+        cellRepDebe2.setBackground(new java.awt.Color(250, 250, 250));
+        cellRepDebe2.setForeground(new java.awt.Color(26, 32, 44));
         cellRepDebe2.setOpaque(false);
 
-        lblRepBadgeDe2.setFont(lblRepBadgeDe2.getFont().deriveFont(lblRepBadgeDe2.getFont().getSize()-2f));
+        lblRepBadgeDe2.setFont(new java.awt.Font("Inter", 0, 11)); // NOI18N
         lblRepBadgeDe2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRepBadgeDe2.setText("S");
         lblRepBadgeDe2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
 
+        lblRepDe2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepDe2.setText("SIARHEI LUKASHOU");
 
         javax.swing.GroupLayout cellRepDebe2Layout = new javax.swing.GroupLayout(cellRepDebe2);
@@ -772,18 +1005,24 @@ public class ResumenView extends javax.swing.JFrame {
                 .addGap(0, 14, Short.MAX_VALUE))
         );
 
+        lblRepFlecha2.setBackground(new java.awt.Color(250, 250, 250));
+        lblRepFlecha2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblRepFlecha2.setForeground(new java.awt.Color(26, 32, 44));
         lblRepFlecha2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRepFlecha2.setText("→");
         lblRepFlecha2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        cellRepA2.setBackground(new java.awt.Color(250, 250, 250));
         cellRepA2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
+        cellRepA2.setForeground(new java.awt.Color(26, 32, 44));
         cellRepA2.setOpaque(false);
 
-        lblRepBadgeA2.setFont(lblRepBadgeA2.getFont().deriveFont(lblRepBadgeA2.getFont().getSize()-2f));
+        lblRepBadgeA2.setFont(new java.awt.Font("Inter", 0, 11)); // NOI18N
         lblRepBadgeA2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblRepBadgeA2.setText("P");
         lblRepBadgeA2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(150, 150, 150)));
 
+        lblRepA2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblRepA2.setText("Pablo");
 
         javax.swing.GroupLayout cellRepA2Layout = new javax.swing.GroupLayout(cellRepA2);
@@ -807,14 +1046,19 @@ public class ResumenView extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        lblRepImporte2.setFont(lblRepImporte2.getFont().deriveFont(lblRepImporte2.getFont().getStyle() | java.awt.Font.BOLD));
+        lblRepImporte2.setBackground(new java.awt.Color(250, 250, 250));
+        lblRepImporte2.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
+        lblRepImporte2.setForeground(new java.awt.Color(26, 32, 44));
         lblRepImporte2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblRepImporte2.setText("7,83 €");
         lblRepImporte2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        cellRepBizum2.setBackground(new java.awt.Color(250, 250, 250));
         cellRepBizum2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
+        cellRepBizum2.setForeground(new java.awt.Color(26, 32, 44));
         cellRepBizum2.setOpaque(false);
 
+        btnBizum2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnBizum2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/phone.png"))); // NOI18N
         btnBizum2.setText("<html><center>Pagar con<br>Bizum</center></html>");
 
@@ -856,7 +1100,7 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblRepFlecha2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellRepA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(lblRepImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(cellRepBizum2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(cellRepBizum2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout repTableLayout = new javax.swing.GroupLayout(repTable);
@@ -894,27 +1138,37 @@ public class ResumenView extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        comprasCard.setBackground(new java.awt.Color(250, 250, 250));
         comprasCard.setBorder(javax.swing.BorderFactory.createTitledBorder("Compras del periodo"));
+        comprasCard.setForeground(new java.awt.Color(26, 32, 44));
 
+        comTable.setBackground(new java.awt.Color(250, 250, 250));
         comTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
+        comTable.setForeground(new java.awt.Color(26, 32, 44));
 
-        comHeader.setBackground(new java.awt.Color(236, 236, 236));
+        comHeader.setBackground(new java.awt.Color(250, 250, 250));
         comHeader.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        comHeader.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblComHdrProducto.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComHdrProducto.setText("Producto");
         lblComHdrProducto.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblComHdrPago.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComHdrPago.setText("Pagó");
         lblComHdrPago.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComHdrEstado.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComHdrEstado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblComHdrEstado.setText("Estado");
         lblComHdrEstado.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComHdrImporte.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComHdrImporte.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblComHdrImporte.setText("Importe");
         lblComHdrImporte.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComHdrAcciones.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComHdrAcciones.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
         javax.swing.GroupLayout comHeaderLayout = new javax.swing.GroupLayout(comHeader);
@@ -941,37 +1195,54 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblComHdrAcciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        comRow1.setBackground(new java.awt.Color(255, 255, 255));
+        comRow1.setBackground(new java.awt.Color(250, 250, 250));
         comRow1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        comRow1.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblComProducto1.setBackground(new java.awt.Color(250, 250, 250));
+        lblComProducto1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComProducto1.setForeground(new java.awt.Color(26, 32, 44));
         lblComProducto1.setText("Qwe");
         lblComProducto1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblComPago1.setBackground(new java.awt.Color(250, 250, 250));
+        lblComPago1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComPago1.setForeground(new java.awt.Color(26, 32, 44));
         lblComPago1.setText("Pablo");
         lblComPago1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
-        lblComEstado1.setForeground(new java.awt.Color(180, 105, 20));
+        lblComEstado1.setBackground(new java.awt.Color(250, 250, 250));
+        lblComEstado1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComEstado1.setForeground(new java.awt.Color(26, 32, 44));
         lblComEstado1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblComEstado1.setText("Pendiente");
         lblComEstado1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComImporte1.setBackground(new java.awt.Color(250, 250, 250));
+        lblComImporte1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComImporte1.setForeground(new java.awt.Color(26, 32, 44));
         lblComImporte1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblComImporte1.setText("5,00 €");
         lblComImporte1.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        cellComAcciones1.setBackground(new java.awt.Color(250, 250, 250));
         cellComAcciones1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
+        cellComAcciones1.setForeground(new java.awt.Color(26, 32, 44));
         cellComAcciones1.setOpaque(false);
 
+        btnComEstado1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEstado1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/circle.png"))); // NOI18N
         btnComEstado1.setBorderPainted(false);
         btnComEstado1.setContentAreaFilled(false);
         btnComEstado1.setFocusPainted(false);
 
+        btnComEditar1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEditar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
         btnComEditar1.setBorderPainted(false);
         btnComEditar1.setContentAreaFilled(false);
         btnComEditar1.setFocusPainted(false);
 
+        btnComBorrar1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComBorrar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
         btnComBorrar1.setBorderPainted(false);
         btnComBorrar1.setContentAreaFilled(false);
@@ -1025,37 +1296,54 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(cellComAcciones1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        comRow2.setBackground(new java.awt.Color(246, 247, 250));
+        comRow2.setBackground(new java.awt.Color(250, 250, 250));
         comRow2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        comRow2.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblComProducto2.setBackground(new java.awt.Color(250, 250, 250));
+        lblComProducto2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComProducto2.setForeground(new java.awt.Color(26, 32, 44));
         lblComProducto2.setText("Gasolina");
         lblComProducto2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblComPago2.setBackground(new java.awt.Color(250, 250, 250));
+        lblComPago2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComPago2.setForeground(new java.awt.Color(26, 32, 44));
         lblComPago2.setText("Pablo");
         lblComPago2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
-        lblComEstado2.setForeground(new java.awt.Color(180, 105, 20));
+        lblComEstado2.setBackground(new java.awt.Color(250, 250, 250));
+        lblComEstado2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComEstado2.setForeground(new java.awt.Color(26, 32, 44));
         lblComEstado2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblComEstado2.setText("Pendiente");
         lblComEstado2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComImporte2.setBackground(new java.awt.Color(250, 250, 250));
+        lblComImporte2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblComImporte2.setForeground(new java.awt.Color(26, 32, 44));
         lblComImporte2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblComImporte2.setText("30,00 €");
         lblComImporte2.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        cellComAcciones2.setBackground(new java.awt.Color(250, 250, 250));
         cellComAcciones2.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
+        cellComAcciones2.setForeground(new java.awt.Color(26, 32, 44));
         cellComAcciones2.setOpaque(false);
 
+        btnComEstado2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEstado2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/circle.png"))); // NOI18N
         btnComEstado2.setBorderPainted(false);
         btnComEstado2.setContentAreaFilled(false);
         btnComEstado2.setFocusPainted(false);
 
+        btnComEditar2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEditar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
         btnComEditar2.setBorderPainted(false);
         btnComEditar2.setContentAreaFilled(false);
         btnComEditar2.setFocusPainted(false);
 
+        btnComBorrar2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComBorrar2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
         btnComBorrar2.setBorderPainted(false);
         btnComBorrar2.setContentAreaFilled(false);
@@ -1109,20 +1397,25 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(cellComAcciones2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        comRow3.setBackground(new java.awt.Color(255, 255, 255));
+        comRow3.setBackground(new java.awt.Color(250, 250, 250));
         comRow3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        comRow3.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblComProducto3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComProducto3.setText("Cine");
         lblComProducto3.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblComPago3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComPago3.setText("Elias");
         lblComPago3.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComEstado3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComEstado3.setForeground(new java.awt.Color(180, 105, 20));
         lblComEstado3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblComEstado3.setText("Pendiente");
         lblComEstado3.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComImporte3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComImporte3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblComImporte3.setText("21,00 €");
         lblComImporte3.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
@@ -1130,16 +1423,19 @@ public class ResumenView extends javax.swing.JFrame {
         cellComAcciones3.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
         cellComAcciones3.setOpaque(false);
 
+        btnComEstado3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEstado3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/circle.png"))); // NOI18N
         btnComEstado3.setBorderPainted(false);
         btnComEstado3.setContentAreaFilled(false);
         btnComEstado3.setFocusPainted(false);
 
+        btnComEditar3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEditar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
         btnComEditar3.setBorderPainted(false);
         btnComEditar3.setContentAreaFilled(false);
         btnComEditar3.setFocusPainted(false);
 
+        btnComBorrar3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComBorrar3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
         btnComBorrar3.setBorderPainted(false);
         btnComBorrar3.setContentAreaFilled(false);
@@ -1193,20 +1489,25 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(cellComAcciones3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        comRow4.setBackground(new java.awt.Color(246, 247, 250));
+        comRow4.setBackground(new java.awt.Color(250, 250, 250));
         comRow4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        comRow4.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblComProducto4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComProducto4.setText("Bocata");
         lblComProducto4.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblComPago4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComPago4.setText("<html>SIARHEI<br>LUKASHOU</html>");
         lblComPago4.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComEstado4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComEstado4.setForeground(new java.awt.Color(180, 105, 20));
         lblComEstado4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblComEstado4.setText("Pendiente");
         lblComEstado4.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComImporte4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComImporte4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblComImporte4.setText("5,00 €");
         lblComImporte4.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
@@ -1214,16 +1515,19 @@ public class ResumenView extends javax.swing.JFrame {
         cellComAcciones4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
         cellComAcciones4.setOpaque(false);
 
+        btnComEstado4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEstado4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/circle.png"))); // NOI18N
         btnComEstado4.setBorderPainted(false);
         btnComEstado4.setContentAreaFilled(false);
         btnComEstado4.setFocusPainted(false);
 
+        btnComEditar4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEditar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
         btnComEditar4.setBorderPainted(false);
         btnComEditar4.setContentAreaFilled(false);
         btnComEditar4.setFocusPainted(false);
 
+        btnComBorrar4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComBorrar4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
         btnComBorrar4.setBorderPainted(false);
         btnComBorrar4.setContentAreaFilled(false);
@@ -1277,20 +1581,25 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(cellComAcciones4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        comRow5.setBackground(new java.awt.Color(255, 255, 255));
+        comRow5.setBackground(new java.awt.Color(250, 250, 250));
         comRow5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(210, 210, 210)));
+        comRow5.setForeground(new java.awt.Color(26, 32, 44));
 
+        lblComProducto5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComProducto5.setText("Coca Cola");
         lblComProducto5.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
 
+        lblComPago5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComPago5.setText("<html>SIARHEI<br>LUKASHOU</html>");
         lblComPago5.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComEstado5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComEstado5.setForeground(new java.awt.Color(180, 105, 20));
         lblComEstado5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblComEstado5.setText("Pendiente");
         lblComEstado5.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
 
+        lblComImporte5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblComImporte5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblComImporte5.setText("3,00 €");
         lblComImporte5.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
@@ -1298,16 +1607,19 @@ public class ResumenView extends javax.swing.JFrame {
         cellComAcciones5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
         cellComAcciones5.setOpaque(false);
 
+        btnComEstado5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEstado5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/circle.png"))); // NOI18N
         btnComEstado5.setBorderPainted(false);
         btnComEstado5.setContentAreaFilled(false);
         btnComEstado5.setFocusPainted(false);
 
+        btnComEditar5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComEditar5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
         btnComEditar5.setBorderPainted(false);
         btnComEditar5.setContentAreaFilled(false);
         btnComEditar5.setFocusPainted(false);
 
+        btnComBorrar5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnComBorrar5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
         btnComBorrar5.setBorderPainted(false);
         btnComBorrar5.setContentAreaFilled(false);
@@ -1361,13 +1673,14 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(cellComAcciones5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        comRow6.setBackground(new java.awt.Color(246, 247, 250));
+        comRow6.setBackground(new java.awt.Color(250, 250, 250));
+        comRow6.setForeground(new java.awt.Color(26, 32, 44));
 
         javax.swing.GroupLayout comRow6Layout = new javax.swing.GroupLayout(comRow6);
         comRow6.setLayout(comRow6Layout);
         comRow6Layout.setHorizontalGroup(
             comRow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 922, Short.MAX_VALUE)
+            .addGap(0, 949, Short.MAX_VALUE)
         );
         comRow6Layout.setVerticalGroup(
             comRow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1422,6 +1735,31 @@ public class ResumenView extends javax.swing.JFrame {
                 .addContainerGap(9, Short.MAX_VALUE))
         );
 
+        jButton4.setBackground(new java.awt.Color(250, 250, 250));
+        jButton4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(26, 32, 44));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
+        jButton4.setText("Nueva compra");
+        jButton4.addActionListener(this::jButton4ActionPerformed);
+
+        btnResumen.setBackground(new java.awt.Color(250, 250, 250));
+        btnResumen.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnResumen.setForeground(new java.awt.Color(26, 32, 44));
+        btnResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
+        btnResumen.setText("Resumen");
+
+        jButton3.setBackground(new java.awt.Color(250, 250, 250));
+        jButton3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(26, 32, 44));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jButton3.setText("Repartos");
+
+        jButton5.setBackground(new java.awt.Color(250, 250, 250));
+        jButton5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(26, 32, 44));
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-billetes-16.png"))); // NOI18N
+        jButton5.setText("Gastos");
+
         javax.swing.GroupLayout contentPanelLayout = new javax.swing.GroupLayout(contentPanel);
         contentPanel.setLayout(contentPanelLayout);
         contentPanelLayout.setHorizontalGroup(
@@ -1431,7 +1769,7 @@ public class ResumenView extends javax.swing.JFrame {
                 .addGroup(contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(contentPanelLayout.createSequentialGroup()
                         .addComponent(lblResumenTitle)
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addGap(0, 666, Short.MAX_VALUE)
                         .addComponent(lblPeriodo)
                         .addGap(6, 6, 6)
                         .addComponent(cmbPeriodo, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -1440,18 +1778,33 @@ public class ResumenView extends javax.swing.JFrame {
                     .addComponent(repartoCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(comprasCard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(12, 12, 12))
+            .addGroup(contentPanelLayout.createSequentialGroup()
+                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jButton3)
+                .addGap(0, 0, 0)
+                .addComponent(jButton4)
+                .addGap(0, 0, 0)
+                .addComponent(btnResumen)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         contentPanelLayout.setVerticalGroup(
             contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contentPanelLayout.createSequentialGroup()
-                .addGap(10, 10, 10)
+                .addGap(0, 0, 0)
+                .addGroup(contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(contentPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblResumenTitle)
                     .addComponent(lblPeriodo)
                     .addComponent(cmbPeriodo))
                 .addGap(8, 8, 8)
                 .addComponent(gastoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addGap(10, 33, 33)
                 .addComponent(balanceCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(repartoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1465,17 +1818,7 @@ public class ResumenView extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(toolbarPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jButton5)
-                .addGap(20, 20, 20)
-                .addComponent(jButton3)
-                .addGap(20, 20, 20)
-                .addComponent(jButton4)
-                .addGap(20, 20, 20)
-                .addComponent(btnResumen)
-                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -1484,12 +1827,6 @@ public class ResumenView extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(toolbarPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnResumen)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3)
-                    .addComponent(jButton5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1509,17 +1846,7 @@ public class ResumenView extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
+
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> new ResumenView().setVisible(true));
@@ -1649,6 +1976,5 @@ public class ResumenView extends javax.swing.JFrame {
     private javax.swing.JPanel repTable;
     private javax.swing.JPanel repartoCard;
     private javax.swing.JPanel toolbarPanel19;
-    private javax.swing.JSeparator toolbarSeparator20;
     // End of variables declaration//GEN-END:variables
 }
