@@ -25,7 +25,41 @@ public class LoginView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        loginCard = new javax.swing.JPanel();
+        loginCard =
+        new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                // Convertimos a Graphics2D para tener más opciones de dibujo
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+
+                // 1. Activamos el suavizado (antialiasing) para que las curvas queden perfectas
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int margenIzquierdo = 5;
+                int margenDerecho = 5;
+                int margenInferior = 8;
+                int margenSuperior = 18;
+
+                // 2. Definimos la curvatura de las esquinas (10 o 12 suele coincidir perfecto con el TitledBorder)
+                int arc = 12;
+
+                g2d.setColor(new java.awt.Color(255, 255, 255));
+
+                // 3. Usamos fillRoundRect en lugar de fillRect
+                g2d.fillRoundRect(margenIzquierdo,
+                    margenSuperior,
+                    getWidth() - margenIzquierdo - margenDerecho,
+                    getHeight() - margenSuperior - margenInferior,
+                    arc, arc); // Los dos últimos parámetros son la curvatura
+
+                g2d.dispose();
+                super.paintComponent(g);
+            }
+        };
         headerPanel = new javax.swing.JPanel();
         lblHeader = new javax.swing.JLabel();
         lblIntro = new javax.swing.JLabel();
@@ -38,7 +72,42 @@ public class LoginView extends javax.swing.JFrame {
         lblContrasena = new javax.swing.JLabel();
         lblOlvidaste = new javax.swing.JLabel();
         pwdContrasena = new javax.swing.JPasswordField();
-        btnIniciarSesion = new javax.swing.JButton();
+        btnIniciarSesion = new javax.swing.JButton() {
+            {
+                setOpaque(false);
+                setContentAreaFilled(false); // Desactiva el fondo gris de Swing
+                setBorderPainted(false);     // Desactiva el borde nativo
+                setFocusPainted(false);      // Elimina el marco al hacer clic (corregido)
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // 1. Pintar el fondo con gradiente
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // 2. Pintar el borde fino gris
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+
+                // 3. Renderiza el texto e icono por encima
+                super.paintComponent(g);
+            }
+        };
         btnCrearCuenta = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);

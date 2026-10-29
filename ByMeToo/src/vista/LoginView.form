@@ -60,6 +60,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="&#xa;new javax.swing.JPanel() {&#xa;    {&#xa;        setOpaque(false);&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xa;        // Convertimos a Graphics2D para tener m&#xe1;s opciones de dibujo&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xa;&#xa;        // 1. Activamos el suavizado (antialiasing) para que las curvas queden perfectas&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xa;&#xa;        int margenIzquierdo = 5;&#xa;        int margenDerecho = 5;&#xa;        int margenInferior = 8;&#xa;        int margenSuperior = 18;&#xa;&#xa;        // 2. Definimos la curvatura de las esquinas (10 o 12 suele coincidir perfecto con el TitledBorder)&#xa;        int arc = 12;&#xa;&#xa;        g2d.setColor(new java.awt.Color(255, 255, 255));&#xa;&#xa;        // 3. Usamos fillRoundRect en lugar de fillRect&#xa;        g2d.fillRoundRect(margenIzquierdo,&#xa;            margenSuperior,&#xa;            getWidth() - margenIzquierdo - margenDerecho,&#xa;            getHeight() - margenSuperior - margenInferior,&#xa;            arc, arc); // Los dos &#xfa;ltimos par&#xe1;metros son la curvatura&#xa;&#xa;        g2d.dispose();&#xa;        super.paintComponent(g);&#xa;    }&#xa;}"/>
+      </AuxValues>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -304,6 +307,9 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Iniciar sesi&#xf3;n"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JButton() {&#xa;    {&#xa;        setOpaque(false);&#xa;        setContentAreaFilled(false); // Desactiva el fondo gris de Swing&#xa;        setBorderPainted(false);     // Desactiva el borde nativo&#xa;        setFocusPainted(false);      // Elimina el marco al hacer clic (corregido)&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xa;&#xa;        int w = getWidth();&#xa;        int h = getHeight();&#xa;        int arc = 15; // Curvatura de las esquinas&#xa;&#xa;        // Blanco roto a la izquierda, verde menta a la derecha&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;); &#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;); &#xa;&#xa;        // 1. Pintar el fondo con gradiente&#xa;        g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));&#xa;        g2d.fillRoundRect(0, 0, w, h, arc, arc);&#xa;&#xa;        // 2. Pintar el borde fino gris&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xa;        g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);&#xa;&#xa;        g2d.dispose();&#xa;&#xa;        // 3. Renderiza el texto e icono por encima&#xa;        super.paintComponent(g);&#xa;    }&#xa;};"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="btnCrearCuenta">
           <Properties>
