@@ -5,14 +5,14 @@ import javax.swing.UIManager;
 /**
  * Ventana de inicio de sesión (maqueta).
  */
-public class LoginWindow extends javax.swing.JFrame {
+public class LoginView extends javax.swing.JFrame {
 
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginWindow.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginView.class.getName());
 
     /**
      * Creates new form LoginWindow
      */
-    public LoginWindow() {
+    public LoginView() {
         initComponents();
     }
 
@@ -217,7 +217,7 @@ public class LoginWindow extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new LoginWindow().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new LoginView().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

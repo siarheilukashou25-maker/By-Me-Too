@@ -5,9 +5,9 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
-public class GroupsWindow extends javax.swing.JFrame {
+public class MainView extends javax.swing.JFrame {
 
-    public GroupsWindow() {
+    public MainView() {
         initComponents();
     }
 
@@ -389,7 +389,7 @@ public class GroupsWindow extends javax.swing.JFrame {
             ex.printStackTrace();
         }
         java.awt.EventQueue.invokeLater(() -> {
-            new GroupsWindow().setVisible(true);
+            new MainView().setVisible(true);
         });
     }
 

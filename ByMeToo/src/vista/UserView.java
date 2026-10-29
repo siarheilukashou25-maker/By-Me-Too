@@ -10,14 +10,14 @@ import javax.swing.UIManager;
  *
  * @author DAM2
  */
-public class UserWindow extends javax.swing.JFrame {
+public class UserView extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(UserWindow.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(UserView.class.getName());
 
     /**
      * Creates new form UserView
      */
-    public UserWindow() {
+    public UserView() {
         initComponents();
     }
 
@@ -135,7 +135,7 @@ public class UserWindow extends javax.swing.JFrame {
                 .addGap(3, 3, 3))
         );
 
-        jPanel2.setBackground(new java.awt.Color(250, 250, 250));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 229)));
         jPanel2.setForeground(new java.awt.Color(26, 32, 44));
 
@@ -392,7 +392,7 @@ public class UserWindow extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new UserWindow().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new UserView().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
