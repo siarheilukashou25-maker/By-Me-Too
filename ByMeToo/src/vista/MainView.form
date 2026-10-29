@@ -58,6 +58,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ab" green="da" red="81" type="rgb"/>
         </Property>
+        <Property name="opaque" type="boolean" value="false"/>
       </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel() {&#xa;    {&#xa;        setOpaque(false); &#xa;        setBackground(new java.awt.Color(0, 0, 0, 0));&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xa;        super.paintComponent(g);&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xa;&#xa;        int w = getWidth();&#xa;        int h = getHeight();&#xa;        int arc = 15; // Curvatura de las esquinas&#xa;&#xa;        // Blanco roto a la izquierda, verde menta a la derecha&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;); &#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;); &#xa;&#xa;        // Gradiente horizontal (de izquierda a derecha)&#xa;        g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));&#xa;        g2d.fillRoundRect(0, 0, w, h, arc, arc);&#xa;&#xa;        // Borde fino y gris clarito&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xa;        g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;};"/>
@@ -239,7 +240,7 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                 <TitledBorder title="Acciones">
-                  <Font PropertyName="font" name="Inter" size="13" style="0"/>
+                  <Font PropertyName="font" name="Inter" size="18" style="1"/>
                 </TitledBorder>
               </Border>
             </Property>
@@ -355,7 +356,7 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                 <TitledBorder title="Listado de grupos">
-                  <Font PropertyName="font" name="Inter" size="12" style="0"/>
+                  <Font PropertyName="font" name="Inter" size="18" style="1"/>
                 </TitledBorder>
               </Border>
             </Property>
@@ -387,7 +388,7 @@
                       <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="91" max="32767" attributes="0"/>
+                      <EmptySpace pref="77" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -396,7 +397,7 @@
             <Container class="javax.swing.JPanel" name="jPanel3">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ab" green="da" red="81" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="2c" green="20" red="1a" type="rgb"/>
@@ -550,11 +551,12 @@
             <Container class="javax.swing.JPanel" name="jPanel4">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ab" green="da" red="81" type="rgb"/>
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="2c" green="20" red="1a" type="rgb"/>
                 </Property>
+                <Property name="opaque" type="boolean" value="false"/>
               </Properties>
               <AuxValues>
                 <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel() {&#xa;    {&#xa;        setOpaque(false); &#xa;        setBackground(new java.awt.Color(0, 0, 0, 0));&#xa;    }&#xa;&#xa;    @Override&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xa;        super.paintComponent(g);&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xa;&#xa;        int w = getWidth();&#xa;        int h = getHeight();&#xa;        int arc = 15; // Curvatura de las esquinas&#xa;&#xa;        // Blanco roto a la izquierda, verde menta a la derecha&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;); &#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;); &#xa;&#xa;        // Gradiente horizontal (de izquierda a derecha)&#xa;        g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));&#xa;        g2d.fillRoundRect(0, 0, w, h, arc, arc);&#xa;&#xa;        // Borde fino y gris clarito&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xa;        g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);&#xa;&#xa;        g2d.dispose();&#xa;    }&#xa;};"/>
@@ -590,7 +592,7 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
                           <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="50" max="32767" attributes="0"/>
+                          <EmptySpace pref="51" max="32767" attributes="0"/>
                       </Group>
                       <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">

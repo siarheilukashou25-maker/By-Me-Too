@@ -250,6 +250,7 @@ public class MainView extends javax.swing.JFrame {
         toolbarPanel21.setBackground(new java.awt.Color(129, 218, 171));
         toolbarPanel21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(129, 218, 171)));
         toolbarPanel21.setForeground(new java.awt.Color(129, 218, 171));
+        toolbarPanel21.setOpaque(false);
 
         lblConectado22.setBackground(new java.awt.Color(129, 218, 171));
         lblConectado22.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -313,7 +314,7 @@ public class MainView extends javax.swing.JFrame {
         jLabel11.setText("Grupos");
 
         accionesCard3.setBackground(new java.awt.Color(250, 250, 250));
-        accionesCard3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acciones", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 13))); // NOI18N
+        accionesCard3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acciones", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 1, 18))); // NOI18N
         accionesCard3.setForeground(new java.awt.Color(26, 32, 44));
 
         jButton14.setBackground(new java.awt.Color(250, 250, 250));
@@ -366,10 +367,10 @@ public class MainView extends javax.swing.JFrame {
         );
 
         jPanel2.setBackground(new java.awt.Color(250, 250, 250));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Listado de grupos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 12))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Listado de grupos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 1, 18))); // NOI18N
         jPanel2.setForeground(new java.awt.Color(26, 32, 44));
 
-        jPanel3.setBackground(new java.awt.Color(129, 218, 171));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setForeground(new java.awt.Color(26, 32, 44));
         jPanel3.setOpaque(false);
 
@@ -444,8 +445,9 @@ public class MainView extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        jPanel4.setBackground(new java.awt.Color(129, 218, 171));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setForeground(new java.awt.Color(26, 32, 44));
+        jPanel4.setOpaque(false);
 
         jButton10.setBackground(new java.awt.Color(250, 250, 250));
         jButton10.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -501,7 +503,7 @@ public class MainView extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel6)
-                .addContainerGap(50, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addGap(1, 1, 1)
@@ -534,7 +536,7 @@ public class MainView extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(22, 22, 22)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(91, Short.MAX_VALUE))
+                .addContainerGap(77, Short.MAX_VALUE))
         );
 
         jButton4.setBackground(new java.awt.Color(250, 250, 250));
