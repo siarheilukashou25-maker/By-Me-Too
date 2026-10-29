@@ -10,3 +10,7 @@
 
 ## Correcciones realizadas
 -Tamaño de las letras: Hemos tenido que corregirlos ya que dos textos estaban por el mínimo de recomendado que es 14px y estaban entre el 10 -11px
+
+## Correcciones por realizar
+- Añadir una escala para los textos.
+- Añadir una variante de tema oscuro para personas con problemas en la vista.
