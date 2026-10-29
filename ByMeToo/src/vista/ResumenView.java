@@ -1,18 +1,21 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ */
 package vista;
 
-import javax.swing.UIManager;
-
 /**
- * Ventana de resumen (maqueta).
+ *
+ * @author pazog
  */
-public class ResumenWindow extends javax.swing.JFrame {
-
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ResumenWindow.class.getName());
+public class ResumenView extends javax.swing.JFrame {
+    
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(ResumenView.class.getName());
 
     /**
-     * Creates new form SummaryWindow
+     * Creates new form NewJFrame
      */
-    public ResumenWindow() {
+    public ResumenView() {
         initComponents();
     }
 
@@ -25,26 +28,15 @@ public class ResumenWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        toolbarPanel = new javax.swing.JPanel();
-        btnNuevoGrupo = new javax.swing.JButton();
-        btnNuevaCompra = new javax.swing.JButton();
-        toolbarSeparator = new javax.swing.JSeparator();
+        toolbarPanel19 = new javax.swing.JPanel();
+        toolbarSeparator20 = new javax.swing.JSeparator();
+        lblConectado20 = new javax.swing.JLabel();
+        navGrupos20 = new javax.swing.JButton();
+        navPerfil20 = new javax.swing.JButton();
         btnResumen = new javax.swing.JButton();
-        lblConectado = new javax.swing.JLabel();
-        sidebarPanel = new javax.swing.JPanel();
-        navPanel = new javax.swing.JPanel();
-        navTitle = new javax.swing.JLabel();
-        navSeparator = new javax.swing.JSeparator();
-        navInicio = new javax.swing.JButton();
-        navGrupos = new javax.swing.JButton();
-        navResumenPanel = new javax.swing.JPanel();
-        navResumen = new javax.swing.JButton();
-        navPerfil = new javax.swing.JButton();
-        gruposSidePanel = new javax.swing.JPanel();
-        gruposTitle = new javax.swing.JLabel();
-        gruposSeparator = new javax.swing.JSeparator();
-        lblGrupoPiso1 = new javax.swing.JLabel();
-        contentScroll = new javax.swing.JScrollPane();
+        jButton4 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         contentPanel = new javax.swing.JPanel();
         lblResumenTitle = new javax.swing.JLabel();
         lblPeriodo = new javax.swing.JLabel();
@@ -160,204 +152,82 @@ public class ResumenWindow extends javax.swing.JFrame {
         btnComEditar5 = new javax.swing.JButton();
         btnComBorrar5 = new javax.swing.JButton();
         comRow6 = new javax.swing.JPanel();
-        lblComProducto6 = new javax.swing.JLabel();
-        lblComPago6 = new javax.swing.JLabel();
-        lblComEstado6 = new javax.swing.JLabel();
-        lblComImporte6 = new javax.swing.JLabel();
-        cellComAcciones6 = new javax.swing.JPanel();
-        btnComEstado6 = new javax.swing.JButton();
-        btnComEditar6 = new javax.swing.JButton();
-        btnComBorrar6 = new javax.swing.JButton();
-        statusPanel = new javax.swing.JPanel();
-        statusGrupos = new javax.swing.JLabel();
-        menuBar = new javax.swing.JMenuBar();
-        menuArchivo = new javax.swing.JMenu();
-        menuVer = new javax.swing.JMenu();
-        menuAyuda = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Cómprame! — Gestor de gastos compartidos");
 
-        toolbarPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
+        toolbarPanel19.setBackground(new java.awt.Color(226, 232, 229));
+        toolbarPanel19.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
 
-        btnNuevoGrupo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/plus.png"))); // NOI18N
-        btnNuevoGrupo.setText("Nuevo grupo");
+        toolbarSeparator20.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
-        btnNuevaCompra.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
-        btnNuevaCompra.setText("Nueva compra");
+        lblConectado20.setBackground(new java.awt.Color(226, 232, 229));
+        lblConectado20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblConectado20.setForeground(new java.awt.Color(26, 32, 44));
+        lblConectado20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblConectado20.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
 
-        toolbarSeparator.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        navGrupos20.setBackground(new java.awt.Color(250, 250, 250));
+        navGrupos20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        navGrupos20.setForeground(new java.awt.Color(26, 32, 44));
+        navGrupos20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
+        navGrupos20.setText("Inicio");
+        navGrupos20.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
+        navGrupos20.setBorderPainted(false);
+        navGrupos20.setContentAreaFilled(false);
+        navGrupos20.setFocusPainted(false);
+        navGrupos20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        navGrupos20.setOpaque(true);
+
+        navPerfil20.setBackground(new java.awt.Color(250, 250, 250));
+        navPerfil20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        navPerfil20.setForeground(new java.awt.Color(26, 32, 44));
+        navPerfil20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
+        navPerfil20.setText("Perfil");
+        navPerfil20.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
+        navPerfil20.setBorderPainted(false);
+        navPerfil20.setContentAreaFilled(false);
+        navPerfil20.setFocusPainted(false);
+        navPerfil20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+
+        javax.swing.GroupLayout toolbarPanel19Layout = new javax.swing.GroupLayout(toolbarPanel19);
+        toolbarPanel19.setLayout(toolbarPanel19Layout);
+        toolbarPanel19Layout.setHorizontalGroup(
+            toolbarPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(toolbarPanel19Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(navGrupos20, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(toolbarSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(navPerfil20, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(143, 143, 143)
+                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 476, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addContainerGap())
+        );
+        toolbarPanel19Layout.setVerticalGroup(
+            toolbarPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(toolbarPanel19Layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addGroup(toolbarPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(toolbarSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblConectado20)
+                    .addComponent(navGrupos20)
+                    .addComponent(navPerfil20))
+                .addGap(3, 3, 3))
+        );
 
         btnResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
         btnResumen.setText("Resumen");
 
-        lblConectado.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblConectado.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
+        jButton4.setText("Nueva compra");
+        jButton4.addActionListener(this::jButton4ActionPerformed);
 
-        javax.swing.GroupLayout toolbarPanelLayout = new javax.swing.GroupLayout(toolbarPanel);
-        toolbarPanel.setLayout(toolbarPanelLayout);
-        toolbarPanelLayout.setHorizontalGroup(
-            toolbarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(toolbarPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addComponent(btnNuevoGrupo)
-                .addGap(3, 3, 3)
-                .addComponent(btnNuevaCompra)
-                .addGap(5, 5, 5)
-                .addComponent(toolbarSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(btnResumen)
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(lblConectado)
-                .addGap(8, 8, 8))
-        );
-        toolbarPanelLayout.setVerticalGroup(
-            toolbarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(toolbarPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addGroup(toolbarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(btnNuevoGrupo)
-                    .addComponent(btnNuevaCompra)
-                    .addComponent(toolbarSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnResumen)
-                    .addComponent(lblConectado))
-                .addGap(2, 2, 2))
-        );
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jButton3.setText("Repartos");
 
-        navPanel.setBackground(new java.awt.Color(255, 255, 255));
-        navPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
-
-        navTitle.setFont(navTitle.getFont().deriveFont(navTitle.getFont().getStyle() | java.awt.Font.BOLD));
-        navTitle.setText("Navegación");
-        navTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 6, 5, 6));
-
-        navInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/home.png"))); // NOI18N
-        navInicio.setText("Inicio");
-        navInicio.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-        navInicio.setBorderPainted(false);
-        navInicio.setContentAreaFilled(false);
-        navInicio.setFocusPainted(false);
-        navInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-
-        navGrupos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
-        navGrupos.setText("Grupos");
-        navGrupos.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-        navGrupos.setBorderPainted(false);
-        navGrupos.setContentAreaFilled(false);
-        navGrupos.setFocusPainted(false);
-        navGrupos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-
-        navResumenPanel.setBackground(new java.awt.Color(65, 130, 220));
-
-        navResumen.setForeground(new java.awt.Color(255, 255, 255));
-        navResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
-        navResumen.setText("Resumen");
-        navResumen.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-        navResumen.setBorderPainted(false);
-        navResumen.setContentAreaFilled(false);
-        navResumen.setFocusPainted(false);
-        navResumen.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-
-        javax.swing.GroupLayout navResumenPanelLayout = new javax.swing.GroupLayout(navResumenPanel);
-        navResumenPanel.setLayout(navResumenPanelLayout);
-        navResumenPanelLayout.setHorizontalGroup(
-            navResumenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navResumen, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-        );
-        navResumenPanelLayout.setVerticalGroup(
-            navResumenPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navResumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
-        navPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
-        navPerfil.setText("Perfil");
-        navPerfil.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-        navPerfil.setBorderPainted(false);
-        navPerfil.setContentAreaFilled(false);
-        navPerfil.setFocusPainted(false);
-        navPerfil.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-
-        javax.swing.GroupLayout navPanelLayout = new javax.swing.GroupLayout(navPanel);
-        navPanel.setLayout(navPanelLayout);
-        navPanelLayout.setHorizontalGroup(
-            navPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navSeparator)
-            .addComponent(navInicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navGrupos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navResumenPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navPerfil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        navPanelLayout.setVerticalGroup(
-            navPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(navPanelLayout.createSequentialGroup()
-                .addComponent(navTitle)
-                .addGap(0, 0, 0)
-                .addComponent(navSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2)
-                .addComponent(navInicio)
-                .addGap(0, 0, 0)
-                .addComponent(navGrupos)
-                .addGap(0, 0, 0)
-                .addComponent(navResumenPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(navPerfil)
-                .addGap(4, 4, 4))
-        );
-
-        gruposSidePanel.setBackground(new java.awt.Color(255, 255, 255));
-        gruposSidePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
-
-        gruposTitle.setFont(gruposTitle.getFont().deriveFont(gruposTitle.getFont().getStyle() | java.awt.Font.BOLD));
-        gruposTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/folder.png"))); // NOI18N
-        gruposTitle.setText("Grupos");
-        gruposTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 6, 5, 6));
-
-        lblGrupoPiso1.setText("›  Piso1");
-        lblGrupoPiso1.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-
-        javax.swing.GroupLayout gruposSidePanelLayout = new javax.swing.GroupLayout(gruposSidePanel);
-        gruposSidePanel.setLayout(gruposSidePanelLayout);
-        gruposSidePanelLayout.setHorizontalGroup(
-            gruposSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(gruposTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(gruposSeparator)
-            .addComponent(lblGrupoPiso1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        gruposSidePanelLayout.setVerticalGroup(
-            gruposSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(gruposSidePanelLayout.createSequentialGroup()
-                .addComponent(gruposTitle)
-                .addGap(0, 0, 0)
-                .addComponent(gruposSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(2, 2, 2)
-                .addComponent(lblGrupoPiso1)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout sidebarPanelLayout = new javax.swing.GroupLayout(sidebarPanel);
-        sidebarPanel.setLayout(sidebarPanelLayout);
-        sidebarPanelLayout.setHorizontalGroup(
-            sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sidebarPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(navPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(2, 2, 2))
-        );
-        sidebarPanelLayout.setVerticalGroup(
-            sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sidebarPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addComponent(navPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3)
-                .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(2, 2, 2))
-        );
-
-        contentScroll.setBorder(null);
-        contentScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-billetes-16.png"))); // NOI18N
+        jButton5.setText("Gastos");
 
         lblResumenTitle.setFont(lblResumenTitle.getFont().deriveFont(lblResumenTitle.getFont().getStyle() | java.awt.Font.BOLD, lblResumenTitle.getFont().getSize()+4));
         lblResumenTitle.setText("Resumen");
@@ -416,7 +286,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         balHeaderLayout.setHorizontalGroup(
             balHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(balHeaderLayout.createSequentialGroup()
-                .addComponent(lblBalHdrMiembro, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblBalHdrMiembro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblBalHdrProporcion, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -425,8 +295,8 @@ public class ResumenWindow extends javax.swing.JFrame {
         balHeaderLayout.setVerticalGroup(
             balHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblBalHdrMiembro, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblBalHdrProporcion, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblBalHdrBalance, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+            .addComponent(lblBalHdrProporcion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblBalHdrBalance, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         balRow1.setBackground(new java.awt.Color(255, 255, 255));
@@ -495,7 +365,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         balRow1Layout.setHorizontalGroup(
             balRow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(balRow1Layout.createSequentialGroup()
-                .addComponent(lblBalMiembro1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblBalMiembro1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(cellBalBar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -505,7 +375,7 @@ public class ResumenWindow extends javax.swing.JFrame {
             balRow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblBalMiembro1, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
             .addComponent(cellBalBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblBalImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+            .addComponent(lblBalImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         balRow2.setBackground(new java.awt.Color(246, 247, 250));
@@ -574,7 +444,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         balRow2Layout.setHorizontalGroup(
             balRow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(balRow2Layout.createSequentialGroup()
-                .addComponent(lblBalMiembro2, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblBalMiembro2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(cellBalBar2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -584,7 +454,7 @@ public class ResumenWindow extends javax.swing.JFrame {
             balRow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblBalMiembro2, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
             .addComponent(cellBalBar2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblBalImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+            .addComponent(lblBalImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         balRow3.setBackground(new java.awt.Color(255, 255, 255));
@@ -652,7 +522,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         balRow3Layout.setHorizontalGroup(
             balRow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(balRow3Layout.createSequentialGroup()
-                .addComponent(lblBalMiembro3, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblBalMiembro3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(cellBalBar3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -662,7 +532,7 @@ public class ResumenWindow extends javax.swing.JFrame {
             balRow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblBalMiembro3, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
             .addComponent(cellBalBar3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblBalImporte3, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+            .addComponent(lblBalImporte3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout balTableLayout = new javax.swing.GroupLayout(balTable);
@@ -729,7 +599,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         repHeaderLayout.setHorizontalGroup(
             repHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(repHeaderLayout.createSequentialGroup()
-                .addComponent(lblRepHdrDebe, javax.swing.GroupLayout.DEFAULT_SIZE, 240, Short.MAX_VALUE)
+                .addComponent(lblRepHdrDebe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblRepHdrFlecha, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -742,10 +612,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         repHeaderLayout.setVerticalGroup(
             repHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblRepHdrDebe, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblRepHdrFlecha, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblRepHdrA, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblRepHdrImporte, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblRepHdrAccion, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+            .addComponent(lblRepHdrFlecha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblRepHdrA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblRepHdrImporte, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblRepHdrAccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         repRow1.setBackground(new java.awt.Color(255, 255, 255));
@@ -774,11 +644,11 @@ public class ResumenWindow extends javax.swing.JFrame {
         cellRepDebe1Layout.setVerticalGroup(
             cellRepDebe1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellRepDebe1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 14, Short.MAX_VALUE)
                 .addGroup(cellRepDebe1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblRepBadgeDe1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblRepDe1))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 14, Short.MAX_VALUE))
         );
 
         lblRepFlecha1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -862,10 +732,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         repRow1Layout.setVerticalGroup(
             repRow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(cellRepDebe1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblRepFlecha1, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+            .addComponent(lblRepFlecha1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellRepA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblRepImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-            .addComponent(cellRepBizum1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, Short.MAX_VALUE)
+            .addComponent(lblRepImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(cellRepBizum1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
 
         repRow2.setBackground(new java.awt.Color(246, 247, 250));
@@ -893,11 +763,11 @@ public class ResumenWindow extends javax.swing.JFrame {
         cellRepDebe2Layout.setVerticalGroup(
             cellRepDebe2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellRepDebe2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 14, Short.MAX_VALUE)
                 .addGroup(cellRepDebe2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(lblRepBadgeDe2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblRepDe2))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 14, Short.MAX_VALUE))
         );
 
         lblRepFlecha2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -981,10 +851,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         repRow2Layout.setVerticalGroup(
             repRow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(cellRepDebe2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblRepFlecha2, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
+            .addComponent(lblRepFlecha2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellRepA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(lblRepImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)
-            .addComponent(cellRepBizum2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, Short.MAX_VALUE)
+            .addComponent(lblRepImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(cellRepBizum2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout repTableLayout = new javax.swing.GroupLayout(repTable);
@@ -1050,7 +920,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         comHeaderLayout.setHorizontalGroup(
             comHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(comHeaderLayout.createSequentialGroup()
-                .addComponent(lblComHdrProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblComHdrProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblComHdrPago, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -1063,10 +933,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         comHeaderLayout.setVerticalGroup(
             comHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(lblComHdrProducto, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblComHdrPago, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblComHdrEstado, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblComHdrImporte, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
-            .addComponent(lblComHdrAcciones, javax.swing.GroupLayout.DEFAULT_SIZE, 26, Short.MAX_VALUE)
+            .addComponent(lblComHdrPago, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComHdrEstado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComHdrImporte, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComHdrAcciones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         comRow1.setBackground(new java.awt.Color(255, 255, 255));
@@ -1121,12 +991,12 @@ public class ResumenWindow extends javax.swing.JFrame {
         cellComAcciones1Layout.setVerticalGroup(
             cellComAcciones1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellComAcciones1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 2, Short.MAX_VALUE)
                 .addGroup(cellComAcciones1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(btnComEstado1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnComEditar1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnComBorrar1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout comRow1Layout = new javax.swing.GroupLayout(comRow1);
@@ -1134,7 +1004,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         comRow1Layout.setHorizontalGroup(
             comRow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(comRow1Layout.createSequentialGroup()
-                .addComponent(lblComProducto1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblComProducto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblComPago1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -1146,10 +1016,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         );
         comRow1Layout.setVerticalGroup(
             comRow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblComProducto1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComPago1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComEstado1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addComponent(lblComProducto1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComPago1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComEstado1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellComAcciones1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -1205,12 +1075,12 @@ public class ResumenWindow extends javax.swing.JFrame {
         cellComAcciones2Layout.setVerticalGroup(
             cellComAcciones2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellComAcciones2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 2, Short.MAX_VALUE)
                 .addGroup(cellComAcciones2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(btnComEstado2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnComEditar2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnComBorrar2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout comRow2Layout = new javax.swing.GroupLayout(comRow2);
@@ -1218,7 +1088,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         comRow2Layout.setHorizontalGroup(
             comRow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(comRow2Layout.createSequentialGroup()
-                .addComponent(lblComProducto2, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblComProducto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblComPago2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -1230,10 +1100,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         );
         comRow2Layout.setVerticalGroup(
             comRow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblComProducto2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComPago2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComEstado2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addComponent(lblComProducto2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComPago2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComEstado2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellComAcciones2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -1289,12 +1159,12 @@ public class ResumenWindow extends javax.swing.JFrame {
         cellComAcciones3Layout.setVerticalGroup(
             cellComAcciones3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellComAcciones3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(0, 2, Short.MAX_VALUE)
                 .addGroup(cellComAcciones3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(btnComEstado3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnComEditar3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnComBorrar3, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 2, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout comRow3Layout = new javax.swing.GroupLayout(comRow3);
@@ -1302,7 +1172,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         comRow3Layout.setHorizontalGroup(
             comRow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(comRow3Layout.createSequentialGroup()
-                .addComponent(lblComProducto3, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblComProducto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblComPago3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -1314,10 +1184,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         );
         comRow3Layout.setVerticalGroup(
             comRow3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblComProducto3, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComPago3, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComEstado3, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
-            .addComponent(lblComImporte3, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+            .addComponent(lblComProducto3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComPago3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComEstado3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComImporte3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellComAcciones3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -1386,7 +1256,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         comRow4Layout.setHorizontalGroup(
             comRow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(comRow4Layout.createSequentialGroup()
-                .addComponent(lblComProducto4, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblComProducto4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblComPago4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -1398,10 +1268,10 @@ public class ResumenWindow extends javax.swing.JFrame {
         );
         comRow4Layout.setVerticalGroup(
             comRow4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblComProducto4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(lblComProducto4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(lblComPago4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(lblComEstado4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(lblComImporte4, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(lblComEstado4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComImporte4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellComAcciones4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
@@ -1470,7 +1340,7 @@ public class ResumenWindow extends javax.swing.JFrame {
         comRow5Layout.setHorizontalGroup(
             comRow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(comRow5Layout.createSequentialGroup()
-                .addComponent(lblComProducto5, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                .addComponent(lblComProducto5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(0, 0, 0)
                 .addComponent(lblComPago5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
@@ -1482,94 +1352,24 @@ public class ResumenWindow extends javax.swing.JFrame {
         );
         comRow5Layout.setVerticalGroup(
             comRow5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblComProducto5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(lblComProducto5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(lblComPago5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(lblComEstado5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(lblComImporte5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
+            .addComponent(lblComEstado5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(lblComImporte5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellComAcciones5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         comRow6.setBackground(new java.awt.Color(246, 247, 250));
 
-        lblComProducto6.setText("Leche");
-        lblComProducto6.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8));
-
-        lblComPago6.setText("<html>SIARHEI<br>LUKASHOU</html>");
-        lblComPago6.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
-
-        lblComEstado6.setForeground(new java.awt.Color(50, 135, 60));
-        lblComEstado6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblComEstado6.setText("Pagada");
-        lblComEstado6.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
-
-        lblComImporte6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblComImporte6.setText("2,99 €");
-        lblComImporte6.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)), javax.swing.BorderFactory.createEmptyBorder(0, 8, 0, 8)));
-
-        cellComAcciones6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(210, 210, 210)));
-        cellComAcciones6.setOpaque(false);
-
-        btnComEstado6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/check.png"))); // NOI18N
-        btnComEstado6.setBorderPainted(false);
-        btnComEstado6.setContentAreaFilled(false);
-        btnComEstado6.setFocusPainted(false);
-
-        btnComEditar6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/pencil.png"))); // NOI18N
-        btnComEditar6.setBorderPainted(false);
-        btnComEditar6.setContentAreaFilled(false);
-        btnComEditar6.setFocusPainted(false);
-
-        btnComBorrar6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/trash.png"))); // NOI18N
-        btnComBorrar6.setBorderPainted(false);
-        btnComBorrar6.setContentAreaFilled(false);
-        btnComBorrar6.setFocusPainted(false);
-
-        javax.swing.GroupLayout cellComAcciones6Layout = new javax.swing.GroupLayout(cellComAcciones6);
-        cellComAcciones6.setLayout(cellComAcciones6Layout);
-        cellComAcciones6Layout.setHorizontalGroup(
-            cellComAcciones6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(cellComAcciones6Layout.createSequentialGroup()
-                .addGap(0, 15, Short.MAX_VALUE)
-                .addComponent(btnComEstado6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(btnComEditar6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(btnComBorrar6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 16, Short.MAX_VALUE))
-        );
-        cellComAcciones6Layout.setVerticalGroup(
-            cellComAcciones6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(cellComAcciones6Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(cellComAcciones6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(btnComEstado6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnComEditar6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnComBorrar6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
         javax.swing.GroupLayout comRow6Layout = new javax.swing.GroupLayout(comRow6);
         comRow6.setLayout(comRow6Layout);
         comRow6Layout.setHorizontalGroup(
             comRow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(comRow6Layout.createSequentialGroup()
-                .addComponent(lblComProducto6, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
-                .addComponent(lblComPago6, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(lblComEstado6, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(lblComImporte6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(cellComAcciones6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGap(0, 922, Short.MAX_VALUE)
         );
         comRow6Layout.setVerticalGroup(
             comRow6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblComProducto6, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(lblComPago6, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(lblComEstado6, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(lblComImporte6, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-            .addComponent(cellComAcciones6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout comTableLayout = new javax.swing.GroupLayout(comTable);
@@ -1598,8 +1398,9 @@ public class ResumenWindow extends javax.swing.JFrame {
                 .addComponent(comRow4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(comRow5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(comRow6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(comRow6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout comprasCardLayout = new javax.swing.GroupLayout(comprasCard);
@@ -1615,8 +1416,8 @@ public class ResumenWindow extends javax.swing.JFrame {
             comprasCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(comprasCardLayout.createSequentialGroup()
                 .addGap(2, 2, 2)
-                .addComponent(comTable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(comTable, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(9, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout contentPanelLayout = new javax.swing.GroupLayout(contentPanel);
@@ -1654,68 +1455,48 @@ public class ResumenWindow extends javax.swing.JFrame {
                 .addComponent(repartoCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(comprasCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12))
+                .addContainerGap())
         );
-
-        contentScroll.setViewportView(contentPanel);
-
-        statusPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(160, 160, 160)));
-
-        statusGrupos.setText("Grupos: 1");
-        statusGrupos.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
-
-        javax.swing.GroupLayout statusPanelLayout = new javax.swing.GroupLayout(statusPanel);
-        statusPanel.setLayout(statusPanelLayout);
-        statusPanelLayout.setHorizontalGroup(
-            statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(statusPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addComponent(statusGrupos)
-                .addGap(108, 108, 108))
-        );
-        statusPanelLayout.setVerticalGroup(
-            statusPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(statusPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addComponent(statusGrupos)
-                .addGap(1, 1, 1))
-        );
-
-        menuArchivo.setText("Archivo");
-        menuBar.add(menuArchivo);
-
-        menuVer.setText("Ver");
-        menuBar.add(menuVer);
-
-        menuAyuda.setText("Ayuda");
-        menuBar.add(menuAyuda);
-
-        setJMenuBar(menuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(toolbarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(toolbarPanel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(sidebarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(contentScroll))
-            .addComponent(statusPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton5)
+                .addGap(20, 20, 20)
+                .addComponent(jButton3)
+                .addGap(20, 20, 20)
+                .addComponent(jButton4)
+                .addGap(20, 20, 20)
+                .addComponent(btnResumen)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(toolbarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(sidebarPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(contentScroll))
-                .addComponent(statusPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(toolbarPanel19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnResumen)
+                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton3)
+                    .addComponent(jButton5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(contentPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        setSize(new java.awt.Dimension(1024, 768));
-        setLocationRelativeTo(null);
+        pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1727,14 +1508,19 @@ public class ResumenWindow extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (Exception ex) {
-            ex.printStackTrace();
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
+            logger.log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new ResumenWindow().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new ResumenView().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -1757,21 +1543,16 @@ public class ResumenWindow extends javax.swing.JFrame {
     private javax.swing.JButton btnComBorrar3;
     private javax.swing.JButton btnComBorrar4;
     private javax.swing.JButton btnComBorrar5;
-    private javax.swing.JButton btnComBorrar6;
     private javax.swing.JButton btnComEditar1;
     private javax.swing.JButton btnComEditar2;
     private javax.swing.JButton btnComEditar3;
     private javax.swing.JButton btnComEditar4;
     private javax.swing.JButton btnComEditar5;
-    private javax.swing.JButton btnComEditar6;
     private javax.swing.JButton btnComEstado1;
     private javax.swing.JButton btnComEstado2;
     private javax.swing.JButton btnComEstado3;
     private javax.swing.JButton btnComEstado4;
     private javax.swing.JButton btnComEstado5;
-    private javax.swing.JButton btnComEstado6;
-    private javax.swing.JButton btnNuevaCompra;
-    private javax.swing.JButton btnNuevoGrupo;
     private javax.swing.JButton btnResumen;
     private javax.swing.JPanel cellBalBar1;
     private javax.swing.JPanel cellBalBar2;
@@ -1781,7 +1562,6 @@ public class ResumenWindow extends javax.swing.JFrame {
     private javax.swing.JPanel cellComAcciones3;
     private javax.swing.JPanel cellComAcciones4;
     private javax.swing.JPanel cellComAcciones5;
-    private javax.swing.JPanel cellComAcciones6;
     private javax.swing.JPanel cellRepA1;
     private javax.swing.JPanel cellRepA2;
     private javax.swing.JPanel cellRepBizum1;
@@ -1799,11 +1579,10 @@ public class ResumenWindow extends javax.swing.JFrame {
     private javax.swing.JPanel comTable;
     private javax.swing.JPanel comprasCard;
     private javax.swing.JPanel contentPanel;
-    private javax.swing.JScrollPane contentScroll;
     private javax.swing.JPanel gastoCard;
-    private javax.swing.JSeparator gruposSeparator;
-    private javax.swing.JPanel gruposSidePanel;
-    private javax.swing.JLabel gruposTitle;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel lblBalHdrBalance;
     private javax.swing.JLabel lblBalHdrMiembro;
     private javax.swing.JLabel lblBalHdrProporcion;
@@ -1818,7 +1597,6 @@ public class ResumenWindow extends javax.swing.JFrame {
     private javax.swing.JLabel lblComEstado3;
     private javax.swing.JLabel lblComEstado4;
     private javax.swing.JLabel lblComEstado5;
-    private javax.swing.JLabel lblComEstado6;
     private javax.swing.JLabel lblComHdrAcciones;
     private javax.swing.JLabel lblComHdrEstado;
     private javax.swing.JLabel lblComHdrImporte;
@@ -1829,23 +1607,19 @@ public class ResumenWindow extends javax.swing.JFrame {
     private javax.swing.JLabel lblComImporte3;
     private javax.swing.JLabel lblComImporte4;
     private javax.swing.JLabel lblComImporte5;
-    private javax.swing.JLabel lblComImporte6;
     private javax.swing.JLabel lblComPago1;
     private javax.swing.JLabel lblComPago2;
     private javax.swing.JLabel lblComPago3;
     private javax.swing.JLabel lblComPago4;
     private javax.swing.JLabel lblComPago5;
-    private javax.swing.JLabel lblComPago6;
     private javax.swing.JLabel lblComProducto1;
     private javax.swing.JLabel lblComProducto2;
     private javax.swing.JLabel lblComProducto3;
     private javax.swing.JLabel lblComProducto4;
     private javax.swing.JLabel lblComProducto5;
-    private javax.swing.JLabel lblComProducto6;
     private javax.swing.JLabel lblComprasRegistradas;
-    private javax.swing.JLabel lblConectado;
+    private javax.swing.JLabel lblConectado20;
     private javax.swing.JLabel lblGastoTotal;
-    private javax.swing.JLabel lblGrupoPiso1;
     private javax.swing.JLabel lblPeriodo;
     private javax.swing.JLabel lblRepA1;
     private javax.swing.JLabel lblRepA2;
@@ -1865,27 +1639,14 @@ public class ResumenWindow extends javax.swing.JFrame {
     private javax.swing.JLabel lblRepImporte1;
     private javax.swing.JLabel lblRepImporte2;
     private javax.swing.JLabel lblResumenTitle;
-    private javax.swing.JMenu menuArchivo;
-    private javax.swing.JMenu menuAyuda;
-    private javax.swing.JMenuBar menuBar;
-    private javax.swing.JMenu menuVer;
-    private javax.swing.JButton navGrupos;
-    private javax.swing.JButton navInicio;
-    private javax.swing.JPanel navPanel;
-    private javax.swing.JButton navPerfil;
-    private javax.swing.JButton navResumen;
-    private javax.swing.JPanel navResumenPanel;
-    private javax.swing.JSeparator navSeparator;
-    private javax.swing.JLabel navTitle;
+    private javax.swing.JButton navGrupos20;
+    private javax.swing.JButton navPerfil20;
     private javax.swing.JPanel repHeader;
     private javax.swing.JPanel repRow1;
     private javax.swing.JPanel repRow2;
     private javax.swing.JPanel repTable;
     private javax.swing.JPanel repartoCard;
-    private javax.swing.JPanel sidebarPanel;
-    private javax.swing.JLabel statusGrupos;
-    private javax.swing.JPanel statusPanel;
-    private javax.swing.JPanel toolbarPanel;
-    private javax.swing.JSeparator toolbarSeparator;
+    private javax.swing.JPanel toolbarPanel19;
+    private javax.swing.JSeparator toolbarSeparator20;
     // End of variables declaration//GEN-END:variables
 }

@@ -5,14 +5,14 @@ import javax.swing.UIManager;
 /**
  * Ventana de inicio de sesión (maqueta).
  */
-public class LoginWindow extends javax.swing.JFrame {
+public class LoginView extends javax.swing.JFrame {
 
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginWindow.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(LoginView.class.getName());
 
     /**
      * Creates new form LoginWindow
      */
-    public LoginWindow() {
+    public LoginView() {
         initComponents();
     }
 
@@ -184,14 +184,14 @@ public class LoginWindow extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(289, 289, 289)
+                .addContainerGap(290, Short.MAX_VALUE)
                 .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(299, Short.MAX_VALUE))
+                .addContainerGap(300, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(194, 194, 194)
+                .addContainerGap(194, Short.MAX_VALUE)
                 .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(194, Short.MAX_VALUE))
         );
@@ -217,7 +217,7 @@ public class LoginWindow extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new LoginWindow().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new LoginView().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
