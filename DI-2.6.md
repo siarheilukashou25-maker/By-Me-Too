@@ -14,3 +14,19 @@
 ## Correcciones por realizar
 - Añadir una escala para los textos.
 - Añadir una variante de tema oscuro para personas con problemas en la vista.
+
+## Referencias
+
+[1] W3C, "Web Content Accessibility Guidelines (WCAG) 2.2," W3C Recommendation, oct. 2023. [En línea]. Disponible en: https://www.w3.org/TR/WCAG22/. Accedido: 29 oct. 2026.
+
+[2] W3C WAI, "Understanding Success Criterion 1.4.3: Contrast (Minimum)," *WCAG 2.2 Understanding Docs*. [En línea]. Disponible en: https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum. Accedido: 26 oct. 2026.
+
+[3] W3C WAI, "Understanding Success Criterion 1.4.6: Contrast (Enhanced)," *WCAG 2.2 Understanding Docs*. [En línea]. Disponible en: https://www.w3.org/WAI/WCAG22/Understanding/contrast-enhanced. Accedido: 27 oct. 2026.
+
+[4] W3C WAI, "Understanding Success Criterion 2.5.8: Target Size (Minimum)," *WCAG 2.2 Understanding Docs*. [En línea]. Disponible en: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum. Accedido: 27 oct. 2026.
+
+[5] W3C WAI, "Understanding Success Criterion 2.5.5: Target Size (Enhanced)," *WCAG 2.2 Understanding Docs*. [En línea]. Disponible en: https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced. Accedido: 27 oct. 2026.
+
+[6] W3C WAI, "Understanding Success Criterion 2.1.1: Keyboard," *WCAG 2.2 Understanding Docs*. [En línea]. Disponible en: https://www.w3.org/WAI/WCAG22/Understanding/keyboard. Accedido: 28 oct. 2026.
+
+[7] Coddy, "Comprobador de contraste de color," *Coddy Tools*. [En línea]. Disponible en: https://coddy.tech/tools/es/contrast-checker. Accedido: 28 oct. 2026.
