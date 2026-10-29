@@ -28,26 +28,216 @@ public class MainView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        toolbarPanel21 = new javax.swing.JPanel();
-        toolbarSeparator22 = new javax.swing.JSeparator();
+        toolbarPanel21 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         lblConectado22 = new javax.swing.JLabel();
         navGrupos22 = new javax.swing.JButton();
         navPerfil22 = new javax.swing.JButton();
-        jPanel7 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto en origen, gris divisor en destino
+                java.awt.Color colorTopLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorBottomRight = java.awt.Color.decode("#E2E8E5");
+
+                // Gradiente de esquina superior izquierda (0,0) a esquina inferior derecha (w,h)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorTopLeft, w, h, colorBottomRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino neutro
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         jLabel11 = new javax.swing.JLabel();
-        accionesCard3 = new javax.swing.JPanel();
+        accionesCard3 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                // Convertimos a Graphics2D para tener más opciones de dibujo
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+
+                // 1. Activamos el suavizado (antialiasing) para que las curvas queden perfectas
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int margenIzquierdo = 2;
+                int margenDerecho = 4;
+                int margenInferior = 6;
+                int margenSuperior = 18;
+
+                // 2. Definimos la curvatura de las esquinas (10 o 12 suele coincidir perfecto con el TitledBorder)
+                int arc = 12;
+
+                g2d.setColor(new java.awt.Color(255, 255, 255));
+
+                // 3. Usamos fillRoundRect en lugar de fillRect
+                g2d.fillRoundRect(margenIzquierdo,
+                    margenSuperior,
+                    getWidth() - margenIzquierdo - margenDerecho,
+                    getHeight() - margenSuperior - margenInferior,
+                    arc, arc); // Los dos últimos parámetros son la curvatura
+
+                g2d.dispose();
+                super.paintComponent(g);
+            }
+        };
         jButton14 = new javax.swing.JButton();
         jLabel12 = new javax.swing.JLabel();
         jTextField4 = new javax.swing.JTextField();
         jButton15 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        jPanel2 =
+        new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                // Convertimos a Graphics2D para tener más opciones de dibujo
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+
+                // 1. Activamos el suavizado (antialiasing) para que las curvas queden perfectas
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int margenIzquierdo = 5;
+                int margenDerecho = 5;
+                int margenInferior = 8;
+                int margenSuperior = 18;
+
+                // 2. Definimos la curvatura de las esquinas (10 o 12 suele coincidir perfecto con el TitledBorder)
+                int arc = 12;
+
+                g2d.setColor(new java.awt.Color(255, 255, 255));
+
+                // 3. Usamos fillRoundRect en lugar de fillRect
+                g2d.fillRoundRect(margenIzquierdo,
+                    margenSuperior,
+                    getWidth() - margenIzquierdo - margenDerecho,
+                    getHeight() - margenSuperior - margenInferior,
+                    arc, arc); // Los dos últimos parámetros son la curvatura
+
+                g2d.dispose();
+                super.paintComponent(g);
+            }
+        };
+        jPanel3 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton9 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto a la izquierda, verde menta a la derecha
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                // Gradiente horizontal (de izquierda a derecha)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino y gris clarito
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         jButton10 = new javax.swing.JButton();
         jButton11 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
@@ -57,18 +247,17 @@ public class MainView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        toolbarPanel21.setBackground(new java.awt.Color(226, 232, 229));
-        toolbarPanel21.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
+        toolbarPanel21.setBackground(new java.awt.Color(129, 218, 171));
+        toolbarPanel21.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(129, 218, 171)));
+        toolbarPanel21.setForeground(new java.awt.Color(129, 218, 171));
 
-        toolbarSeparator22.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        lblConectado22.setBackground(new java.awt.Color(226, 232, 229));
+        lblConectado22.setBackground(new java.awt.Color(129, 218, 171));
         lblConectado22.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblConectado22.setForeground(new java.awt.Color(26, 32, 44));
         lblConectado22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblConectado22.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
 
-        navGrupos22.setBackground(new java.awt.Color(250, 250, 250));
+        navGrupos22.setBackground(new java.awt.Color(129, 218, 171));
         navGrupos22.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         navGrupos22.setForeground(new java.awt.Color(26, 32, 44));
         navGrupos22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
@@ -78,9 +267,8 @@ public class MainView extends javax.swing.JFrame {
         navGrupos22.setContentAreaFilled(false);
         navGrupos22.setFocusPainted(false);
         navGrupos22.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        navGrupos22.setOpaque(true);
 
-        navPerfil22.setBackground(new java.awt.Color(250, 250, 250));
+        navPerfil22.setBackground(new java.awt.Color(129, 218, 171));
         navPerfil22.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         navPerfil22.setForeground(new java.awt.Color(26, 32, 44));
         navPerfil22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
@@ -98,12 +286,10 @@ public class MainView extends javax.swing.JFrame {
             .addGroup(toolbarPanel21Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(navGrupos22, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(toolbarSeparator22, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(8, 8, 8)
                 .addComponent(navPerfil22, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(143, 143, 143)
-                .addComponent(lblConectado22)
+                .addComponent(lblConectado22, javax.swing.GroupLayout.DEFAULT_SIZE, 680, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addContainerGap())
         );
         toolbarPanel21Layout.setVerticalGroup(
@@ -111,32 +297,45 @@ public class MainView extends javax.swing.JFrame {
             .addGroup(toolbarPanel21Layout.createSequentialGroup()
                 .addGap(2, 2, 2)
                 .addGroup(toolbarPanel21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(toolbarSeparator22, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblConectado22)
                     .addComponent(navGrupos22)
                     .addComponent(navPerfil22)))
         );
 
-        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel7.setBackground(new java.awt.Color(250, 250, 250));
         jPanel7.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel7.setForeground(new java.awt.Color(26, 32, 44));
         jPanel7.setPreferredSize(new java.awt.Dimension(1188, 1188));
 
-        jLabel11.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel11.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel11.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(26, 32, 44));
         jLabel11.setText("Grupos");
 
-        accionesCard3.setBackground(new java.awt.Color(252, 252, 252));
-        accionesCard3.setBorder(javax.swing.BorderFactory.createTitledBorder("Acciones"));
+        accionesCard3.setBackground(new java.awt.Color(250, 250, 250));
+        accionesCard3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acciones", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 13))); // NOI18N
+        accionesCard3.setForeground(new java.awt.Color(26, 32, 44));
 
+        jButton14.setBackground(new java.awt.Color(250, 250, 250));
+        jButton14.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton14.setForeground(new java.awt.Color(26, 32, 44));
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/plus.png"))); // NOI18N
         jButton14.setText("Crear grupo");
         jButton14.addActionListener(this::jButton14ActionPerformed);
 
+        jLabel12.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel12.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(26, 32, 44));
         jLabel12.setText("Unirse con código");
 
-        jTextField4.setForeground(new java.awt.Color(204, 204, 204));
+        jTextField4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jTextField4.setForeground(new java.awt.Color(26, 32, 44));
         jTextField4.setText("ABC123");
         jTextField4.addActionListener(this::jTextField4ActionPerformed);
 
+        jButton15.setBackground(new java.awt.Color(250, 250, 250));
+        jButton15.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton15.setForeground(new java.awt.Color(26, 32, 44));
         jButton15.setText("Unirse");
 
         javax.swing.GroupLayout accionesCard3Layout = new javax.swing.GroupLayout(accionesCard3);
@@ -166,18 +365,29 @@ public class MainView extends javax.swing.JFrame {
                 .addGap(34, 34, 34))
         );
 
-        jPanel2.setBackground(new java.awt.Color(252, 252, 252));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Listado de grupos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 12))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(250, 250, 250));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Listado de grupos", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Inter", 0, 12))); // NOI18N
+        jPanel2.setForeground(new java.awt.Color(26, 32, 44));
 
-        jPanel3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel3.setBackground(new java.awt.Color(129, 218, 171));
+        jPanel3.setForeground(new java.awt.Color(26, 32, 44));
+        jPanel3.setOpaque(false);
 
+        jButton7.setBackground(new java.awt.Color(250, 250, 250));
+        jButton7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(26, 32, 44));
         jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-compartir-18.png"))); // NOI18N
         jButton7.setText("Compartir");
         jButton7.setMargin(new java.awt.Insets(2, 3, 3, 10));
 
+        jButton8.setBackground(new java.awt.Color(250, 250, 250));
+        jButton8.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(26, 32, 44));
         jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
 
-        jLabel5.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel5.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel5.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(26, 32, 44));
         jLabel5.setText("Piso 1");
 
         jLabel7.setBackground(new java.awt.Color(250, 250, 250));
@@ -186,6 +396,9 @@ public class MainView extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-shield-16.png"))); // NOI18N
         jLabel7.setText("️Administrador");
 
+        jButton9.setBackground(new java.awt.Color(250, 250, 250));
+        jButton9.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(26, 32, 44));
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
         jButton9.setText("Salir");
 
@@ -194,26 +407,29 @@ public class MainView extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(1064, Short.MAX_VALUE)
                 .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32))
+                .addContainerGap())
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel3Layout.createSequentialGroup()
                     .addContainerGap()
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton7))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 677, Short.MAX_VALUE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 696, Short.MAX_VALUE)
                     .addComponent(jLabel7)
                     .addContainerGap()))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(49, Short.MAX_VALUE)
+                .addContainerGap(8, Short.MAX_VALUE)
+                .addComponent(jLabel5)
+                .addGap(18, 18, 18)
                 .addComponent(jButton9)
                 .addContainerGap())
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -221,24 +437,31 @@ public class MainView extends javax.swing.JFrame {
                     .addGap(1, 1, 1)
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel5)
-                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addComponent(jLabel7))
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        jPanel4.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel4.setBackground(new java.awt.Color(129, 218, 171));
+        jPanel4.setForeground(new java.awt.Color(26, 32, 44));
 
+        jButton10.setBackground(new java.awt.Color(250, 250, 250));
+        jButton10.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton10.setForeground(new java.awt.Color(26, 32, 44));
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-compartir-18.png"))); // NOI18N
         jButton10.setText("Compartir");
         jButton10.setMargin(new java.awt.Insets(2, 3, 3, 10));
 
+        jButton11.setBackground(new java.awt.Color(250, 250, 250));
+        jButton11.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(26, 32, 44));
         jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
 
+        jLabel6.setBackground(new java.awt.Color(250, 250, 250));
         jLabel6.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(26, 32, 44));
         jLabel6.setText("Barbacoa 11 de noviembre");
 
         jLabel8.setBackground(new java.awt.Color(250, 250, 250));
@@ -247,6 +470,9 @@ public class MainView extends javax.swing.JFrame {
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-shield-16.png"))); // NOI18N
         jLabel8.setText("️Administrador");
 
+        jButton12.setBackground(new java.awt.Color(250, 250, 250));
+        jButton12.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(26, 32, 44));
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
         jButton12.setText("Salir");
 
@@ -254,17 +480,17 @@ public class MainView extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addContainerGap()
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jButton10))
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 485, Short.MAX_VALUE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 696, Short.MAX_VALUE)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -272,15 +498,16 @@ public class MainView extends javax.swing.JFrame {
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 78, Short.MAX_VALUE)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel6)
+                .addContainerGap(50, Short.MAX_VALUE))
             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel4Layout.createSequentialGroup()
                     .addGap(1, 1, 1)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(jPanel4Layout.createSequentialGroup()
-                            .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel6)
-                                .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                 .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -296,8 +523,8 @@ public class MainView extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -305,11 +532,14 @@ public class MainView extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(22, 22, 22)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addContainerGap(91, Short.MAX_VALUE))
         );
 
+        jButton4.setBackground(new java.awt.Color(250, 250, 250));
+        jButton4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(26, 32, 44));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
         jButton4.setText("Hacer compra");
         jButton4.setMargin(new java.awt.Insets(2, 4, 3, 6));
@@ -324,9 +554,9 @@ public class MainView extends javax.swing.JFrame {
                     .addComponent(accionesCard3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton4)
-                        .addGap(741, 741, 741))
+                        .addContainerGap())
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel7Layout.setVerticalGroup(
@@ -358,7 +588,7 @@ public class MainView extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addComponent(toolbarPanel21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 439, Short.MAX_VALUE))
         );
 
         pack();
@@ -423,6 +653,5 @@ public class MainView extends javax.swing.JFrame {
     private javax.swing.JButton navGrupos22;
     private javax.swing.JButton navPerfil22;
     private javax.swing.JPanel toolbarPanel21;
-    private javax.swing.JSeparator toolbarSeparator22;
     // End of variables declaration//GEN-END:variables
 }
