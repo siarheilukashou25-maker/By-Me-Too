@@ -9,4 +9,4 @@
 | Navegación por teclado | ✅ Correcto | 2.1.1 Teclado (A) y 2.1.3 Teclado (AAA) |  AAA| Todo se puede usar solo con el teclado. Conviene comprobar que se ve el foco (2.4.7) y que no hay trampas de teclado (2.1.2). |
 
 ## Correcciones realizadas
--tamaño de las letras: Hemos tenido que corregirlos ya que dos textos estaban por el mínimo de recomendado que es 14px y estaban entre el 10 -11px
+-Tamaño de las letras: Hemos tenido que corregirlos ya que dos textos estaban por el mínimo de recomendado que es 14px y estaban entre el 10 -11px
