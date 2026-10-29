@@ -1,6 +1,6 @@
 package controlador;
 
-import vista.LoginWindow;
+import vista.LoginView;
 
 public class ArranqueTest {
 
@@ -10,6 +10,6 @@ public class ArranqueTest {
     }
 
     private static void comprobarCambioDeVentana() {
-        LoginWindow login = new LoginWindow();
+        LoginView login = new LoginView();
     }
 }

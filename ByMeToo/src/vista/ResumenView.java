@@ -229,6 +229,8 @@ public class ResumenView extends javax.swing.JFrame {
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-billetes-16.png"))); // NOI18N
         jButton5.setText("Gastos");
 
+        contentPanel.setBackground(new java.awt.Color(255, 255, 255));
+
         lblResumenTitle.setFont(lblResumenTitle.getFont().deriveFont(lblResumenTitle.getFont().getStyle() | java.awt.Font.BOLD, lblResumenTitle.getFont().getSize()+4));
         lblResumenTitle.setText("Resumen");
 

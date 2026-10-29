@@ -2,7 +2,7 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import modelo.Modelo;
-import vista.LoginWindow;
+import vista.LoginView;
 
 /**
  * Conecta las ventanas con el modelo.
@@ -11,9 +11,9 @@ import vista.LoginWindow;
 public class Controlador {
 
     private final Modelo modelo;
-    private final LoginWindow login;
+    private final LoginView login;
 
-    public Controlador(Modelo modelo, LoginWindow login) {
+    public Controlador(Modelo modelo, LoginView login) {
         this.modelo = modelo;
         this.login = login;
         //this.login.alEntrar(this::entrar);
