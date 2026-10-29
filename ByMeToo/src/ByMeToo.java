@@ -2,8 +2,7 @@ import controlador.Controlador;
 import java.awt.EventQueue;
 import javax.swing.UIManager;
 import modelo.Modelo;
-import vista.LoginWindow;
-import vista.MainWindow;
+import vista.LoginView;
 
 public class ByMeToo {
 
@@ -20,7 +19,7 @@ public class ByMeToo {
         }
 
         EventQueue.invokeLater(() -> {
-            Controlador controlador = new Controlador(new Modelo(), new LoginWindow(), new MainWindow());
+            Controlador controlador = new Controlador(new Modelo(), new LoginView());
             controlador.iniciar();
         });
     }

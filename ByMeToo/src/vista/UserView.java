@@ -4,18 +4,20 @@
  */
 package vista;
 
+import javax.swing.UIManager;
+
 /**
  *
  * @author DAM2
  */
-public class UserWindow extends javax.swing.JFrame {
+public class UserView extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(UserWindow.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(UserView.class.getName());
 
     /**
      * Creates new form UserView
      */
-    public UserWindow() {
+    public UserView() {
         initComponents();
     }
 
@@ -35,23 +37,10 @@ public class UserWindow extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         sidebarPanel = new javax.swing.JPanel();
         toolbarPanel1 = new javax.swing.JPanel();
-        btnNuevoGrupo1 = new javax.swing.JButton();
-        btnNuevaCompra1 = new javax.swing.JButton();
         toolbarSeparator1 = new javax.swing.JSeparator();
-        btnResumen1 = new javax.swing.JButton();
         lblConectado1 = new javax.swing.JLabel();
-        navPanel = new javax.swing.JPanel();
-        navTitle = new javax.swing.JLabel();
-        navSeparator = new javax.swing.JSeparator();
-        navInicioPanel = new javax.swing.JPanel();
-        navInicio = new javax.swing.JButton();
         navGrupos = new javax.swing.JButton();
-        navResumen = new javax.swing.JButton();
         navPerfil = new javax.swing.JButton();
-        gruposSidePanel = new javax.swing.JPanel();
-        gruposTitle = new javax.swing.JLabel();
-        gruposSeparator = new javax.swing.JSeparator();
-        lblGrupoPiso1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         lblInicioTitle = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
@@ -70,10 +59,6 @@ public class UserWindow extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
 
         jMenu1.setText("Archivo");
         jMenuBar2.add(jMenu1);
@@ -92,28 +77,7 @@ public class UserWindow extends javax.swing.JFrame {
         toolbarPanel1.setBackground(new java.awt.Color(226, 232, 229));
         toolbarPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
 
-        btnNuevoGrupo1.setBackground(new java.awt.Color(226, 232, 229));
-        btnNuevoGrupo1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
-        btnNuevoGrupo1.setForeground(new java.awt.Color(26, 32, 44));
-        btnNuevoGrupo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/plus.png"))); // NOI18N
-        btnNuevoGrupo1.setText("Nuevo grupo");
-        btnNuevoGrupo1.setBorderPainted(false);
-
-        btnNuevaCompra1.setBackground(new java.awt.Color(226, 232, 229));
-        btnNuevaCompra1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
-        btnNuevaCompra1.setForeground(new java.awt.Color(26, 32, 44));
-        btnNuevaCompra1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
-        btnNuevaCompra1.setText("Nueva compra");
-        btnNuevaCompra1.setBorderPainted(false);
-
         toolbarSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-
-        btnResumen1.setBackground(new java.awt.Color(226, 232, 229));
-        btnResumen1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
-        btnResumen1.setForeground(new java.awt.Color(26, 32, 44));
-        btnResumen1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
-        btnResumen1.setText("Resumen");
-        btnResumen1.setBorderPainted(false);
 
         lblConectado1.setBackground(new java.awt.Color(226, 232, 229));
         lblConectado1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -121,95 +85,17 @@ public class UserWindow extends javax.swing.JFrame {
         lblConectado1.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblConectado1.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
 
-        javax.swing.GroupLayout toolbarPanel1Layout = new javax.swing.GroupLayout(toolbarPanel1);
-        toolbarPanel1.setLayout(toolbarPanel1Layout);
-        toolbarPanel1Layout.setHorizontalGroup(
-            toolbarPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(toolbarPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnNuevoGrupo1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btnNuevaCompra1)
-                .addGap(5, 5, 5)
-                .addComponent(toolbarSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(btnResumen1)
-                .addGap(175, 175, 175)
-                .addComponent(lblConectado1, javax.swing.GroupLayout.DEFAULT_SIZE, 546, javax.swing.GroupLayout.DEFAULT_SIZE)
-                .addContainerGap())
-        );
-        toolbarPanel1Layout.setVerticalGroup(
-            toolbarPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(toolbarPanel1Layout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addGroup(toolbarPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(btnNuevoGrupo1)
-                    .addComponent(btnNuevaCompra1)
-                    .addComponent(toolbarSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnResumen1)
-                    .addComponent(lblConectado1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, javax.swing.GroupLayout.DEFAULT_SIZE))
-                .addGap(2, 2, 2))
-        );
-
-        navPanel.setBackground(new java.awt.Color(250, 250, 250));
-        navPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 229)));
-
-        navTitle.setBackground(new java.awt.Color(250, 250, 250));
-        navTitle.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
-        navTitle.setForeground(new java.awt.Color(26, 32, 44));
-        navTitle.setText("Navegación");
-        navTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 6, 5, 6));
-
-        navSeparator.setBackground(new java.awt.Color(250, 250, 250));
-        navSeparator.setForeground(new java.awt.Color(250, 250, 250));
-
-        navInicioPanel.setBackground(new java.awt.Color(250, 250, 250));
-
-        navInicio.setBackground(new java.awt.Color(250, 250, 250));
-        navInicio.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
-        navInicio.setForeground(new java.awt.Color(26, 32, 44));
-        navInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/home.png"))); // NOI18N
-        navInicio.setText("Inicio");
-        navInicio.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-        navInicio.setBorderPainted(false);
-        navInicio.setContentAreaFilled(false);
-        navInicio.setFocusPainted(false);
-        navInicio.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-
-        javax.swing.GroupLayout navInicioPanelLayout = new javax.swing.GroupLayout(navInicioPanel);
-        navInicioPanel.setLayout(navInicioPanelLayout);
-        navInicioPanelLayout.setHorizontalGroup(
-            navInicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        navInicioPanelLayout.setVerticalGroup(
-            navInicioPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navInicio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-
         navGrupos.setBackground(new java.awt.Color(250, 250, 250));
         navGrupos.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         navGrupos.setForeground(new java.awt.Color(26, 32, 44));
         navGrupos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
-        navGrupos.setText("Grupos");
+        navGrupos.setText("Inicio");
         navGrupos.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
         navGrupos.setBorderPainted(false);
         navGrupos.setContentAreaFilled(false);
         navGrupos.setFocusPainted(false);
         navGrupos.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         navGrupos.setOpaque(true);
-
-        navResumen.setBackground(new java.awt.Color(250, 250, 250));
-        navResumen.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
-        navResumen.setForeground(new java.awt.Color(26, 32, 44));
-        navResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
-        navResumen.setText("Resumen");
-        navResumen.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-        navResumen.setBorderPainted(false);
-        navResumen.setContentAreaFilled(false);
-        navResumen.setFocusPainted(false);
-        navResumen.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        navResumen.addActionListener(this::navResumenActionPerformed);
 
         navPerfil.setBackground(new java.awt.Color(250, 250, 250));
         navPerfil.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -222,76 +108,37 @@ public class UserWindow extends javax.swing.JFrame {
         navPerfil.setFocusPainted(false);
         navPerfil.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
 
-        javax.swing.GroupLayout navPanelLayout = new javax.swing.GroupLayout(navPanel);
-        navPanel.setLayout(navPanelLayout);
-        navPanelLayout.setHorizontalGroup(
-            navPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(navSeparator)
-            .addComponent(navInicioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navGrupos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navResumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(navPerfil, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(navPanelLayout.createSequentialGroup()
-                .addComponent(navTitle, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+        javax.swing.GroupLayout toolbarPanel1Layout = new javax.swing.GroupLayout(toolbarPanel1);
+        toolbarPanel1.setLayout(toolbarPanel1Layout);
+        toolbarPanel1Layout.setHorizontalGroup(
+            toolbarPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(toolbarPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(navGrupos, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(toolbarSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(navPerfil, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(143, 143, 143)
+                .addComponent(lblConectado1)
+                .addContainerGap())
         );
-        navPanelLayout.setVerticalGroup(
-            navPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(navPanelLayout.createSequentialGroup()
-                .addComponent(navTitle)
-                .addGap(0, 0, 0)
-                .addComponent(navSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(navInicioPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(navGrupos)
-                .addGap(0, 0, 0)
-                .addComponent(navResumen)
-                .addGap(0, 0, 0)
-                .addComponent(navPerfil)
-                .addGap(0, 0, 0))
+        toolbarPanel1Layout.setVerticalGroup(
+            toolbarPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(toolbarPanel1Layout.createSequentialGroup()
+                .addGap(2, 2, 2)
+                .addGroup(toolbarPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(toolbarSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblConectado1)
+                    .addComponent(navGrupos)
+                    .addComponent(navPerfil))
+                .addGap(3, 3, 3))
         );
 
-        gruposSidePanel.setBackground(new java.awt.Color(250, 250, 250));
-        gruposSidePanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 229)));
-
-        gruposTitle.setBackground(new java.awt.Color(250, 250, 250));
-        gruposTitle.setFont(new java.awt.Font("Inter", 1, 13)); // NOI18N
-        gruposTitle.setForeground(new java.awt.Color(26, 32, 44));
-        gruposTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/folder.png"))); // NOI18N
-        gruposTitle.setText("Grupos");
-        gruposTitle.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 6, 5, 6));
-
-        gruposSeparator.setForeground(new java.awt.Color(250, 250, 250));
-
-        lblGrupoPiso1.setBackground(new java.awt.Color(250, 250, 250));
-        lblGrupoPiso1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
-        lblGrupoPiso1.setForeground(new java.awt.Color(26, 32, 44));
-        lblGrupoPiso1.setText("Piso1");
-        lblGrupoPiso1.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 6, 3, 6));
-
-        javax.swing.GroupLayout gruposSidePanelLayout = new javax.swing.GroupLayout(gruposSidePanel);
-        gruposSidePanel.setLayout(gruposSidePanelLayout);
-        gruposSidePanelLayout.setHorizontalGroup(
-            gruposSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(gruposTitle, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-            .addComponent(gruposSeparator)
-            .addComponent(lblGrupoPiso1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        gruposSidePanelLayout.setVerticalGroup(
-            gruposSidePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(gruposSidePanelLayout.createSequentialGroup()
-                .addComponent(gruposTitle)
-                .addGap(0, 0, 0)
-                .addComponent(gruposSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(lblGrupoPiso1)
-                .addGap(220, 220, 220))
-        );
-
-        jPanel2.setBackground(new java.awt.Color(250, 250, 250));
+        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(226, 232, 229)));
         jPanel2.setForeground(new java.awt.Color(26, 32, 44));
+        jPanel2.setPreferredSize(new java.awt.Dimension(864, 500));
 
         lblInicioTitle.setBackground(new java.awt.Color(250, 250, 250));
         lblInicioTitle.setFont(new java.awt.Font("Inter", 1, 17)); // NOI18N
@@ -456,13 +303,15 @@ public class UserWindow extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton3)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(lblInicioTitle, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(487, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(lblInicioTitle, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(352, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton3)
+                .addGap(15, 15, 15))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -473,22 +322,16 @@ public class UserWindow extends javax.swing.JFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 149, Short.MAX_VALUE)
                 .addComponent(jButton3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout sidebarPanelLayout = new javax.swing.GroupLayout(sidebarPanel);
         sidebarPanel.setLayout(sidebarPanelLayout);
         sidebarPanelLayout.setHorizontalGroup(
             sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(sidebarPanelLayout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(navPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(gruposSidePanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, 0)
-                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(toolbarPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         sidebarPanelLayout.setVerticalGroup(
@@ -496,13 +339,8 @@ public class UserWindow extends javax.swing.JFrame {
             .addGroup(sidebarPanelLayout.createSequentialGroup()
                 .addComponent(toolbarPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
-                .addGroup(sidebarPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(sidebarPanelLayout.createSequentialGroup()
-                        .addComponent(navPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, 0)
-                        .addComponent(gruposSidePanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 0, 0))
+                .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -517,26 +355,6 @@ public class UserWindow extends javax.swing.JFrame {
                 .addComponent(sidebarPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-
-        jMenuBar1.setBackground(new java.awt.Color(250, 250, 250));
-        jMenuBar1.setForeground(new java.awt.Color(26, 32, 44));
-
-        jMenu4.setBackground(new java.awt.Color(250, 250, 250));
-        jMenu4.setForeground(new java.awt.Color(26, 32, 44));
-        jMenu4.setText("Archivo");
-        jMenuBar1.add(jMenu4);
-
-        jMenu5.setBackground(new java.awt.Color(250, 250, 250));
-        jMenu5.setForeground(new java.awt.Color(26, 32, 44));
-        jMenu5.setText("Ver");
-        jMenuBar1.add(jMenu5);
-
-        jMenu6.setBackground(new java.awt.Color(250, 250, 250));
-        jMenu6.setForeground(new java.awt.Color(26, 32, 44));
-        jMenu6.setText("Ayuda");
-        jMenuBar1.add(jMenu6);
-
-        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -556,10 +374,6 @@ public class UserWindow extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
 
-    private void navResumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_navResumenActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_navResumenActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -570,28 +384,17 @@ public class UserWindow extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        } catch (Exception ex) {
+            ex.printStackTrace();
         }
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new UserWindow().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new UserView().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnNuevaCompra1;
-    private javax.swing.JButton btnNuevoGrupo1;
-    private javax.swing.JButton btnResumen1;
-    private javax.swing.JSeparator gruposSeparator;
-    private javax.swing.JPanel gruposSidePanel;
-    private javax.swing.JLabel gruposTitle;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -605,10 +408,6 @@ public class UserWindow extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -619,16 +418,9 @@ public class UserWindow extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JLabel lblConectado1;
-    private javax.swing.JLabel lblGrupoPiso1;
     private javax.swing.JLabel lblInicioTitle;
     private javax.swing.JButton navGrupos;
-    private javax.swing.JButton navInicio;
-    private javax.swing.JPanel navInicioPanel;
-    private javax.swing.JPanel navPanel;
     private javax.swing.JButton navPerfil;
-    private javax.swing.JButton navResumen;
-    private javax.swing.JSeparator navSeparator;
-    private javax.swing.JLabel navTitle;
     private javax.swing.JPanel sidebarPanel;
     private javax.swing.JPanel toolbarPanel1;
     private javax.swing.JSeparator toolbarSeparator1;
