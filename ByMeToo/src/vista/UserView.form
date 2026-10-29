@@ -282,9 +282,9 @@
                           <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="152" max="32767" attributes="0"/>
+                          <EmptySpace pref="144" max="32767" attributes="0"/>
                           <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="23" max="32767" attributes="0"/>
+                          <EmptySpace pref="15" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -313,7 +313,7 @@
                       <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                         <TitledBorder position="2" title="Informaci&#xf3;n del usuario">
                           <Border PropertyName="innerBorder" info="null"/>
-                          <Font PropertyName="font" name="Arial" size="12" style="1"/>
+                          <Font PropertyName="font" name="Arial" size="18" style="1"/>
                         </TitledBorder>
                       </Border>
                     </Property>
@@ -536,7 +536,7 @@
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                         <TitledBorder title="Estad&#xed;sticas">
-                          <Font PropertyName="font" name="Arial" size="12" style="1"/>
+                          <Font PropertyName="font" name="Arial" size="18" style="1"/>
                         </TitledBorder>
                       </Border>
                     </Property>
