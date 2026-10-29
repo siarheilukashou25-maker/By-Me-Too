@@ -73,6 +73,7 @@
                   <Component id="compraPanel7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
+              <Component id="contentPanel" alignment="1" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
@@ -344,7 +345,7 @@
                                   <Component id="lblTotalProductos7" attributes="0"/>
                               </Group>
                           </Group>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="16" pref="16" max="16" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -360,7 +361,17 @@
                               <Component id="btnEliminarProducto7" attributes="0"/>
                               <Component id="lblTotalProductos7" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="14" pref="14" max="14" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="productosCard" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Component id="pagadoCard" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="12" pref="12" max="12" attributes="0"/>
+                                  <Component id="repartoCard" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace min="16" pref="16" max="16" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
@@ -491,7 +502,7 @@
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/vista/icons/pencil.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Editar"/>
+                    <Property name="text" type="java.lang.String" value="Mercadona"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JButton" name="btnEliminarProducto7">
@@ -508,7 +519,7 @@
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/vista/icons/trash.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Eliminar"/>
+                    <Property name="text" type="java.lang.String" value="23 de octubre de 2026  &#xb7;  Piso 1"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEliminarProductoActionPerformed"/>
@@ -627,7 +638,7 @@
                     </Property>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JLabel" name="lblPagador">
+                <Component class="javax.swing.JLabel" name="lblEstadoCompra">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="fa" green="fa" red="fa" type="rgb"/>
@@ -698,6 +709,7 @@
                         <StringItem index="3" value="Roberto"/>
                       </StringArray>
                     </Property>
+                    <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
                   <AuxValues>
                     <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
@@ -751,32 +763,149 @@
                                   <EmptySpace min="-2" max="-2" attributes="0"/>
                                   <Component id="btnEditarReparto" attributes="0"/>
                               </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
                       </Group>
-                  </Group>
-                </DimensionLayout>
-                <DimensionLayout dim="1">
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="2" pref="2" max="2" attributes="0"/>
-                          <Component id="lblRepartoModo" attributes="0"/>
-                          <EmptySpace min="6" pref="6" max="6" attributes="0"/>
-                          <Component id="scrollReparto" min="-2" pref="130" max="-2" attributes="0"/>
-                          <EmptySpace min="8" pref="8" max="8" attributes="0"/>
-                          <Component id="lblRepartoPendiente" attributes="0"/>
-                          <EmptySpace min="10" pref="10" max="10" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btnMarcarPagado" attributes="0"/>
-                              <Component id="btnEditarReparto" attributes="0"/>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="2" pref="2" max="2" attributes="0"/>
+                              <Component id="scrollProductos" pref="540" max="32767" attributes="0"/>
+                              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="btnAnadirProducto" attributes="0"/>
+                                  <Component id="btnEditarProducto" attributes="0"/>
+                                  <Component id="btnEliminarProducto" attributes="0"/>
+                                  <Component id="lblTotalProductos" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" max="-2" attributes="0"/>
                       </Group>
-                  </Group>
-                </DimensionLayout>
-              </Layout>
-              <SubComponents>
-                <Component class="javax.swing.JLabel" name="lblRepartoModo">
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Container class="javax.swing.JScrollPane" name="scrollProductos">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="tblProductos">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="4" rowCount="8">
+                                <Column editable="false" title="Producto" type="java.lang.String">
+                                  <Data value="Leche entera"/>
+                                  <Data value="Pan de molde"/>
+                                  <Data value="Huevos (docena)"/>
+                                  <Data value="Pechugas de pollo"/>
+                                  <Data value="Arroz 1 kg"/>
+                                  <Data value="Tomates 1 kg"/>
+                                  <Data value="Aceite de oliva 1 L"/>
+                                  <Data value="Papel higi&#xe9;nico"/>
+                                </Column>
+                                <Column editable="false" title="Cant." type="java.lang.Integer">
+                                  <Data value="6"/>
+                                  <Data value="2"/>
+                                  <Data value="1"/>
+                                  <Data value="1"/>
+                                  <Data value="2"/>
+                                  <Data value="1"/>
+                                  <Data value="1"/>
+                                  <Data value="1"/>
+                                </Column>
+                                <Column editable="false" title="Precio" type="java.lang.String">
+                                  <Data value="0,95 &#x20ac;"/>
+                                  <Data value="1,35 &#x20ac;"/>
+                                  <Data value="2,40 &#x20ac;"/>
+                                  <Data value="6,85 &#x20ac;"/>
+                                  <Data value="1,15 &#x20ac;"/>
+                                  <Data value="1,99 &#x20ac;"/>
+                                  <Data value="8,95 &#x20ac;"/>
+                                  <Data value="3,71 &#x20ac;"/>
+                                </Column>
+                                <Column editable="false" title="Subtotal" type="java.lang.String">
+                                  <Data value="5,70 &#x20ac;"/>
+                                  <Data value="2,70 &#x20ac;"/>
+                                  <Data value="2,40 &#x20ac;"/>
+                                  <Data value="6,85 &#x20ac;"/>
+                                  <Data value="2,30 &#x20ac;"/>
+                                  <Data value="1,99 &#x20ac;"/>
+                                  <Data value="8,95 &#x20ac;"/>
+                                  <Data value="3,71 &#x20ac;"/>
+                                </Column>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="260" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="50" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="80" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="90" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="rowHeight" type="int" value="24"/>
+                            <Property name="fillsViewportHeight" type="boolean" value="true"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JButton" name="btnAnadirProducto">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/vista/icons/plus.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="A&#xf1;adir"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnEditarProducto">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/vista/icons/pencil.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Editar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnEliminarProducto">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/vista/icons/trash.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Eliminar"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblTotalProductos">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                          <FontInfo relative="true">
+                            <Font bold="true" component="lblTotalProductos" property="font" relativeSize="true" size="2"/>
+                          </FontInfo>
+                        </Property>
+                        <Property name="horizontalAlignment" type="int" value="4"/>
+                        <Property name="text" type="java.lang.String" value="Total: 34,60 &#x20ac;"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Container class="javax.swing.JPanel" name="pagadoCard">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="fa" green="fa" red="fa" type="rgb"/>
@@ -803,9 +932,60 @@
                     <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                   </AuxValues>
 
-                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="lblPagadorBadge" min="-2" pref="30" max="-2" attributes="0"/>
+                                      <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="lblPagador" attributes="0"/>
+                                          <Component id="lblPagadorDetalle" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="sepPagado" max="32767" attributes="0"/>
+                                  <Component id="lblReasignar" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="cmbReasignar" pref="210" max="32767" attributes="0"/>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnReasignar" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Group type="103" groupAlignment="2" attributes="0">
+                                  <Component id="lblPagadorBadge" min="-2" pref="30" max="-2" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="lblPagador" attributes="0"/>
+                                      <EmptySpace min="2" pref="2" max="2" attributes="0"/>
+                                      <Component id="lblPagadorDetalle" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                              <Component id="sepPagado" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+                              <Component id="lblReasignar" attributes="0"/>
+                              <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                              <Group type="103" groupAlignment="2" attributes="0">
+                                  <Component id="cmbReasignar" min="-2" pref="26" max="-2" attributes="0"/>
+                                  <Component id="btnReasignar" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JTable" name="tblReparto">
+                    <Component class="javax.swing.JLabel" name="lblPagadorBadge">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="fa" green="fa" red="fa" type="rgb"/>
@@ -844,29 +1024,47 @@
                             </Column>
                           </Table>
                         </Property>
-                        <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
-                          <TableColumnModel selectionModel="0">
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="24" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="55" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                            <Column maxWidth="-1" minWidth="-1" prefWidth="80" resizable="true">
-                              <Title/>
-                              <Editor/>
-                              <Renderer/>
-                            </Column>
-                          </TableColumnModel>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblPagador">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                          <FontInfo relative="true">
+                            <Font bold="true" component="lblPagador" property="font" relativeSize="true" size="0"/>
+                          </FontInfo>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="SIARHEI LUKASHOU"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblPagadorDetalle">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                          <FontInfo relative="true">
+                            <Font component="lblPagadorDetalle" property="font" relativeSize="true" size="-1"/>
+                          </FontInfo>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="6e" green="6e" red="6e" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Pag&#xf3; 34,60 &#x20ac; el 23/10/2026"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JSeparator" name="sepPagado">
+                    </Component>
+                    <Component class="javax.swing.JLabel" name="lblReasignar">
+                      <Properties>
+                        <Property name="text" type="java.lang.String" value="Reasignar pago a:"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JComboBox" name="cmbReasignar">
+                      <Properties>
+                        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                          <StringArray count="4">
+                            <StringItem index="0" value="SIARHEI LUKASHOU"/>
+                            <StringItem index="1" value="Pablo"/>
+                            <StringItem index="2" value="Elias"/>
+                            <StringItem index="3" value="Roberto"/>
+                          </StringArray>
                         </Property>
                         <Property name="fillsViewportHeight" type="boolean" value="true"/>
                         <Property name="rowHeight" type="int" value="24"/>
@@ -874,7 +1072,7 @@
                     </Component>
                   </SubComponents>
                 </Container>
-                <Component class="javax.swing.JLabel" name="lblRepartoPendiente">
+                <Container class="javax.swing.JPanel" name="repartoCard">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="fa" green="fa" red="fa" type="rgb"/>
@@ -919,9 +1117,156 @@
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                       <Image iconType="3" name="/vista/icons/pencil.png"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Editar reparto"/>
+                    <Property name="opaque" type="boolean" value="false"/>
                   </Properties>
-                </Component>
+
+                  <Layout>
+                    <DimensionLayout dim="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblRepartoModo" attributes="0"/>
+                                  <Component id="scrollReparto" pref="298" max="32767" attributes="0"/>
+                                  <Component id="lblRepartoPendiente" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <Component id="btnMarcarPagado" attributes="0"/>
+                                      <EmptySpace min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnEditarReparto" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                    <DimensionLayout dim="1">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="2" pref="2" max="2" attributes="0"/>
+                              <Component id="lblRepartoModo" attributes="0"/>
+                              <EmptySpace min="6" pref="6" max="6" attributes="0"/>
+                              <Component id="scrollReparto" min="-2" pref="130" max="-2" attributes="0"/>
+                              <EmptySpace min="8" pref="8" max="8" attributes="0"/>
+                              <Component id="lblRepartoPendiente" attributes="0"/>
+                              <EmptySpace min="10" pref="10" max="10" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="btnMarcarPagado" attributes="0"/>
+                                  <Component id="btnEditarReparto" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                    </DimensionLayout>
+                  </Layout>
+                  <SubComponents>
+                    <Component class="javax.swing.JLabel" name="lblRepartoModo">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                          <FontInfo relative="true">
+                            <Font component="lblRepartoModo" property="font" relativeSize="true" size="-1"/>
+                          </FontInfo>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="6e" green="6e" red="6e" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="A partes iguales &#xb7; 4 personas"/>
+                      </Properties>
+                    </Component>
+                    <Container class="javax.swing.JScrollPane" name="scrollReparto">
+                      <AuxValues>
+                        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                      </AuxValues>
+
+                      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                      <SubComponents>
+                        <Component class="javax.swing.JTable" name="tblReparto">
+                          <Properties>
+                            <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                              <Table columnCount="4" rowCount="4">
+                                <Column editable="true" title="" type="java.lang.Boolean">
+                                  <Data value="true"/>
+                                  <Data value="true"/>
+                                  <Data value="true"/>
+                                  <Data value="true"/>
+                                </Column>
+                                <Column editable="false" title="Miembro" type="java.lang.String">
+                                  <Data value="SIARHEI LUKASHOU"/>
+                                  <Data value="Pablo"/>
+                                  <Data value="Elias"/>
+                                  <Data value="Roberto"/>
+                                </Column>
+                                <Column editable="false" title="Parte" type="java.lang.String">
+                                  <Data value="8,65 &#x20ac;"/>
+                                  <Data value="8,65 &#x20ac;"/>
+                                  <Data value="8,65 &#x20ac;"/>
+                                  <Data value="8,65 &#x20ac;"/>
+                                </Column>
+                                <Column editable="false" title="Estado" type="java.lang.String">
+                                  <Data value="Pagador"/>
+                                  <Data value="Pagado"/>
+                                  <Data value="Pendiente"/>
+                                  <Data value="Pendiente"/>
+                                </Column>
+                              </Table>
+                            </Property>
+                            <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
+                              <TableColumnModel selectionModel="0">
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="24" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="120" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="55" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                                <Column maxWidth="-1" minWidth="-1" prefWidth="80" resizable="true">
+                                  <Title/>
+                                  <Editor/>
+                                  <Renderer/>
+                                </Column>
+                              </TableColumnModel>
+                            </Property>
+                            <Property name="fillsViewportHeight" type="boolean" value="true"/>
+                            <Property name="rowHeight" type="int" value="24"/>
+                          </Properties>
+                        </Component>
+                      </SubComponents>
+                    </Container>
+                    <Component class="javax.swing.JLabel" name="lblRepartoPendiente">
+                      <Properties>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.modules.form.editors2.FontEditor">
+                          <FontInfo relative="true">
+                            <Font bold="true" component="lblRepartoPendiente" property="font" relativeSize="true" size="0"/>
+                          </FontInfo>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Pendiente de cobrar: 17,30 &#x20ac;"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnMarcarPagado">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/vista/icons/check.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Marcar pagado"/>
+                      </Properties>
+                    </Component>
+                    <Component class="javax.swing.JButton" name="btnEditarReparto">
+                      <Properties>
+                        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                          <Image iconType="3" name="/vista/icons/pencil.png"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="Editar reparto"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
               </SubComponents>
             </Container>
             <Component class="javax.swing.JButton" name="jButton5">
