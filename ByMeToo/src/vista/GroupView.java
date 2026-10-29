@@ -30,38 +30,317 @@ public class GroupView extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+                int arc = 15; // Curvatura de las esquinas
+
+                // Blanco roto en origen, gris divisor en destino
+                java.awt.Color colorTopLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorBottomRight = java.awt.Color.decode("#E2E8E5");
+
+                // Gradiente de esquina superior izquierda (0,0) a esquina inferior derecha (w,h)
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorTopLeft, w, h, colorBottomRight));
+                g2d.fillRoundRect(0, 0, w, h, arc, arc);
+
+                // Borde fino neutro
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);
+
+                g2d.dispose();
+            }
+        };
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel() {
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                if (isOpaque()) {
+                    setOpaque(false);
+                }
+
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+
+                // Posición y dimensiones del recuadro
+                int x = 2;
+                int y = 7; 
+                int ancho = w - 5;
+                int alto = h - 9;
+                int arc = 10; // Curvatura de las esquinas redondeadas
+
+                // 1. Dibujamos el gradiente de fondo
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));
+                g2d.fillRoundRect(x, y, ancho, alto, arc, arc);
+
+                // 2. Dibujamos el borde redondeado gris claro
+                g2d.setColor(new java.awt.Color(200, 200, 200)); 
+                g2d.setStroke(new java.awt.BasicStroke(1.0f)); 
+                g2d.drawRoundRect(x, y, ancho, alto, arc, arc);
+
+                g2d.dispose();
+
+                // Dibuja el texto del título y del contenido por encima del fondo y borde
+                super.paintComponent(g);
+            }
+        };
+        jLabel10 = new javax.swing.JLabel() {
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                if (isOpaque()) {
+                    setOpaque(false);
+                }
+
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+
+                // Posición y dimensiones del recuadro
+                int x = 2;
+                int y = 7; 
+                int ancho = w - 5;
+                int alto = h - 9;
+                int arc = 10; // Curvatura de las esquinas redondeadas
+
+                // 1. Dibujamos el gradiente de fondo
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));
+                g2d.fillRoundRect(x, y, ancho, alto, arc, arc);
+
+                // 2. Dibujamos el borde redondeado gris claro
+                g2d.setColor(new java.awt.Color(200, 200, 200)); 
+                g2d.setStroke(new java.awt.BasicStroke(1.0f)); 
+                g2d.drawRoundRect(x, y, ancho, alto, arc, arc);
+
+                g2d.dispose();
+
+                // Dibuja el texto del título y del contenido por encima del fondo y borde
+                super.paintComponent(g);
+            }
+        };
+        jLabel11 = new javax.swing.JLabel() {
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                if (isOpaque()) {
+                    setOpaque(false);
+                }
+
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+
+                // Posición y dimensiones del recuadro
+                int x = 2;
+                int y = 7; 
+                int ancho = w - 5;
+                int alto = h - 9;
+                int arc = 10; // Curvatura de las esquinas redondeadas
+
+                // 1. Dibujamos el gradiente de fondo
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));
+                g2d.fillRoundRect(x, y, ancho, alto, arc, arc);
+
+                // 2. Dibujamos el borde redondeado gris claro
+                g2d.setColor(new java.awt.Color(200, 200, 200)); 
+                g2d.setStroke(new java.awt.BasicStroke(1.0f)); 
+                g2d.drawRoundRect(x, y, ancho, alto, arc, arc);
+
+                g2d.dispose();
+
+                // Dibuja el texto del título y del contenido por encima del fondo y borde
+                super.paintComponent(g);
+            }
+        };
+        jLabel12 = new javax.swing.JLabel() {
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                if (isOpaque()) {
+                    setOpaque(false);
+                }
+
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+
+                // Posición y dimensiones del recuadro
+                int x = 2;
+                int y = 7; 
+                int ancho = w - 5;
+                int alto = h - 9;
+                int arc = 10; // Curvatura de las esquinas redondeadas
+
+                // 1. Dibujamos el gradiente de fondo
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));
+                g2d.fillRoundRect(x, y, ancho, alto, arc, arc);
+
+                // 2. Dibujamos el borde redondeado gris claro
+                g2d.setColor(new java.awt.Color(200, 200, 200)); 
+                g2d.setStroke(new java.awt.BasicStroke(1.0f)); 
+                g2d.drawRoundRect(x, y, ancho, alto, arc, arc);
+
+                g2d.dispose();
+
+                // Dibuja el texto del título y del contenido por encima del fondo y borde
+                super.paintComponent(g);
+            }
+        };
+        jLabel13 = new javax.swing.JLabel() {
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                if (isOpaque()) {
+                    setOpaque(false);
+                }
+
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+
+                // Posición y dimensiones del recuadro
+                int x = 2;
+                int y = 7; 
+                int ancho = w - 5;
+                int alto = h - 9;
+                int arc = 10; // Curvatura de las esquinas redondeadas
+
+                // 1. Dibujamos el gradiente de fondo
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));
+                g2d.fillRoundRect(x, y, ancho, alto, arc, arc);
+
+                // 2. Dibujamos el borde redondeado gris claro
+                g2d.setColor(new java.awt.Color(200, 200, 200)); 
+                g2d.setStroke(new java.awt.BasicStroke(1.0f)); 
+                g2d.drawRoundRect(x, y, ancho, alto, arc, arc);
+
+                g2d.dispose();
+
+                // Dibuja el texto del título y del contenido por encima del fondo y borde
+                super.paintComponent(g);
+            }
+        };
+        jLabel14 = new javax.swing.JLabel() {
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                if (isOpaque()) {
+                    setOpaque(false);
+                }
+
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+
+                // Posición y dimensiones del recuadro
+                int x = 2;
+                int y = 7; 
+                int ancho = w - 5;
+                int alto = h - 9;
+                int arc = 10; // Curvatura de las esquinas redondeadas
+
+                // 1. Dibujamos el gradiente de fondo
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));
+                g2d.fillRoundRect(x, y, ancho, alto, arc, arc);
+
+                // 2. Dibujamos el borde redondeado gris claro
+                g2d.setColor(new java.awt.Color(200, 200, 200)); 
+                g2d.setStroke(new java.awt.BasicStroke(1.0f)); 
+                g2d.drawRoundRect(x, y, ancho, alto, arc, arc);
+
+                g2d.dispose();
+
+                // Dibuja el texto del título y del contenido por encima del fondo y borde
+                super.paintComponent(g);
+            }
+        };
         jLabel4 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
-        jButton8 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
         jButton12 = new javax.swing.JButton();
-        jPanel4 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton13 = new javax.swing.JButton();
         btnResumen = new javax.swing.JButton();
-        toolbarPanel19 = new javax.swing.JPanel();
-        toolbarSeparator20 = new javax.swing.JSeparator();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        toolbarPanel19 = new javax.swing.JPanel() {
+            {
+                setOpaque(false);
+                setBackground(new java.awt.Color(0, 0, 0, 0));
+            }
+
+            @Override
+            protected void paintComponent(java.awt.Graphics g) {
+                super.paintComponent(g);
+                java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();
+                g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);
+
+                int w = getWidth();
+                int h = getHeight();
+
+                java.awt.Color colorLeft = java.awt.Color.decode("#FAFAFA");
+                java.awt.Color colorRight = java.awt.Color.decode("#81DAAB");
+
+                g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));
+                g2d.fillRect(0, 0, w, h);
+
+                // Borde inferior neutro fino
+                g2d.setColor(new java.awt.Color(200, 200, 200));
+                g2d.setStroke(new java.awt.BasicStroke(1.0f));
+                g2d.drawLine(0, h - 1, w, h - 1);
+
+                g2d.dispose();
+            }
+        };
         lblConectado20 = new javax.swing.JLabel();
         navGrupos20 = new javax.swing.JButton();
         navPerfil20 = new javax.swing.JButton();
@@ -91,55 +370,48 @@ public class GroupView extends javax.swing.JFrame {
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
         jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel7.setText("Pagado por : Siarhei                                                                                                                              34,60 €");
-        jLabel7.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 255, 0), 3, true), "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.TOP, new java.awt.Font("Arial", 1, 14))); // NOI18N
-        jLabel7.setOpaque(true);
+        jLabel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
         jLabel10.setBackground(new java.awt.Color(237, 237, 237));
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel10.setText("Pagado por : Pablo                                                                                                                                 10,70 €");
-        jLabel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Limpieza", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
-        jLabel10.setOpaque(true);
+        jLabel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
         jLabel11.setBackground(new java.awt.Color(237, 237, 237));
         jLabel11.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel11.setText("Pagado por : Elias                                                                                                                                  15,30 €");
-        jLabel11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Aldi", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
-        jLabel11.setOpaque(true);
+        jLabel11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
         jLabel12.setBackground(new java.awt.Color(237, 237, 237));
         jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel12.setText("Pagado por : Roberto                                                                                                                            47,71 €");
         jLabel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
-        jLabel12.setOpaque(true);
 
         jLabel13.setBackground(new java.awt.Color(237, 237, 237));
         jLabel13.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel13.setText("Pagado por : Siarhei                                                                                                                              9,87 €");
-        jLabel13.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Pan , Chacinas y Bebidas", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
-        jLabel13.setOpaque(true);
+        jLabel13.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
         jLabel14.setBackground(new java.awt.Color(237, 237, 237));
         jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
         jLabel14.setText("Pagado por : Roberto                                                                                                                            5,93 €");
-        jLabel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Chuches", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
-        jLabel14.setOpaque(true);
+        jLabel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
         jLabel4.setText("17 de Octubre de 2026");
 
         jLabel15.setText("23 de Octubre 2026");
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
-        jButton8.addActionListener(this::jButton8ActionPerformed);
-
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
-
-        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
-
-        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
-
-        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
-
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
+
+        jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
+
+        jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
+
+        jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
+
+        jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
+
+        jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -149,21 +421,26 @@ public class GroupView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGap(0, 15, Short.MAX_VALUE)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton8, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButton7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
-                                    .addComponent(jButton10, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addComponent(jButton11, javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING)))
-                        .addGap(27, 27, 27)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGap(0, 8, Short.MAX_VALUE)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(27, 27, 27))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel3Layout.createSequentialGroup()
+                                        .addGap(8, 8, 8)
+                                        .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jButton15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 598, Short.MAX_VALUE)
                             .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 598, Short.MAX_VALUE)
                             .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -171,7 +448,7 @@ public class GroupView extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4))
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 0, 0)))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -180,78 +457,33 @@ public class GroupView extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel15)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton16, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jButton14, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(12, 12, 12)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10))
-                .addGap(18, 18, 18)
-                .addComponent(jLabel4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12))
-                .addContainerGap(83, Short.MAX_VALUE))
-        );
-
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel2.setText("Mis gastos");
-
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel3.setText("Gastos totales");
-
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("124,11 €");
-
-        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
-        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel9.setText("46,47 €");
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel12)
+                    .addComponent(jButton12, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(62, Short.MAX_VALUE))
         );
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
@@ -268,6 +500,20 @@ public class GroupView extends javax.swing.JFrame {
         btnResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
         btnResumen.setText("Resumen");
 
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel2.setText("Mis gastos");
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setText("Gastos totales");
+
+        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("124,11 €");
+
+        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("46,47 €");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -278,19 +524,18 @@ public class GroupView extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton13, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButton5)
-                        .addGap(20, 20, 20)
-                        .addComponent(jButton3)
-                        .addGap(20, 20, 20)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, 0)
                         .addComponent(jButton4)
-                        .addGap(20, 20, 20)
-                        .addComponent(btnResumen)
+                        .addGap(0, 0, 0)
+                        .addComponent(btnResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap(76, Short.MAX_VALUE)
+                        .addContainerGap(95, Short.MAX_VALUE)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -298,8 +543,18 @@ public class GroupView extends javax.swing.JFrame {
                                     .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(65, 65, 65)
-                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(60, 60, 60)))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(225, 225, 225))
+                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(0, 0, 0))
         );
         jPanel2Layout.setVerticalGroup(
@@ -308,28 +563,35 @@ public class GroupView extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnResumen)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jButton3)
-                        .addComponent(jButton5)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, 24, Short.MAX_VALUE)
+                        .addComponent(btnResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(34, 34, 34)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel1)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel3)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(4, 4, 4)))
+                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
                 .addComponent(jButton13))
         );
 
         toolbarPanel19.setBackground(new java.awt.Color(226, 232, 229));
         toolbarPanel19.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
-
-        toolbarSeparator20.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
         lblConectado20.setBackground(new java.awt.Color(226, 232, 229));
         lblConectado20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -347,7 +609,6 @@ public class GroupView extends javax.swing.JFrame {
         navGrupos20.setContentAreaFilled(false);
         navGrupos20.setFocusPainted(false);
         navGrupos20.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        navGrupos20.setOpaque(true);
 
         navPerfil20.setBackground(new java.awt.Color(250, 250, 250));
         navPerfil20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -367,12 +628,10 @@ public class GroupView extends javax.swing.JFrame {
             .addGroup(toolbarPanel19Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(navGrupos20, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(toolbarSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(8, 8, 8)
                 .addComponent(navPerfil20, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(143, 143, 143)
-                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 330, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 349, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addContainerGap())
         );
         toolbarPanel19Layout.setVerticalGroup(
@@ -380,7 +639,6 @@ public class GroupView extends javax.swing.JFrame {
             .addGroup(toolbarPanel19Layout.createSequentialGroup()
                 .addGap(2, 2, 2)
                 .addGroup(toolbarPanel19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(toolbarSeparator20, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblConectado20)
                     .addComponent(navGrupos20)
                     .addComponent(navPerfil20))
@@ -414,10 +672,6 @@ public class GroupView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -441,18 +695,18 @@ public class GroupView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnResumen;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -468,106 +722,9 @@ public class GroupView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JLabel lblConectado;
-    private javax.swing.JLabel lblConectado1;
-    private javax.swing.JLabel lblConectado10;
-    private javax.swing.JLabel lblConectado11;
-    private javax.swing.JLabel lblConectado12;
-    private javax.swing.JLabel lblConectado13;
-    private javax.swing.JLabel lblConectado14;
-    private javax.swing.JLabel lblConectado15;
-    private javax.swing.JLabel lblConectado16;
-    private javax.swing.JLabel lblConectado17;
-    private javax.swing.JLabel lblConectado18;
-    private javax.swing.JLabel lblConectado2;
     private javax.swing.JLabel lblConectado20;
-    private javax.swing.JLabel lblConectado3;
-    private javax.swing.JLabel lblConectado4;
-    private javax.swing.JLabel lblConectado5;
-    private javax.swing.JLabel lblConectado6;
-    private javax.swing.JLabel lblConectado7;
-    private javax.swing.JLabel lblConectado8;
-    private javax.swing.JLabel lblConectado9;
-    private javax.swing.JButton navGrupos;
-    private javax.swing.JButton navGrupos1;
-    private javax.swing.JButton navGrupos10;
-    private javax.swing.JButton navGrupos11;
-    private javax.swing.JButton navGrupos12;
-    private javax.swing.JButton navGrupos13;
-    private javax.swing.JButton navGrupos14;
-    private javax.swing.JButton navGrupos15;
-    private javax.swing.JButton navGrupos16;
-    private javax.swing.JButton navGrupos17;
-    private javax.swing.JButton navGrupos18;
-    private javax.swing.JButton navGrupos2;
     private javax.swing.JButton navGrupos20;
-    private javax.swing.JButton navGrupos3;
-    private javax.swing.JButton navGrupos4;
-    private javax.swing.JButton navGrupos5;
-    private javax.swing.JButton navGrupos6;
-    private javax.swing.JButton navGrupos7;
-    private javax.swing.JButton navGrupos8;
-    private javax.swing.JButton navGrupos9;
-    private javax.swing.JButton navPerfil;
-    private javax.swing.JButton navPerfil1;
-    private javax.swing.JButton navPerfil10;
-    private javax.swing.JButton navPerfil11;
-    private javax.swing.JButton navPerfil12;
-    private javax.swing.JButton navPerfil13;
-    private javax.swing.JButton navPerfil14;
-    private javax.swing.JButton navPerfil15;
-    private javax.swing.JButton navPerfil16;
-    private javax.swing.JButton navPerfil17;
-    private javax.swing.JButton navPerfil18;
-    private javax.swing.JButton navPerfil2;
     private javax.swing.JButton navPerfil20;
-    private javax.swing.JButton navPerfil3;
-    private javax.swing.JButton navPerfil4;
-    private javax.swing.JButton navPerfil5;
-    private javax.swing.JButton navPerfil6;
-    private javax.swing.JButton navPerfil7;
-    private javax.swing.JButton navPerfil8;
-    private javax.swing.JButton navPerfil9;
-    private javax.swing.JPanel toolbarPanel;
-    private javax.swing.JPanel toolbarPanel1;
-    private javax.swing.JPanel toolbarPanel10;
-    private javax.swing.JPanel toolbarPanel11;
-    private javax.swing.JPanel toolbarPanel12;
-    private javax.swing.JPanel toolbarPanel13;
-    private javax.swing.JPanel toolbarPanel14;
-    private javax.swing.JPanel toolbarPanel15;
-    private javax.swing.JPanel toolbarPanel16;
-    private javax.swing.JPanel toolbarPanel17;
-    private javax.swing.JPanel toolbarPanel18;
     private javax.swing.JPanel toolbarPanel19;
-    private javax.swing.JPanel toolbarPanel2;
-    private javax.swing.JPanel toolbarPanel3;
-    private javax.swing.JPanel toolbarPanel4;
-    private javax.swing.JPanel toolbarPanel5;
-    private javax.swing.JPanel toolbarPanel6;
-    private javax.swing.JPanel toolbarPanel7;
-    private javax.swing.JPanel toolbarPanel8;
-    private javax.swing.JPanel toolbarPanel9;
-    private javax.swing.JSeparator toolbarSeparator;
-    private javax.swing.JSeparator toolbarSeparator1;
-    private javax.swing.JSeparator toolbarSeparator10;
-    private javax.swing.JSeparator toolbarSeparator11;
-    private javax.swing.JSeparator toolbarSeparator12;
-    private javax.swing.JSeparator toolbarSeparator13;
-    private javax.swing.JSeparator toolbarSeparator14;
-    private javax.swing.JSeparator toolbarSeparator15;
-    private javax.swing.JSeparator toolbarSeparator16;
-    private javax.swing.JSeparator toolbarSeparator17;
-    private javax.swing.JSeparator toolbarSeparator18;
-    private javax.swing.JSeparator toolbarSeparator2;
-    private javax.swing.JSeparator toolbarSeparator20;
-    private javax.swing.JSeparator toolbarSeparator3;
-    private javax.swing.JSeparator toolbarSeparator4;
-    private javax.swing.JSeparator toolbarSeparator5;
-    private javax.swing.JSeparator toolbarSeparator6;
-    private javax.swing.JSeparator toolbarSeparator7;
-    private javax.swing.JSeparator toolbarSeparator8;
-    private javax.swing.JSeparator toolbarSeparator9;
     // End of variables declaration//GEN-END:variables
 }

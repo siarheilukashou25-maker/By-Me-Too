@@ -52,6 +52,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel() {&#xd;&#xa;    {&#xd;&#xa;        setOpaque(false);&#xd;&#xa;        setBackground(new java.awt.Color(0, 0, 0, 0));&#xd;&#xa;    }&#xd;&#xa;&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;        int arc = 15; // Curvatura de las esquinas&#xd;&#xa;&#xd;&#xa;        // Blanco roto en origen, gris divisor en destino&#xd;&#xa;        java.awt.Color colorTopLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorBottomRight = java.awt.Color.decode(&quot;#E2E8E5&quot;);&#xd;&#xa;&#xd;&#xa;        // Gradiente de esquina superior izquierda (0,0) a esquina inferior derecha (w,h)&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(0, 0, colorTopLeft, w, h, colorBottomRight));&#xd;&#xa;        g2d.fillRoundRect(0, 0, w, h, arc, arc);&#xd;&#xa;&#xd;&#xa;        // Borde fino neutro&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200));&#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f));&#xd;&#xa;        g2d.drawRoundRect(0, 0, w - 1, h - 1, arc, arc);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;    }&#xd;&#xa;}"/>
+      </AuxValues>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -63,21 +66,20 @@
                           <Component id="jButton13" min="-2" pref="86" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <Component id="jButton5" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                          <Component id="jButton5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Component id="jButton3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                           <Component id="jButton4" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-                          <Component id="btnResumen" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                          <Component id="btnResumen" min="-2" pref="100" max="-2" attributes="0"/>
                           <EmptySpace max="32767" attributes="0"/>
                           <Component id="jButton2" min="-2" pref="21" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace pref="76" max="32767" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace pref="95" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jPanel3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" alignment="0" attributes="0">
+                              <Group type="102" attributes="0">
                                   <Component id="jButton1" min="-2" pref="58" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -85,10 +87,24 @@
                                       <Component id="jLabel1" min="-2" pref="91" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
-                                  <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="jLabel2" max="32767" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="jLabel9" min="-2" pref="112" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel5" min="-2" pref="129" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="225" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="75" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
@@ -101,25 +117,39 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="jButton2" min="-2" pref="23" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btnResumen" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton4" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
-                          <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnResumen" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jButton4" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jButton3" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="jButton5" alignment="3" min="-2" pref="30" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace type="unrelated" pref="24" max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                          <Component id="jButton6" min="-2" pref="18" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jButton6" min="-2" pref="18" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="jLabel9" min="-2" pref="21" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="jLabel5" alignment="0" min="-2" pref="21" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <Component id="jButton1" alignment="1" min="-2" pref="58" max="-2" attributes="0"/>
-                      <Component id="jPanel4" alignment="1" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="13" max="32767" attributes="0"/>
+                  <EmptySpace pref="8" max="32767" attributes="0"/>
                   <Component id="jButton13" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -184,24 +214,32 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton8" alignment="1" min="-2" pref="31" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jButton7" alignment="1" pref="31" max="32767" attributes="0"/>
-                                          <Component id="jButton10" alignment="1" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton9" alignment="1" max="32767" attributes="0"/>
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="0" pref="8" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jButton12" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="jButton14" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
                                       </Group>
-                                      <Component id="jButton11" alignment="1" min="-2" max="-2" attributes="0"/>
-                                      <Component id="jButton12" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                                              <Component id="jButton18" min="-2" pref="38" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jButton15" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="jButton16" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                          <Component id="jButton17" alignment="1" min="-2" pref="38" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="jLabel12" alignment="1" max="32767" attributes="0"/>
                                   <Component id="jLabel11" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="jLabel10" alignment="1" max="32767" attributes="0"/>
+                                  <Component id="jLabel10" alignment="1" pref="598" max="32767" attributes="0"/>
                                   <Component id="jLabel7" alignment="1" pref="598" max="32767" attributes="0"/>
                                   <Component id="jLabel14" alignment="1" max="32767" attributes="0"/>
                                   <Component id="jLabel13" alignment="1" max="32767" attributes="0"/>
@@ -212,7 +250,7 @@
                                   <Component id="jLabel15" min="-2" pref="119" max="-2" attributes="0"/>
                                   <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
@@ -225,41 +263,40 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel15" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel7" min="-2" pref="39" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel7" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jButton17" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel10" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jButton16" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel11" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jButton15" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jLabel14" min="-2" pref="42" max="-2" attributes="0"/>
+                          <Component id="jButton18" min="-2" pref="35" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              <Component id="jButton8" min="-2" pref="33" max="-2" attributes="0"/>
+                              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="jLabel13" min="-2" pref="42" max="-2" attributes="0"/>
                           </Group>
+                          <Component id="jButton14" min="-2" pref="35" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel10" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel12" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton12" min="-2" pref="35" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel11" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="jButton9" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel14" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="jButton10" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel13" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="jButton11" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="jLabel12" min="-2" pref="27" max="-2" attributes="0"/>
-                          <Component id="jButton12" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="83" max="32767" attributes="0"/>
+                      <EmptySpace pref="62" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -276,18 +313,16 @@
                 <Property name="text" type="java.lang.String" value="Pagado por : Siarhei                                                                                                                              34,60 &#x20ac;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder justification="2" position="2" title="Mercadona">
-                      <Border PropertyName="innerBorder" info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                        <LineBorder roundedCorners="true" thickness="3">
-                          <Color PropertyName="color" blue="0" green="ff" red="33" type="rgb"/>
-                        </LineBorder>
-                      </Border>
+                    <TitledBorder justification="2" title="Mercadona">
+                      <Border PropertyName="innerBorder" info="null"/>
                       <Font PropertyName="font" name="Arial" size="14" style="1"/>
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="opaque" type="boolean" value="true"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel() {&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        if (isOpaque()) {&#xd;&#xa;            setOpaque(false);&#xd;&#xa;        }&#xd;&#xa;&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;&#xd;&#xa;        // Posici&#xf3;n y dimensiones del recuadro&#xd;&#xa;        int x = 2;&#xd;&#xa;        int y = 7; &#xd;&#xa;        int ancho = w - 5;&#xd;&#xa;        int alto = h - 9;&#xd;&#xa;        int arc = 10; // Curvatura de las esquinas redondeadas&#xd;&#xa;&#xd;&#xa;        // 1. Dibujamos el gradiente de fondo&#xd;&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;);&#xd;&#xa;&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));&#xd;&#xa;        g2d.fillRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        // 2. Dibujamos el borde redondeado gris claro&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xd;&#xa;        g2d.drawRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;&#xd;&#xa;        // Dibuja el texto del t&#xed;tulo y del contenido por encima del fondo y borde&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;    }&#xd;&#xa;}"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel10">
               <Properties>
@@ -300,13 +335,16 @@
                 <Property name="text" type="java.lang.String" value="Pagado por : Pablo                                                                                                                                 10,70 &#x20ac;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder justification="2" title="Limpieza">
+                    <TitledBorder justification="2" title="Mercadona">
+                      <Border PropertyName="innerBorder" info="null"/>
                       <Font PropertyName="font" name="Arial" size="14" style="1"/>
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="opaque" type="boolean" value="true"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel() {&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        if (isOpaque()) {&#xd;&#xa;            setOpaque(false);&#xd;&#xa;        }&#xd;&#xa;&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;&#xd;&#xa;        // Posici&#xf3;n y dimensiones del recuadro&#xd;&#xa;        int x = 2;&#xd;&#xa;        int y = 7; &#xd;&#xa;        int ancho = w - 5;&#xd;&#xa;        int alto = h - 9;&#xd;&#xa;        int arc = 10; // Curvatura de las esquinas redondeadas&#xd;&#xa;&#xd;&#xa;        // 1. Dibujamos el gradiente de fondo&#xd;&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;);&#xd;&#xa;&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));&#xd;&#xa;        g2d.fillRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        // 2. Dibujamos el borde redondeado gris claro&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xd;&#xa;        g2d.drawRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;&#xd;&#xa;        // Dibuja el texto del t&#xed;tulo y del contenido por encima del fondo y borde&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;    }&#xd;&#xa;}"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel11">
               <Properties>
@@ -319,13 +357,16 @@
                 <Property name="text" type="java.lang.String" value="Pagado por : Elias                                                                                                                                  15,30 &#x20ac;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder justification="2" title="Aldi">
+                    <TitledBorder justification="2" title="Mercadona">
+                      <Border PropertyName="innerBorder" info="null"/>
                       <Font PropertyName="font" name="Arial" size="14" style="1"/>
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="opaque" type="boolean" value="true"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel() {&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        if (isOpaque()) {&#xd;&#xa;            setOpaque(false);&#xd;&#xa;        }&#xd;&#xa;&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;&#xd;&#xa;        // Posici&#xf3;n y dimensiones del recuadro&#xd;&#xa;        int x = 2;&#xd;&#xa;        int y = 7; &#xd;&#xa;        int ancho = w - 5;&#xd;&#xa;        int alto = h - 9;&#xd;&#xa;        int arc = 10; // Curvatura de las esquinas redondeadas&#xd;&#xa;&#xd;&#xa;        // 1. Dibujamos el gradiente de fondo&#xd;&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;);&#xd;&#xa;&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));&#xd;&#xa;        g2d.fillRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        // 2. Dibujamos el borde redondeado gris claro&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xd;&#xa;        g2d.drawRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;&#xd;&#xa;        // Dibuja el texto del t&#xed;tulo y del contenido por encima del fondo y borde&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;    }&#xd;&#xa;}"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel12">
               <Properties>
@@ -339,12 +380,15 @@
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                     <TitledBorder justification="2" title="Mercadona">
+                      <Border PropertyName="innerBorder" info="null"/>
                       <Font PropertyName="font" name="Arial" size="14" style="1"/>
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="opaque" type="boolean" value="true"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel() {&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        if (isOpaque()) {&#xd;&#xa;            setOpaque(false);&#xd;&#xa;        }&#xd;&#xa;&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;&#xd;&#xa;        // Posici&#xf3;n y dimensiones del recuadro&#xd;&#xa;        int x = 2;&#xd;&#xa;        int y = 7; &#xd;&#xa;        int ancho = w - 5;&#xd;&#xa;        int alto = h - 9;&#xd;&#xa;        int arc = 10; // Curvatura de las esquinas redondeadas&#xd;&#xa;&#xd;&#xa;        // 1. Dibujamos el gradiente de fondo&#xd;&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;);&#xd;&#xa;&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));&#xd;&#xa;        g2d.fillRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        // 2. Dibujamos el borde redondeado gris claro&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xd;&#xa;        g2d.drawRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;&#xd;&#xa;        // Dibuja el texto del t&#xed;tulo y del contenido por encima del fondo y borde&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;    }&#xd;&#xa;}"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel13">
               <Properties>
@@ -357,13 +401,16 @@
                 <Property name="text" type="java.lang.String" value="Pagado por : Siarhei                                                                                                                              9,87 &#x20ac;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder justification="2" title="Pan , Chacinas y Bebidas">
+                    <TitledBorder justification="2" title="Mercadona">
+                      <Border PropertyName="innerBorder" info="null"/>
                       <Font PropertyName="font" name="Arial" size="14" style="1"/>
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="opaque" type="boolean" value="true"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel() {&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        if (isOpaque()) {&#xd;&#xa;            setOpaque(false);&#xd;&#xa;        }&#xd;&#xa;&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;&#xd;&#xa;        // Posici&#xf3;n y dimensiones del recuadro&#xd;&#xa;        int x = 2;&#xd;&#xa;        int y = 7; &#xd;&#xa;        int ancho = w - 5;&#xd;&#xa;        int alto = h - 9;&#xd;&#xa;        int arc = 10; // Curvatura de las esquinas redondeadas&#xd;&#xa;&#xd;&#xa;        // 1. Dibujamos el gradiente de fondo&#xd;&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;);&#xd;&#xa;&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));&#xd;&#xa;        g2d.fillRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        // 2. Dibujamos el borde redondeado gris claro&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xd;&#xa;        g2d.drawRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;&#xd;&#xa;        // Dibuja el texto del t&#xed;tulo y del contenido por encima del fondo y borde&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;    }&#xd;&#xa;}"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel14">
               <Properties>
@@ -376,13 +423,16 @@
                 <Property name="text" type="java.lang.String" value="Pagado por : Roberto                                                                                                                            5,93 &#x20ac;"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder justification="2" title="Chuches">
+                    <TitledBorder justification="2" title="Mercadona">
+                      <Border PropertyName="innerBorder" info="null"/>
                       <Font PropertyName="font" name="Arial" size="14" style="1"/>
                     </TitledBorder>
                   </Border>
                 </Property>
-                <Property name="opaque" type="boolean" value="true"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JLabel() {&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        if (isOpaque()) {&#xd;&#xa;            setOpaque(false);&#xd;&#xa;        }&#xd;&#xa;&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;&#xd;&#xa;        // Posici&#xf3;n y dimensiones del recuadro&#xd;&#xa;        int x = 2;&#xd;&#xa;        int y = 7; &#xd;&#xa;        int ancho = w - 5;&#xd;&#xa;        int alto = h - 9;&#xd;&#xa;        int arc = 10; // Curvatura de las esquinas redondeadas&#xd;&#xa;&#xd;&#xa;        // 1. Dibujamos el gradiente de fondo&#xd;&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;);&#xd;&#xa;&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(x, 0, colorLeft, x + ancho, 0, colorRight));&#xd;&#xa;        g2d.fillRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        // 2. Dibujamos el borde redondeado gris claro&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200)); &#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f)); &#xd;&#xa;        g2d.drawRoundRect(x, y, ancho, alto, arc, arc);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;&#xd;&#xa;        // Dibuja el texto del t&#xed;tulo y del contenido por encima del fondo y borde&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;    }&#xd;&#xa;}"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
@@ -394,44 +444,6 @@
                 <Property name="text" type="java.lang.String" value="23 de Octubre 2026"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JButton" name="jButton8">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
-                </Property>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
-              </Events>
-            </Component>
-            <Component class="javax.swing.JButton" name="jButton7">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="jButton9">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="jButton10">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
-                </Property>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JButton" name="jButton11">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
-                </Property>
-              </Properties>
-            </Component>
             <Component class="javax.swing.JButton" name="jButton12">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
@@ -439,83 +451,39 @@
                 </Property>
               </Properties>
             </Component>
-          </SubComponents>
-        </Container>
-        <Container class="javax.swing.JPanel" name="jPanel4">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
-          </Properties>
-
-          <Layout>
-            <DimensionLayout dim="0">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel2" alignment="0" pref="112" max="32767" attributes="0"/>
-                          <Component id="jLabel9" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="37" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-            <DimensionLayout dim="1">
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel2" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel5" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
-                          <Component id="jLabel9" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-              </Group>
-            </DimensionLayout>
-          </Layout>
-          <SubComponents>
-            <Component class="javax.swing.JLabel" name="jLabel2">
+            <Component class="javax.swing.JButton" name="jButton14">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial" size="18" style="1"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Mis gastos"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel3">
+            <Component class="javax.swing.JButton" name="jButton15">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial" size="18" style="1"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Gastos totales"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel5">
+            <Component class="javax.swing.JButton" name="jButton16">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
                 </Property>
-                <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="124,11 &#x20ac;"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JLabel" name="jLabel9">
+            <Component class="javax.swing.JButton" name="jButton17">
               <Properties>
-                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
                 </Property>
-                <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="46,47 &#x20ac;"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButton18">
+              <Properties>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/vista/icons/icons8-flecha-derecha-23.png"/>
+                </Property>
               </Properties>
             </Component>
           </SubComponents>
@@ -558,6 +526,40 @@
             <Property name="text" type="java.lang.String" value="Resumen"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JLabel" name="jLabel2">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mis gastos"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="18" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Gastos totales"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel5">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="124,11 &#x20ac;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel9">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Yu Gothic UI Semibold" size="14" style="0"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="46,47 &#x20ac;"/>
+          </Properties>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="toolbarPanel19">
@@ -573,6 +575,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel() {&#xd;&#xa;    {&#xd;&#xa;        setOpaque(false);&#xd;&#xa;        setBackground(new java.awt.Color(0, 0, 0, 0));&#xd;&#xa;    }&#xd;&#xa;&#xd;&#xa;    @Override&#xd;&#xa;    protected void paintComponent(java.awt.Graphics g) {&#xd;&#xa;        super.paintComponent(g);&#xd;&#xa;        java.awt.Graphics2D g2d = (java.awt.Graphics2D) g.create();&#xd;&#xa;        g2d.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON);&#xd;&#xa;&#xd;&#xa;        int w = getWidth();&#xd;&#xa;        int h = getHeight();&#xd;&#xa;&#xd;&#xa;        java.awt.Color colorLeft = java.awt.Color.decode(&quot;#FAFAFA&quot;);&#xd;&#xa;        java.awt.Color colorRight = java.awt.Color.decode(&quot;#81DAAB&quot;);&#xd;&#xa;&#xd;&#xa;        g2d.setPaint(new java.awt.GradientPaint(0, 0, colorLeft, w, 0, colorRight));&#xd;&#xa;        g2d.fillRect(0, 0, w, h);&#xd;&#xa;&#xd;&#xa;        // Borde inferior neutro fino&#xd;&#xa;        g2d.setColor(new java.awt.Color(200, 200, 200));&#xd;&#xa;        g2d.setStroke(new java.awt.BasicStroke(1.0f));&#xd;&#xa;        g2d.drawLine(0, h - 1, w, h - 1);&#xd;&#xa;&#xd;&#xa;        g2d.dispose();&#xd;&#xa;    }&#xd;&#xa;}"/>
+      </AuxValues>
 
       <Layout>
         <DimensionLayout dim="0">
@@ -580,12 +585,10 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="navGrupos20" min="-2" pref="101" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="toolbarSeparator20" min="-2" pref="2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
                   <Component id="navPerfil20" min="-2" pref="242" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="143" max="-2" attributes="0"/>
-                  <Component id="lblConectado20" pref="330" attributes="0"/>
+                  <Component id="lblConectado20" pref="349" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -595,7 +598,6 @@
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="2" attributes="0">
-                      <Component id="toolbarSeparator20" alignment="2" min="-2" pref="22" max="-2" attributes="0"/>
                       <Component id="lblConectado20" alignment="2" attributes="0"/>
                       <Component id="navGrupos20" alignment="2" attributes="0"/>
                       <Component id="navPerfil20" alignment="2" attributes="0"/>
@@ -606,11 +608,6 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JSeparator" name="toolbarSeparator20">
-          <Properties>
-            <Property name="orientation" type="int" value="1"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JLabel" name="lblConectado20">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -650,7 +647,6 @@
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="opaque" type="boolean" value="true"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="navPerfil20">
