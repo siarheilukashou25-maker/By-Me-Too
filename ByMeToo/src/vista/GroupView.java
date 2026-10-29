@@ -347,70 +347,111 @@ public class GroupView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel2.setBackground(new java.awt.Color(250, 250, 250));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
+        jPanel2.setForeground(new java.awt.Color(26, 32, 44));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel1.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel1.setFont(new java.awt.Font("Inter", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(26, 32, 44));
         jLabel1.setText("Piso 1");
 
+        jButton1.setBackground(new java.awt.Color(250, 250, 250));
+        jButton1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(26, 32, 44));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
         jButton1.addActionListener(this::jButton1ActionPerformed);
 
+        jButton2.setBackground(new java.awt.Color(250, 250, 250));
+        jButton2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(26, 32, 44));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-ajustes-25-2.png"))); // NOI18N
         jButton2.setBorder(null);
 
+        jButton3.setBackground(new java.awt.Color(250, 250, 250));
+        jButton3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton3.setForeground(new java.awt.Color(26, 32, 44));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
         jButton3.setText("Repartos");
 
+        jButton5.setBackground(new java.awt.Color(250, 250, 250));
+        jButton5.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton5.setForeground(new java.awt.Color(26, 32, 44));
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-billetes-16.png"))); // NOI18N
         jButton5.setText("Gastos");
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel3.setBackground(new java.awt.Color(250, 250, 250));
+        jPanel3.setForeground(new java.awt.Color(26, 32, 44));
 
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel7.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel7.setFont(new java.awt.Font("Inter", 1, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(26, 32, 44));
         jLabel7.setText("Pagado por : Siarhei                                                                                                                              34,60 €");
         jLabel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
-        jLabel10.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel10.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel10.setFont(new java.awt.Font("Inter", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(26, 32, 44));
         jLabel10.setText("Pagado por : Pablo                                                                                                                                 10,70 €");
         jLabel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
-        jLabel11.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel11.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel11.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel11.setFont(new java.awt.Font("Inter", 1, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(26, 32, 44));
         jLabel11.setText("Pagado por : Elias                                                                                                                                  15,30 €");
         jLabel11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
-        jLabel12.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel12.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel12.setFont(new java.awt.Font("Inter", 1, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(26, 32, 44));
         jLabel12.setText("Pagado por : Roberto                                                                                                                            47,71 €");
         jLabel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
-        jLabel13.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel13.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel13.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel13.setFont(new java.awt.Font("Inter", 1, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(26, 32, 44));
         jLabel13.setText("Pagado por : Siarhei                                                                                                                              9,87 €");
         jLabel13.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
-        jLabel14.setBackground(new java.awt.Color(237, 237, 237));
-        jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel14.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel14.setFont(new java.awt.Font("Inter", 1, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(26, 32, 44));
         jLabel14.setText("Pagado por : Roberto                                                                                                                            5,93 €");
         jLabel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
 
+        jLabel4.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(26, 32, 44));
         jLabel4.setText("17 de Octubre de 2026");
 
+        jLabel15.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel15.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(26, 32, 44));
         jLabel15.setText("23 de Octubre 2026");
 
+        jButton12.setBackground(new java.awt.Color(250, 250, 250));
+        jButton12.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton12.setForeground(new java.awt.Color(26, 32, 44));
         jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
 
+        jButton14.setBackground(new java.awt.Color(250, 250, 250));
+        jButton14.setForeground(new java.awt.Color(26, 32, 44));
         jButton14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
 
+        jButton15.setBackground(new java.awt.Color(250, 250, 250));
+        jButton15.setForeground(new java.awt.Color(26, 32, 44));
         jButton15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
 
+        jButton16.setBackground(new java.awt.Color(250, 250, 250));
+        jButton16.setForeground(new java.awt.Color(26, 32, 44));
         jButton16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
 
+        jButton17.setBackground(new java.awt.Color(250, 250, 250));
+        jButton17.setForeground(new java.awt.Color(26, 32, 44));
         jButton17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
 
+        jButton18.setBackground(new java.awt.Color(250, 250, 250));
+        jButton18.setForeground(new java.awt.Color(26, 32, 44));
         jButton18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-23.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -440,15 +481,12 @@ public class GroupView extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 598, Short.MAX_VALUE)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 598, Short.MAX_VALUE)
+                            .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jLabel13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel4))
-                        .addGap(0, 0, 0)))
+                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -486,31 +524,51 @@ public class GroupView extends javax.swing.JFrame {
                 .addContainerGap(62, Short.MAX_VALUE))
         );
 
+        jButton4.setBackground(new java.awt.Color(250, 250, 250));
+        jButton4.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(26, 32, 44));
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/cart.png"))); // NOI18N
         jButton4.setText("Nueva compra");
         jButton4.addActionListener(this::jButton4ActionPerformed);
 
+        jButton6.setBackground(new java.awt.Color(250, 250, 250));
+        jButton6.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(26, 32, 44));
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-compartir-18.png"))); // NOI18N
         jButton6.setText("Compartir");
         jButton6.setMargin(new java.awt.Insets(2, 3, 3, 10));
 
+        jButton13.setBackground(new java.awt.Color(250, 250, 250));
+        jButton13.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton13.setForeground(new java.awt.Color(26, 32, 44));
         jButton13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
         jButton13.setText("Salir");
 
+        btnResumen.setBackground(new java.awt.Color(250, 250, 250));
+        btnResumen.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnResumen.setForeground(new java.awt.Color(26, 32, 44));
         btnResumen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/chart.png"))); // NOI18N
         btnResumen.setText("Resumen");
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel2.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel2.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(26, 32, 44));
         jLabel2.setText("Mis gastos");
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel3.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(26, 32, 44));
         jLabel3.setText("Gastos totales");
 
-        jLabel5.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        jLabel5.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel5.setFont(new java.awt.Font("Inter", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(26, 32, 44));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("124,11 €");
 
-        jLabel9.setFont(new java.awt.Font("Yu Gothic UI Semibold", 0, 14)); // NOI18N
+        jLabel9.setBackground(new java.awt.Color(250, 250, 250));
+        jLabel9.setFont(new java.awt.Font("Inter", 0, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(26, 32, 44));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel9.setText("46,47 €");
 
@@ -526,15 +584,15 @@ public class GroupView extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, 0)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jButton3)
                         .addGap(0, 0, 0)
                         .addComponent(jButton4)
                         .addGap(0, 0, 0)
-                        .addComponent(btnResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnResumen)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap(95, Short.MAX_VALUE)
+                        .addGap(239, 239, 239)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -543,18 +601,15 @@ public class GroupView extends javax.swing.JFrame {
                                     .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(65, 65, 65)
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                                    .addGroup(jPanel2Layout.createSequentialGroup()
-                                        .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(60, 60, 60)))
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 112, Short.MAX_VALUE)
+                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(60, 60, 60)
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(225, 225, 225))
-                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(126, 126, 126)))
                 .addGap(0, 0, 0))
         );
         jPanel2Layout.setVerticalGroup(
@@ -586,14 +641,15 @@ public class GroupView extends javax.swing.JFrame {
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(14, 14, 14)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton13))
         );
 
-        toolbarPanel19.setBackground(new java.awt.Color(226, 232, 229));
+        toolbarPanel19.setBackground(new java.awt.Color(250, 250, 250));
         toolbarPanel19.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
+        toolbarPanel19.setForeground(new java.awt.Color(26, 32, 44));
 
-        lblConectado20.setBackground(new java.awt.Color(226, 232, 229));
+        lblConectado20.setBackground(new java.awt.Color(250, 250, 250));
         lblConectado20.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblConectado20.setForeground(new java.awt.Color(26, 32, 44));
         lblConectado20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -631,7 +687,7 @@ public class GroupView extends javax.swing.JFrame {
                 .addGap(8, 8, 8)
                 .addComponent(navPerfil20, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(143, 143, 143)
-                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 349, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 352, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addContainerGap())
         );
         toolbarPanel19Layout.setVerticalGroup(
