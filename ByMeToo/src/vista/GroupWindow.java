@@ -62,7 +62,6 @@ public class GroupWindow extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cómprame! — Gestor de gastos compartidos");
         setMinimumSize(new java.awt.Dimension(850, 550));
-        setPreferredSize(new java.awt.Dimension(900, 600));
 
         navPanel.setBackground(new java.awt.Color(255, 255, 255));
         navPanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
@@ -207,7 +206,7 @@ public class GroupWindow extends javax.swing.JFrame {
                 .addGap(5, 5, 5)
                 .addComponent(btnResumen)
                 .addGap(175, 175, 175)
-                .addComponent(lblConectado, javax.swing.GroupLayout.DEFAULT_SIZE, 436, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addComponent(lblConectado, javax.swing.GroupLayout.DEFAULT_SIZE, 435, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addContainerGap())
         );
         toolbarPanelLayout.setVerticalGroup(
@@ -309,7 +308,7 @@ public class GroupWindow extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -330,7 +329,7 @@ public class GroupWindow extends javax.swing.JFrame {
                 .addComponent(accionesCard, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(137, Short.MAX_VALUE))
+                .addGap(137, 137, 137))
         );
 
         statusGrupos.setText("Grupos: 1");

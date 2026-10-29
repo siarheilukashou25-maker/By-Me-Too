@@ -1,5 +1,7 @@
 package vista;
 
+import javax.swing.UIManager;
+
 /**
  * Ventana de resumen (maqueta).
  */
@@ -1725,7 +1727,7 @@ public class ResumenWindow extends javax.swing.JFrame {
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
         try {
-            javax.swing.UIManager.setLookAndFeel(javax.swing.UIManager.getSystemLookAndFeelClassName());
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (Exception ex) {
             ex.printStackTrace();
         }

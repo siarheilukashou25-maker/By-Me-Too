@@ -3,7 +3,6 @@ package controlador;
 import java.awt.event.ActionEvent;
 import modelo.Modelo;
 import vista.LoginWindow;
-import vista.MainWindow;
 
 /**
  * Conecta las ventanas con el modelo.
@@ -13,12 +12,10 @@ public class Controlador {
 
     private final Modelo modelo;
     private final LoginWindow login;
-    private final MainWindow principal;
 
-    public Controlador(Modelo modelo, LoginWindow login, MainWindow principal) {
+    public Controlador(Modelo modelo, LoginWindow login) {
         this.modelo = modelo;
         this.login = login;
-        this.principal = principal;
         //this.login.alEntrar(this::entrar);
     }
 
@@ -33,7 +30,5 @@ public class Controlador {
 
     public void entrar(ActionEvent evento) {
         login.setVisible(false);
-        principal.setLocationRelativeTo(null);
-        principal.setVisible(true);
     }
 }
