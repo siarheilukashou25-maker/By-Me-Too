@@ -49,7 +49,6 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -127,7 +126,7 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jButton2.setBackground(new java.awt.Color(242, 242, 242));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-ajustes-25-2.png"))); // NOI18N
-        jButton2.setBorder(null);
+        jButton2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
         jButton3.setText("Repartos");
 
@@ -137,43 +136,70 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jLabel7.setBackground(new java.awt.Color(237, 237, 237));
         jLabel7.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel7.setText("Pagado por : Siarhei                                                                                                                              34,60 €");
+        jLabel7.setText("Pagado por : Siarhei                                                                                                                           34,60 €");
         jLabel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
         jLabel7.setOpaque(true);
 
         jLabel10.setBackground(new java.awt.Color(237, 237, 237));
         jLabel10.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel10.setText("Pagado por : Pablo                                                                                                                                 10,70 €");
+        jLabel10.setText("Pagado por : Pablo                                                                                                                             10,70 €");
         jLabel10.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Limpieza", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
         jLabel10.setOpaque(true);
 
         jLabel11.setBackground(new java.awt.Color(237, 237, 237));
         jLabel11.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel11.setText("Pagado por : Elias                                                                                                                                  15,30 €");
+        jLabel11.setText("Pagado por : Elias                                                                                                                              15,30 €");
         jLabel11.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Aldi", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
         jLabel11.setOpaque(true);
 
         jLabel12.setBackground(new java.awt.Color(237, 237, 237));
         jLabel12.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel12.setText("Pagado por : Roberto                                                                                                                            47,71 €");
+        jLabel12.setText("Pagado por : Roberto                                                                                                                         47,71 €");
         jLabel12.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Mercadona", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
         jLabel12.setOpaque(true);
 
         jLabel13.setBackground(new java.awt.Color(237, 237, 237));
         jLabel13.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel13.setText("Pagado por : Siarhei                                                                                                                              9,87 €");
+        jLabel13.setText("Pagado por : Siarhei                                                                                                                             9,87 €");
         jLabel13.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Pan , Chacinas y Bebidas", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
         jLabel13.setOpaque(true);
+        jLabel13.setPreferredSize(new java.awt.Dimension(539, 38));
 
         jLabel14.setBackground(new java.awt.Color(237, 237, 237));
         jLabel14.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel14.setText("Pagado por : Roberto                                                                                                                            5,93 €");
+        jLabel14.setText("Pagado por : Roberto                                                                                                                          5,93 €");
         jLabel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Chuches", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
         jLabel14.setOpaque(true);
 
+        jLabel15.setText("23 de Octubre 2026");
+
         jLabel4.setText("17 de Octubre de 2026");
 
-        jLabel15.setText("23 de Octubre 2026");
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-24.png"))); // NOI18N
+        jButton6.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton6.setOpaque(true);
+        jButton6.addActionListener(this::jButton6ActionPerformed);
+
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-24.png"))); // NOI18N
+        jButton8.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton8.addActionListener(this::jButton8ActionPerformed);
+
+        jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-24.png"))); // NOI18N
+        jButton9.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton9.addActionListener(this::jButton9ActionPerformed);
+
+        jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-24.png"))); // NOI18N
+        jButton10.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton10.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jButton10.addActionListener(this::jButton10ActionPerformed);
+
+        jButton11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-24.png"))); // NOI18N
+        jButton11.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton11.addActionListener(this::jButton11ActionPerformed);
+
+        jButton12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-flecha-derecha-24.png"))); // NOI18N
+        jButton12.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton12.addActionListener(this::jButton12ActionPerformed);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -196,16 +222,27 @@ public class NewJFrame extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -493,6 +530,9 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton btnResumen;
     private javax.swing.JLabel gruposTitle;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
