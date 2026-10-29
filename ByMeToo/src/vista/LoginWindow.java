@@ -41,136 +41,157 @@ public class LoginWindow extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cómprame! — Iniciar sesión");
+        setBackground(new java.awt.Color(250, 250, 250));
 
+        loginCard.setBackground(new java.awt.Color(250, 250, 250));
         loginCard.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(160, 160, 160)));
-        headerPanel.setBackground(new java.awt.Color(150, 175, 210));
 
+        headerPanel.setBackground(new java.awt.Color(226, 232, 229));
         headerPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
 
         lblHeader.setFont(lblHeader.getFont().deriveFont(lblHeader.getFont().getStyle() | java.awt.Font.BOLD));
-
-
         lblHeader.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
-
-
         lblHeader.setText("Iniciar sesión");
-
 
         javax.swing.GroupLayout headerPanelLayout = new javax.swing.GroupLayout(headerPanel);
         headerPanel.setLayout(headerPanelLayout);
-
         headerPanelLayout.setHorizontalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(headerPanelLayout.createSequentialGroup()
-                    .addGap(8, 8, 8)
-                    .addComponent(lblHeader)
-                    .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(headerPanelLayout.createSequentialGroup()
+                .addGap(8, 8, 8)
+                .addComponent(lblHeader)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-
         headerPanelLayout.setVerticalGroup(
             headerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(headerPanelLayout.createSequentialGroup()
-                    .addGap(5, 5, 5)
-                    .addComponent(lblHeader)
-                    .addGap(5, 5, 5))
+            .addGroup(headerPanelLayout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(lblHeader)
+                .addGap(5, 5, 5))
         );
 
+        lblIntro.setBackground(new java.awt.Color(250, 250, 250));
         lblIntro.setText("Accede a tu cuenta para gestionar tus gastos compartidos.");
 
+        btnGoogle.setBackground(new java.awt.Color(250, 250, 250));
+        btnGoogle.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnGoogle.setForeground(new java.awt.Color(26, 32, 44));
         btnGoogle.setText("Continuar con Google");
 
+        sepIzquierda.setBackground(new java.awt.Color(250, 250, 250));
+        sepIzquierda.setForeground(new java.awt.Color(226, 232, 229));
+
+        lblO.setBackground(new java.awt.Color(250, 250, 250));
+        lblO.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         lblO.setText("o");
 
+        sepDerecha.setBackground(new java.awt.Color(250, 250, 250));
+        sepDerecha.setForeground(new java.awt.Color(226, 232, 229));
+
+        lblCorreo.setBackground(new java.awt.Color(250, 250, 250));
+        lblCorreo.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        lblCorreo.setForeground(new java.awt.Color(26, 32, 44));
         lblCorreo.setText("Correo electrónico");
 
+        txtCorreo.setBackground(new java.awt.Color(250, 250, 250));
+        txtCorreo.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        txtCorreo.setForeground(new java.awt.Color(26, 32, 44));
+
+        lblContrasena.setBackground(new java.awt.Color(250, 250, 250));
         lblContrasena.setText("Contraseña");
 
-        lblOlvidaste.setFont(lblOlvidaste.getFont().deriveFont(lblOlvidaste.getFont().getSize()-1f));
-
+        lblOlvidaste.setFont(new java.awt.Font("Inter", 0, 12)); // NOI18N
+        lblOlvidaste.setForeground(new java.awt.Color(26, 32, 44));
         lblOlvidaste.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-
         lblOlvidaste.setText("<html><u>¿Olvidaste tu contraseña?</u></html>");
 
+        pwdContrasena.setBackground(new java.awt.Color(250, 250, 250));
+        pwdContrasena.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        pwdContrasena.setForeground(new java.awt.Color(26, 32, 44));
         pwdContrasena.setText("password");
 
+        btnIniciarSesion.setBackground(new java.awt.Color(250, 250, 250));
+        btnIniciarSesion.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnIniciarSesion.setForeground(new java.awt.Color(26, 32, 44));
         btnIniciarSesion.setText("Iniciar sesión");
 
+        btnCrearCuenta.setBackground(new java.awt.Color(250, 250, 250));
+        btnCrearCuenta.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        btnCrearCuenta.setForeground(new java.awt.Color(26, 32, 44));
         btnCrearCuenta.setText("¿No tienes cuenta?  Crear una");
 
         javax.swing.GroupLayout loginCardLayout = new javax.swing.GroupLayout(loginCard);
         loginCard.setLayout(loginCardLayout);
         loginCardLayout.setHorizontalGroup(
             loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(loginCardLayout.createSequentialGroup()
-                    .addGap(16, 16, 16)
-                    .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lblIntro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnGoogle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(loginCardLayout.createSequentialGroup()
-                            .addComponent(sepIzquierda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGap(8, 8, 8)
-                            .addComponent(lblO)
-                            .addGap(8, 8, 8)
-                            .addComponent(sepDerecha, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addComponent(lblCorreo)
-                        .addComponent(txtCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(loginCardLayout.createSequentialGroup()
-                            .addComponent(lblContrasena)
-                            .addGap(0, 0, Short.MAX_VALUE)
-                            .addComponent(lblOlvidaste))
-                        .addComponent(pwdContrasena, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnIniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCrearCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGap(16, 16, 16))
+            .addComponent(headerPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(loginCardLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(lblIntro, javax.swing.GroupLayout.DEFAULT_SIZE, 386, Short.MAX_VALUE)
+                    .addComponent(btnGoogle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(loginCardLayout.createSequentialGroup()
+                        .addComponent(sepIzquierda)
+                        .addGap(8, 8, 8)
+                        .addComponent(lblO)
+                        .addGap(8, 8, 8)
+                        .addComponent(sepDerecha))
+                    .addComponent(lblCorreo)
+                    .addComponent(txtCorreo)
+                    .addGroup(loginCardLayout.createSequentialGroup()
+                        .addComponent(lblContrasena)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(lblOlvidaste))
+                    .addComponent(pwdContrasena)
+                    .addComponent(btnIniciarSesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnCrearCuenta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(16, 16, 16))
         );
         loginCardLayout.setVerticalGroup(
             loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(loginCardLayout.createSequentialGroup()
-                    .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(16, 16, 16)
-                    .addComponent(lblIntro)
-                    .addGap(12, 12, 12)
-                    .addComponent(btnGoogle, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(14, 14, 14)
-                    .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                        .addComponent(sepIzquierda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblO)
-                        .addComponent(sepDerecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(14, 14, 14)
-                    .addComponent(lblCorreo)
-                    .addGap(4, 4, 4)
-                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(12, 12, 12)
-                    .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(lblContrasena)
-                        .addComponent(lblOlvidaste))
-                    .addGap(4, 4, 4)
-                    .addComponent(pwdContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(12, 12, 12)
-                    .addComponent(btnIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(12, 12, 12)
-                    .addComponent(btnCrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(16, 16, 16))
+            .addGroup(loginCardLayout.createSequentialGroup()
+                .addComponent(headerPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addComponent(lblIntro)
+                .addGap(12, 12, 12)
+                .addComponent(btnGoogle, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14)
+                .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(sepIzquierda, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblO)
+                    .addComponent(sepDerecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addComponent(lblCorreo)
+                .addGap(4, 4, 4)
+                .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addGroup(loginCardLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblContrasena)
+                    .addComponent(lblOlvidaste))
+                .addGap(4, 4, 4)
+                .addComponent(pwdContrasena, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(btnIniciarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
+                .addComponent(btnCrearCuenta, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
-
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, 420, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(loginCard, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         setSize(new java.awt.Dimension(1024, 768));
