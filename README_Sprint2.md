@@ -56,7 +56,8 @@ Cada pantalla debe tener su título o nombre, justificación de su elección y u
 
  **Diagrama de jererquía de navegación:**
 
-![alt text](image-18.png)
+<img width="1536" height="1024" alt="imagen" src="https://github.com/user-attachments/assets/1ce0902e-d564-4b16-8b92-0227d94c994f" />
+
 
 Se siguió como pauta un prototipo creado por Base44.
 
@@ -68,7 +69,8 @@ Se siguió como pauta un prototipo creado por Base44.
 
  **Diagrama de jererquía de navegación:**
 
-![alt text](image-17.png)
+<img width="865" height="484" alt="imagen" src="https://github.com/user-attachments/assets/e33a681b-0d0e-487e-b0ae-dd9f3f01f602" />
+
 
 Se simplificaron las ventanas para concentrar las funciones útiles para el usuario y se elimino las redundancias y funciones poco útiles.
 
@@ -193,25 +195,32 @@ Identificar los atajos estándar de la industria y compararlos con las necesidad
 
 ### 3.1. Capturas de pantalla
 
-![alt text](image-10.png)
+<img width="865" height="747" alt="imagen" src="https://github.com/user-attachments/assets/688fca92-82f2-43ea-9e8c-b9bea02d73b8" />
+
 *Login*
 
-![alt text](image-11.png)
+<img width="865" height="542" alt="imagen" src="https://github.com/user-attachments/assets/72ab5338-f56a-4687-abc8-822698760264" />
+
 *Main Window*
 
-![alt text](image-12.png)
+<img width="865" height="541" alt="imagen" src="https://github.com/user-attachments/assets/a215e9db-48de-483f-9896-9e4e4c21d6cc" />
+
 *Perfil Personal*
 
-![alt text](image-13.png)
+<img width="865" height="540" alt="imagen" src="https://github.com/user-attachments/assets/8ef13655-b984-47b3-af16-721f8a91bcc0" />
+
 *Grupo*
 
-![alt text](image-14.png)
+<img width="865" height="540" alt="imagen" src="https://github.com/user-attachments/assets/65fc4305-4f06-49fd-8b89-8434d69817b5" />
+
 *Resumen Grupo*
 
-![alt text](image-15.png)
+<img width="865" height="606" alt="imagen" src="https://github.com/user-attachments/assets/7a20abfe-eddc-41ec-a3df-56ae56f24560" />
+
 *Compra*
 
-![alt text](image-16.png)
+<img width="865" height="395" alt="imagen" src="https://github.com/user-attachments/assets/8655b16f-11ca-4d75-80ce-9e8de3b904e8" />
+
 *Repartos*
 
 ---
