@@ -258,19 +258,19 @@ public class RepartosView extends javax.swing.JFrame {
         jLabel4.setBackground(new java.awt.Color(250, 250, 250));
         jLabel4.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(26, 32, 44));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
         jLabel4.setText("Elias Perez te debe ");
 
         jLabel5.setBackground(new java.awt.Color(250, 250, 250));
         jLabel5.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(26, 32, 44));
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
         jLabel5.setText("Pablo Azogue te debe ");
 
         jLabel6.setBackground(new java.awt.Color(250, 250, 250));
         jLabel6.setFont(new java.awt.Font("Inter", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(26, 32, 44));
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
         jLabel6.setText("Roberto te debe ");
 
         jLabel10.setBackground(new java.awt.Color(250, 250, 250));
@@ -428,7 +428,7 @@ public class RepartosView extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(250, 250, 250));
         jButton3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         jButton3.setForeground(new java.awt.Color(26, 32, 44));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
         jButton3.setText("Repartos");
 
         jButton4.setBackground(new java.awt.Color(250, 250, 250));
@@ -464,7 +464,7 @@ public class RepartosView extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jLabel9))))
                     .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(162, Short.MAX_VALUE))
+                .addContainerGap(142, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)

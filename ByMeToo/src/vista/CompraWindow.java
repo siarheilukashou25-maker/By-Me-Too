@@ -183,6 +183,7 @@ public class CompraWindow extends javax.swing.JFrame {
         btnResumen = new javax.swing.JButton();
         btnAjustes = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         topNavPanel = new javax.swing.JPanel() {
             {
                 setOpaque(false);
@@ -215,9 +216,9 @@ public class CompraWindow extends javax.swing.JFrame {
                 g2d.dispose();
             }
         };
-        btnTopInicio = new javax.swing.JButton();
-        btnTopPerfil = new javax.swing.JButton();
         lblTopUsuario = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cómprame! — Detalle de compra");
@@ -344,7 +345,7 @@ public class CompraWindow extends javax.swing.JFrame {
             .addGroup(productosCard7Layout.createSequentialGroup()
                 .addGap(0, 0, 0)
                 .addGroup(productosCard7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(scrollProductos7, javax.swing.GroupLayout.DEFAULT_SIZE, 629, Short.MAX_VALUE)
+                    .addComponent(scrollProductos7, javax.swing.GroupLayout.DEFAULT_SIZE, 658, Short.MAX_VALUE)
                     .addGroup(productosCard7Layout.createSequentialGroup()
                         .addComponent(btnAnadirProducto7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -353,7 +354,7 @@ public class CompraWindow extends javax.swing.JFrame {
                         .addComponent(btnEliminarProducto7)
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(lblTotalProductos7)))
-                .addContainerGap())
+                .addGap(16, 16, 16))
         );
         productosCard7Layout.setVerticalGroup(
             productosCard7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -366,7 +367,7 @@ public class CompraWindow extends javax.swing.JFrame {
                     .addComponent(btnEditarProducto7)
                     .addComponent(btnEliminarProducto7)
                     .addComponent(lblTotalProductos7))
-                .addContainerGap())
+                .addGap(16, 16, 16))
         );
 
         pagadoCard.setBackground(new java.awt.Color(250, 250, 250));
@@ -567,8 +568,9 @@ public class CompraWindow extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         jButton3.setForeground(new java.awt.Color(26, 32, 44));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
         jButton3.setText("Repartos");
+        jButton3.setOpaque(true);
 
         btnResumen.setBackground(new java.awt.Color(250, 250, 250));
         btnResumen.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
@@ -588,6 +590,12 @@ public class CompraWindow extends javax.swing.JFrame {
         btnSalir.setForeground(new java.awt.Color(26, 32, 44));
         btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/login.png"))); // NOI18N
         btnSalir.setText("Salir");
+
+        jButton7.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(26, 32, 44));
+        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
+        jButton7.setText("Repartos");
+        jButton7.setOpaque(true);
 
         javax.swing.GroupLayout compraPanel7Layout = new javax.swing.GroupLayout(compraPanel7);
         compraPanel7.setLayout(compraPanel7Layout);
@@ -631,6 +639,11 @@ public class CompraWindow extends javax.swing.JFrame {
                 .addComponent(btnResumen)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnAjustes, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(compraPanel7Layout.createSequentialGroup()
+                    .addGap(472, 472, 472)
+                    .addComponent(jButton7)
+                    .addContainerGap(480, Short.MAX_VALUE)))
         );
         compraPanel7Layout.setVerticalGroup(
             compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -665,6 +678,11 @@ public class CompraWindow extends javax.swing.JFrame {
                         .addGap(130, 130, 130)
                         .addComponent(btnSalir)
                         .addContainerGap())))
+            .addGroup(compraPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(compraPanel7Layout.createSequentialGroup()
+                    .addGap(323, 323, 323)
+                    .addComponent(jButton7)
+                    .addContainerGap(323, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout contentPanel7Layout = new javax.swing.GroupLayout(contentPanel7);
@@ -672,58 +690,55 @@ public class CompraWindow extends javax.swing.JFrame {
         contentPanel7Layout.setHorizontalGroup(
             contentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(contentPanel7Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
                 .addComponent(compraPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         contentPanel7Layout.setVerticalGroup(
             contentPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(contentPanel7Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(compraPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(compraPanel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         topNavPanel.setBackground(new java.awt.Color(236, 237, 237));
         topNavPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(160, 160, 160)));
 
-        btnTopInicio.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/users.png"))); // NOI18N
-        btnTopInicio.setText("Inicio");
-        btnTopInicio.setBorderPainted(false);
-        btnTopInicio.setContentAreaFilled(false);
-        btnTopInicio.setFocusPainted(false);
-
-        btnTopPerfil.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
-        btnTopPerfil.setText("Perfil");
-        btnTopPerfil.setBorderPainted(false);
-        btnTopPerfil.setContentAreaFilled(false);
-        btnTopPerfil.setFocusPainted(false);
-
         lblTopUsuario.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblTopUsuario.setText("<html>Conectado como <b>SIARHEI LUKASHOU</b></html>");
+
+        jButton6.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(26, 32, 44));
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/user.png"))); // NOI18N
+        jButton6.setText("Perfil");
+        jButton6.setOpaque(true);
+        jButton6.addActionListener(this::jButton6ActionPerformed);
+
+        jButton8.setBackground(new java.awt.Color(250, 250, 250));
+        jButton8.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
+        jButton8.setForeground(new java.awt.Color(26, 32, 44));
+        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/home.png"))); // NOI18N
+        jButton8.setText("Inicio");
+        jButton8.addActionListener(this::jButton8ActionPerformed);
 
         javax.swing.GroupLayout topNavPanelLayout = new javax.swing.GroupLayout(topNavPanel);
         topNavPanel.setLayout(topNavPanelLayout);
         topNavPanelLayout.setHorizontalGroup(
             topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(topNavPanelLayout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(btnTopInicio)
-                .addGap(18, 18, 18)
-                .addComponent(btnTopPerfil)
-                .addGap(0, 303, Short.MAX_VALUE)
-                .addComponent(lblTopUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 536, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(jButton8)
+                .addGap(0, 0, 0)
+                .addComponent(jButton6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 324, Short.MAX_VALUE)
+                .addComponent(lblTopUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 569, javax.swing.GroupLayout.DEFAULT_SIZE)
                 .addGap(10, 10, 10))
         );
         topNavPanelLayout.setVerticalGroup(
             topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(topNavPanelLayout.createSequentialGroup()
-                .addGap(2, 2, 2)
-                .addGroup(topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
-                    .addComponent(btnTopInicio)
-                    .addComponent(btnTopPerfil)
-                    .addComponent(lblTopUsuario))
-                .addGap(2, 2, 2))
+                .addGap(0, 0, 0)
+                .addGroup(topNavPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lblTopUsuario, javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jButton6, javax.swing.GroupLayout.Alignment.CENTER)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -740,7 +755,7 @@ public class CompraWindow extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(topNavPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0))
+                .addGap(0, 682, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(29, 29, 29)
@@ -748,7 +763,7 @@ public class CompraWindow extends javax.swing.JFrame {
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        setSize(new java.awt.Dimension(1024, 744));
+        setSize(new java.awt.Dimension(1070, 717));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
@@ -759,6 +774,14 @@ public class CompraWindow extends javax.swing.JFrame {
     private void btnEliminarProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarProductoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEliminarProductoActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -777,88 +800,26 @@ public class CompraWindow extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAjustes;
-    private javax.swing.JButton btnAnadirProducto;
-    private javax.swing.JButton btnAnadirProducto1;
-    private javax.swing.JButton btnAnadirProducto2;
-    private javax.swing.JButton btnAnadirProducto3;
-    private javax.swing.JButton btnAnadirProducto4;
-    private javax.swing.JButton btnAnadirProducto5;
-    private javax.swing.JButton btnAnadirProducto6;
     private javax.swing.JButton btnAnadirProducto7;
-    private javax.swing.JButton btnEditarProducto;
-    private javax.swing.JButton btnEditarProducto1;
-    private javax.swing.JButton btnEditarProducto2;
-    private javax.swing.JButton btnEditarProducto3;
-    private javax.swing.JButton btnEditarProducto4;
-    private javax.swing.JButton btnEditarProducto5;
-    private javax.swing.JButton btnEditarProducto6;
     private javax.swing.JButton btnEditarProducto7;
     private javax.swing.JButton btnEditarReparto;
-    private javax.swing.JButton btnEliminarProducto;
-    private javax.swing.JButton btnEliminarProducto1;
-    private javax.swing.JButton btnEliminarProducto2;
-    private javax.swing.JButton btnEliminarProducto3;
-    private javax.swing.JButton btnEliminarProducto4;
-    private javax.swing.JButton btnEliminarProducto5;
-    private javax.swing.JButton btnEliminarProducto6;
     private javax.swing.JButton btnEliminarProducto7;
     private javax.swing.JButton btnMarcarPagado;
     private javax.swing.JButton btnReasignar;
     private javax.swing.JButton btnResumen;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JButton btnTopInicio;
-    private javax.swing.JButton btnTopPerfil;
-    private javax.swing.JButton btnVolver;
-    private javax.swing.JButton btnVolver1;
-    private javax.swing.JButton btnVolver2;
-    private javax.swing.JButton btnVolver3;
-    private javax.swing.JButton btnVolver4;
-    private javax.swing.JButton btnVolver5;
-    private javax.swing.JButton btnVolver6;
     private javax.swing.JButton btnVolver7;
     private javax.swing.JComboBox<String> cmbReasignar;
-    private javax.swing.JPanel compraPanel;
-    private javax.swing.JPanel compraPanel1;
-    private javax.swing.JPanel compraPanel2;
-    private javax.swing.JPanel compraPanel3;
-    private javax.swing.JPanel compraPanel4;
-    private javax.swing.JPanel compraPanel5;
-    private javax.swing.JPanel compraPanel6;
     private javax.swing.JPanel compraPanel7;
-    private javax.swing.JPanel contentPanel;
-    private javax.swing.JPanel contentPanel1;
-    private javax.swing.JPanel contentPanel2;
-    private javax.swing.JPanel contentPanel3;
-    private javax.swing.JPanel contentPanel4;
-    private javax.swing.JPanel contentPanel5;
-    private javax.swing.JPanel contentPanel6;
     private javax.swing.JPanel contentPanel7;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JLabel lblCompraFecha;
-    private javax.swing.JLabel lblCompraFecha1;
-    private javax.swing.JLabel lblCompraFecha2;
-    private javax.swing.JLabel lblCompraFecha3;
-    private javax.swing.JLabel lblCompraFecha4;
-    private javax.swing.JLabel lblCompraFecha5;
-    private javax.swing.JLabel lblCompraFecha6;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
     private javax.swing.JLabel lblCompraFecha7;
-    private javax.swing.JLabel lblCompraTitulo;
-    private javax.swing.JLabel lblCompraTitulo1;
-    private javax.swing.JLabel lblCompraTitulo2;
-    private javax.swing.JLabel lblCompraTitulo3;
-    private javax.swing.JLabel lblCompraTitulo4;
-    private javax.swing.JLabel lblCompraTitulo5;
-    private javax.swing.JLabel lblCompraTitulo6;
     private javax.swing.JLabel lblCompraTitulo7;
-    private javax.swing.JLabel lblEstadoCompra;
-    private javax.swing.JLabel lblEstadoCompra1;
-    private javax.swing.JLabel lblEstadoCompra2;
-    private javax.swing.JLabel lblEstadoCompra3;
-    private javax.swing.JLabel lblEstadoCompra4;
-    private javax.swing.JLabel lblEstadoCompra5;
-    private javax.swing.JLabel lblEstadoCompra6;
     private javax.swing.JLabel lblEstadoCompra7;
     private javax.swing.JLabel lblPagador;
     private javax.swing.JLabel lblPagadorBadge;
@@ -867,57 +828,15 @@ public class CompraWindow extends javax.swing.JFrame {
     private javax.swing.JLabel lblRepartoModo;
     private javax.swing.JLabel lblRepartoPendiente;
     private javax.swing.JLabel lblTopUsuario;
-    private javax.swing.JLabel lblTotal;
-    private javax.swing.JLabel lblTotal1;
-    private javax.swing.JLabel lblTotal2;
-    private javax.swing.JLabel lblTotal3;
-    private javax.swing.JLabel lblTotal4;
-    private javax.swing.JLabel lblTotal5;
-    private javax.swing.JLabel lblTotal6;
     private javax.swing.JLabel lblTotal7;
-    private javax.swing.JLabel lblTotalProductos;
-    private javax.swing.JLabel lblTotalProductos1;
-    private javax.swing.JLabel lblTotalProductos2;
-    private javax.swing.JLabel lblTotalProductos3;
-    private javax.swing.JLabel lblTotalProductos4;
-    private javax.swing.JLabel lblTotalProductos5;
-    private javax.swing.JLabel lblTotalProductos6;
     private javax.swing.JLabel lblTotalProductos7;
-    private javax.swing.JLabel lblTotalTitulo;
-    private javax.swing.JLabel lblTotalTitulo1;
-    private javax.swing.JLabel lblTotalTitulo2;
-    private javax.swing.JLabel lblTotalTitulo3;
-    private javax.swing.JLabel lblTotalTitulo4;
-    private javax.swing.JLabel lblTotalTitulo5;
-    private javax.swing.JLabel lblTotalTitulo6;
     private javax.swing.JLabel lblTotalTitulo7;
     private javax.swing.JPanel pagadoCard;
-    private javax.swing.JPanel productosCard;
-    private javax.swing.JPanel productosCard1;
-    private javax.swing.JPanel productosCard2;
-    private javax.swing.JPanel productosCard3;
-    private javax.swing.JPanel productosCard4;
-    private javax.swing.JPanel productosCard5;
-    private javax.swing.JPanel productosCard6;
     private javax.swing.JPanel productosCard7;
     private javax.swing.JPanel repartoCard;
-    private javax.swing.JScrollPane scrollProductos;
-    private javax.swing.JScrollPane scrollProductos1;
-    private javax.swing.JScrollPane scrollProductos2;
-    private javax.swing.JScrollPane scrollProductos3;
-    private javax.swing.JScrollPane scrollProductos4;
-    private javax.swing.JScrollPane scrollProductos5;
-    private javax.swing.JScrollPane scrollProductos6;
     private javax.swing.JScrollPane scrollProductos7;
     private javax.swing.JScrollPane scrollReparto;
     private javax.swing.JSeparator sepPagado;
-    private javax.swing.JTable tblProductos;
-    private javax.swing.JTable tblProductos1;
-    private javax.swing.JTable tblProductos2;
-    private javax.swing.JTable tblProductos3;
-    private javax.swing.JTable tblProductos4;
-    private javax.swing.JTable tblProductos5;
-    private javax.swing.JTable tblProductos6;
     private javax.swing.JTable tblProductos7;
     private javax.swing.JTable tblReparto;
     private javax.swing.JPanel topNavPanel;

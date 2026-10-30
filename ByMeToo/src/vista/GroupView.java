@@ -371,7 +371,7 @@ public class GroupView extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(250, 250, 250));
         jButton3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         jButton3.setForeground(new java.awt.Color(26, 32, 44));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
         jButton3.setText("Repartos");
 
         jButton5.setBackground(new java.awt.Color(250, 250, 250));
@@ -687,7 +687,7 @@ public class GroupView extends javax.swing.JFrame {
                 .addGap(8, 8, 8)
                 .addComponent(navPerfil20, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(143, 143, 143)
-                .addComponent(lblConectado20, javax.swing.GroupLayout.DEFAULT_SIZE, 352, javax.swing.GroupLayout.DEFAULT_SIZE)
+                .addComponent(lblConectado20)
                 .addContainerGap())
         );
         toolbarPanel19Layout.setVerticalGroup(

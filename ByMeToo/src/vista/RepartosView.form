@@ -182,7 +182,7 @@
                           </Group>
                           <Component id="jPanel4" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="162" max="32767" attributes="0"/>
+                      <EmptySpace pref="142" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="jButton5" min="-2" pref="100" max="-2" attributes="0"/>
@@ -423,7 +423,7 @@
                       <Color blue="2c" green="20" red="1a" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/vista/icons/icons8-apret&#xf3;n-de-manos-coraz&#xf3;n-16.png"/>
+                      <Image iconType="3" name="/vista/icons/icons8-apreton-de-manos-corazon-16.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Elias Perez te debe "/>
                   </Properties>
@@ -440,7 +440,7 @@
                       <Color blue="2c" green="20" red="1a" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/vista/icons/icons8-apret&#xf3;n-de-manos-coraz&#xf3;n-16.png"/>
+                      <Image iconType="3" name="/vista/icons/icons8-apreton-de-manos-corazon-16.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Pablo Azogue te debe "/>
                   </Properties>
@@ -457,7 +457,7 @@
                       <Color blue="2c" green="20" red="1a" type="rgb"/>
                     </Property>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/vista/icons/icons8-apret&#xf3;n-de-manos-coraz&#xf3;n-16.png"/>
+                      <Image iconType="3" name="/vista/icons/icons8-apreton-de-manos-corazon-16.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Roberto te debe "/>
                   </Properties>
@@ -697,7 +697,7 @@
                   <Color blue="2c" green="20" red="1a" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/vista/icons/icons8-apret&#xf3;n-de-manos-coraz&#xf3;n-16.png"/>
+                  <Image iconType="3" name="/vista/icons/icons8-apreton-de-manos-corazon-16.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Repartos"/>
               </Properties>

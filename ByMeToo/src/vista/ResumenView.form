@@ -1147,10 +1147,10 @@
                     <DimensionLayout dim="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblRepHdrDebe" max="32767" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="lblRepHdrFlecha" min="-2" pref="60" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <Component id="lblRepHdrDebe" pref="414" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lblRepHdrFlecha" min="-2" pref="63" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="lblRepHdrA" min="-2" pref="200" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                               <Component id="lblRepHdrImporte" min="-2" pref="110" max="-2" attributes="0"/>
@@ -1294,9 +1294,9 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="cellRepDebe1" max="32767" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="lblRepFlecha1" min="-2" pref="60" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lblRepFlecha1" min="-2" pref="61" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="cellRepA1" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                               <Component id="lblRepImporte1" min="-2" pref="110" max="-2" attributes="0"/>
@@ -1311,7 +1311,7 @@
                           <Component id="lblRepFlecha1" alignment="0" max="32767" attributes="0"/>
                           <Component id="cellRepA1" alignment="0" max="32767" attributes="0"/>
                           <Component id="lblRepImporte1" alignment="0" max="32767" attributes="0"/>
-                          <Component id="cellRepBizum1" alignment="0" pref="46" max="32767" attributes="0"/>
+                          <Component id="cellRepBizum1" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -1335,7 +1335,7 @@
                                   <Component id="lblRepBadgeDe1" min="-2" pref="18" max="-2" attributes="0"/>
                                   <EmptySpace min="8" pref="8" max="8" attributes="0"/>
                                   <Component id="lblRepDe1" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="253" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1529,18 +1529,18 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="6" pref="6" max="6" attributes="0"/>
-                                  <Component id="btnBizum1" pref="137" max="32767" attributes="0"/>
-                                  <EmptySpace min="6" pref="6" max="6" attributes="0"/>
+                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="btnBizum1" min="-2" pref="120" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="4" pref="4" max="4" attributes="0"/>
-                                  <Component id="btnBizum1" max="32767" attributes="0"/>
-                                  <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                                  <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                  <Component id="btnBizum1" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1555,6 +1555,7 @@
                               <Image iconType="3" name="/vista/icons/phone.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;Pagar con&lt;br&gt;Bizum&lt;/center&gt;&lt;/html&gt;"/>
+                            <Property name="opaque" type="boolean" value="true"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -1576,9 +1577,9 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="cellRepDebe2" max="32767" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                              <Component id="lblRepFlecha2" min="-2" pref="60" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="lblRepFlecha2" min="-2" pref="62" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="cellRepA2" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                               <Component id="lblRepImporte2" min="-2" pref="110" max="-2" attributes="0"/>
@@ -1593,7 +1594,7 @@
                           <Component id="lblRepFlecha2" alignment="0" max="32767" attributes="0"/>
                           <Component id="cellRepA2" alignment="0" max="32767" attributes="0"/>
                           <Component id="lblRepImporte2" alignment="0" max="32767" attributes="0"/>
-                          <Component id="cellRepBizum2" alignment="0" pref="46" max="32767" attributes="0"/>
+                          <Component id="cellRepBizum2" alignment="0" max="32767" attributes="0"/>
                       </Group>
                     </DimensionLayout>
                   </Layout>
@@ -1617,7 +1618,7 @@
                                   <Component id="lblRepBadgeDe2" min="-2" pref="18" max="-2" attributes="0"/>
                                   <EmptySpace min="8" pref="8" max="8" attributes="0"/>
                                   <Component id="lblRepDe2" attributes="0"/>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="253" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1811,18 +1812,18 @@
                         <DimensionLayout dim="0">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="6" pref="6" max="6" attributes="0"/>
-                                  <Component id="btnBizum2" pref="137" max="32767" attributes="0"/>
-                                  <EmptySpace min="6" pref="6" max="6" attributes="0"/>
+                                  <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                                  <Component id="btnBizum2" min="-2" pref="120" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
                         <DimensionLayout dim="1">
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="4" pref="4" max="4" attributes="0"/>
-                                  <Component id="btnBizum2" max="32767" attributes="0"/>
-                                  <EmptySpace min="4" pref="4" max="4" attributes="0"/>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="btnBizum2" min="-2" pref="33" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1837,6 +1838,7 @@
                               <Image iconType="3" name="/vista/icons/phone.png"/>
                             </Property>
                             <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;Pagar con&lt;br&gt;Bizum&lt;/center&gt;&lt;/html&gt;"/>
+                            <Property name="opaque" type="boolean" value="true"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -3275,7 +3277,7 @@
               <Color blue="2c" green="20" red="1a" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/vista/icons/icons8-apret&#xf3;n-de-manos-coraz&#xf3;n-16.png"/>
+              <Image iconType="3" name="/vista/icons/icons8-apreton-de-manos-corazon-16.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Repartos"/>
           </Properties>

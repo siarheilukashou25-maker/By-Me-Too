@@ -815,10 +815,10 @@ public class ResumenView extends javax.swing.JFrame {
         repHeaderLayout.setHorizontalGroup(
             repHeaderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(repHeaderLayout.createSequentialGroup()
-                .addComponent(lblRepHdrDebe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
-                .addComponent(lblRepHdrFlecha, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addComponent(lblRepHdrDebe, javax.swing.GroupLayout.DEFAULT_SIZE, 414, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblRepHdrFlecha, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblRepHdrA, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(lblRepHdrImporte, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -859,7 +859,7 @@ public class ResumenView extends javax.swing.JFrame {
                 .addComponent(lblRepBadgeDe1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(8, 8, 8)
                 .addComponent(lblRepDe1)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 253, Short.MAX_VALUE))
         );
         cellRepDebe1Layout.setVerticalGroup(
             cellRepDebe1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -927,22 +927,23 @@ public class ResumenView extends javax.swing.JFrame {
         btnBizum1.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnBizum1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/phone.png"))); // NOI18N
         btnBizum1.setText("<html><center>Pagar con<br>Bizum</center></html>");
+        btnBizum1.setOpaque(true);
 
         javax.swing.GroupLayout cellRepBizum1Layout = new javax.swing.GroupLayout(cellRepBizum1);
         cellRepBizum1.setLayout(cellRepBizum1Layout);
         cellRepBizum1Layout.setHorizontalGroup(
             cellRepBizum1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellRepBizum1Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(btnBizum1, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
-                .addGap(6, 6, 6))
+                .addGap(23, 23, 23)
+                .addComponent(btnBizum1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         cellRepBizum1Layout.setVerticalGroup(
             cellRepBizum1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellRepBizum1Layout.createSequentialGroup()
                 .addGap(4, 4, 4)
-                .addComponent(btnBizum1)
-                .addGap(4, 4, 4))
+                .addComponent(btnBizum1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout repRow1Layout = new javax.swing.GroupLayout(repRow1);
@@ -951,9 +952,9 @@ public class ResumenView extends javax.swing.JFrame {
             repRow1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(repRow1Layout.createSequentialGroup()
                 .addComponent(cellRepDebe1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
-                .addComponent(lblRepFlecha1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblRepFlecha1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cellRepA1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(lblRepImporte1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -966,7 +967,7 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblRepFlecha1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellRepA1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(lblRepImporte1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(cellRepBizum1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, Short.MAX_VALUE)
+            .addComponent(cellRepBizum1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         repRow2.setBackground(new java.awt.Color(250, 250, 250));
@@ -993,7 +994,7 @@ public class ResumenView extends javax.swing.JFrame {
                 .addComponent(lblRepBadgeDe2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(8, 8, 8)
                 .addComponent(lblRepDe2)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 253, Short.MAX_VALUE))
         );
         cellRepDebe2Layout.setVerticalGroup(
             cellRepDebe2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1061,22 +1062,23 @@ public class ResumenView extends javax.swing.JFrame {
         btnBizum2.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         btnBizum2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/phone.png"))); // NOI18N
         btnBizum2.setText("<html><center>Pagar con<br>Bizum</center></html>");
+        btnBizum2.setOpaque(true);
 
         javax.swing.GroupLayout cellRepBizum2Layout = new javax.swing.GroupLayout(cellRepBizum2);
         cellRepBizum2.setLayout(cellRepBizum2Layout);
         cellRepBizum2Layout.setHorizontalGroup(
             cellRepBizum2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellRepBizum2Layout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(btnBizum2, javax.swing.GroupLayout.DEFAULT_SIZE, 137, Short.MAX_VALUE)
-                .addGap(6, 6, 6))
+                .addGap(23, 23, 23)
+                .addComponent(btnBizum2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         cellRepBizum2Layout.setVerticalGroup(
             cellRepBizum2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(cellRepBizum2Layout.createSequentialGroup()
-                .addGap(4, 4, 4)
-                .addComponent(btnBizum2)
-                .addGap(4, 4, 4))
+                .addContainerGap()
+                .addComponent(btnBizum2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout repRow2Layout = new javax.swing.GroupLayout(repRow2);
@@ -1085,9 +1087,9 @@ public class ResumenView extends javax.swing.JFrame {
             repRow2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(repRow2Layout.createSequentialGroup()
                 .addComponent(cellRepDebe2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(0, 0, 0)
-                .addComponent(lblRepFlecha2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblRepFlecha2, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cellRepA2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(lblRepImporte2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1100,7 +1102,7 @@ public class ResumenView extends javax.swing.JFrame {
             .addComponent(lblRepFlecha2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(cellRepA2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(lblRepImporte2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(cellRepBizum2, javax.swing.GroupLayout.PREFERRED_SIZE, 46, Short.MAX_VALUE)
+            .addComponent(cellRepBizum2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout repTableLayout = new javax.swing.GroupLayout(repTable);
@@ -1751,7 +1753,7 @@ public class ResumenView extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(250, 250, 250));
         jButton3.setFont(new java.awt.Font("Inter", 0, 13)); // NOI18N
         jButton3.setForeground(new java.awt.Color(26, 32, 44));
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apretón-de-manos-corazón-16.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vista/icons/icons8-apreton-de-manos-corazon-16.png"))); // NOI18N
         jButton3.setText("Repartos");
 
         jButton5.setBackground(new java.awt.Color(250, 250, 250));
